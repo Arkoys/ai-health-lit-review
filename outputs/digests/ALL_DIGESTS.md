@@ -1,0 +1,83 @@
+# AI Health Literature Review - All Digests
+
+
+---
+
+# Source file: digest_2026-04-05.md
+
+# AI Health Literature Review - Daily Digest
+## 2026-04-05
+
+**Total papers reviewed**: 2
+**Top highlights**: 2 high-priority
+
+---
+
+## 🏆 Top Papers (Priority 2)
+
+### 1. A CT-based model integrating deep learning features radiomics and body composition for preoperative prediction of microsatellite instability in colorectal cancer: a multicenter study.
+
+**Source**: PUBMED | **Score**: 9.0/10 | **Venue**: European journal of radiology
+**Authors**: Kaiting Han, Cuiling Zhu, Zhenyu Xu et al.
+**Date**: 2026-03-31 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935453/
+**DOI**: 10.1016/j.ejrad.2026.112837
+
+**Summary** (51 words):
+> This multicenter study developed and validated an interpretable deep learning radiomics model using pre-operative portal venous phase CT images to non-invasively predict microsatellite instability (MSI) status in colorectal cancer (CRC). By integrating deep learning features, traditional radiomics, and body composition-based clinical factors via a random forest algorithm, the authors created three
+
+**Methods & Techniques**:
+The precise prediction by MSI plays a key role in the perioperative treatment and prognosis of colorectal cancer (CRC) patients. Key signals: retrospective, prospective, cohort, deep learning, radiomi...
+
+**Key Results**:
+In summary, the interpretable CDLR fusion model based on enhanced CT demonstrates promising potential as a noninvasive pre-screening tool for predicting MSI in CRC, supporting individualized treatment...
+
+**Critical Evaluation**:
+Retrospective design may not reflect prospective deployment performance. External validation details are unclear from the available metadata.
+
+**Research Gaps**:
+Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+
+**Keywords**: d, e, e, p,  , l, e, a, r, n
+**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
+
+---
+
+### 2. Biochemical biomarker-Driven deep learning framework with SHAP-based feature interpretation for diabetes classification.
+
+**Source**: PUBMED | **Score**: 9.0/10 | **Venue**: Biophysical chemistry
+**Authors**: Salman Khan
+**Date**: 2026-04-01 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935405/
+**DOI**: 10.1016/j.bpc.2026.107601
+
+**Summary** (102 words):
+> This study addresses the global rise of type 2 diabetes by proposing a deep learning framework for early classification. The model integrates a Deep Neural Network (DNN) with feature ranking and a statistical algorithm to predict diabetes status. A key component is the use of SHAP (Shapley Additive exPlanations) to interpret the model's decisions and identify influential predictive features. The approach is validated using 10-fold cross-validation, achieving high accuracy and outperforming tradi...
+
+**Methods & Techniques**:
+The proposed framework consists of several integrated steps: 1) **Feature Ranking & Selection:** A statistical algorithm is applied to rank and select the most relevant input features from the dataset...
+
+**Key Results**:
+Through extensive experiments using 10-fold cross-validation, the proposed method achieved an average accuracy of 95.72% demonstrated clear improvements over traditional machine learning models and se...
+
+**Critical Evaluation**:
+External validation details are unclear from the available metadata.
+
+**Research Gaps**:
+Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+
+**Keywords**: m, a, c, h, i, n, e,  , l, e
+**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
+
+---
+
+## 🔍 Trends & Patterns
+
+**Most frequent topics**: e, i, n,  , a, l, r, ,, c, d
+
+**Commonly mentioned gaps**:
+- Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+
+
+---
+
+*Generated automatically by AI Health Lit Review on 2026-04-05 22:15*
+*Database: ./data/papers.db*

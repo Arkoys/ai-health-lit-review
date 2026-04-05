@@ -1,0 +1,31 @@
+# Secrets
+.env
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local data / runtime artifacts
+data/
+logs/
+*.db
+
+# Temporary test configs
+config.test-e2e.yaml
+config. integration-test.yaml
+collector.py.backup
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+
+# Keep generated digests, ignore other output clutter
+outputs/*
+!outputs/.gitkeep
+!outputs/digests/
+!outputs/digests/**
