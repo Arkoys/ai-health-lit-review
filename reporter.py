@@ -340,6 +340,7 @@ class ReportGenerator:
             f.write(content)
         
         self._update_aggregate_markdown(output_dir)
+        self._refresh_short_indexes()
         self._sync_digests_to_github(output_dir, date)
         
         logger.info(f"Saved digest to {filename}")
@@ -360,6 +361,21 @@ class ReportGenerator:
         aggregate_path.write_text(''.join(parts))
         logger.info(f"Updated aggregate digest file: {aggregate_path}")
         return str(aggregate_path)
+    
+    def _refresh_short_indexes(self) -> bool:
+        """Refresh short visual index files when the helper script exists."""
+        repo_root = Path(__file__).resolve().parent
+        script_path = repo_root / 'scripts' / 'update_short_indexes.py'
+        if not script_path.exists():
+            logger.info('Short index script not found; skipping refresh')
+            return False
+        try:
+            subprocess.run(['python3', str(script_path)], cwd=repo_root, check=True, capture_output=True, text=True)
+            logger.info('Refreshed short index files')
+            return True
+        except subprocess.CalledProcessError as e:
+            logger.error(f'Short index refresh failed: {e.stderr or e.stdout or e}')
+            return False
     
     def _sync_digests_to_github(self, output_dir: str, date: str) -> bool:
         """Commit and push digest updates to GitHub when a token/repo are configured."""
