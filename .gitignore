@@ -24,8 +24,10 @@ collector.py.backup
 .idea/
 .vscode/
 
-# Keep generated digests, ignore other output clutter
+# Keep generated digests/reviews, ignore other output clutter
 outputs/*
 !outputs/.gitkeep
 !outputs/digests/
 !outputs/digests/**
+!outputs/reviews/
+!outputs/reviews/**
