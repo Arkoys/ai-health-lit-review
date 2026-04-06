@@ -31,3 +31,5 @@ outputs/*
 !outputs/digests/**
 !outputs/reviews/
 !outputs/reviews/**
+!outputs/slides/
+!outputs/slides/**
