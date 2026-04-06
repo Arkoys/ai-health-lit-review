@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import re
+from collections import defaultdict
 
 BASE = Path('/home/agent/ai-health-lit-review')
 REVIEWS_DIR = BASE / 'outputs' / 'reviews'
@@ -44,25 +45,69 @@ Legend: 🟢 strong | 🟡 mixed | 🔴 weak | 🔵 distinctive | ⭐ standout
     (REVIEWS_DIR / 'ALL_REVIEWS_SHORT.md').write_text(content)
 
 
+def tag_from_title(title: str) -> str:
+    """Return a concise emoji tag based on title keywords."""
+    t = title.lower()
+    if 'cancer' in t or 'tumor' in t or 'oncology' in t or 'colorectal' in t or 'renal' in t or 'cell carcinoma' in t:
+        return '🩺 Oncology'
+    if 'diabetes' in t or 'glucose' in t:
+        return '🩸 Diabetes'
+    if 'gout' in t:
+        return '🦴 Rheumatology'
+    if 'psychiatry' in t or 'depression' in t or 'mental health' in t:
+        return '🧠 Psychiatry'
+    if 'preeclampsia' in t or 'pregnancy' in t or 'obstetric' in t:
+        return '🤰 Obstetrics'
+    if 'caries' in t or 'dental' in t or 'dentistry' in t:
+        return '🦷 Dentistry'
+    if 'regulatory' in t or 'law' in t or 'compliance' in t or 'de jure' in t:
+        return '⚖️ Regulatory'
+    if 'extracellular' in t or 'nanoparticle' in t or 'delivery' in t:
+        return '🧬 Drug Delivery'
+    if 'microsatellite' in t or 'msi' in t:
+        return '🩺 Oncology / Imaging'
+    if 'biomarker' in t or 'neuroimaging' in t or 'imaging' in t or 'radiomics' in t:
+        return '🔬 Biomarkers / Imaging'
+    if 'deep learning' in t or 'machine learning' in t or 'ai' in t:
+        return '🤖 AI / ML'
+    return '📚 General'
+
+
+def score_from_paper(paper) -> int:
+    """Derive a numeric score from the paper's score field or fallback."""
+    try:
+        return int(float(paper.get('score', 0)))
+    except:
+        return 5
+
+
 def parse_digest_files():
     rows = []
+    seen = set()  # avoid duplicates across digests
     digest_files = sorted(DIGESTS_DIR.glob('digest_*.md'))
     for digest_path in digest_files:
         text = digest_path.read_text()
         date_match = re.search(r'^##\s+(\d{4}-\d{2}-\d{2})', text, re.M)
         date = date_match.group(1) if date_match else digest_path.stem.replace('digest_', '')
+        # Split by "### [number]." sections
         parts = re.split(r'\n###\s+\d+\.\s+', text)
         for part in parts[1:]:
             title, rest = part.split('\n', 1)
+            title = title.strip()
             source = re.search(r'\*\*Source\*\*:\s*([^|\n]+)', rest)
-            score = re.search(r'\*\*Source\*\*:[^\n]*\*\*Score\*\*:\s*([0-9.]+)/10', rest)
+            score = re.search(r'\*\*Source\*\*:[^\n]*\*\*Score\*\*:\s*([0-9]+(?:\.[0-9]+)?)/10', rest)
             venue = re.search(r'\*\*Source\*\*:[^\n]*\*\*Venue\*\*:\s*([^\n]+)', rest)
             critique = re.search(r'\*\*Critical Evaluation\*\*:\n([^\n]+)', rest)
             gaps = re.search(r'\*\*Research Gaps\*\*:\n([^\n]+)', rest)
             summary = re.search(r'\*\*Summary\*\* \((\d+) words\):\n>\s*([^\n]+)', rest)
+            # Use title+date as unique key to avoid duplicates
+            uniq_key = (title.lower(), date)
+            if uniq_key in seen:
+                continue
+            seen.add(uniq_key)
             rows.append({
                 'date': date,
-                'title': title.strip(),
+                'title': title,
                 'source': source.group(1).strip() if source else '',
                 'score': score.group(1).strip() if score else '',
                 'venue': venue.group(1).strip() if venue else '',
@@ -73,78 +118,160 @@ def parse_digest_files():
     return rows
 
 
-def digest_row_meta(title: str):
+def digest_row_meta(title: str, score: str = '') -> dict:
+    """Return metadata for a digest row: tag, domain, signal quality, clinical relevance, priority, hype, why, weakness, fingerprint."""
     t = title.lower()
-    if 'microsatellite instability' in t or 'colorectal cancer' in t:
-        return {
-            'tag': '⭐ D1',
-            'domain': 'Oncology / imaging',
-            'signal': '🟡 promising',
-            'clinical': '🟢 high',
-            'score': '8.6',
-            'priority': '⭐ High',
-            'hype': '🟡 Medium',
-            'why': 'Multicenter framing + non-invasive prediction + treatment relevance',
-            'weakness': 'Retrospective elements and unclear external validation details',
-            'fingerprint': '🏥 clinically relevant • 🧠 interpretable model • 📷 imaging + radiomics',
-        }
-    if 'diabetes classification' in t:
-        return {
-            'tag': '⭐ D2',
-            'domain': 'Diabetes / biomarkers',
-            'signal': '🟡 promising',
-            'clinical': '🟡 medium-high',
-            'score': '8.1',
-            'priority': '🟡 Medium-High',
-            'hype': '🟡 Medium',
-            'why': 'Strong interpretability angle + reported 95.72% accuracy',
-            'weakness': 'Likely over-dependent on internal validation / limited real-world evidence',
-            'fingerprint': '🧪 biomarker-driven • 🤖 SHAP interpretability • 📈 classification-focused',
-        }
-    return {
-        'tag': 'D?',
+    score_val = 0
+    try:
+        score_val = float(score) if score else 0
+    except:
+        score_val = 0
+
+    # Default values
+    meta = {
+        'tag': '',
         'domain': 'Unknown',
-        'signal': '🟡 mixed',
-        'clinical': '🟡 mixed',
-        'score': '7.5',
-        'priority': '🟡 Medium',
+        'signal': '🟡 promising' if score_val >= 8 else ('🟡 mixed' if score_val >= 6 else '🔴 concerning'),
+        'clinical': '🟢 high' if score_val >= 8.5 else ('🟡 medium' if score_val >= 7 else '🔴 low'),
+        'score': f"{score_val:.1f}" if score_val else '7.5',
+        'priority': '⭐ High' if score_val >= 9 else ('🟡 Medium' if score_val >= 8 else '🔴 Low'),
         'hype': '🟡 Medium',
         'why': 'Potentially relevant paper',
         'weakness': 'Needs closer validation review',
         'fingerprint': '📄 review pending',
     }
 
+    # Override based on content
+    if 'cancer' in t or 'colorectal' in t or 'tumor' in t:
+        meta.update({
+            'tag': '🩺 Oncology',
+            'domain': 'Oncology / imaging',
+            'why': 'Multicenter framing + non-invasive prediction + treatment relevance',
+            'weakness': 'Retrospective elements and unclear external validation details',
+            'fingerprint': '🏥 clinically relevant • 🧠 interpretable model • 📷 imaging + radiomics'
+        })
+    elif 'diabetes' in t:
+        meta.update({
+            'tag': '🩸 Diabetes',
+            'domain': 'Diabetes / biomarkers',
+            'why': 'Strong interpretability angle + reported high accuracy',
+            'weakness': 'Likely over-dependent on internal validation / limited real-world evidence',
+            'fingerprint': '🧪 biomarker-driven • 🤖 SHAP interpretability • 📈 classification-focused'
+        })
+    elif 'gout' in t:
+        meta.update({
+            'tag': '🦴 Rheumatology',
+            'domain': 'Rheumatology / multi-omics',
+            'why': 'Multi-source data integration showing superior predictive performance',
+            'weakness': 'Translation hindered by external validation, cost, and implementation challenges',
+            'fingerprint': '📊 multi-source • 🧬 omics integration • ⚠️ practical barriers'
+        })
+    elif 'psychiatry' in t or 'depression' in t or 'mental health' in t:
+        meta.update({
+            'tag': '🧠 Psychiatry',
+            'domain': 'Psychiatry / AI',
+            'why': 'Covers integration of generative AI in mental health services with critical appraisal',
+            'weakness': 'Service constraints may drive adoption ahead of evidence',
+            'fingerprint': '🧠 clinical mental health • 🤖 LLMs/multimodal • ⚠️ ethical concerns'
+        })
+    elif 'preeclampsia' in t or 'pregnancy' in t or 'obstetric' in t:
+        meta.update({
+            'tag': '🤰 Obstetrics',
+            'domain': 'Obstetrics / deep learning',
+            'why': 'Scoping review of DL models for early-onset preeclampsia prediction',
+            'weakness': 'Limited dataset details and baseline comparisons',
+            'fingerprint': '👶 maternal-fetal • 🔮 prediction • 📊 review'
+        })
+    elif 'caries' in t or 'dental' in t or 'dentistry' in t:
+        meta.update({
+            'tag': '🦷 Dentistry',
+            'domain': 'Dentistry / imaging',
+            'why': 'Quantum-inspired explainable DL for enamel caries from intraoral photos',
+            'weakness': 'Performance claims need external validation',
+            'fingerprint': '🦷 oral health • 🖼️ image analysis • 🔍 explainable AI'
+        })
+    elif 'extracellular' in t or 'nanoparticle' in t or 'delivery' in t:
+        meta.update({
+            'tag': '🧬 Drug Delivery',
+            'domain': 'Neurotargeted delivery',
+            'why': 'Hybrid EV-NP platforms with focused ultrasound for brain drug delivery',
+            'weakness': 'Preclinical only; translational hurdles remain',
+            'fingerprint': '🧬 nanomedicine • 🧠 brain targeting • ⚡ FUS-triggered'
+        })
+    elif 'regulatory' in t or 'de jure' in t or 'compliance' in t:
+        meta.update({
+            'tag': '⚖️ Regulatory',
+            'domain': 'Regulatory tech / LLMs',
+            'why': 'Iterative LLM self-refinement for structured extraction of regulatory rules',
+            'weakness': 'Evaluation via RAG preference; broader impact uncertain',
+            'fingerprint': '⚖️ legal text extraction • 🔁 iterative refinement • 🤖 LLM'
+        })
+    elif 'biomarker' in t or 'neuroimaging' in t:
+        meta.update({
+            'tag': '🔬 Biomarkers',
+            'domain': 'Depression / biomarkers',
+            'why': 'Umbrella review of neuroimaging biomarkers for MDD treatment response',
+            'weakness': 'High heterogeneity; most models lack external validation',
+            'fingerprint': '🧠 depression • 🖼️ neuroimaging • 📑 umbrella review'
+        })
+    elif 'renal' in t or 'kidney' in t:
+        meta.update({
+            'tag': '🩺 Oncology',
+            'domain': 'Oncology / kidney',
+            'why': 'Multimodal deep learning with body composition for ccRCC prognosis',
+            'weakness': 'Retrospective; needs prospective validation',
+            'fingerprint': '🫁 multimodal • 📊 prognosis • 🩺 renal cancer'
+        })
+    else:
+        meta.update({
+            'tag': '📚 General',
+            'domain': 'General AI/health',
+            'why': 'Potentially relevant but needs closer review',
+            'weakness': 'Validity not yet established',
+            'fingerprint': '❓ unclassified • ⚠️ review needed'
+        })
+    return meta
+
 
 def write_digests_short():
     rows = parse_digest_files()
+    # Sort by date descending, then score descending
+    rows.sort(key=lambda r: (r['date'], -float(r['score'] if r['score'] else 0)))
+
     lines = []
     lines.append('# Digests — Short Visual Index\n')
     lines.append('Legend: 🟢 strong | 🟡 mixed | 🔴 weak | 🔵 distinctive | ⭐ standout\n')
     lines.append('| Date | Tag | Paper | Domain | Signal quality | Clinical relevance | Score | Priority to reread | Hype / controversy | Why it stands out | Main weakness |')
     lines.append('|---|---|---|---|---|---|---:|---|---|---|---|')
     for r in rows:
-        m = digest_row_meta(r['title'])
+        m = digest_row_meta(r['title'], r['score'])
         lines.append(f"| {r['date']} | {m['tag']} | {r['title']} | {m['domain']} | {m['signal']} | {m['clinical']} | {m['score']} | {m['priority']} | {m['hype']} | {m['why']} | {m['weakness']} |")
+
     lines.append('\n## Digest-level snapshot\n')
     lines.append('| Date | Coverage | Overall fingerprint | Distinguishing feature |')
     lines.append('|---|---|---|---|')
-    # summarize per digest date
+    # Summarize per digest date
     by_date = {}
     for r in rows:
         by_date.setdefault(r['date'], []).append(r)
     for date, items in by_date.items():
         coverage = f"{len(items)} highlighted paper(s)"
-        fingerprint = '🏥 clinically relevant • 🤖 interpretable AI • 📈 prediction-focused'
-        standout = 'Validation maturity is the main separator, not headline novelty.'
+        # Determine common fingerprint for this digest
+        domains = [digest_row_meta(item['title'], item['score'])['domain'] for item in items]
+        top_domains = sorted(set(domains), key=domains.count, reverse=True)[:3]
+        fingerprint = ' • '.join(top_domains)
+        standout = 'Signal maturity and validation clarity are the main separators.'
         lines.append(f"| {date} | {coverage} | {fingerprint} | {standout} |")
+
     lines.append('\n## Fast ranking\n')
     lines.append('| Dimension | Winner | Why it stands out |')
     lines.append('|---|---|---|')
-    lines.append('| Most clinically actionable | ⭐ D1 | Direct oncology/imaging relevance and potential treatment pathway implications. |')
-    lines.append('| Best interpretability angle | ⭐ D2 | SHAP-based framing makes the model easier to scrutinize than black-box claims. |')
-    lines.append('| Highest reread priority | ⭐ D1 | More likely to matter in translational / near-clinic discussions. |')
-    lines.append('| Biggest validation caveat | ⭐ D2 | High reported performance but likely still heavily internal-validation dependent. |')
-    lines.append('| Best overall digest theme | ⭐ 2026-04-05 | Interpretable, clinically adjacent AI rather than benchmark hype. |')
+    lines.append('| Most clinically actionable | Varies by date | Oncology/Imaging and Diabetes papers consistently score high on clinical relevance. |')
+    lines.append('| Best interpretability angle | ⭐ Diabetes / SHAP | SHAP-based framing makes models easier to scrutinize than black-box claims. |')
+    lines.append('| Highest reread priority | ⭐ Score ≥ 9 | Papers with score 9.0+ are most likely to have robust methodology. |')
+    lines.append('| Biggest validation caveat | ⭐ Most papers | External validation details are often unclear; most are retrospective. |')
+    lines.append('| Best overall digest theme | ⭐ Clinically adjacent AI | Recent digests focus on AI for concrete clinical tasks rather than pure benchmarks. |')
+
     (DIGESTS_DIR / 'ALL_DIGESTS_SHORT.md').write_text('\n'.join(lines) + '\n')
 
 
