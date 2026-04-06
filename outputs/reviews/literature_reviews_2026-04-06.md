@@ -180,3 +180,94 @@ in adopting this alternative approach...
 
 **Overall Score: 8.0/10** (conceptuellement fort, manque validation)
 ---
+
+
+# 2. Responsible AI Governance: A Systematic Literature Review
+
+**Authors:** Amna Batool, Didar Zowghi, Muneera Bano (CSIRO Data61)  
+**Source:** arXiv:2401.10896v1 (2024)  
+**Type:** Systematic literature review (SLR) of 61 papers (2013-2023)
+
+## Abstract
+
+As artificial intelligence transforms a wide range of sectors and isation for Economic Co-operation and Development [OECD] 4 , drives innovation, it also introduces complex challenges concerning Australian government 5 , professional bodies (the Institute of Elecethics, transparency, bias, and fairness. The imperative for integrattrical and Electronics Engineers [IEEE]), and various companies arXiv:2401.10896v1 [cs.CY] 18 Dec 2023 ing Responsible AI (RAI) principles within governance frameworks have published their ethical AI principles and guidelines [8], [9]. is paramount to mitigate these emerging risks. While there are The effort goes beyond just technical concerns and includes the many solutions for AI governance, significant questions remain development of strong AI governance solutions and techniques, about their effectiveness in practice. Addressing this knowledge gap, which are considered essential for directing responsible use of AI this paper aims to examine the existing literature on AI Governance. technology, striking a balance between innovation and ethical beThe focus of this study is to analyse the literature to answer key haviour, and avoiding unforeseen effects [10]. Ethics principles questions: WHO is accountable for AI systems’ governance, WHAT and guidelines must be embedded in AI systems through proper elements are being governed, WHEN governance occurs within AI governance techniques [11]. AI governance can be understood the AI development life cycle, and HOW it is executed through as encompassing a set of regulations, methods, procedures, and various mechanisms like frameworks, tools, standards, policies, or technological mechanisms utilized to guarantee that an organisamodels. Employing a systematic literature review methodology, tion’s utilization of AI technologies is consistent with its strategies, a rigorous search and selection process has been employed. This goals, and principles [10]. This encompasses adhering to legal reeffort resulted in the identification of 61 relevant articles on the quirements and upholding the ethical AI principles adopted by subject of AI Governance. Out of the 61 studies analysed, only 5 the organisation [10]. There have been numerous research studies provided complete responses to all questions. The findings from done on proposing different AI governance solutions to govern AI this review aid research in formulating more holistic and compresystems [12], including the ECCOLA method for the governance hensive Responsible AI (RAI) governance frameworks. This study of ethical and trustworthy AI systems [13], [14], the framework for highlights important role of AI governance on various levels speAI governance proposed for AI safety domains [15], a governance cially organisational in establishing effective and responsible AI model for the AI application in healthcare sectors [3]. However, practices. The findings of this study provides a foundational basis there are multiple challenges, including transparency, explainability, for future research and development of comprehensive governance and accountability of algorithms in AI governance, that need to be models that align with RAI principles. addressed [16], [17]. In addition to these challenges, AI governance also faces diversity and inclusion issues such as lack of fairness,
+
+## Introduction
+
+Artificial intelligence (AI) has emerged as one of the most important organisation, and industry, to make sure the development and imtechnologies in many businesses and has grown to be an integral plementation of AI systems adhere to ethical principles in line with part of our society [1]. However, the risks and negative effects of AI AI governance patterns for responsible AI can be referred to as are growing with its widespread application in a variety of sectors, responsible AI governance [1]. An approach referred to as 3W1H such as autonomous cars [2], healthcare [3], finance [4], and other (Who, What, When, and How) has been adopted in this study to areas. There are different repositories1 2 on AI incident databases analyse the existing AI governance solutions from the literature. that contains over 2000 AI incidents. In this approach, 3W covers three questions: who is governing Responsible AI refers to developing, deploying, and utilizing AI in (stakeholders), what should be governed (humans, data, system, or order to ensure it is developed and used in a manner that aligns process), as proposed by Zowghi and da Rimini [6], and when is it with human values, societal norms, legal standards, and mitigates being governed (i.e. at what stage of AI development life cycle)? 1H potential risks and negative consequences associated with it, such covers: How is AI being governed (i.e. frameworks, standards, reguas bias, discrimination, and lack of transparency [1], [5], [6]. In lat...
+
+## Methodology
+
+- **Guidelines:** Kitchenham et al. SLR guidelines  
+- **Search:** Keywords ((AI OR artificial intelligence) AND (governance)) in Google Scholar, Scopus, Science Direct, IEEE, ACM  
+- **Inclusion:** English, 2013-2023, relevance to AI governance; excluded environmental/climate etc.  
+- **Screening:** 2918 → 225 → 61 (using forward/backward snowballing)  
+- **Data Extraction:** Structured analysis using the *3W1H* approach (Who, What, When, How) and five governance levels (team, organisation, industry, national, international).
+
+Research Questions: The following research questions have This section presents the data analysis of 61 selected studies through guided this systematic review: the 3W1H approach and also presents the categorisation of stake• RQ1: What governance frameworks, models, tools, and Poliholders based on "Who is governing?" and artefacts based on "How cies (regulations, ethics principles, or guidelines etc) for AI is it governed?" under five levels of AI governance. are offered in the literature? • RQ2: Which target AI application domains are considered 6 https://github.com/amnacsiro/SLR-AI-Governance/tree/main in the existing AI governance approaches/solutions? 7 https://github.com/amnacsiro/SLR-AI-Governance/tree/main
+
+Search Strategy: The keywords used to search for the articles in search engines and digital libraries are: ((AI OR artificial intelligence) AND (governance)) Inclusion and Exclusion Criteria: A wide range of search engines and digital libraries have been used to identify the relevant articles. Then, the inclusion criteria of year of publication and relevance were applied. The articles published in English between 2013 to 2023 in Google Scholar, Scopus, Science Direct, IEEE, and ACM were considered while determining inclusion criteria. Moreover, the papers relevant to the research focus were considered for inclusion, while book chapters, reports, and documentary articles were excluded. Papers that meet the relevance criteria were included in this study. All other papers that did not fit these requirements were omitted. Consequently, publications focusing on such topics as environmental governance, climate change, ecology, etc., were
+
+## 3W1H Approach and Governance Levels
+
+3.1.1 Comprehensive analysis of 3W1H:. Figure 5 and Figure 6 3.1 3W1H Approach: present a comprehensive analysis of 3W1H, applied to all 61 papers, The 3W1H approach consists of questions, Who, What, When, and with the paper IDs representing E as empirical studies and N as nonHow, which have been explored for the selected set of 61 studies empirical studies from a total of 61 studies. Out of 61 studies, only using thematic analysis. This analysis involved a comprehensive five [N15], [N26], [N29], [E45], and [E47] had all of the questions examination of the literature to identify recurring themes related in 3W1H answered; these studies are indicated in grey in figure 5 to AI governance. "Who" focuses on the stakeholders (key AI overand figure 6. There are a significant number of studies (20 out of 61) sight roles) who should be involved in governing to oversee if AI focused on answering the question of "how" AI should be governed complies with standards or regulations for responsible AI. These (figure 6) while neglecting other aspects such as "who" should be stakeholders include responsible research and innovation officers, responsible for governance and "at what stage" of the AI developdata management scientists, AI governance committee members etc. ment life cycle. It has been observed that 11 studies (figure 5) have Next, "What" covers the four pillars of the AI ecosystem, which are answered to the question "Who is governing?" where the studies humans, data, processes, and systems. The selection of these four [N8] and [E37] added that national and international governance pillars is grounded in a thorough review of the existing literature coordinating committee members should be in charge of governing and a consideration of the fundamental elements that constitute the AI systems; the study [N15] mentioned multiple parties should the AI ecosystem [6]. Aligning with Zowghi and da Rimini’s study be in charge of governing data at the design, development, and [6], each pillar is further explained below. deployment stages of the AI life cycle. However, this study [N15] • Humans: Acknowledging the centrality of human involvehas not specifically mentioned the names of the parties. The rement in AI development and deployment, this pillar encommaining studies (figure 5) have mentioned the multi-disciplinary passes stakeholders (operational AI practitioners) involved steering committee ([E45]), the data management group ([N26] in the day-to-day technical implementation and operational [N29]), and AI scientists as high level expert groups ([N2] [N3]) as aspects of AI projects, such as AI developers, AI designers, stakeholders who should be responsible for governing data, proetc. From the previous question, "Who is governing?", which cesses, or systems under the AI ecosystem. It has been analysed includes key AI oversight roles, this pillar is linked with that under the question "What is being governed?," not a single a focus on observing "Who is governing ...
+
+## Key Results
+
+### RQ1: Governance Frameworks, Models, Tools, Policies
+
+- **Frameworks:** 5 proposed; only 1 (N29) answered all 3W1H questions. Examples: Risk Management Framework (N3), Media-AI Governance Framework (N13), Framework to incorporate stakeholders (N29), System-Level Framework for financial services (N32), Fusion Fuzzy Multiple Rule-Based Framework (N56).  
+- **Models:** 4 proposed (N10, N12, N26, E44) covering fairness/transparency/trustworthiness/accountability; domain-specific; system-level; dimensional. Only N26 answered all 3W1H.  
+- **Tools:** 2 studies (N25, E53) discussed tools: “artificial discretion” and ECOOLA (with accountability fix via information governance).  
+- **Policies/Ethics:** 9 studies proposed ethics principles or guidelines; 3 studies proposed policy infrastructure; others offered recommendations.  
+
+### RQ2: Target Application Domains
+
+Healthcare is the most common domain (10 studies), followed by robotics (3). Other domains: banking, media/communication, academia. 25 studies did not specify an application domain.  
+
+### RQ3: Limitations and Challenges
+
+Ethical challenges (fairness, transparency, privacy, trust) dominate. Legal-regulatory (human-centric concerns), technical (biases/harm), societal/economic also noted. A major gap: lack of human involvement in governance solutions.  
+
+### 3W1H Coverage Gap
+
+Out of 61 studies, only 5 answered all Who/What/When/How questions. 20 studies focused solely on “How” governance is executed, neglecting “Who” (stakeholders), “What” (governed elements), and “When” (development stages).  
+
+### Governance Levels
+
+- Organisational-level: 19 solutions (most common)  
+- National-level: 8  
+- International-level: 2  
+- Team/Industry: also present but fewer  
+Only 4 organisational-level solutions had complete 3W1H coverage.
+
+## Conclusion
+
+In conclusion, this systematic literature review of 61 selected studRQ3: What are the limitations and challenges of AI goveries achieves its objectives by providing a comprehensive summary nance discussed in the literature? of current AI governance solutions, including frameworks, tools, AI governance solutions are required in order to mitigate the risks models, and policies. The challenges within existing AI governance associated with AI, such as bias, discrimination, lack of transsolutions are also presented in this paper, emphasizing the prevaparency, and unintended harmful impacts [5] [6]. But there are lent focus on ethical considerations such as fairness, transparency, challenges associated with AI governance solutions as well, which privacy, and trust. The 3W1H analysis reveals a critical gap in adare discussed in the literature and are presented in table 4. Ethical dressing "who," "when," and "what" aspects of AI governance in a Amna Batool, Didar Zowghi, and Muneera Bano holistic manner, with a disproportionate emphasis on the "how." [17] Joshua A Kroll. Outlining traceability: A principle for operationalizing accountOnly 5 studies of 61 have provided all the answers to questions in ability in computing systems. In Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency, pages 758–771, 2021. 3W1H. The analysis has also revealed that the highest number of [18] Denise Carter. Regulation and ethics in artificial intelligence and machine lear...
+
+## Assessment
+
+**Strengths:**  
+- Rigorous SLR methodology (Kitchenham) with clear inclusion/exclusion.  
+- Introduction of the 3W1H analytical lens, which effectively highlights gaps.  
+- Extensive tabulation of frameworks (Table 1), models (Table 2), tools, policies (Table 3), and challenges (Table 4).  
+- Good visualisation (figures) of publication trends, 3W1H coverage, stakeholder classification, application domains.  
+- Identification of healthcare as the most frequent application domain, making findings highly relevant to health AI.
+
+**Weaknesses:**  
+- Over-reliance on academic literature; grey literature (white papers, organizational reports) not fully included (though mentioned as future work).  
+- Limited critical appraisal of the quality of the 61 studies; mostly descriptive summary.  
+- The 3W1H approach, while useful, may be too coarse; does not capture nuance of stakeholder dynamics or implementation barriers.  
+- Little discussion on why most solutions are incomplete (e.g., feasibility constraints, complexity).  
+- No meta-synthesis or cross-validation of results across studies.
+
+**Relevance to Health AI Governance:**  
+- Healthcare is the top application domain, so findings directly inform health AI governance.  
+- The emphasis on stakeholder (“Who”) involvement maps to multi-stakeholder processes needed in consumer health.  
+- The identified ethical challenges (fairness, transparency, privacy, trust) are core to health AI.  
+- The gap in addressing “When” (development stages) suggests health AI governance solutions should cover the entire AI lifecycle.  
+- The catalog of frameworks and models provides a starting point for health organisations selecting governance artefacts.
+
+**Overall Score: 8.5/10** (excellent systematic review with actionable insights for health AI)
+
+---
