@@ -48,13 +48,13 @@ Legend: 🟢 strong | 🟡 mixed | 🔴 weak | 🔵 distinctive | ⭐ standout
 def tag_from_title(title: str) -> str:
     """Return a concise emoji tag based on title keywords."""
     t = title.lower()
-    if 'cancer' in t or 'tumor' in t or 'oncology' in t or 'colorectal' in t or 'renal' in t or 'cell carcinoma' in t:
+    if 'cancer' in t or 'tumor' in t or 'oncology' in t or 'colorectal' in t or 'renal' in t or 'cell carcinoma' in t or 'carcinoma' in t:
         return '🩺 Oncology'
     if 'diabetes' in t or 'glucose' in t:
         return '🩸 Diabetes'
     if 'gout' in t:
         return '🦴 Rheumatology'
-    if 'psychiatry' in t or 'depression' in t or 'mental health' in t:
+    if 'psychiatry' in t or 'depression' in t or 'mental health' in t or 'major depressive' in t:
         return '🧠 Psychiatry'
     if 'preeclampsia' in t or 'pregnancy' in t or 'obstetric' in t:
         return '🤰 Obstetrics'
@@ -62,13 +62,13 @@ def tag_from_title(title: str) -> str:
         return '🦷 Dentistry'
     if 'regulatory' in t or 'law' in t or 'compliance' in t or 'de jure' in t:
         return '⚖️ Regulatory'
-    if 'extracellular' in t or 'nanoparticle' in t or 'delivery' in t:
+    if 'extracellular' in t or 'nanoparticle' in t or 'delivery' in t or 'drug delivery' in t:
         return '🧬 Drug Delivery'
     if 'microsatellite' in t or 'msi' in t:
         return '🩺 Oncology / Imaging'
     if 'biomarker' in t or 'neuroimaging' in t or 'imaging' in t or 'radiomics' in t:
         return '🔬 Biomarkers / Imaging'
-    if 'deep learning' in t or 'machine learning' in t or 'ai' in t:
+    if 'deep learning' in t or 'machine learning' in t or 'ai' in t or 'artificial intelligence' in t:
         return '🤖 AI / ML'
     return '📚 General'
 
@@ -82,14 +82,16 @@ def score_from_paper(paper) -> int:
 
 
 def parse_digest_files():
-    rows = []
-    seen = set()  # avoid duplicates across digests
+    # rows_all: every entry from every digest (used for digest-level counts)
+    rows_all = []
+    # rows_unique: one entry per title (first occurrence)
+    first_occurrence = {}  # title_normalized -> row dict
+
     digest_files = sorted(DIGESTS_DIR.glob('digest_*.md'))
     for digest_path in digest_files:
         text = digest_path.read_text()
         date_match = re.search(r'^##\s+(\d{4}-\d{2}-\d{2})', text, re.M)
         date = date_match.group(1) if date_match else digest_path.stem.replace('digest_', '')
-        # Split by "### [number]." sections
         parts = re.split(r'\n###\s+\d+\.\s+', text)
         for part in parts[1:]:
             title, rest = part.split('\n', 1)
@@ -100,12 +102,7 @@ def parse_digest_files():
             critique = re.search(r'\*\*Critical Evaluation\*\*:\n([^\n]+)', rest)
             gaps = re.search(r'\*\*Research Gaps\*\*:\n([^\n]+)', rest)
             summary = re.search(r'\*\*Summary\*\* \((\d+) words\):\n>\s*([^\n]+)', rest)
-            # Use title+date as unique key to avoid duplicates
-            uniq_key = (title.lower(), date)
-            if uniq_key in seen:
-                continue
-            seen.add(uniq_key)
-            rows.append({
+            row = {
                 'date': date,
                 'title': title,
                 'source': source.group(1).strip() if source else '',
@@ -114,8 +111,15 @@ def parse_digest_files():
                 'critique': critique.group(1).strip() if critique else '',
                 'gaps': gaps.group(1).strip() if gaps else '',
                 'summary': summary.group(2).strip() if summary else '',
-            })
-    return rows
+            }
+            rows_all.append(row)
+            uniq_key = title.lower().strip()
+            if uniq_key not in first_occurrence:
+                first_occurrence[uniq_key] = row
+
+    # Return two lists: unique rows (first occurrence) and all rows (for digest counts)
+    rows_unique = list(first_occurrence.values())
+    return rows_unique, rows_all
 
 
 def digest_row_meta(title: str, score: str = '') -> dict:
@@ -127,7 +131,6 @@ def digest_row_meta(title: str, score: str = '') -> dict:
     except:
         score_val = 0
 
-    # Default values
     meta = {
         'tag': '',
         'domain': 'Unknown',
@@ -142,7 +145,7 @@ def digest_row_meta(title: str, score: str = '') -> dict:
     }
 
     # Override based on content
-    if 'cancer' in t or 'colorectal' in t or 'tumor' in t:
+    if 'cancer' in t or 'tumor' in t or 'oncology' in t or 'colorectal' in t or 'renal' in t or 'cell carcinoma' in t or 'carcinoma' in t:
         meta.update({
             'tag': '🩺 Oncology',
             'domain': 'Oncology / imaging',
@@ -166,7 +169,7 @@ def digest_row_meta(title: str, score: str = '') -> dict:
             'weakness': 'Translation hindered by external validation, cost, and implementation challenges',
             'fingerprint': '📊 multi-source • 🧬 omics integration • ⚠️ practical barriers'
         })
-    elif 'psychiatry' in t or 'depression' in t or 'mental health' in t:
+    elif 'psychiatry' in t or 'depression' in t or 'mental health' in t or 'major depressive' in t:
         meta.update({
             'tag': '🧠 Psychiatry',
             'domain': 'Psychiatry / AI',
@@ -190,7 +193,7 @@ def digest_row_meta(title: str, score: str = '') -> dict:
             'weakness': 'Performance claims need external validation',
             'fingerprint': '🦷 oral health • 🖼️ image analysis • 🔍 explainable AI'
         })
-    elif 'extracellular' in t or 'nanoparticle' in t or 'delivery' in t:
+    elif 'extracellular' in t or 'nanoparticle' in t or 'delivery' in t or 'drug delivery' in t:
         meta.update({
             'tag': '🧬 Drug Delivery',
             'domain': 'Neurotargeted delivery',
@@ -234,32 +237,36 @@ def digest_row_meta(title: str, score: str = '') -> dict:
 
 
 def write_digests_short():
-    rows = parse_digest_files()
-    # Sort by date descending, then score descending
-    rows.sort(key=lambda r: (r['date'], -float(r['score'] if r['score'] else 0)))
+    rows_unique, rows_all = parse_digest_files()
+    # For main table, use unique rows sorted by score descending
+    rows_unique.sort(key=lambda r: (-float(r['score'] if r['score'] else 0), r['date']))
 
     lines = []
     lines.append('# Digests — Short Visual Index\n')
     lines.append('Legend: 🟢 strong | 🟡 mixed | 🔴 weak | 🔵 distinctive | ⭐ standout\n')
     lines.append('| Date | Tag | Paper | Domain | Signal quality | Clinical relevance | Score | Priority to reread | Hype / controversy | Why it stands out | Main weakness |')
     lines.append('|---|---|---|---|---|---|---:|---|---|---|---|')
-    for r in rows:
+    for r in rows_unique:
         m = digest_row_meta(r['title'], r['score'])
         lines.append(f"| {r['date']} | {m['tag']} | {r['title']} | {m['domain']} | {m['signal']} | {m['clinical']} | {m['score']} | {m['priority']} | {m['hype']} | {m['why']} | {m['weakness']} |")
 
     lines.append('\n## Digest-level snapshot\n')
     lines.append('| Date | Coverage | Overall fingerprint | Distinguishing feature |')
     lines.append('|---|---|---|---|')
-    # Summarize per digest date
-    by_date = {}
-    for r in rows:
-        by_date.setdefault(r['date'], []).append(r)
-    for date, items in by_date.items():
+    # Summarize per digest date using rows_all to show actual coverage (including duplicates across digests)
+    by_date = defaultdict(list)
+    for r in rows_all:
+        by_date[r['date']].append(r)
+    for date in sorted(by_date.keys()):
+        items = by_date[date]
         coverage = f"{len(items)} highlighted paper(s)"
-        # Determine common fingerprint for this digest
-        domains = [digest_row_meta(item['title'], item['score'])['domain'] for item in items]
+        # Determine common fingerprint for this digest based on unique titles within that digest
+        unique_titles = {r['title'].lower().strip() for r in items}
+        unique_rows = [r for r in items if r['title'].lower().strip() in unique_titles]
+        # For simplicity, use top domains among those items
+        domains = [digest_row_meta(item['title'], item['score'])['domain'] for item in unique_rows]
         top_domains = sorted(set(domains), key=domains.count, reverse=True)[:3]
-        fingerprint = ' • '.join(top_domains)
+        fingerprint = ' • '.join(top_domains) if top_domains else 'N/A'
         standout = 'Signal maturity and validation clarity are the main separators.'
         lines.append(f"| {date} | {coverage} | {fingerprint} | {standout} |")
 
