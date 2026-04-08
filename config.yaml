@@ -1,0 +1,210 @@
+sources:
+  arxiv:
+    enabled: true
+    categories:
+    - cs.AI
+    - cs.LG
+    - cs.CL
+    - q-bio
+    - eess.AS
+    - cs.CV
+    max_results_per_day: 50
+  pubmed:
+    enabled: true
+    databases:
+    - pubmed
+    - pmc
+    max_results_per_day: 30
+  conferences:
+    enabled: true
+    sites:
+    - https://neurips.cc/Conferences/
+    - https://icml.cc/Conferences/
+    - https://www.nature.com/nmedicine/
+    - https://jamanetwork.com/
+    max_results_per_day: 20
+keywords:
+  # AI Evaluation & Validation
+  - AI evaluation
+  - AI validation
+  - AI auditing
+  - algorithmic auditing
+  - model evaluation
+  - AI testing
+  - AI assessment
+  - external validation
+  - real-world validation
+  - deployment evaluation
+  - post-deployment monitoring
+  - continuous evaluation
+  - AI performance assessment
+
+  # Fairness & Reliability
+  - fairness evaluation
+  - bias detection
+  - robustness testing
+  - AI reliability
+  - model monitoring
+  - AI transparency assessment
+  - explainability evaluation
+  - safety evaluation
+  - risk assessment
+
+  # Participatory Governance & Democracy
+  - participatory governance
+  - participatory democracy
+  - community participation
+  - stakeholder engagement
+  - citizen participation
+  - public participation
+  - deliberative democracy
+  - participatory decision-making
+  - co-governance
+  - collaborative governance
+  - participatory AI
+  - participatory AI design
+  - participatory AI governance
+  - democratic AI
+  - community-centered AI
+  - citizen science for AI
+  - public interest technology
+  - AI accountability
+  - algorithmic accountability
+
+  # Adaptive Governance & Regulation
+  - adaptive governance
+  - adaptive regulation
+  - agile regulation
+  - responsive regulation
+  - dynamic regulation
+  - iterative regulation
+  - experimental regulation
+  - learning regulation
+  - flexible governance
+  - anticipatory governance
+  - regulatory sandboxes
+  - innovation hubs
+  - living labs
+  - regulatory experiments
+  - regulatory innovation
+  - policy learning
+  - regulatory adaptation
+  - evidence-based regulation
+  - outcome-based regulation
+
+  # Evidence & Implementation
+  - evidence-based policy
+  - evidence-based policymaking
+  - knowledge translation
+  - research utilization
+  - evidence synthesis
+  - implementation science
+  - knowledge mobilization
+  - policy-relevant research
+  - actionable evidence
+  - evidence gaps
+  - knowledge barriers
+  - implementation barriers
+  - policy uptake
+  - research impact
+  - evidence quality
+  - policy legibility
+  - evidence actionability
+
+  # AI Governance & Ethics
+  - AI governance
+  - AI regulation
+  - algorithmic governance
+  - AI policy
+  - AI ethics governance
+  - responsible AI governance
+  - AI oversight
+  - AI compliance
+  - continuous compliance
+  - real-time compliance
+
+  # Clinical/Health AI Specific
+  - clinical AI
+  - health AI
+  - medical AI
+  - clinical decision support
+  - diagnostic AI
+  - predictive modeling in healthcare
+  - AI in medicine
+  - digital health
+  - AI safety in healthcare
+  - clinical validation
+priority_indicators:
+  venues:
+  - NeurIPS
+  - ICML
+  - Nature Medicine
+  - JAMA
+  - The Lancet Digital Health
+  - Medical Image Analysis
+  - JAMA Network Open
+  - Nature Biomedical Engineering
+  - Proceedings of the National Academy of Sciences
+  terms:
+  - clinical trial
+  - real-world
+  - validation
+  - prospective
+  - multicenter
+  - FDA
+  - regulatory
+  - deployment
+scoring:
+  keyword_match: 1.0
+  priority_venue: 3.0
+  priority_term: 2.0
+  citation_velocity: 2.0
+  recency: 1.0
+  min_score_threshold: 3.0
+summarization:
+  max_daily_papers: 10
+  summary_length: 400
+  include_critique: true
+  extract_methods: true
+  identify_gaps: true
+providers:
+  openrouter:
+    enabled: true
+    model: stepfun/step-3.5-flash:free
+  openrouter_fallback:
+    enabled: true
+    model: nvidia/nemotron-3-super-120b-a12b:free
+  ollama:
+    enabled: true
+    model: llama3:8b
+    base_url: http://localhost:11434
+  openai:
+    enabled: false
+    model: gpt-4o
+  gemini:
+    enabled: false
+    model: gemini-2.0-flash
+  huggingface:
+    enabled: false
+    model: meta-llama/Llama-3.3-70B-Instruct
+outputs:
+  telegram:
+    enabled: true
+    channel_id: ''
+  email:
+    enabled: true
+    to: ''
+    subject: AI Health Lit Review - Daily Digest
+  google_docs:
+    enabled: true
+    folder_id: ''
+    document_title: AI Health Literature Review - Cumulative Knowledge Base
+  local:
+    markdown_dir: ./outputs/digests
+    database: ./data/papers.db
+    log_file: ./logs/processing.log
+processing:
+  max_workers: 3
+  request_timeout: 30
+  retry_attempts: 6
+  user_agent: 'AI-Health-Lit-Review/1.0 (contact: you@example.com)'
