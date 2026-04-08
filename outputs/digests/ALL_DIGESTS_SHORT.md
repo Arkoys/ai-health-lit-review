@@ -24,14 +24,17 @@ Legend: 🟢 strong | 🟡 mixed | 🔴 weak | 🔵 distinctive | ⭐ standout
 | 2026-04-06 | ⚖️ Regulatory | De Jure: Iterative LLM Self-Refinement for Structured Extraction of Regulatory Rules | Regulatory tech / LLMs | 🟡 mixed | 🟡 medium | 7.0 | 🔴 Low | 🟡 Medium | Iterative LLM self-refinement for structured extraction of regulatory rules | Evaluation via RAG preference; broader impact uncertain |
 | 2026-04-07 | 📚 General | AI Models for Surgical Decision Support in Spontaneous Intracerebral Hemorrhage: A Systematic Review in Relation to Trials and Guidelines. | General AI/health | 🟡 mixed | 🟡 medium | 7.0 | 🔴 Low | 🟡 Medium | Potentially relevant but needs closer review | Validity not yet established |
 | 2026-04-07 | 🩺 Oncology | Imaging-based stratification of Claudin 18.2-positive gastric adenocarcinoma using | Oncology / imaging | 🟡 mixed | 🟡 medium | 7.0 | 🔴 Low | 🟡 Medium | Multicenter framing + non-invasive prediction + treatment relevance | Retrospective elements and unclear external validation details |
+| 2026-04-08 | 📚 General | Validation of a Risk-Prediction Model in the Presence of Outcome Misclassification. | General AI/health | 🔴 concerning | 🔴 low | 5.0 | 🔴 Low | 🟡 Medium | Potentially relevant but needs closer review | Validity not yet established |
+| 2026-04-08 | 🩺 Oncology | Leveraging large language models to populate structured clinical case report forms from unstructured medical notes in radiation oncology. | Oncology / imaging | 🔴 concerning | 🔴 low | 5.0 | 🔴 Low | 🟡 Medium | Multicenter framing + non-invasive prediction + treatment relevance | Retrospective elements and unclear external validation details |
 
 ## Digest-level snapshot
 
 | Date | Coverage | Overall fingerprint | Distinguishing feature |
 |---|---|---|---|
-| 2026-04-05 | 2 highlighted paper(s) | Oncology / imaging • Diabetes / biomarkers | Signal maturity and validation clarity are the main separators. |
-| 2026-04-06 | 10 highlighted paper(s) | Psychiatry / AI • Oncology / imaging • Obstetrics / deep learning | Signal maturity and validation clarity are the main separators. |
+| 2026-04-05 | 2 highlighted paper(s) | Diabetes / biomarkers • Oncology / imaging | Signal maturity and validation clarity are the main separators. |
+| 2026-04-06 | 10 highlighted paper(s) | Psychiatry / AI • Oncology / imaging • Regulatory tech / LLMs | Signal maturity and validation clarity are the main separators. |
 | 2026-04-07 | 10 highlighted paper(s) | General AI/health • Oncology / imaging | Signal maturity and validation clarity are the main separators. |
+| 2026-04-08 | 2 highlighted paper(s) | General AI/health • Oncology / imaging | Signal maturity and validation clarity are the main separators. |
 
 ## Fast ranking
 

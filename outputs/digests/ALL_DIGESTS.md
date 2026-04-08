@@ -686,3 +686,88 @@ Need clearer reporting on external validation, subgroup performance, and real-wo
 
 *Generated automatically by AI Health Lit Review on 2026-04-07 09:03*
 *Database: ./data/papers.db*
+
+
+---
+
+# Source file: digest_2026-04-08.md
+
+# AI Health Literature Review - Daily Digest
+## 2026-04-08
+
+**Total papers reviewed**: 10
+**Top highlights**: 0 high-priority
+
+---
+
+## 🏆 Top Papers (Priority 2)
+
+
+## 📊 High Priority Papers
+
+### 1. Validation of a Risk-Prediction Model in the Presence of Outcome Misclassification.
+
+**Source**: PUBMED | **Score**: 5.0/10 | **Venue**: Statistics in medicine
+**Authors**: Runjia Zou, Brian D Williamson, Susan M Shortreed et al.
+**Date**: 2026-04-01 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41930736/
+**DOI**: 10.1002/sim.70377
+
+**Summary** (38 words):
+> Electronic health records (EHRs) provide a rich data source for building prediction models to improve the quality of care. However, EHR data are prone to measurement error, and outcomes used to evaluate prediction model performance may be misclassified.
+
+**Methods & Techniques**:
+Electronic health records (EHRs) provide a rich data source for building prediction models to improve the quality of care.
+
+**Key Results**:
+We derive formulae to estimate true positive rate (TPR), false positive rate (FPR), positive predictive value (PPV), negative predictive value (NPV), and area under the receiver operating characterist...
+
+**Critical Evaluation**:
+External validation details are unclear from the available metadata.
+
+**Research Gaps**:
+Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+
+**Keywords**: clinical, prediction
+**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
+
+---
+
+### 2. Leveraging large language models to populate structured clinical case report forms from unstructured medical notes in radiation oncology.
+
+**Source**: PUBMED | **Score**: 5.0/10 | **Venue**: Clinical and translational radiation oncology
+**Authors**: Marcel Nachbar, Nianzi Yi, Marcel Büttner et al.
+**Date**: 2026-05-01 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41859030/
+**DOI**: 10.1016/j.ctro.2026.101143
+
+**Summary** (49 words):
+> Large language models (LLMs) have shown growing potential for clinical text processing, but their systematic application in radiation oncology-especially for non-English clinical documentation-remains underexplored. This study investigated whether pretrained LLMs can automatically extract, analyze, and structure radiotherapy-relevant information from routine unstructured medical notes, with the goal of supporting aut...
+
+**Methods & Techniques**:
+Large language models (LLMs) have shown growing potential for clinical text processing, but their systematic application in radiation oncology-especially for non-English clinical documentation-remains...
+
+**Key Results**:
+The LLM achieved matching accuracies of 83.6% and 83.8% on the development and testing datasets. Analysis revealed that the model disagreed with specific values in 8.1% of development dataset cases an...
+
+**Critical Evaluation**:
+External validation details are unclear from the available metadata.
+
+**Research Gaps**:
+Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+
+**Keywords**: large language model, oncology, clinical
+**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
+
+---
+
+## 🔍 Trends & Patterns
+
+**Most frequent topics**: clinical, prediction, large language model, oncology
+
+**Commonly mentioned gaps**:
+- Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+
+
+---
+
+*Generated automatically by AI Health Lit Review on 2026-04-08 09:05*
+*Database: ./data/papers.db*
