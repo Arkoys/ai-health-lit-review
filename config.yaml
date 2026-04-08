@@ -1,22 +1,37 @@
 sources:
+  # Currently implemented sources (collector.py supports fetch_arxiv, fetch_pubmed)
   arxiv:
     enabled: true
     categories:
     - cs.AI
     - cs.LG
     - cs.CL
+    - cs.CY  # Computers and Society (AI ethics, governance)
     - q-bio
     - eess.AS
     - cs.CV
     max_results_per_day: 50
+
   pubmed:
     enabled: true
     databases:
     - pubmed
     - pmc
     max_results_per_day: 30
+
+  # Future sources to implement (PhD recommendations):
+  # - Google Scholar (most comprehensive, advanced search operators)
+  # - Web of Science / Scopus (citation tracking, impact metrics)
+  # - SSRN (policy and governance working papers)
+  # - ACM Digital Library (FAccT, AIES, CHI proceedings)
+  # - IEEE Xplore (engineering and ethics papers)
+  # - PhilPapers (AI ethics and philosophy)
+  # - JSTOR (historical governance and policy scholarship)
+
+  # Note: The "conferences" source below scrapes journal/conference sites but is NOT fully implemented yet.
+  # It is kept for future development to add venue-specific scraping.
   conferences:
-    enabled: true
+    enabled: false  # Set to true when implemented
     sites:
     - https://neurips.cc/Conferences/
     - https://icml.cc/Conferences/
@@ -136,24 +151,93 @@ keywords:
   - clinical validation
 priority_indicators:
   venues:
-  - NeurIPS
-  - ICML
-  - Nature Medicine
-  - JAMA
-  - The Lancet Digital Health
-  - Medical Image Analysis
-  - JAMA Network Open
-  - Nature Biomedical Engineering
-  - Proceedings of the National Academy of Sciences
+    # ML/AI conferences & journals
+    - NeurIPS
+    - ICML
+    - ICLR
+    - AIES (Conference on AI, Ethics, and Society)
+    - FAccT (Fairness, Accountability, and Transparency)
+    - CHI (Human Factors in Computing Systems)
+
+    # Health/Medical journals
+    - Nature Medicine
+    - JAMA
+    - The Lancet Digital Health
+    - Medical Image Analysis
+    - JAMA Network Open
+    - Nature Biomedical Engineering
+    - Proceedings of the National Academy of Sciences
+    - Health Affairs
+    - Implementation Science
+    - Journal of Medical Ethics
+    - AI & Society
+    - Journal of the American Medical Informatics Association
+    - BMJ Global Health
+    - The Lancet Global Health
+    - Medical Informatics
+
+    # Policy/Governance journals
+    - Government Information Quarterly
+    - Public Administration Review
+    - Journal of Public Administration Research and Theory
+    - Policy & Politics
+    - Science, Technology, & Human Values
+    - Technology in Society
+    - Journal of European Public Policy
+    - European Journal of Political Research
+
+    # Law/Regulation
+    - Harvard Journal of Law & Technology
+    - Stanford Technology Law Review
+    - Tech Regulation (blog/reports)
+    - OECD working papers
+
   terms:
-  - clinical trial
-  - real-world
-  - validation
-  - prospective
-  - multicenter
-  - FDA
-  - regulatory
-  - deployment
+    # Clinical/validation terms (retained)
+    - clinical trial
+    - real-world
+    - validation
+    - prospective
+    - multicenter
+    - FDA
+    - regulatory
+    - deployment
+
+    # Governance/participation
+    - participatory
+    - stakeholder engagement
+    - citizen participation
+    - deliberative
+    - co-governance
+    - collaborative governance
+    - algorithmic accountability
+    - oversight
+    - public interest
+
+    # Evidence/implementation
+    - evidence-based
+    - knowledge translation
+    - implementation science
+    - policy uptake
+    - research impact
+    - evidence synthesis
+    - actionable evidence
+    - policy legibility
+
+    # Adaptive regulation
+    - regulatory sandbox
+    - living lab
+    - adaptive regulation
+    - agile regulation
+    - experimental regulation
+    - outcome-based
+
+    # AI-specific governance
+    - AI governance
+    - responsible AI
+    - continuous monitoring
+    - post-deployment
+    - real-world evaluation
 scoring:
   keyword_match: 1.0
   priority_venue: 3.0
