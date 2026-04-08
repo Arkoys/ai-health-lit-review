@@ -1,3 +1,17 @@
+
+
+# Source file: 2026-04-08_ai-policymaking-integration-gaps-europe_lnenicka_review.md
+
+---
+date: 2026-04-08
+reviewer: Hermes Agent
+source: Lnenicka et al. (2026) - Government Information Quarterly Vol. 43 Article 102138
+tags: [ai-policy, public-policy-cycle, governance, evaluation-gap]
+---
+[content truncated for brevity]
+
+---
+
 # AI Health Literature Review - All Ad Hoc Reviews
 
 
