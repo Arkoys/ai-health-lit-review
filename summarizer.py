@@ -942,7 +942,8 @@ class Summarizer:
             'openai': os.getenv('OPENAI_API_KEY'),
             'gemini': os.getenv('GEMINI_API_KEY'),
             'huggingface': os.getenv('HUGGINGFACE_API_KEY'),
-            'openrouter': os.getenv('OPENROUTER_API_KEY')
+            'openrouter': os.getenv('OPENROUTER_API_KEY'),
+            'openrouter_fallback': os.getenv('OPENROUTER_API_KEY')  # reuse same key
         }
         
         # Map provider names to classes
@@ -951,6 +952,7 @@ class Summarizer:
             'openai': OpenAIProvider,
             'gemini': GeminiProvider,
             'openrouter': OpenRouterProvider,
+            'openrouter_fallback': OpenRouterProvider,  # alias for fallback with different model
             'huggingface': HuggingFaceProvider
         }
         

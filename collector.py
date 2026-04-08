@@ -7,7 +7,7 @@ import json
 import logging
 import re
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 from typing import List, Dict, Any, Optional
 import requests
 import time
@@ -248,7 +248,342 @@ class LiteratureCollector:
         
         logger.info(f"Fetched {len(papers)} relevant papers from PubMed")
         return papers
-    
+
+    def fetch_conferences(self) -> List[Dict[str, Any]]:
+        """Fetch papers from configured conference/journal websites."""
+        if not self.sources.get('conferences', {}).get('enabled', False):
+            return []
+
+        sites = self.sources['conferences'].get('sites', [])
+        max_results = self.sources['conferences'].get('max_results_per_day', 20)
+        cutoff_date = (datetime.now() - timedelta(days=7)).date()
+
+        all_papers = []
+        for site in sites:
+            try:
+                # Dispatch to appropriate scraper based on URL pattern
+                if 'nature.com' in site and 'nmedicine' in site:
+                    papers = self._scrape_nature_medicine(site, max_results, cutoff_date)
+                elif 'jamanetwork.com' in site:
+                    papers = self._scrape_jama(site, max_results, cutoff_date)
+                elif 'neurips.cc' in site:
+                    papers = self._scrape_neurips(site, max_results, cutoff_date)
+                elif 'icml.cc' in site:
+                    papers = self._scrape_icml(site, max_results, cutoff_date)
+                else:
+                    logger.warning(f"Unknown conference site pattern: {site}. Skipping.")
+                    continue
+
+                if papers:
+                    # Filter by keyword relevance
+                    relevant_papers = [p for p in papers if self._is_relevant(p)]
+                    all_papers.extend(relevant_papers)
+                    logger.info(f"Fetched {len(relevant_papers)} relevant papers from {site} (filtered from {len(papers)})")
+                else:
+                    logger.info(f"No papers found from {site}")
+
+            except Exception as e:
+                logger.error(f"Error fetching from {site}: {e}")
+                continue
+
+        logger.info(f"Fetched {len(all_papers)} papers from conference sources")
+        return all_papers
+
+    def _scrape_nature_medicine(self, base_url: str, max_results: int, cutoff_date: date) -> List[Dict[str, Any]]:
+        """Scrape latest articles from Nature Medicine via RSS feed."""
+        papers = []
+        rss_url = "https://www.nature.com/nmedicine/current-issue/rss"
+
+        try:
+            response = self.session.get(rss_url, timeout=15)
+            if response.status_code == 429:
+                logger.warning("Nature Medicine rate limited (429), skipping")
+                return []
+            response.raise_for_status()
+
+            # Parse RSS
+            root = ET.fromstring(response.content)
+            ns = {'atom': 'http://www.w3.org/2005/Atom'}
+
+            for entry in root.findall('atom:entry', ns)[:max_results]:
+                try:
+                    title_elem = entry.find('atom:title', ns)
+                    title = title_elem.text.strip() if title_elem is not None else ''
+                    if not title:
+                        continue
+
+                    link_elem = entry.find('atom:link', ns)
+                    link = link_elem.get('href', '') if link_elem is not None else ''
+                    if not link:
+                        continue
+
+                    summary_elem = entry.find('atom:summary', ns)
+                    abstract = summary_elem.text.strip() if summary_elem is not None else ''
+
+                    published_elem = entry.find('atom:published', ns)
+                    pub_date_str = published_elem.text[:10] if published_elem is not None and published_elem.text else ''
+                    if not pub_date_str:
+                        continue
+
+                    try:
+                        pub_date = datetime.strptime(pub_date_str, '%Y-%m-%d').date()
+                        if pub_date < cutoff_date:
+                            continue
+                    except ValueError:
+                        pass
+
+                    # Authors
+                    authors = []
+                    for author_elem in entry.findall('atom:author', ns):
+                        name_elem = author_elem.find('atom:name', ns)
+                        if name_elem is not None and name_elem.text:
+                            authors.append(name_elem.text.strip())
+
+                    paper = {
+                        'paper_id': f"nature-med:{link.split('/')[-1]}",
+                        'source': 'conference',
+                        'title': title,
+                        'authors': authors,
+                        'abstract': abstract,
+                        'url': link,
+                        'pdf_url': '',
+                        'published_date': pub_date_str,
+                        'venue': 'Nature Medicine',
+                        'doi': '',
+                        'keywords': [],
+                        'score': 0,
+                        'priority': 0,
+                        'processing_status': 'pending'
+                    }
+                    papers.append(paper)
+
+                except Exception as e:
+                    logger.warning(f"Error parsing Nature Medicine entry: {e}")
+                    continue
+
+        except Exception as e:
+            logger.error(f"Failed to fetch Nature Medicine RSS: {e}")
+
+        logger.info(f"Fetched {len(papers)} papers from Nature Medicine")
+        return papers
+
+    def _scrape_jama(self, base_url: str, max_results: int, cutoff_date: date) -> List[Dict[str, Any]]:
+        """Scrape latest articles from JAMA Network via RSS feed."""
+        papers = []
+        # JAMA RSS feed for latest articles
+        rss_url = "https://jamanetwork.com/journals/jama/current/rss"
+
+        try:
+            response = self.session.get(rss_url, timeout=15)
+            if response.status_code == 429:
+                logger.warning("JAMA rate limited (429), skipping")
+                return []
+            response.raise_for_status()
+
+            # Parse RSS
+            root = ET.fromstring(response.content)
+            ns = {'atom': 'http://www.w3.org/2005/Atom'}
+
+            for entry in root.findall('atom:entry', ns)[:max_results]:
+                try:
+                    title_elem = entry.find('atom:title', ns)
+                    title = title_elem.text.strip() if title_elem is not None else ''
+                    if not title:
+                        continue
+
+                    link_elem = entry.find('atom:link', ns)
+                    link = link_elem.get('href', '') if link_elem is not None else ''
+                    if not link:
+                        continue
+
+                    summary_elem = entry.find('atom:summary', ns)
+                    abstract = summary_elem.text.strip() if summary_elem is not None else ''
+
+                    published_elem = entry.find('atom:published', ns)
+                    pub_date_str = published_elem.text[:10] if published_elem is not None and published_elem.text else ''
+                    if not pub_date_str:
+                        continue
+
+                    try:
+                        pub_date = datetime.strptime(pub_date_str, '%Y-%m-%d').date()
+                        if pub_date < cutoff_date:
+                            continue
+                    except ValueError:
+                        pass
+
+                    # Authors often not in RSS; skip or empty
+                    authors = []
+
+                    paper = {
+                        'paper_id': f"jama:{link.rstrip('/').split('/')[-1]}",
+                        'source': 'conference',
+                        'title': title,
+                        'authors': authors,
+                        'abstract': abstract,
+                        'url': link,
+                        'pdf_url': '',
+                        'published_date': pub_date_str,
+                        'venue': 'JAMA',
+                        'doi': '',
+                        'keywords': [],
+                        'score': 0,
+                        'priority': 0,
+                        'processing_status': 'pending'
+                    }
+                    papers.append(paper)
+
+                except Exception as e:
+                    logger.warning(f"Error parsing JAMA entry: {e}")
+                    continue
+
+        except Exception as e:
+            logger.error(f"Failed to fetch JAMA RSS: {e}")
+
+        logger.info(f"Fetched {len(papers)} papers from JAMA")
+        return papers
+
+    def _scrape_neurips(self, base_url: str, max_results: int, cutoff_date: date) -> List[Dict[str, Any]]:
+        """Scrape papers from NeurIPS proceedings."""
+        papers = []
+        import re
+        # Step 1: Get volume links (by year) from main page
+        main_url = "https://proceedings.neurips.cc/"
+        try:
+            response = self.session.get(main_url, timeout=20)
+            if response.status_code == 429:
+                logger.warning("NeurIPS rate limited on main page, skipping")
+                return []
+            response.raise_for_status()
+
+            # Find volume links: /paper_files/paper/YYYY
+            volume_links = re.findall(r'href="(/paper_files/paper/\d{4})"', response.text)
+            # Sort by year descending (most recent first)
+            volume_links.sort(reverse=True)
+            # Limit to recent years (2024, 2023, 2022, 2021, 2020)
+            recent_volumes = [v for v in volume_links if int(v.split('/')[-1]) >= 2020][:3]
+        except Exception as e:
+            logger.error(f"Failed to fetch NeurIPS main page: {e}")
+            return []
+
+        collected = 0
+        for volume_link in recent_volumes:
+            if collected >= max_results:
+                break
+            volume_url = f"https://proceedings.neurips.cc{volume_link}"
+            year = volume_link.split('/')[-1]
+            try:
+                logger.info(f"Fetching NeurIPS volume {year} from {volume_url}")
+                vol_resp = self.session.get(volume_url, timeout=20)
+                if vol_resp.status_code == 429:
+                    logger.warning(f"NeurIPS rate limited for volume {year}, skipping")
+                    continue
+                vol_resp.raise_for_status()
+
+                # Extract paper entries: <li class="conference" data-track="conference"> ... </li>
+                # Each contains an <a href="..."> with title, and <span class="paper-authors"> with authors
+                paper_blocks = re.findall(r'<li[^>]*class="[^"]*conference[^"]*"[^>]*>(.*?)</li>', vol_resp.text, re.DOTALL)
+                logger.info(f"Found {len(paper_blocks)} paper entries in volume {year}")
+
+                for block in paper_blocks:
+                    if collected >= max_results:
+                        break
+                    try:
+                        # Extract relative link to paper page
+                        link_match = re.search(r'href="(/paper_files/paper/\d{4}/hash/[^"]+)"', block)
+                        if not link_match:
+                            continue
+                        paper_rel_link = link_match.group(1)
+                        paper_url = f"https://proceedings.neurips.cc{paper_rel_link}"
+
+                        # Extract title directly from block (short title)
+                        title_short_match = re.search(r'<a[^>]*title="paper title"[^>]*>(.*?)</a>', block, re.DOTALL)
+                        title_short = title_short_match.group(1).strip() if title_short_match else ''
+                        # Clean HTML entities and whitespace
+                        title_short = re.sub(r'\s+', ' ', title_short)
+                        title_short = title_short.replace('&nbsp;', ' ').replace('&amp;', '&')
+
+                        # Extract authors from span.paper-authors
+                        authors_match = re.search(r'<span class="paper-authors">(.*?)</span>', block, re.DOTALL)
+                        authors_str = authors_match.group(1).strip() if authors_match else ''
+                        authors = [a.strip() for a in re.split(r',\s*', authors_str) if a.strip()]
+
+                        # Now fetch the individual paper page for full abstract and metadata
+                        paper_resp = self.session.get(paper_url, timeout=15)
+                        if paper_resp.status_code != 200:
+                            continue
+
+                        html = paper_resp.text
+
+                        # Full title from <title> tag (more complete)
+                        full_title_match = re.search(r'<title>(.*?)</title>', html)
+                        full_title = full_title_match.group(1).strip() if full_title_match else title_short
+                        full_title = re.sub(r'\s*-\s*NeurIPS\s+\d{4}.*$', '', full_title)
+
+                        # Abstract: look for <meta name="citation_abstract" content="...">
+                        abstract_match = re.search(r'<meta\s+name="citation_abstract"\s+content="([^"]+)"', html)
+                        abstract = abstract_match.group(1).strip() if abstract_match else ''
+
+                        # Publication date: usually not on individual page, use Jan 1 of year as fallback
+                        pub_date = f"{year}-01-01"
+
+                        # PDF URL
+                        pdf_match = re.search(r'<meta\s+name="citation_pdf_url"\s+content="([^"]+)"', html)
+                        pdf_url = pdf_match.group(1) if pdf_match else ''
+
+                        # DOI
+                        doi_match = re.search(r'<meta\s+name="citation_doi"\s+content="([^"]+)"', html)
+                        doi = doi_match.group(1) if doi_match else ''
+
+                        # Keywords: not easily available
+                        paper_id = f"neurips:{paper_rel_link.split('/')[-1]}"
+                        paper = {
+                            'paper_id': paper_id,
+                            'source': 'conference',
+                            'title': full_title,
+                            'authors': authors[:15],
+                            'abstract': abstract,
+                            'url': paper_url,
+                            'pdf_url': pdf_url,
+                            'published_date': pub_date,
+                            'venue': f'NeurIPS {year}',
+                            'doi': doi,
+                            'keywords': [],
+                            'score': 0,  # will calculate below
+                            'priority': 0,
+                            'processing_status': 'pending'
+                        }
+                        # Calculate score
+                        paper['score'] = self._calculate_score(
+                            title=full_title,
+                            abstract=abstract,
+                            venue=f'NeurIPS {year}',
+                            authors=authors,
+                            published_date=pub_date
+                        )
+                        paper['priority'] = 2 if paper['score'] >= 8 else 1 if paper['score'] >= 5 else 0
+                        papers.append(paper)
+                        collected += 1
+                        time.sleep(0.5)  # polite delay between paper pages
+
+                    except Exception as e:
+                        logger.warning(f"Error processing NeurIPS paper block: {e}")
+                        continue
+
+                logger.info(f"Collected {collected} papers so far from NeurIPS")
+                time.sleep(1)  # delay between volumes
+
+            except Exception as e:
+                logger.error(f"Error fetching NeurIPS volume {year}: {e}")
+                continue
+
+        return papers
+
+    def _scrape_icml(self, base_url: str, max_results: int, cutoff_date: date) -> List[Dict[str, Any]]:
+        """Scrape papers from ICML proceedings (placeholder)."""
+        # TODO: Implement ICML scraper
+        logger.info("ICML scraper not yet implemented")
+        return []
+
     def _parse_pubmed_xml(self, root: ET.Element) -> Dict[str, Any]:
         """Parse PubMed EFetch XML response into a simple article dictionary."""
         result = {}
@@ -499,7 +834,10 @@ class LiteratureCollector:
         
         pubmed_papers = self.fetch_pubmed()
         all_papers.extend(pubmed_papers)
-        
+
+        conferences_papers = self.fetch_conferences()
+        all_papers.extend(conferences_papers)
+
         # Deduplicate by similar title
         unique_papers = self._deduplicate_by_title(all_papers)
         

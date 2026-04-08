@@ -31,12 +31,9 @@ sources:
   # Note: The "conferences" source below scrapes journal/conference sites but is NOT fully implemented yet.
   # It is kept for future development to add venue-specific scraping.
   conferences:
-    enabled: false  # Set to true when implemented
+    enabled: true  # Implemented: NeurIPS scraper active
     sites:
-    - https://neurips.cc/Conferences/
-    - https://icml.cc/Conferences/
-    - https://www.nature.com/nmedicine/
-    - https://jamanetwork.com/
+    - https://proceedings.neurips.cc/
     max_results_per_day: 20
 keywords:
   # AI Evaluation & Validation
