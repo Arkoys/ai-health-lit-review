@@ -53,11 +53,14 @@ def load_env():
 
 SEARCH_QUERIES = {
     "arxiv": [
-        ("ti:AI+governance+OR+ti:algorithmic+accountability+OR+ti:AI+regulation)+AND+(ti:health+OR+ti:clinical+OR+ti:medical)", 6),
-        ("ti:adaptive+regulation+OR+ti:regulatory+sandbox)+AND+(ti:health+OR+ti:clinical+OR+ti:medical)", 5),
+        # Query 1: had 5 '(' but 3 ')' — removed leading '(' before all:AI
+        ("all:AI+governance+OR+all:algorithmic+accountability+OR+all:AI+regulation)+AND+(ti:health+OR+ti:clinical+OR+ti:medical)", 6),
+        ("ti:adaptive+regulation+OR+ti:regulatory+sandbox+OR+ti:learning+regulatory)+AND+(ti:health+OR+ti:clinical+OR+ti:medical)", 5),
         ("ti:participatory+governance+OR+ti:stakeholder+engagement+OR+ti:co-design+AI)+AND+(ti:health+OR+ti:medical)", 4),
-        ("ti:evidence-based+policy+OR+ti:implementation+science)+AND+(ti:AI+OR+ti:artificial+intelligence)+AND+(ti:health+OR+ti:clinical)", 4),
-        ("ti:AI+evaluation+OR+ti:AI+validation+OR+ti:post-deployment+monitoring)+AND+(ti:health+OR+ti:medical)", 5),
+        # Query 4: had 4 '(' but 3 ')' — removed leading '('
+        ("all:AI+evidence+OR+all:implementation+NASSS+OR+all:uptake+OR+all:adoption)+AND+(ti:AI+OR+ti:artificial+intelligence)+AND+(ti:health+OR+ti:clinical)", 4),
+        # Query 5: had 4 '(' but 3 ')' — removed leading '('
+        ("all:AI+evaluation+OR+all:AI+validation+OR+all:post-deployment+monitoring)+AND+(ti:health+OR+ti:medical)", 5),
     ],
     "pubmed": [
         ("AI+governance+healthcare[Title/Abstract]+AND+2020:2026[dp]", 5),
@@ -469,33 +472,6 @@ def rebuild_aggregate():
     print(f"  Rebuilt aggregate files ({len(digests)} digests)")
 
 
-# ─── GitHub Push ───────────────────────────────────────────────────────────────
-
-def push_to_github(files: list, commit_msg: str) -> bool:
-    if not GITHUB_TOKEN or not GITHUB_REPO:
-        print("  ⚠️ No GitHub config — skipping push")
-        return False
-
-    remote_url = f"https://x-access-token:{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"
-    subprocess.run(["git", "remote", "set-url", "origin", remote_url], cwd=PROJECT_ROOT, check=True, capture_output=True)
-    subprocess.run(["git", "config", "user.name", "Hermes Agent"], cwd=PROJECT_ROOT, check=True, capture_output=True)
-    subprocess.run(["git", "config", "user.email", "hermes-agent@users.noreply.github.com"], cwd=PROJECT_ROOT, check=True, capture_output=True)
-
-    for f in files:
-        subprocess.run(["git", "add", str(f)], cwd=PROJECT_ROOT, check=True, capture_output=True)
-
-    result = subprocess.run(["git", "status", "--short"], cwd=PROJECT_ROOT, capture_output=True, text=True)
-    if not result.stdout.strip():
-        print("  Nothing to push — no changes")
-        return True
-
-    subprocess.run(["git", "commit", "-m", commit_msg], cwd=PROJECT_ROOT, check=True, capture_output=True)
-    result = subprocess.run(["git", "push", "origin", "main"], cwd=PROJECT_ROOT, capture_output=True, text=True)
-    ok = result.returncode == 0
-    print("  ✅ GitHub push OK" if ok else f"  ❌ Push failed: {result.stderr.decode()}")
-    return ok
-
-
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 def main(push: bool = False):
@@ -534,12 +510,92 @@ def main(push: bool = False):
     # 6. Push
     if push:
         push_to_github(
-            [digest_path, AGGREGATE_FILE, AGGREGATE_SHORT, DB_PATH],
+            [digest_path, AGGREGATE_FILE, AGGREGATE_SHORT],
             f"Daily digest {today_str} (v{version}): {len(added)} new papers"
         )
 
     print(f"\n✅ Pipeline complete — {len(added)} new papers added, digest v{version} ready")
+    return digest_content, len(added), version
+
+
+def push_to_github(files: list, commit_msg: str) -> bool:
+    """Push files to GitHub. Gracefully skips gitignored files."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        print("  ⚠️ No GitHub config — skipping push")
+        return False
+
+    remote_url = f"https://x-access-token:{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"
+    subprocess.run(["git", "remote", "set-url", "origin", remote_url], cwd=PROJECT_ROOT, check=True, capture_output=True)
+    subprocess.run(["git", "config", "user.name", "Hermes Agent"], cwd=PROJECT_ROOT, check=True, capture_output=True)
+    subprocess.run(["git", "config", "user.email", "hermes-agent@users.noreply.github.com"], cwd=PROJECT_ROOT, check=True, capture_output=True)
+
+    for f in files:
+        f_path = Path(f) if isinstance(f, str) else f
+        # Skip gitignored files
+        result = subprocess.run(
+            ["git", "check-ignore", str(f_path)],
+            cwd=PROJECT_ROOT, capture_output=True, text=True
+        )
+        if result.returncode == 0:
+            print(f"  ↩️  Skipping gitignored: {f_path.name}")
+            continue
+        subprocess.run(["git", "add", str(f_path)], cwd=PROJECT_ROOT, check=True, capture_output=True)
+
+    result = subprocess.run(["git", "status", "--short"], cwd=PROJECT_ROOT, capture_output=True, text=True)
+    if not result.stdout.strip():
+        print("  Nothing to push — no changes")
+        return True
+
+    subprocess.run(["git", "commit", "-m", commit_msg], cwd=PROJECT_ROOT, check=True, capture_output=True)
+    result = subprocess.run(["git", "push", "origin", "main"], cwd=PROJECT_ROOT, capture_output=True, text=True)
+    ok = result.returncode == 0
+    print("  ✅ GitHub push OK" if ok else f"  ❌ Push failed: {result.stderr.decode()}")
+    return ok
+
+
+def send_telegram_digest(content: str, chat_id: str = None) -> bool:
+    """Send digest to Telegram. Reads token from .env TELEGRAM_BOT_TOKEN."""
+    import os as _os
+    with open(PROJECT_ROOT / ".env") as _f:
+        for line in _f:
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                k, v = line.split("=", 1)
+                _os.environ[k] = v
+
+    bot_token = _os.environ.get("TELEGRAM_BOT_TOKEN", "")
+    target = chat_id or _os.environ.get("TELEGRAM_CHANNEL_ID", "") or _os.environ.get("TELEGRAM_CHAT_ID", "")
+
+    if not bot_token or not target:
+        print("  ⚠️ Telegram: no bot token or chat ID configured — skipping")
+        return False
+
+    import requests as _req
+    url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+    max_len = 4000
+    sent = 0
+    try:
+        # Send in chunks if needed
+        for i in range(0, len(content), max_len):
+            chunk = content[i:i+max_len]
+            r = _req.post(url, json={"chat_id": target, "text": chunk, "parse_mode": "Markdown"}, timeout=30)
+            if r.ok:
+                sent += 1
+        print(f"  ✅ Telegram: sent {sent} message(s)")
+        return True
+    except Exception as e:
+        print(f"  ❌ Telegram error: {e}")
+        return False
 
 
 if __name__ == "__main__":
-    main(push="--push" in __import__("sys").argv)
+    import sys
+    push = "--push" in sys.argv
+    telegram = "--telegram" in sys.argv
+    content, added_count, version = main(push=push)
+
+    if telegram:
+        send_telegram_digest(content)
+    elif push:
+        # Also send to Telegram when --push is used
+        send_telegram_digest(content)
