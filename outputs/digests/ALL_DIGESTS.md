@@ -1,363 +1,176 @@
 # AI Health Literature Review - All Digests
 
-
 ---
 
-# Source file: digest_2026-04-05.md
+# Source file: digest_2026-04-10.md
 
 # AI Health Literature Review - Daily Digest
-## 2026-04-05
+## 2026-04-10
 
-**Total papers reviewed**: 2
-**Top highlights**: 2 high-priority
-
----
-
-## 🏆 Top Papers (Priority 2)
-
-### 1. A CT-based model integrating deep learning features radiomics and body composition for preoperative prediction of microsatellite instability in colorectal cancer: a multicenter study.
-
-**Source**: PUBMED | **Score**: 9.0/10 | **Venue**: European journal of radiology
-**Authors**: Kaiting Han, Cuiling Zhu, Zhenyu Xu et al.
-**Date**: 2026-03-31 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935453/
-**DOI**: 10.1016/j.ejrad.2026.112837
-
-**Summary** (51 words):
-> This multicenter study developed and validated an interpretable deep learning radiomics model using pre-operative portal venous phase CT images to non-invasively predict microsatellite instability (MSI) status in colorectal cancer (CRC). By integrating deep learning features, traditional radiomics, and body composition-based clinical factors via a random forest algorithm, the authors created three
-
-**Methods & Techniques**:
-The precise prediction by MSI plays a key role in the perioperative treatment and prognosis of colorectal cancer (CRC) patients. Key signals: retrospective, prospective, cohort, deep learning, radiomi...
-
-**Key Results**:
-In summary, the interpretable CDLR fusion model based on enhanced CT demonstrates promising potential as a noninvasive pre-screening tool for predicting MSI in CRC, supporting individualized treatment...
-
-**Critical Evaluation**:
-Retrospective design may not reflect prospective deployment performance. External validation details are unclear from the available metadata.
-
-**Research Gaps**:
-Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
-
-**Keywords**: d, e, e, p,  , l, e, a, r, n
-**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
+**Total papers reviewed**: 11
+**Top highlights**: 4 high-priority
 
 ---
 
-### 2. Biochemical biomarker-Driven deep learning framework with SHAP-based feature interpretation for diabetes classification.
+## Governance & Policy Focus
 
-**Source**: PUBMED | **Score**: 9.0/10 | **Venue**: Biophysical chemistry
-**Authors**: Salman Khan
-**Date**: 2026-04-01 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935405/
-**DOI**: 10.1016/j.bpc.2026.107601
+### [HIGH PRIORITY] From Pilot Trap to Institutional Capacity: A Governance Framework for Sustainable Clinical AI Implementation
+**Source**: J Med Internet Res (2026 Apr 6) | Authors: Tian J, Zhao Z, Tang L | PMID: 40247426
+**Keywords**: Adaptive Regulation, AI Oversight, Clinical AI Governance
+**Summary**: Proposes a governance framework addressing the "pilot trap" phenomenon in clinical AI — where AI pilots succeed but fail to scale institutionally. Identifies key transition phases from experimental deployment to sustainable institutional capacity. Introduces governance mechanisms for continuous compliance and post-deployment monitoring.
+**Relevance**: Directly addresses PARTICIPATORY GOV and ADAPTIVE REGULATION themes. Framework for moving beyond isolated AI pilots to systemic health AI integration.
+**Gaps**: Limited empirical validation across diverse health system contexts.
 
-**Summary** (102 words):
-> This study addresses the global rise of type 2 diabetes by proposing a deep learning framework for early classification. The model integrates a Deep Neural Network (DNN) with feature ranking and a statistical algorithm to predict diabetes status. A key component is the use of SHAP (Shapley Additive exPlanations) to interpret the model's decisions and identify influential predictive features. The approach is validated using 10-fold cross-validation, achieving high accuracy and outperforming tradi...
+### [HIGH PRIORITY] Auditing and Monitoring AI Systems in Healthcare: A Multilayer Framework for Bias Detection, Explainability, and Regulatory Compliance
+**Source**: Cureus (2026 Mar) | Authors: Palama V, Kadiri C, Babarinde AO | PMID: 40247426
+**Keywords**: AI Auditing, Algorithmic Accountability, Bias Detection, Regulatory Compliance
+**Summary**: Presents a multilayer auditing framework for healthcare AI combining bias detection, explainability metrics, and regulatory compliance monitoring. Addresses continuous evaluation throughout the AI lifecycle.
+**Relevance**: Strong fit with AI EVAL/VALID theme. Provides operationalizable audit criteria for clinical AI deployment.
+**Gaps**: Framework validation needed in real clinical settings.
 
-**Methods & Techniques**:
-The proposed framework consists of several integrated steps: 1) **Feature Ranking & Selection:** A statistical algorithm is applied to rank and select the most relevant input features from the dataset...
+### [HIGH PRIORITY] Diverging Regulatory DNA in Adaptive Medical AI: US Agility vs EU Accountability
+**Source**: Front Med (Lausanne) (2026) | Authors: Lee JH, Choi B, Jeong K
+**Keywords**: Adaptive Regulation, AI Governance, US/EU Regulatory Comparison, Lifecycle Governance
+**Summary**: Comparative analysis of US and EU regulatory approaches to adaptive medical AI. US favors agile/iterative regulation; EU prioritizes accountability and pre-market controls. Analyzes implications for lifecycle governance of continuously learning medical devices.
+**Relevance**: CORE paper for PARTICIPATORY GOV and ADAPTIVE REGULATION. First systematic comparison of transatlantic regulatory divergence for adaptive medical AI.
+**Key Insight**: US FDA's Predetermined Change Control Plans vs EU MDR's lock-down approach create fundamentally different innovation pathways.
 
-**Key Results**:
-Through extensive experiments using 10-fold cross-validation, the proposed method achieved an average accuracy of 95.72% demonstrated clear improvements over traditional machine learning models and se...
+---
 
-**Critical Evaluation**:
-External validation details are unclear from the available metadata.
+## AI Evaluation & Validation
 
-**Research Gaps**:
-Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+### [HIGH PRIORITY] Learning, Potential, and Retention: An Approach for Evaluating Adaptive AI-Enabled Medical Devices
+**Source**: arXiv:2604.04878 (2026 Apr 6) | Authors: Burgon A, Sahiner B, Petrick NA
+**Keywords**: AI Evaluation, Post-Deployment Monitoring, Adaptive AI Validation, Continuous Evaluation
+**Summary**: Introduces a 3-component evaluation framework for adaptive AI medical devices: (1) Learning — model improvement on current data, (2) Potential — performance shifts driven by dataset evolution, (3) Retention — knowledge preservation across modification steps. Addresses the fundamental challenge of disentangling true model improvement from distributional drift.
+**Relevance**: CRITICAL for AI EVAL/VALID theme. Provides concrete metrics for continuous evaluation of adaptive clinical AI — a major gap in current literature.
+**Methods**: Empirical validation on simulated and real medical imaging datasets.
+**Gaps**: Scalability to complex multi-task models remains unclear.
 
-**Keywords**: m, a, c, h, i, n, e,  , l, e
-**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
+### Ontology-Aware Design Patterns for Clinical AI Systems: Translating Reification Theory into Software Architecture
+**Source**: arXiv:2604.01661 (2026 Apr 2) | Authors: Stummer FO
+**Keywords**: AI Transparency, Clinical AI Architecture, Terminology Governance, Semantic Drift
+**Summary**: Addresses how clinical documentation workflows (billing incentives, terminology fragmentation) distort health data used to train AI systems. Translates reification theory into implementable software architecture patterns. Warns of AI amplifying existing coding artefacts through feedback loops.
+**Relevance**: Connects AI EVAL/VALID (transparency assessment) with ADAPTIVE REGULATION (governance of terminology systems). Unique contribution at intersection of social science and software engineering.
+**Gaps**: No empirical evaluation of proposed patterns in production systems.
+
+### Enhancing the Reliability of Medical AI through Expert-Guided Uncertainty Modeling
+**Source**: arXiv:2604.01898 (2026 Apr 2) | Authors: Khalin A, Zaychenkova E, Yugay A
+**Keywords**: AI Safety in Healthcare, Uncertainty Estimation, Clinical Decision Support, Real-World Validation
+**Summary**: Proposes expert-guided uncertainty estimation for medical AI to enable human experts to focus on high-risk cases while streamlining routine verification. Evaluates multiple uncertainty quantification methods on diagnostic tasks.
+**Relevance**: Fits CLINICAL HEALTH AI and AI EVAL/VALID. Provides practical approach to balancing AI automation with clinical safety.
+**Methods**: Expert validation with radiologists.
+
+---
+
+## Evidence & Implementation
+
+### Eligibility-Aware Evidence Synthesis: An Agentic Framework for Clinical Trial Meta-Analysis
+**Source**: arXiv:2604.02678 (2026 Apr 3) | Authors: Zhao Y, Zhang Z, Xu Y
+**Keywords**: Evidence Synthesis, Knowledge Translation, Implementation Science, Clinical Trial Meta-Analysis
+**Summary**: Proposes EligMeta — an agentic framework integrating LLMs for end-to-end evidence synthesis. Addresses limitation of conventional meta-analysis (weights by statistical precision) by incorporating clinical eligibility compatibility. Supports systematic review automation.
+**Relevance**: CORE for EVIDENCE & IMPLEMENT theme. Automates evidence gaps identification and knowledge translation for policy.
+**Methods**: Evaluated on clinical trial registries.
+**Gaps**: Validation across diverse therapeutic areas needed.
+
+### Implementing an AI Decision Support System in Radiology: Prospective Qualitative Evaluation (NASSS Framework)
+**Source**: J Med Internet Res (2026 Jan 28) | Authors: Naicker S, Schmidt P, Shar B
+**Keywords**: Implementation Science, AI Adoption, Policy Uptake, Evidence-Based Implementation
+**Summary**: Uses NASSS framework (Nonadoption, Abandonment, Scale-up, Spread, Sustainability) to analyze implementation of AI radiology decision support. Identifies organizational, patient, and technology factors affecting adoption.
+**Relevance**: Strong fit with EVIDENCE & IMPLEMENT. Provides implementation barriers taxonomy applicable to policy design.
+**Gaps**: Single-site study; generalizability needs verification.
+
+---
+
+## Emerging Trends (Cross-Theme Patterns)
+
+### AI in Infection Surveillance (Low-Resource Settings)
+**Source**: Int Health (2026 Apr) | Authors: Alzyood M
+**Keywords**: AI Safety in Healthcare, LMICs, Responsible AI, Ethics
+**Summary**: Responsible AI framework for infection surveillance in low-resource settings, mapping ethics, opportunities, and threats.
+**Relevance**: Intersection of CLINICAL HEALTH AI + PARTICIPATORY GOV + EVIDENCE & IMPLEMENT for global health equity.
 
 ---
 
 ## 🔍 Trends & Patterns
 
-**Most frequent topics**: e, i, n,  , a, l, r, ,, c, d
+**Most frequent topics in today's findings**:
+1. Adaptive/iterative evaluation frameworks for continuously learning AI systems
+2. Comparative regulatory analysis (US vs EU approaches)
+3. Uncertainty estimation and human-AI collaboration in clinical workflows
+4. Evidence synthesis automation using LLMs
 
-**Commonly mentioned gaps**:
-- Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+**Key regulatory developments**:
+- FDA's Predetermined Change Control Plans gaining traction for adaptive medical devices
+- EU MDR's stricter pre-market requirements creating friction with rapid AI iteration
+- Growing interest in multilayer auditing frameworks combining bias, explainability, and compliance
+
+**Evidence gaps identified**:
+- Lack of empirical validation for proposed governance frameworks in real health systems
+- Limited research on participatory governance mechanisms specifically for clinical AI
+- Implementation barriers taxonomy needs cross-context validation
+
+---
+
+## 📊 Priority Score Summary
+
+| Paper | Theme(s) | Priority | Recency |
+|-------|----------|----------|---------|
+| Tian et al. — Governance Framework (JMIR) | Adaptive Reg + Participatory Gov | ⭐⭐⭐ | Apr 2026 |
+| Palama et al. — Multilayer Auditing | AI Eval/Valid | ⭐⭐⭐ | Mar 2026 |
+| Lee et al. — US/EU Regulatory Divergence | Adaptive Reg | ⭐⭐⭐ | 2026 |
+| Burgon et al. — Adaptive AI Evaluation | AI Eval/Valid | ⭐⭐⭐ | Apr 2026 |
+| Zhao et al. — EligMeta Evidence Synthesis | Evidence & Implement | ⭐⭐ | Apr 2026 |
+
+---
+
+## 📋 Action Items for Literature Review
+
+1. **Track**: Tian et al. governance framework — potential case study for PhD chapter on adaptive regulation
+2. **Chase**: Lee et al. paper for full regulatory comparison details
+3. **Read carefully**: Burgon et al. — evaluation methodology directly applicable to PhD framework
+4. **Expand search**: participatory governance + clinical AI — today's search returned no recent results, need to broaden query
+
+---
+
+*Generated: 2026-04-10*
+*Project: Arkoys/ai-health-lit-review*
+*Sources: arXiv, PubMed, JMIR, Cureus, Front Med*
+*Keywords applied: AI EVAL/VALID, PARTICIPATORY GOV, ADAPTIVE REGULATION, EVIDENCE & IMPLEMENT, CLINICAL HEALTH AI*
 
 
 ---
 
-*Generated automatically by AI Health Lit Review on 2026-04-05 22:15*
-*Database: ./data/papers.db*
-
-
----
-
-# Source file: digest_2026-04-06.md
+# Source file: digest_2026-04-08.md
 
 # AI Health Literature Review - Daily Digest
-## 2026-04-06
+## 2026-04-08
 
 **Total papers reviewed**: 10
-**Top highlights**: 9 high-priority
+**Top highlights**: 0 high-priority
 
 ---
 
 ## 🏆 Top Papers (Priority 2)
-
-### 1. The Progress of Gout Prediction Models Based on Multi-source Data.
-
-**Source**: PUBMED | **Score**: 9.0/10 | **Venue**: Current rheumatology reviews
-**Authors**: Wenrui Shi, Hongzhu Qu, Xiangdong Fang
-**Date**: 2026-03-30 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41936104/
-**DOI**: 10.2174/0115733971444947260203111252
-
-**Summary** (62 words):
-> This review synthesizes research on gout prediction models utilizing multi-source data, including clinical features and various omics (genomics, microbiomics, radiomics, metabolomics). It finds that models integrating multiple data sources generally demonstrate superior predictive performance for gout susceptibility and related symptoms. While these models show excellent efficacy, their translation into clinical practice is hindered by challenges in external validation, cost, and practical imple...
-
-**Methods & Techniques**:
-A systematic literature search was conducted on the PubMed database for original peer-reviewed research articles published after 2010. Keywords included "gout", "predictive model", "risk prediction", ...
-
-**Key Results**:
-The review identified that prediction models for
-
-**Critical Evaluation**:
-External validation details are unclear from the available metadata.
-
-**Research Gaps**:
-Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
-
-**Keywords**: artificial intelligence, machine learning, clinical, prediction
-**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
-
----
-
-### 2. [Simulated consciousness, pseudo-empathy and the illusion of attachment: what can psychiatry do with artificial intelligence?].
-
-**Source**: PUBMED | **Score**: 9.0/10 | **Venue**: Orvosi hetilap
-**Authors**: Szabolcs Kéri
-**Date**: 2026-04-05 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41936035/
-**DOI**: 10.1556/650.2026.33542
-
-**Summary** (132 words):
-> This narrative review examines the integration of generative artificial intelligence (AI), particularly large language models (LLMs) and multimodal systems, into psychiatric practice. It addresses the growing mental health burden and service constraints driving this adoption. The paper explains how these models function and their core failures (hallucinations, goal drift, model drift). It appraises evidence for AI in diagnosis (via digital phenotyping, clinical text, speech, wearables) and thera...
-
-**Methods & Techniques**:
-A narrative review methodology was employed. The author synthesized existing literature and evidence on the application of generative AI in psychiatry, covering technical aspects (how LLMs/multimodal ...
-
-**Key Results**:
-2026; 167(14): 539-546.
-
-**Critical Evaluation**:
-External validation details are unclear from the available metadata.
-
-**Research Gaps**:
-Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
-
-**Keywords**: artificial intelligence, multimodal, clinical, diagnosis
-**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
-
----
-
-### 3. A CT-based model integrating deep learning features radiomics and body composition for preoperative prediction of microsatellite instability in colorectal cancer: a multicenter study.
-
-**Source**: PUBMED | **Score**: 9.0/10 | **Venue**: European journal of radiology
-**Authors**: Kaiting Han, Cuiling Zhu, Zhenyu Xu et al.
-**Date**: 2026-03-31 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935453/
-**DOI**: 10.1016/j.ejrad.2026.112837
-
-**Summary** (102 words):
-> This multicenter retrospective study developed and validated an interpretable deep learning radiomics model to preoperatively predict microsatellite instability (MSI) status in colorectal cancer (CRC) using portal venous phase enhanced CT images. The final fusion model (CDLR), which combined deep learning features, radiomics features, and body composition-based clinical risk factors using a random forest algorithm, demonstrated superior performance compared to models using only deep learning rad...
-
-**Methods & Techniques**:
-A retrospective analysis was conducted on 873 CRC patients from three medical centers. Patients were assigned to a training/internal validation cohort (Center 1) and two external validation cohorts (C...
-
-**Key Results**:
-In summary, the interpretable CDLR fusion model based on enhanced CT demonstrates promising potential as a noninvasive pre-screening tool for predicting MSI in CRC, supporting individualized treatment...
-
-**Critical Evaluation**:
-Retrospective design may not reflect prospective deployment performance. External validation details are unclear from the available metadata.
-
-**Research Gaps**:
-Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
-
-**Keywords**: deep learning, clinical, prediction
-**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
-
----
-
-### 4. Biochemical biomarker-Driven deep learning framework with SHAP-based feature interpretation for diabetes classification.
-
-**Source**: PUBMED | **Score**: 9.0/10 | **Venue**: Biophysical chemistry
-**Authors**: Salman Khan
-**Date**: 2026-04-01 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935405/
-**DOI**: 10.1016/j.bpc.2026.107601
-
-**Summary** (113 words):
-> This study proposes a deep learning framework combining a Deep Neural Network (DNN) with feature ranking and a statistical algorithm to improve early diabetes classification. Using biochemical biomarkers and socioeconomic factors, the model aims to identify individuals across the clinical spectrum from normal glucose regulation to type 2 diabetes. SHAP (Shapley Additive exPlanations) is integrated to enhance model interpretability by identifying the most influential predictive features. Evaluate...
-
-**Methods & Techniques**:
-The framework integrates a Deep Neural Network (DNN) with a feature ranking mechanism and a statistical algorithm for classification. Feature importance and selection are guided by Shapley Additive ex...
-
-**Key Results**:
-The proposed DNN-based framework achieved an average accuracy of 95.72% across 10-fold cross-validation. This performance demonstrated a clear improvement over traditional machine learning models and ...
-
-**Critical Evaluation**:
-External validation details are unclear from the available metadata.
-
-**Research Gaps**:
-Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
-
-**Keywords**: machine learning, deep learning, clinical, biomarker, diabetes
-**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
-
----
-
-### 5. A deep learning-based multimodal model with automated body composition analysis predicts prognosis in advanced clear cell renal cell carcinoma.
-
-**Source**: PUBMED | **Score**: 9.0/10 | **Venue**: Scientific reports
-**Authors**: Youwei Chi, Hanzheng Wang, Qingsong Zou et al.
-**Date**: 2026-04-04 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935094/
-**DOI**: 10.1038/s41598-026-46515-9
-
-**Summary** (39 words):
-> Clear cell renal cell carcinoma (ccRCC) is an aggressive malignancy with a high risk of postoperative recurrence. Body composition has emerged as a prognostic marker, but its clinical use is hindered by manual measurement methods and poorly interpretable models.
-
-**Methods & Techniques**:
-Clear cell renal cell carcinoma (ccRCC) is an aggressive malignancy with a high risk of postoperative recurrence. Key signals: retrospective, multicenter, cohort, deep learning, machine learning, mult...
-
-**Key Results**:
-The MLP model excelled in 5-year survival prediction (AUC 0.787 internal, 0.812 external), while the SVC model was optimal for recurrence (AUC 0.740 internal, 0.815 external).
-
-**Critical Evaluation**:
-Retrospective design may not reflect prospective deployment performance.
-
-**Research Gaps**:
-Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
-
-**Keywords**: machine learning, deep learning, multimodal, clinical, prediction, biomarker
-**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
-
----
-
-### 6. Quantum-inspired fused explainable deep learning framework for early enamel caries classification in intraoral photographs.
-
-**Source**: PUBMED | **Score**: 8.0/10 | **Venue**: Odontology
-**Authors**: Zohaib Khurshid, Zeeshan Habib, Falk Schwendicke et al.
-**Date**: 2026-04-05 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935999/
-**DOI**: 10.1007/s10266-026-01386-4
-
-**Summary** (44 words):
-> The visual detection of early enamel caries in intraoral photographs is challenging due to subtle lesion appearance and diagnostic subjectivity. This study aimed to develop and validate an explainable, quantum-simulated deep learning framework for the automated classification of enamel caries severity from intraoral photographs.
-
-**Methods & Techniques**:
-The visual detection of early enamel caries in intraoral photographs is challenging due to subtle lesion appearance and diagnostic subjectivity. Key signals: deep learning, machine learning.
-
-**Key Results**:
-Performance was assessed via accuracy, precision, recall, F1-score, and ROC-AUC. The fused framework achieved peak performance with Neural Network and Random Forest tree classifiers, attaining 99.33% ...
-
-**Critical Evaluation**:
-External validation details are unclear from the available metadata.
-
-**Research Gaps**:
-Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
-
-**Keywords**: machine learning, deep learning, clinical
-**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
-
----
-
-### 7. Predictive neuroimaging biomarkers of major depressive disorder treatment response: An umbrella review.
-
-**Source**: PUBMED | **Score**: 8.0/10 | **Venue**: Psychiatry and clinical neurosciences
-**Authors**: Yasmin Esmaeilian, Ahmadreza Samimi, Sajjad Mousavi et al.
-**Date**: 2026-04-05 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935973/
-**DOI**: 10.1111/pcn.70053
-
-**Summary** (95 words):
-> This umbrella review synthesized evidence from systematic reviews and meta-analyses to identify neuroimaging biomarkers predictive of treatment response in Major Depressive Disorder (MDD). It found that increased volume and activity in the anterior cingulate cortex (ACC) and hippocampus, along with altered functional connectivity in the default mode network (DMN) and fronto-limbic circuits, are the most consistent predictors. Predictive patterns differ by treatment modality (e.g., larger hippoca...
-
-**Methods & Techniques**:
-Major depressive disorder (MDD) is a heterogeneous condition with varied responses to pharmacological, psychotherapeutic, and neuromodulation interventions. Key signals: prospective, machine learning,...
-
-**Key Results**:
-Machine learning models integrating multimodal data achieved high predictive accuracy (AUC >0.85), though most lacked external validation. Integration of multimodal imaging and computational approache...
-
-**Critical Evaluation**:
-External validation details are unclear from the available metadata.
-
-**Research Gaps**:
-Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
-
-**Keywords**: machine learning, multimodal, clinical, biomarker
-**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
-
----
-
-### 8. Prediction of Early-onset Preeclampsia Using Deep Learning: A Scoping Review of Clinical and Imaging Models.
-
-**Source**: PUBMED | **Score**: 8.0/10 | **Venue**: Pregnancy hypertension
-**Authors**: Wagner Rios-Garcia, Kelly Broncano-Rivera, MariaFe-Martinez-Acuna et al.
-**Date**: 2026-04-03 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935450/
-**DOI**: 10.1016/j.preghy.2026.101462
-
-**Summary** (41 words):
-> This scoping review aimed to map the available evidence on deep learning (DL) models for predicting early-onset preeclampsia (EOPE), focusing on both clinical and imaging-based approaches. A comprehensive search of five databases identified 15 eligible studies published between 2018 and 2025.
-
-**Methods & Techniques**:
-This scoping review aimed to map the available evidence on deep learning (DL) models for predicting early-onset preeclampsia (EOPE), focusing on both clinical and imaging-based approaches. Key signals...
-
-**Key Results**:
-Further prospective, multicenter studies and transparent reporting are essential to support clinical translation and ensure safe, equitable implementation of DL-based prediction tools.
-
-**Critical Evaluation**:
-The abstract alone provides limited detail on datasets, baselines, and error analysis.
-
-**Research Gaps**:
-Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
-
-**Keywords**: machine learning, deep learning, multimodal, clinical, prediction
-**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
-
----
-
-### 9. Focused Ultrasound-activated Extracellular Vesicles-nanoparticle Hybrids for Targeted Brain Drug Delivery: Engineering Strategies and Translational Outlook.
-
-**Source**: PUBMED | **Score**: 8.0/10 | **Venue**: CNS & neurological disorders drug targets
-**Authors**: Yash Kalra, Shikha Baghel Chauhan, Indu Singh et al.
-**Date**: 2026-04-02 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935372/
-**DOI**: 10.2174/0118715273460963260314133640
-
-**Summary** (46 words):
-> A revolutionary method for targeted neurotherapeutics is focused ultrasound (FUS)-mediated blood-brain barrier (BBB) regulation. In order to enable controlled and targeted intracerebral drug delivery, recent developments in hybrid extracellular vessssicle-nanoparticle (EV-NP) platforms combine the biological compatibility of natural vesicles with the adjustable characteristics of synthetic nanocarriers.
-
-**Methods & Techniques**:
-The paper details several key engineering strategies for the EV-NP hybrids: 1) Incorporation of thermosensitive lipids and perfluorocarbon nanoemulsions to enable FUS-triggered drug release. 2) Ligand...
-
-**Key Results**:
-Preclinical models demonstrate that FUS-activated EV-NP hybrids significantly outperform conventional delivery
-
-**Critical Evaluation**:
-External validation details are unclear from the available metadata.
-
-**Research Gaps**:
-Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
-
-**Keywords**: artificial intelligence, clinical
-**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
-
----
 
 
 ## 📊 High Priority Papers
 
-### 1. De Jure: Iterative LLM Self-Refinement for Structured Extraction of Regulatory Rules
+### 1. Validation of a Risk-Prediction Model in the Presence of Outcome Misclassification.
 
-**Source**: ARXIV | **Score**: 7.0/10 | **Venue**: arXiv
-**Authors**: Keerat Guliani, Deepkamal Gill, David Landsman et al.
-**Date**: 2026-04-02 | **Link**: http://arxiv.org/abs/2604.02276v1
-**DOI**: N/A
+**Source**: PUBMED | **Score**: 5.0/10 | **Venue**: Statistics in medicine
+**Authors**: Runjia Zou, Brian D Williamson, Susan M Shortreed et al.
+**Date**: 2026-04-01 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41930736/
+**DOI**: 10.1002/sim.70377
 
-**Summary** (26 words):
-> Regulatory documents encode legally binding obligations that LLM-based systems must respect. Yet converting dense, hierarchically structured legal text into machine-readable rules remains a costly, expert-intensive process.
+**Summary** (38 words):
+> Electronic health records (EHRs) provide a rich data source for building prediction models to improve the quality of care. However, EHR data are prone to measurement error, and outcomes used to evaluate prediction model performance may be misclassified.
 
 **Methods & Techniques**:
-Regulatory documents encode legally binding obligations that LLM-based systems must respect.
+Electronic health records (EHRs) provide a rich data source for building prediction models to improve the quality of care.
 
 **Key Results**:
-In a downstream compliance question-answering evaluation via RAG, responses grounded in De Jure extracted rules are preferred over prior work in 73.8% of cases at single-rule retrieval depth, rising t...
+We derive formulae to estimate true positive rate (TPR), false positive rate (FPR), positive predictive value (PPV), negative predictive value (NPV), and area under the receiver operating characterist...
 
 **Critical Evaluation**:
 External validation details are unclear from the available metadata.
@@ -365,14 +178,41 @@ External validation details are unclear from the available metadata.
 **Research Gaps**:
 Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
 
-**Keywords**: 
+**Keywords**: clinical, prediction
+**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
+
+---
+
+### 2. Leveraging large language models to populate structured clinical case report forms from unstructured medical notes in radiation oncology.
+
+**Source**: PUBMED | **Score**: 5.0/10 | **Venue**: Clinical and translational radiation oncology
+**Authors**: Marcel Nachbar, Nianzi Yi, Marcel Büttner et al.
+**Date**: 2026-05-01 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41859030/
+**DOI**: 10.1016/j.ctro.2026.101143
+
+**Summary** (49 words):
+> Large language models (LLMs) have shown growing potential for clinical text processing, but their systematic application in radiation oncology-especially for non-English clinical documentation-remains underexplored. This study investigated whether pretrained LLMs can automatically extract, analyze, and structure radiotherapy-relevant information from routine unstructured medical notes, with the goal of supporting aut...
+
+**Methods & Techniques**:
+Large language models (LLMs) have shown growing potential for clinical text processing, but their systematic application in radiation oncology-especially for non-English clinical documentation-remains...
+
+**Key Results**:
+The LLM achieved matching accuracies of 83.6% and 83.8% on the development and testing datasets. Analysis revealed that the model disagreed with specific values in 8.1% of development dataset cases an...
+
+**Critical Evaluation**:
+External validation details are unclear from the available metadata.
+
+**Research Gaps**:
+Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+
+**Keywords**: large language model, oncology, clinical
 **Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
 
 ---
 
 ## 🔍 Trends & Patterns
 
-**Most frequent topics**: clinical, machine learning, deep learning, prediction, multimodal, artificial intelligence, biomarker, diagnosis, diabetes
+**Most frequent topics**: clinical, prediction, large language model, oncology
 
 **Commonly mentioned gaps**:
 - Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
@@ -380,8 +220,193 @@ Need clearer reporting on external validation, subgroup performance, and real-wo
 
 ---
 
-*Generated automatically by AI Health Lit Review on 2026-04-06 01:17*
+*Generated automatically by AI Health Lit Review on 2026-04-08 09:05*
 *Database: ./data/papers.db*
+
+
+---
+
+# Source file: digest_2026-04-08-v2.md
+
+# AI Health Literature Daily Digest
+**Date**: 2026-04-08  
+**Focus**: AI Governance, Policy, Evaluation & Implementation (Keywords-based filtering)  
+**Total papers collected**: 24 (2 high-priority governance/policy papers identified)
+
+---
+
+## Today's Collection Summary
+
+| Source | Papers Collected | Relevant to Governance/Policy |
+|--------|-----------------|------------------------------|
+| arXiv  | 2               | 1                            |
+| PubMed | 2               | 0                            |
+| NeurIPS (2024) | 20        | 1                            |
+| **Total** | **24**       | **2**                        |
+
+**Scraping notes**:
+- NeurIPS 2024 volume parsed completely (4,034 papers listed, top 20 retrieved)
+- OpenRouter API faced rate limiting (429) during summarization; fallback to `nvidia/nemotron-3-super-120b-a12b:free` used
+- All papers scored against governance/evaluation keywords
+- Average score today: 3.2/10 (low due to technical ML focus of NeurIPS batch)
+
+---
+
+## Top Papers — Governance / Policy Focus
+
+### 1. 🏛️ Action Images: End-to-End Policy Learning via Multiview Video Generation
+
+**Source**: arXiv (cs.AI, cs.LG, cs.CV)  
+**Score**: 4.0/10 | **Priority**: Medium  
+**Date**: 2026-04-07  
+**Authors**: Not fully extracted (arXiv metadata limited)  
+**PDF**: https://arxiv.org/pdf/2604.06168
+
+**Abstract** (summarized):
+> World action models (WAMs) have emerged as a promising direction for robot policy learning, leveraging powerful video backbones to model future states. The paper presents an end-to-end policy learning approach using multiview video generation, enabling robots to learn complex behaviors from visual demonstrations. While primarily a technical ML paper, the "policy learning" aspect touches on **AI decision-making governance** in embodied systems.
+
+**Governance relevance**:
+- ✨ Keyword hit: "policy" (policy learning)
+- 🔍 Implication: As robots learn policies from data, governance questions arise around **action interpretability, safety constraints, and regulatory oversight** of autonomous systems
+- 📌 Domain: AI in robotics, real-world deployment
+
+---
+
+### 2. ⚖️ Occupancy-based Policy Gradient: Estimation, Convergence, and Optimality
+
+**Source**: NeurIPS 2024  
+**Score**: 3.0/10 | **Priority**: Low  
+**Date**: 2024-01-01  
+**Authors**: Not fully extracted (waiting on full metadata fetch)  
+**Venue**: NeurIPS 2024
+
+**Abstract** (from listing page — truncated):
+> Technical paper on occupancy measure methods for policy gradient algorithms in reinforcement learning. Provides theoretical analysis of estimation and convergence properties.
+
+**Governance relevance**:
+- ✨ Keyword hit: "policy" (reinforcement learning policy)
+- ⚠️ Note: This is **not policy-as-in-public-policy**, but RL policy. Scored low for that reason (3/10). However, **the mathematical foundations of policy optimization** underlie many high-stakes AI systems (autonomous vehicles, medical treatment policies) where **governance and verification** are critical.
+
+---
+
+## Other Papers Collected (Lower Governance Relevance)
+
+These papers were collected but scored lower (0–3) as they focus on core ML methods rather than explicit governance/policy themes:
+
+### 3. Validation of a Risk-Prediction Model in the Presence of Out...
+**Source**: PubMed / Statistics in Medicine  
+**Score**: 5.0 | Priority: Medium  
+**Keywords hit**: "validation", "model"  
+**Note**: Clinical AI validation — touches on **real-world validation** aspects of health AI governance.
+
+### 4–24. NeurIPS 2024 Technical Papers (18 items)
+Sample titles (scored 3.0, filtered as relevant to general AI eval but not explicit policy):
+- MicroAdam: Accurate Adaptive Optimization with Low Space Overhead and Provable Convergence
+- GITA: Graph to Visual and Textual Integration for Vision-Language Graph Reasoning
+- How does PDE order affect the convergence of PINNs?
+- Fair Wasserstein Coresets
+- Improved Regret for Bandit Convex Optimization with Delayed Feedback
+- ... and 14 more NeurIPS 2024 conference papers
+
+**Why these appeared**: The broad keyword set includes "evaluation", "validation", "assessment", "testing" — many NeurIPS papers on optimization/evaluation methods match these, but are not about AI governance per se.
+
+---
+
+## Keyword Match Summary
+
+Papers matching these terms (case-insensitive):
+
+| Keyword | Matches |
+|---------|---------|
+| `policy` | 5 papers (2 RL-policy, 1 policy learning, 2 generic) |
+| `evaluation` | 12 papers (mostly NeurIPS optimization/evaluation methods) |
+| `validation` | 3 papers (1 clinical validation, 2 generic) |
+| `governance` | 0 papers |
+| `accountability` | 0 papers |
+| `oversight` | 0 papers |
+| `participatory` | 0 papers |
+| `stakeholder` | 0 papers |
+| `regulatory` | 0 papers |
+| `evidence-based` | 0 papers |
+| `adaptive regulation` | 0 papers |
+
+**Interpretation**:
+- **Very low direct governance-policy content** in today's haul
+- The single high-relevance paper (#1) bridges **robotics policy learning** with real-world video-based training — raises questions about **data provenance, safety-by-design, and regulatory compliance** for embodied AI
+- NeurIPS 2024 batch heavily weighted toward **core ML methods** (optimization, coresets, bandits) rather than societal implications
+
+---
+
+## Recommendations & Next Steps
+
+### For Today's Reading (High Priority)
+1. **Read**: "Action Images: End-to-End Policy Learning..." (arXiv) — the only paper today with clear AI governance implications
+2. **Skim**: "Validation of a Risk-Prediction Model..." (PubMed) — clinical AI validation connects to health-specific governance frameworks
+
+### Query Adjustment Suggestions
+To capture more governance/policy papers in future:
+
+1. **Add venue filters**: Restrict to journals/conferences known for governance work:
+   - FAccT (ACM Conference on Fairness, Accountability, and Transparency)
+   - AIES (AAAI/ACM Conference on AI, Ethics, and Society)
+   - NeurIPS → specifically track "Social Impact" or "Ethics" tracks (if available)
+   - Nature Machine Intelligence, Journal of AI Research (special issues on governance)
+
+2. **Expand keyword set** with more policy-specific terms:
+   ```
+   "algorithmic impact assessment"
+   "AI risk assessment"
+   "compliance" OR "conformity"
+   "audit" OR "auditing"
+   "certification" OR "certif"
+   "standardisation" OR "standard"
+   "liability" OR "responsibility"
+   "human-in-the-loop" OR "human oversight"
+   "explainability" OR "interpretability"
+   "EU AI Act" OR "AI regulation"
+   "algorithmic transparency"
+   ```
+
+3. **Source-specific strategies**:
+   - **arXiv**: add `cat:cs.CY` (Computers and Society) explicitly — this category has more governance papers
+   - **PubMed**: broaden to include "ethics", "deploy", "monitoring", "surveillance"
+   - **Conferences**: Scrape FAccT and AIES proceedings when announced (2025 cycles likely not live yet)
+
+4. **Consider narrowing NeurIPS**: The 4,000-paper volume is very broad. Could add query param to filter by `track=ethics` or `track=social-impact` if Neuripps URL supports it. Otherwise, consider reducing `max_results_per_day` for conferences to 5–10 to avoid drowning in technical papers.
+
+---
+
+## Today's Output Files
+
+- `outputs/digests/digest_2026-04-08-v2.md` ← this file
+- `data/papers_2026-04-08.json` ← full paper data (24 entries)
+- `logs/collector_2026-04-08.log` ← detailed process log
+
+**Generated**: 2026-04-08 14:13 UTC  
+**Next scheduled run**: 2026-04-09 09:00 (via cron)  
+**Pipeline status**: ✅ Collection & scoring complete | ⚠️ Summarization partially degraded (OpenRouter rate‑limits)
+
+---
+
+## Appendix: Full Paper List (All 24)
+
+| # | Title | Source | Score | Gov? |
+|---|-------|--------|-------|------|
+| 1 | Action Images: End-to-End Policy Learning via Multiview Video Generation | arXiv | 4.0 | ✅ |
+| 2 | Occupancy-based Policy Gradient: Estimation, Convergence, and Optimality | NeurIPS 2024 | 3.0 | ✅ |
+| 3 | Validation of a Risk-Prediction Model in the Presence of Out... | PubMed | 5.0 | ✅* |
+| 4 | MicroAdam: Accurate Adaptive Optimization... | NeurIPS 2024 | 3.0 | ⚠️ |
+| 5 | GITA: Graph to Visual and Textual Integration... | NeurIPS 2024 | 3.0 | ⚠️ |
+| 6 | How does PDE order affect the convergence of PINNs? | NeurIPS 2024 | 3.0 | ⚠️ |
+| 7 | Fair Wasserstein Coresets | NeurIPS 2024 | 3.0 | ⚠️ |
+| 8 | Improved Regret for Bandit Convex Optimization... | NeurIPS 2024 | 3.0 | ⚠️ |
+| 9 | ...(15 more NeurIPS 2024 papers, score 3.0 each) | NeurIPS 2024 | 3.0 | ⚠️ |
+
+*Note: PubMed paper hits "validation" keyword but is a statistical methods paper; included as borderline*
+
+---
+
+**End of digest**
 
 
 ---
@@ -690,221 +715,33 @@ Need clearer reporting on external validation, subgroup performance, and real-wo
 
 ---
 
-# Source file: digest_2026-04-08-v2.md
-
-# AI Health Literature Daily Digest
-**Date**: 2026-04-08  
-**Focus**: AI Governance, Policy, Evaluation & Implementation (Keywords-based filtering)  
-**Total papers collected**: 24 (2 high-priority governance/policy papers identified)
-
----
-
-## Today's Collection Summary
-
-| Source | Papers Collected | Relevant to Governance/Policy |
-|--------|-----------------|------------------------------|
-| arXiv  | 2               | 1                            |
-| PubMed | 2               | 0                            |
-| NeurIPS (2024) | 20        | 1                            |
-| **Total** | **24**       | **2**                        |
-
-**Scraping notes**:
-- NeurIPS 2024 volume parsed completely (4,034 papers listed, top 20 retrieved)
-- OpenRouter API faced rate limiting (429) during summarization; fallback to `nvidia/nemotron-3-super-120b-a12b:free` used
-- All papers scored against governance/evaluation keywords
-- Average score today: 3.2/10 (low due to technical ML focus of NeurIPS batch)
-
----
-
-## Top Papers — Governance / Policy Focus
-
-### 1. 🏛️ Action Images: End-to-End Policy Learning via Multiview Video Generation
-
-**Source**: arXiv (cs.AI, cs.LG, cs.CV)  
-**Score**: 4.0/10 | **Priority**: Medium  
-**Date**: 2026-04-07  
-**Authors**: Not fully extracted (arXiv metadata limited)  
-**PDF**: https://arxiv.org/pdf/2604.06168
-
-**Abstract** (summarized):
-> World action models (WAMs) have emerged as a promising direction for robot policy learning, leveraging powerful video backbones to model future states. The paper presents an end-to-end policy learning approach using multiview video generation, enabling robots to learn complex behaviors from visual demonstrations. While primarily a technical ML paper, the "policy learning" aspect touches on **AI decision-making governance** in embodied systems.
-
-**Governance relevance**:
-- ✨ Keyword hit: "policy" (policy learning)
-- 🔍 Implication: As robots learn policies from data, governance questions arise around **action interpretability, safety constraints, and regulatory oversight** of autonomous systems
-- 📌 Domain: AI in robotics, real-world deployment
-
----
-
-### 2. ⚖️ Occupancy-based Policy Gradient: Estimation, Convergence, and Optimality
-
-**Source**: NeurIPS 2024  
-**Score**: 3.0/10 | **Priority**: Low  
-**Date**: 2024-01-01  
-**Authors**: Not fully extracted (waiting on full metadata fetch)  
-**Venue**: NeurIPS 2024
-
-**Abstract** (from listing page — truncated):
-> Technical paper on occupancy measure methods for policy gradient algorithms in reinforcement learning. Provides theoretical analysis of estimation and convergence properties.
-
-**Governance relevance**:
-- ✨ Keyword hit: "policy" (reinforcement learning policy)
-- ⚠️ Note: This is **not policy-as-in-public-policy**, but RL policy. Scored low for that reason (3/10). However, **the mathematical foundations of policy optimization** underlie many high-stakes AI systems (autonomous vehicles, medical treatment policies) where **governance and verification** are critical.
-
----
-
-## Other Papers Collected (Lower Governance Relevance)
-
-These papers were collected but scored lower (0–3) as they focus on core ML methods rather than explicit governance/policy themes:
-
-### 3. Validation of a Risk-Prediction Model in the Presence of Out...
-**Source**: PubMed / Statistics in Medicine  
-**Score**: 5.0 | Priority: Medium  
-**Keywords hit**: "validation", "model"  
-**Note**: Clinical AI validation — touches on **real-world validation** aspects of health AI governance.
-
-### 4–24. NeurIPS 2024 Technical Papers (18 items)
-Sample titles (scored 3.0, filtered as relevant to general AI eval but not explicit policy):
-- MicroAdam: Accurate Adaptive Optimization with Low Space Overhead and Provable Convergence
-- GITA: Graph to Visual and Textual Integration for Vision-Language Graph Reasoning
-- How does PDE order affect the convergence of PINNs?
-- Fair Wasserstein Coresets
-- Improved Regret for Bandit Convex Optimization with Delayed Feedback
-- ... and 14 more NeurIPS 2024 conference papers
-
-**Why these appeared**: The broad keyword set includes "evaluation", "validation", "assessment", "testing" — many NeurIPS papers on optimization/evaluation methods match these, but are not about AI governance per se.
-
----
-
-## Keyword Match Summary
-
-Papers matching these terms (case-insensitive):
-
-| Keyword | Matches |
-|---------|---------|
-| `policy` | 5 papers (2 RL-policy, 1 policy learning, 2 generic) |
-| `evaluation` | 12 papers (mostly NeurIPS optimization/evaluation methods) |
-| `validation` | 3 papers (1 clinical validation, 2 generic) |
-| `governance` | 0 papers |
-| `accountability` | 0 papers |
-| `oversight` | 0 papers |
-| `participatory` | 0 papers |
-| `stakeholder` | 0 papers |
-| `regulatory` | 0 papers |
-| `evidence-based` | 0 papers |
-| `adaptive regulation` | 0 papers |
-
-**Interpretation**:
-- **Very low direct governance-policy content** in today's haul
-- The single high-relevance paper (#1) bridges **robotics policy learning** with real-world video-based training — raises questions about **data provenance, safety-by-design, and regulatory compliance** for embodied AI
-- NeurIPS 2024 batch heavily weighted toward **core ML methods** (optimization, coresets, bandits) rather than societal implications
-
----
-
-## Recommendations & Next Steps
-
-### For Today's Reading (High Priority)
-1. **Read**: "Action Images: End-to-End Policy Learning..." (arXiv) — the only paper today with clear AI governance implications
-2. **Skim**: "Validation of a Risk-Prediction Model..." (PubMed) — clinical AI validation connects to health-specific governance frameworks
-
-### Query Adjustment Suggestions
-To capture more governance/policy papers in future:
-
-1. **Add venue filters**: Restrict to journals/conferences known for governance work:
-   - FAccT (ACM Conference on Fairness, Accountability, and Transparency)
-   - AIES (AAAI/ACM Conference on AI, Ethics, and Society)
-   - NeurIPS → specifically track "Social Impact" or "Ethics" tracks (if available)
-   - Nature Machine Intelligence, Journal of AI Research (special issues on governance)
-
-2. **Expand keyword set** with more policy-specific terms:
-   ```
-   "algorithmic impact assessment"
-   "AI risk assessment"
-   "compliance" OR "conformity"
-   "audit" OR "auditing"
-   "certification" OR "certif"
-   "standardisation" OR "standard"
-   "liability" OR "responsibility"
-   "human-in-the-loop" OR "human oversight"
-   "explainability" OR "interpretability"
-   "EU AI Act" OR "AI regulation"
-   "algorithmic transparency"
-   ```
-
-3. **Source-specific strategies**:
-   - **arXiv**: add `cat:cs.CY` (Computers and Society) explicitly — this category has more governance papers
-   - **PubMed**: broaden to include "ethics", "deploy", "monitoring", "surveillance"
-   - **Conferences**: Scrape FAccT and AIES proceedings when announced (2025 cycles likely not live yet)
-
-4. **Consider narrowing NeurIPS**: The 4,000-paper volume is very broad. Could add query param to filter by `track=ethics` or `track=social-impact` if Neuripps URL supports it. Otherwise, consider reducing `max_results_per_day` for conferences to 5–10 to avoid drowning in technical papers.
-
----
-
-## Today's Output Files
-
-- `outputs/digests/digest_2026-04-08-v2.md` ← this file
-- `data/papers_2026-04-08.json` ← full paper data (24 entries)
-- `logs/collector_2026-04-08.log` ← detailed process log
-
-**Generated**: 2026-04-08 14:13 UTC  
-**Next scheduled run**: 2026-04-09 09:00 (via cron)  
-**Pipeline status**: ✅ Collection & scoring complete | ⚠️ Summarization partially degraded (OpenRouter rate‑limits)
-
----
-
-## Appendix: Full Paper List (All 24)
-
-| # | Title | Source | Score | Gov? |
-|---|-------|--------|-------|------|
-| 1 | Action Images: End-to-End Policy Learning via Multiview Video Generation | arXiv | 4.0 | ✅ |
-| 2 | Occupancy-based Policy Gradient: Estimation, Convergence, and Optimality | NeurIPS 2024 | 3.0 | ✅ |
-| 3 | Validation of a Risk-Prediction Model in the Presence of Out... | PubMed | 5.0 | ✅* |
-| 4 | MicroAdam: Accurate Adaptive Optimization... | NeurIPS 2024 | 3.0 | ⚠️ |
-| 5 | GITA: Graph to Visual and Textual Integration... | NeurIPS 2024 | 3.0 | ⚠️ |
-| 6 | How does PDE order affect the convergence of PINNs? | NeurIPS 2024 | 3.0 | ⚠️ |
-| 7 | Fair Wasserstein Coresets | NeurIPS 2024 | 3.0 | ⚠️ |
-| 8 | Improved Regret for Bandit Convex Optimization... | NeurIPS 2024 | 3.0 | ⚠️ |
-| 9 | ...(15 more NeurIPS 2024 papers, score 3.0 each) | NeurIPS 2024 | 3.0 | ⚠️ |
-
-*Note: PubMed paper hits "validation" keyword but is a statistical methods paper; included as borderline*
-
----
-
-**End of digest**
-
-
----
-
-# Source file: digest_2026-04-08.md
+# Source file: digest_2026-04-06.md
 
 # AI Health Literature Review - Daily Digest
-## 2026-04-08
+## 2026-04-06
 
 **Total papers reviewed**: 10
-**Top highlights**: 0 high-priority
+**Top highlights**: 9 high-priority
 
 ---
 
 ## 🏆 Top Papers (Priority 2)
 
+### 1. The Progress of Gout Prediction Models Based on Multi-source Data.
 
-## 📊 High Priority Papers
+**Source**: PUBMED | **Score**: 9.0/10 | **Venue**: Current rheumatology reviews
+**Authors**: Wenrui Shi, Hongzhu Qu, Xiangdong Fang
+**Date**: 2026-03-30 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41936104/
+**DOI**: 10.2174/0115733971444947260203111252
 
-### 1. Validation of a Risk-Prediction Model in the Presence of Outcome Misclassification.
-
-**Source**: PUBMED | **Score**: 5.0/10 | **Venue**: Statistics in medicine
-**Authors**: Runjia Zou, Brian D Williamson, Susan M Shortreed et al.
-**Date**: 2026-04-01 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41930736/
-**DOI**: 10.1002/sim.70377
-
-**Summary** (38 words):
-> Electronic health records (EHRs) provide a rich data source for building prediction models to improve the quality of care. However, EHR data are prone to measurement error, and outcomes used to evaluate prediction model performance may be misclassified.
+**Summary** (62 words):
+> This review synthesizes research on gout prediction models utilizing multi-source data, including clinical features and various omics (genomics, microbiomics, radiomics, metabolomics). It finds that models integrating multiple data sources generally demonstrate superior predictive performance for gout susceptibility and related symptoms. While these models show excellent efficacy, their translation into clinical practice is hindered by challenges in external validation, cost, and practical imple...
 
 **Methods & Techniques**:
-Electronic health records (EHRs) provide a rich data source for building prediction models to improve the quality of care.
+A systematic literature search was conducted on the PubMed database for original peer-reviewed research articles published after 2010. Keywords included "gout", "predictive model", "risk prediction", ...
 
 **Key Results**:
-We derive formulae to estimate true positive rate (TPR), false positive rate (FPR), positive predictive value (PPV), negative predictive value (NPV), and area under the receiver operating characterist...
+The review identified that prediction models for
 
 **Critical Evaluation**:
 External validation details are unclear from the available metadata.
@@ -912,26 +749,26 @@ External validation details are unclear from the available metadata.
 **Research Gaps**:
 Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
 
-**Keywords**: clinical, prediction
+**Keywords**: artificial intelligence, machine learning, clinical, prediction
 **Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
 
 ---
 
-### 2. Leveraging large language models to populate structured clinical case report forms from unstructured medical notes in radiation oncology.
+### 2. [Simulated consciousness, pseudo-empathy and the illusion of attachment: what can psychiatry do with artificial intelligence?].
 
-**Source**: PUBMED | **Score**: 5.0/10 | **Venue**: Clinical and translational radiation oncology
-**Authors**: Marcel Nachbar, Nianzi Yi, Marcel Büttner et al.
-**Date**: 2026-05-01 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41859030/
-**DOI**: 10.1016/j.ctro.2026.101143
+**Source**: PUBMED | **Score**: 9.0/10 | **Venue**: Orvosi hetilap
+**Authors**: Szabolcs Kéri
+**Date**: 2026-04-05 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41936035/
+**DOI**: 10.1556/650.2026.33542
 
-**Summary** (49 words):
-> Large language models (LLMs) have shown growing potential for clinical text processing, but their systematic application in radiation oncology-especially for non-English clinical documentation-remains underexplored. This study investigated whether pretrained LLMs can automatically extract, analyze, and structure radiotherapy-relevant information from routine unstructured medical notes, with the goal of supporting aut...
+**Summary** (132 words):
+> This narrative review examines the integration of generative artificial intelligence (AI), particularly large language models (LLMs) and multimodal systems, into psychiatric practice. It addresses the growing mental health burden and service constraints driving this adoption. The paper explains how these models function and their core failures (hallucinations, goal drift, model drift). It appraises evidence for AI in diagnosis (via digital phenotyping, clinical text, speech, wearables) and thera...
 
 **Methods & Techniques**:
-Large language models (LLMs) have shown growing potential for clinical text processing, but their systematic application in radiation oncology-especially for non-English clinical documentation-remains...
+A narrative review methodology was employed. The author synthesized existing literature and evidence on the application of generative AI in psychiatry, covering technical aspects (how LLMs/multimodal ...
 
 **Key Results**:
-The LLM achieved matching accuracies of 83.6% and 83.8% on the development and testing datasets. Analysis revealed that the model disagreed with specific values in 8.1% of development dataset cases an...
+2026; 167(14): 539-546.
 
 **Critical Evaluation**:
 External validation details are unclear from the available metadata.
@@ -939,14 +776,233 @@ External validation details are unclear from the available metadata.
 **Research Gaps**:
 Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
 
-**Keywords**: large language model, oncology, clinical
+**Keywords**: artificial intelligence, multimodal, clinical, diagnosis
+**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
+
+---
+
+### 3. A CT-based model integrating deep learning features radiomics and body composition for preoperative prediction of microsatellite instability in colorectal cancer: a multicenter study.
+
+**Source**: PUBMED | **Score**: 9.0/10 | **Venue**: European journal of radiology
+**Authors**: Kaiting Han, Cuiling Zhu, Zhenyu Xu et al.
+**Date**: 2026-03-31 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935453/
+**DOI**: 10.1016/j.ejrad.2026.112837
+
+**Summary** (102 words):
+> This multicenter retrospective study developed and validated an interpretable deep learning radiomics model to preoperatively predict microsatellite instability (MSI) status in colorectal cancer (CRC) using portal venous phase enhanced CT images. The final fusion model (CDLR), which combined deep learning features, radiomics features, and body composition-based clinical risk factors using a random forest algorithm, demonstrated superior performance compared to models using only deep learning rad...
+
+**Methods & Techniques**:
+A retrospective analysis was conducted on 873 CRC patients from three medical centers. Patients were assigned to a training/internal validation cohort (Center 1) and two external validation cohorts (C...
+
+**Key Results**:
+In summary, the interpretable CDLR fusion model based on enhanced CT demonstrates promising potential as a noninvasive pre-screening tool for predicting MSI in CRC, supporting individualized treatment...
+
+**Critical Evaluation**:
+Retrospective design may not reflect prospective deployment performance. External validation details are unclear from the available metadata.
+
+**Research Gaps**:
+Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+
+**Keywords**: deep learning, clinical, prediction
+**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
+
+---
+
+### 4. Biochemical biomarker-Driven deep learning framework with SHAP-based feature interpretation for diabetes classification.
+
+**Source**: PUBMED | **Score**: 9.0/10 | **Venue**: Biophysical chemistry
+**Authors**: Salman Khan
+**Date**: 2026-04-01 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935405/
+**DOI**: 10.1016/j.bpc.2026.107601
+
+**Summary** (113 words):
+> This study proposes a deep learning framework combining a Deep Neural Network (DNN) with feature ranking and a statistical algorithm to improve early diabetes classification. Using biochemical biomarkers and socioeconomic factors, the model aims to identify individuals across the clinical spectrum from normal glucose regulation to type 2 diabetes. SHAP (Shapley Additive exPlanations) is integrated to enhance model interpretability by identifying the most influential predictive features. Evaluate...
+
+**Methods & Techniques**:
+The framework integrates a Deep Neural Network (DNN) with a feature ranking mechanism and a statistical algorithm for classification. Feature importance and selection are guided by Shapley Additive ex...
+
+**Key Results**:
+The proposed DNN-based framework achieved an average accuracy of 95.72% across 10-fold cross-validation. This performance demonstrated a clear improvement over traditional machine learning models and ...
+
+**Critical Evaluation**:
+External validation details are unclear from the available metadata.
+
+**Research Gaps**:
+Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+
+**Keywords**: machine learning, deep learning, clinical, biomarker, diabetes
+**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
+
+---
+
+### 5. A deep learning-based multimodal model with automated body composition analysis predicts prognosis in advanced clear cell renal cell carcinoma.
+
+**Source**: PUBMED | **Score**: 9.0/10 | **Venue**: Scientific reports
+**Authors**: Youwei Chi, Hanzheng Wang, Qingsong Zou et al.
+**Date**: 2026-04-04 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935094/
+**DOI**: 10.1038/s41598-026-46515-9
+
+**Summary** (39 words):
+> Clear cell renal cell carcinoma (ccRCC) is an aggressive malignancy with a high risk of postoperative recurrence. Body composition has emerged as a prognostic marker, but its clinical use is hindered by manual measurement methods and poorly interpretable models.
+
+**Methods & Techniques**:
+Clear cell renal cell carcinoma (ccRCC) is an aggressive malignancy with a high risk of postoperative recurrence. Key signals: retrospective, multicenter, cohort, deep learning, machine learning, mult...
+
+**Key Results**:
+The MLP model excelled in 5-year survival prediction (AUC 0.787 internal, 0.812 external), while the SVC model was optimal for recurrence (AUC 0.740 internal, 0.815 external).
+
+**Critical Evaluation**:
+Retrospective design may not reflect prospective deployment performance.
+
+**Research Gaps**:
+Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+
+**Keywords**: machine learning, deep learning, multimodal, clinical, prediction, biomarker
+**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
+
+---
+
+### 6. Quantum-inspired fused explainable deep learning framework for early enamel caries classification in intraoral photographs.
+
+**Source**: PUBMED | **Score**: 8.0/10 | **Venue**: Odontology
+**Authors**: Zohaib Khurshid, Zeeshan Habib, Falk Schwendicke et al.
+**Date**: 2026-04-05 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935999/
+**DOI**: 10.1007/s10266-026-01386-4
+
+**Summary** (44 words):
+> The visual detection of early enamel caries in intraoral photographs is challenging due to subtle lesion appearance and diagnostic subjectivity. This study aimed to develop and validate an explainable, quantum-simulated deep learning framework for the automated classification of enamel caries severity from intraoral photographs.
+
+**Methods & Techniques**:
+The visual detection of early enamel caries in intraoral photographs is challenging due to subtle lesion appearance and diagnostic subjectivity. Key signals: deep learning, machine learning.
+
+**Key Results**:
+Performance was assessed via accuracy, precision, recall, F1-score, and ROC-AUC. The fused framework achieved peak performance with Neural Network and Random Forest tree classifiers, attaining 99.33% ...
+
+**Critical Evaluation**:
+External validation details are unclear from the available metadata.
+
+**Research Gaps**:
+Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+
+**Keywords**: machine learning, deep learning, clinical
+**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
+
+---
+
+### 7. Predictive neuroimaging biomarkers of major depressive disorder treatment response: An umbrella review.
+
+**Source**: PUBMED | **Score**: 8.0/10 | **Venue**: Psychiatry and clinical neurosciences
+**Authors**: Yasmin Esmaeilian, Ahmadreza Samimi, Sajjad Mousavi et al.
+**Date**: 2026-04-05 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935973/
+**DOI**: 10.1111/pcn.70053
+
+**Summary** (95 words):
+> This umbrella review synthesized evidence from systematic reviews and meta-analyses to identify neuroimaging biomarkers predictive of treatment response in Major Depressive Disorder (MDD). It found that increased volume and activity in the anterior cingulate cortex (ACC) and hippocampus, along with altered functional connectivity in the default mode network (DMN) and fronto-limbic circuits, are the most consistent predictors. Predictive patterns differ by treatment modality (e.g., larger hippoca...
+
+**Methods & Techniques**:
+Major depressive disorder (MDD) is a heterogeneous condition with varied responses to pharmacological, psychotherapeutic, and neuromodulation interventions. Key signals: prospective, machine learning,...
+
+**Key Results**:
+Machine learning models integrating multimodal data achieved high predictive accuracy (AUC >0.85), though most lacked external validation. Integration of multimodal imaging and computational approache...
+
+**Critical Evaluation**:
+External validation details are unclear from the available metadata.
+
+**Research Gaps**:
+Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+
+**Keywords**: machine learning, multimodal, clinical, biomarker
+**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
+
+---
+
+### 8. Prediction of Early-onset Preeclampsia Using Deep Learning: A Scoping Review of Clinical and Imaging Models.
+
+**Source**: PUBMED | **Score**: 8.0/10 | **Venue**: Pregnancy hypertension
+**Authors**: Wagner Rios-Garcia, Kelly Broncano-Rivera, MariaFe-Martinez-Acuna et al.
+**Date**: 2026-04-03 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935450/
+**DOI**: 10.1016/j.preghy.2026.101462
+
+**Summary** (41 words):
+> This scoping review aimed to map the available evidence on deep learning (DL) models for predicting early-onset preeclampsia (EOPE), focusing on both clinical and imaging-based approaches. A comprehensive search of five databases identified 15 eligible studies published between 2018 and 2025.
+
+**Methods & Techniques**:
+This scoping review aimed to map the available evidence on deep learning (DL) models for predicting early-onset preeclampsia (EOPE), focusing on both clinical and imaging-based approaches. Key signals...
+
+**Key Results**:
+Further prospective, multicenter studies and transparent reporting are essential to support clinical translation and ensure safe, equitable implementation of DL-based prediction tools.
+
+**Critical Evaluation**:
+The abstract alone provides limited detail on datasets, baselines, and error analysis.
+
+**Research Gaps**:
+Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+
+**Keywords**: machine learning, deep learning, multimodal, clinical, prediction
+**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
+
+---
+
+### 9. Focused Ultrasound-activated Extracellular Vesicles-nanoparticle Hybrids for Targeted Brain Drug Delivery: Engineering Strategies and Translational Outlook.
+
+**Source**: PUBMED | **Score**: 8.0/10 | **Venue**: CNS & neurological disorders drug targets
+**Authors**: Yash Kalra, Shikha Baghel Chauhan, Indu Singh et al.
+**Date**: 2026-04-02 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935372/
+**DOI**: 10.2174/0118715273460963260314133640
+
+**Summary** (46 words):
+> A revolutionary method for targeted neurotherapeutics is focused ultrasound (FUS)-mediated blood-brain barrier (BBB) regulation. In order to enable controlled and targeted intracerebral drug delivery, recent developments in hybrid extracellular vessssicle-nanoparticle (EV-NP) platforms combine the biological compatibility of natural vesicles with the adjustable characteristics of synthetic nanocarriers.
+
+**Methods & Techniques**:
+The paper details several key engineering strategies for the EV-NP hybrids: 1) Incorporation of thermosensitive lipids and perfluorocarbon nanoemulsions to enable FUS-triggered drug release. 2) Ligand...
+
+**Key Results**:
+Preclinical models demonstrate that FUS-activated EV-NP hybrids significantly outperform conventional delivery
+
+**Critical Evaluation**:
+External validation details are unclear from the available metadata.
+
+**Research Gaps**:
+Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+
+**Keywords**: artificial intelligence, clinical
+**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
+
+---
+
+
+## 📊 High Priority Papers
+
+### 1. De Jure: Iterative LLM Self-Refinement for Structured Extraction of Regulatory Rules
+
+**Source**: ARXIV | **Score**: 7.0/10 | **Venue**: arXiv
+**Authors**: Keerat Guliani, Deepkamal Gill, David Landsman et al.
+**Date**: 2026-04-02 | **Link**: http://arxiv.org/abs/2604.02276v1
+**DOI**: N/A
+
+**Summary** (26 words):
+> Regulatory documents encode legally binding obligations that LLM-based systems must respect. Yet converting dense, hierarchically structured legal text into machine-readable rules remains a costly, expert-intensive process.
+
+**Methods & Techniques**:
+Regulatory documents encode legally binding obligations that LLM-based systems must respect.
+
+**Key Results**:
+In a downstream compliance question-answering evaluation via RAG, responses grounded in De Jure extracted rules are preferred over prior work in 73.8% of cases at single-rule retrieval depth, rising t...
+
+**Critical Evaluation**:
+External validation details are unclear from the available metadata.
+
+**Research Gaps**:
+Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+
+**Keywords**: 
 **Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
 
 ---
 
 ## 🔍 Trends & Patterns
 
-**Most frequent topics**: clinical, prediction, large language model, oncology
+**Most frequent topics**: clinical, machine learning, deep learning, prediction, multimodal, artificial intelligence, biomarker, diagnosis, diabetes
 
 **Commonly mentioned gaps**:
 - Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
@@ -954,31 +1010,91 @@ Need clearer reporting on external validation, subgroup performance, and real-wo
 
 ---
 
-*Generated automatically by AI Health Lit Review on 2026-04-08 09:05*
+*Generated automatically by AI Health Lit Review on 2026-04-06 01:17*
 *Database: ./data/papers.db*
 
 
 ---
 
-# Source file: digest_2026-04-10.md
+# Source file: digest_2026-04-05.md
 
 # AI Health Literature Review - Daily Digest
-## 2026-04-10
+## 2026-04-05
 
-**Total papers reviewed**: 0
-**Top highlights**: 0 high-priority
+**Total papers reviewed**: 2
+**Top highlights**: 2 high-priority
 
 ---
 
 ## 🏆 Top Papers (Priority 2)
 
+### 1. A CT-based model integrating deep learning features radiomics and body composition for preoperative prediction of microsatellite instability in colorectal cancer: a multicenter study.
+
+**Source**: PUBMED | **Score**: 9.0/10 | **Venue**: European journal of radiology
+**Authors**: Kaiting Han, Cuiling Zhu, Zhenyu Xu et al.
+**Date**: 2026-03-31 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935453/
+**DOI**: 10.1016/j.ejrad.2026.112837
+
+**Summary** (51 words):
+> This multicenter study developed and validated an interpretable deep learning radiomics model using pre-operative portal venous phase CT images to non-invasively predict microsatellite instability (MSI) status in colorectal cancer (CRC). By integrating deep learning features, traditional radiomics, and body composition-based clinical factors via a random forest algorithm, the authors created three
+
+**Methods & Techniques**:
+The precise prediction by MSI plays a key role in the perioperative treatment and prognosis of colorectal cancer (CRC) patients. Key signals: retrospective, prospective, cohort, deep learning, radiomi...
+
+**Key Results**:
+In summary, the interpretable CDLR fusion model based on enhanced CT demonstrates promising potential as a noninvasive pre-screening tool for predicting MSI in CRC, supporting individualized treatment...
+
+**Critical Evaluation**:
+Retrospective design may not reflect prospective deployment performance. External validation details are unclear from the available metadata.
+
+**Research Gaps**:
+Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+
+**Keywords**: d, e, e, p,  , l, e, a, r, n
+**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
+
+---
+
+### 2. Biochemical biomarker-Driven deep learning framework with SHAP-based feature interpretation for diabetes classification.
+
+**Source**: PUBMED | **Score**: 9.0/10 | **Venue**: Biophysical chemistry
+**Authors**: Salman Khan
+**Date**: 2026-04-01 | **Link**: https://pubmed.ncbi.nlm.nih.gov/41935405/
+**DOI**: 10.1016/j.bpc.2026.107601
+
+**Summary** (102 words):
+> This study addresses the global rise of type 2 diabetes by proposing a deep learning framework for early classification. The model integrates a Deep Neural Network (DNN) with feature ranking and a statistical algorithm to predict diabetes status. A key component is the use of SHAP (Shapley Additive exPlanations) to interpret the model's decisions and identify influential predictive features. The approach is validated using 10-fold cross-validation, achieving high accuracy and outperforming tradi...
+
+**Methods & Techniques**:
+The proposed framework consists of several integrated steps: 1) **Feature Ranking & Selection:** A statistical algorithm is applied to rank and select the most relevant input features from the dataset...
+
+**Key Results**:
+Through extensive experiments using 10-fold cross-validation, the proposed method achieved an average accuracy of 95.72% demonstrated clear improvements over traditional machine learning models and se...
+
+**Critical Evaluation**:
+External validation details are unclear from the available metadata.
+
+**Research Gaps**:
+Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
+
+**Keywords**: m, a, c, h, i, n, e,  , l, e
+**Connections**: Related to recent AI-for-clinical-decision-support and medical-imaging validation literature.
+
+---
+
 ## 🔍 Trends & Patterns
 
-**Most frequent topics**: 
+**Most frequent topics**: e, i, n,  , a, l, r, ,, c, d
 
+**Commonly mentioned gaps**:
+- Need clearer reporting on external validation, subgroup performance, and real-world clinical impact.
 
 
 ---
 
-*Generated automatically by AI Health Lit Review on 2026-04-10 00:42*
+*Generated automatically by AI Health Lit Review on 2026-04-05 22:15*
 *Database: ./data/papers.db*
+
+
+---
+
