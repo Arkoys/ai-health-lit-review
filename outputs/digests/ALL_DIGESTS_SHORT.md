@@ -1,8 +1,24 @@
-# AI Health Literature Review - Short Index
+# AI Health Literature — Short Index
 
-## Latest: 2026-04-10
+## Latest Digests
 
-- From Pilot Trap to Institutional Capacity: A Governance Framework for Sustainable Clinical AI Implementation
-- Auditing and Monitoring AI Systems in Healthcare: A Multilayer Framework for Bias Detection, Explainability, and Regulatory Compliance
-- Diverging Regulatory DNA in Adaptive Medical AI: US Agility vs EU Accountability
-- Learning, Potential, and Retention: An Approach for Evaluating Adaptive AI-Enabled Medical Devices
+### [2026-04-10_v5](outputs/digests/digest_2026-04-10_v5.md)
+
+### [2026-04-10_v4](outputs/digests/digest_2026-04-10_v4.md)
+
+### [2026-04-10_v3](outputs/digests/digest_2026-04-10_v3.md)
+
+### [2026-04-10_v2](outputs/digests/digest_2026-04-10_v2.md)
+
+### [2026-04-10](outputs/digests/digest_2026-04-10.md)
+
+### [2026-04-08](outputs/digests/digest_2026-04-08.md)
+
+### [2026-04-08](outputs/digests/digest_2026-04-08-v2.md)
+
+### [2026-04-07](outputs/digests/digest_2026-04-07.md)
+
+### [2026-04-06](outputs/digests/digest_2026-04-06.md)
+
+### [2026-04-05](outputs/digests/digest_2026-04-05.md)
+
