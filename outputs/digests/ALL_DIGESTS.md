@@ -690,6 +690,191 @@ Need clearer reporting on external validation, subgroup performance, and real-wo
 
 ---
 
+# Source file: digest_2026-04-08-v2.md
+
+# AI Health Literature Daily Digest
+**Date**: 2026-04-08  
+**Focus**: AI Governance, Policy, Evaluation & Implementation (Keywords-based filtering)  
+**Total papers collected**: 24 (2 high-priority governance/policy papers identified)
+
+---
+
+## Today's Collection Summary
+
+| Source | Papers Collected | Relevant to Governance/Policy |
+|--------|-----------------|------------------------------|
+| arXiv  | 2               | 1                            |
+| PubMed | 2               | 0                            |
+| NeurIPS (2024) | 20        | 1                            |
+| **Total** | **24**       | **2**                        |
+
+**Scraping notes**:
+- NeurIPS 2024 volume parsed completely (4,034 papers listed, top 20 retrieved)
+- OpenRouter API faced rate limiting (429) during summarization; fallback to `nvidia/nemotron-3-super-120b-a12b:free` used
+- All papers scored against governance/evaluation keywords
+- Average score today: 3.2/10 (low due to technical ML focus of NeurIPS batch)
+
+---
+
+## Top Papers — Governance / Policy Focus
+
+### 1. 🏛️ Action Images: End-to-End Policy Learning via Multiview Video Generation
+
+**Source**: arXiv (cs.AI, cs.LG, cs.CV)  
+**Score**: 4.0/10 | **Priority**: Medium  
+**Date**: 2026-04-07  
+**Authors**: Not fully extracted (arXiv metadata limited)  
+**PDF**: https://arxiv.org/pdf/2604.06168
+
+**Abstract** (summarized):
+> World action models (WAMs) have emerged as a promising direction for robot policy learning, leveraging powerful video backbones to model future states. The paper presents an end-to-end policy learning approach using multiview video generation, enabling robots to learn complex behaviors from visual demonstrations. While primarily a technical ML paper, the "policy learning" aspect touches on **AI decision-making governance** in embodied systems.
+
+**Governance relevance**:
+- ✨ Keyword hit: "policy" (policy learning)
+- 🔍 Implication: As robots learn policies from data, governance questions arise around **action interpretability, safety constraints, and regulatory oversight** of autonomous systems
+- 📌 Domain: AI in robotics, real-world deployment
+
+---
+
+### 2. ⚖️ Occupancy-based Policy Gradient: Estimation, Convergence, and Optimality
+
+**Source**: NeurIPS 2024  
+**Score**: 3.0/10 | **Priority**: Low  
+**Date**: 2024-01-01  
+**Authors**: Not fully extracted (waiting on full metadata fetch)  
+**Venue**: NeurIPS 2024
+
+**Abstract** (from listing page — truncated):
+> Technical paper on occupancy measure methods for policy gradient algorithms in reinforcement learning. Provides theoretical analysis of estimation and convergence properties.
+
+**Governance relevance**:
+- ✨ Keyword hit: "policy" (reinforcement learning policy)
+- ⚠️ Note: This is **not policy-as-in-public-policy**, but RL policy. Scored low for that reason (3/10). However, **the mathematical foundations of policy optimization** underlie many high-stakes AI systems (autonomous vehicles, medical treatment policies) where **governance and verification** are critical.
+
+---
+
+## Other Papers Collected (Lower Governance Relevance)
+
+These papers were collected but scored lower (0–3) as they focus on core ML methods rather than explicit governance/policy themes:
+
+### 3. Validation of a Risk-Prediction Model in the Presence of Out...
+**Source**: PubMed / Statistics in Medicine  
+**Score**: 5.0 | Priority: Medium  
+**Keywords hit**: "validation", "model"  
+**Note**: Clinical AI validation — touches on **real-world validation** aspects of health AI governance.
+
+### 4–24. NeurIPS 2024 Technical Papers (18 items)
+Sample titles (scored 3.0, filtered as relevant to general AI eval but not explicit policy):
+- MicroAdam: Accurate Adaptive Optimization with Low Space Overhead and Provable Convergence
+- GITA: Graph to Visual and Textual Integration for Vision-Language Graph Reasoning
+- How does PDE order affect the convergence of PINNs?
+- Fair Wasserstein Coresets
+- Improved Regret for Bandit Convex Optimization with Delayed Feedback
+- ... and 14 more NeurIPS 2024 conference papers
+
+**Why these appeared**: The broad keyword set includes "evaluation", "validation", "assessment", "testing" — many NeurIPS papers on optimization/evaluation methods match these, but are not about AI governance per se.
+
+---
+
+## Keyword Match Summary
+
+Papers matching these terms (case-insensitive):
+
+| Keyword | Matches |
+|---------|---------|
+| `policy` | 5 papers (2 RL-policy, 1 policy learning, 2 generic) |
+| `evaluation` | 12 papers (mostly NeurIPS optimization/evaluation methods) |
+| `validation` | 3 papers (1 clinical validation, 2 generic) |
+| `governance` | 0 papers |
+| `accountability` | 0 papers |
+| `oversight` | 0 papers |
+| `participatory` | 0 papers |
+| `stakeholder` | 0 papers |
+| `regulatory` | 0 papers |
+| `evidence-based` | 0 papers |
+| `adaptive regulation` | 0 papers |
+
+**Interpretation**:
+- **Very low direct governance-policy content** in today's haul
+- The single high-relevance paper (#1) bridges **robotics policy learning** with real-world video-based training — raises questions about **data provenance, safety-by-design, and regulatory compliance** for embodied AI
+- NeurIPS 2024 batch heavily weighted toward **core ML methods** (optimization, coresets, bandits) rather than societal implications
+
+---
+
+## Recommendations & Next Steps
+
+### For Today's Reading (High Priority)
+1. **Read**: "Action Images: End-to-End Policy Learning..." (arXiv) — the only paper today with clear AI governance implications
+2. **Skim**: "Validation of a Risk-Prediction Model..." (PubMed) — clinical AI validation connects to health-specific governance frameworks
+
+### Query Adjustment Suggestions
+To capture more governance/policy papers in future:
+
+1. **Add venue filters**: Restrict to journals/conferences known for governance work:
+   - FAccT (ACM Conference on Fairness, Accountability, and Transparency)
+   - AIES (AAAI/ACM Conference on AI, Ethics, and Society)
+   - NeurIPS → specifically track "Social Impact" or "Ethics" tracks (if available)
+   - Nature Machine Intelligence, Journal of AI Research (special issues on governance)
+
+2. **Expand keyword set** with more policy-specific terms:
+   ```
+   "algorithmic impact assessment"
+   "AI risk assessment"
+   "compliance" OR "conformity"
+   "audit" OR "auditing"
+   "certification" OR "certif"
+   "standardisation" OR "standard"
+   "liability" OR "responsibility"
+   "human-in-the-loop" OR "human oversight"
+   "explainability" OR "interpretability"
+   "EU AI Act" OR "AI regulation"
+   "algorithmic transparency"
+   ```
+
+3. **Source-specific strategies**:
+   - **arXiv**: add `cat:cs.CY` (Computers and Society) explicitly — this category has more governance papers
+   - **PubMed**: broaden to include "ethics", "deploy", "monitoring", "surveillance"
+   - **Conferences**: Scrape FAccT and AIES proceedings when announced (2025 cycles likely not live yet)
+
+4. **Consider narrowing NeurIPS**: The 4,000-paper volume is very broad. Could add query param to filter by `track=ethics` or `track=social-impact` if Neuripps URL supports it. Otherwise, consider reducing `max_results_per_day` for conferences to 5–10 to avoid drowning in technical papers.
+
+---
+
+## Today's Output Files
+
+- `outputs/digests/digest_2026-04-08-v2.md` ← this file
+- `data/papers_2026-04-08.json` ← full paper data (24 entries)
+- `logs/collector_2026-04-08.log` ← detailed process log
+
+**Generated**: 2026-04-08 14:13 UTC  
+**Next scheduled run**: 2026-04-09 09:00 (via cron)  
+**Pipeline status**: ✅ Collection & scoring complete | ⚠️ Summarization partially degraded (OpenRouter rate‑limits)
+
+---
+
+## Appendix: Full Paper List (All 24)
+
+| # | Title | Source | Score | Gov? |
+|---|-------|--------|-------|------|
+| 1 | Action Images: End-to-End Policy Learning via Multiview Video Generation | arXiv | 4.0 | ✅ |
+| 2 | Occupancy-based Policy Gradient: Estimation, Convergence, and Optimality | NeurIPS 2024 | 3.0 | ✅ |
+| 3 | Validation of a Risk-Prediction Model in the Presence of Out... | PubMed | 5.0 | ✅* |
+| 4 | MicroAdam: Accurate Adaptive Optimization... | NeurIPS 2024 | 3.0 | ⚠️ |
+| 5 | GITA: Graph to Visual and Textual Integration... | NeurIPS 2024 | 3.0 | ⚠️ |
+| 6 | How does PDE order affect the convergence of PINNs? | NeurIPS 2024 | 3.0 | ⚠️ |
+| 7 | Fair Wasserstein Coresets | NeurIPS 2024 | 3.0 | ⚠️ |
+| 8 | Improved Regret for Bandit Convex Optimization... | NeurIPS 2024 | 3.0 | ⚠️ |
+| 9 | ...(15 more NeurIPS 2024 papers, score 3.0 each) | NeurIPS 2024 | 3.0 | ⚠️ |
+
+*Note: PubMed paper hits "validation" keyword but is a statistical methods paper; included as borderline*
+
+---
+
+**End of digest**
+
+
+---
+
 # Source file: digest_2026-04-08.md
 
 # AI Health Literature Review - Daily Digest
@@ -770,4 +955,30 @@ Need clearer reporting on external validation, subgroup performance, and real-wo
 ---
 
 *Generated automatically by AI Health Lit Review on 2026-04-08 09:05*
+*Database: ./data/papers.db*
+
+
+---
+
+# Source file: digest_2026-04-10.md
+
+# AI Health Literature Review - Daily Digest
+## 2026-04-10
+
+**Total papers reviewed**: 0
+**Top highlights**: 0 high-priority
+
+---
+
+## 🏆 Top Papers (Priority 2)
+
+## 🔍 Trends & Patterns
+
+**Most frequent topics**: 
+
+
+
+---
+
+*Generated automatically by AI Health Lit Review on 2026-04-10 00:42*
 *Database: ./data/papers.db*
