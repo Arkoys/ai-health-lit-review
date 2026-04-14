@@ -10,9 +10,9 @@ __pycache__/
 venv/
 
 # Local data / runtime artifacts
-data/
-logs/
+# data/  <-- tracked on GitHub (literature corpus)
 *.db
+logs/
 
 # Temporary test configs
 config.test-e2e.yaml
@@ -23,6 +23,9 @@ collector.py.backup
 .DS_Store
 .idea/
 .vscode/
+
+# Generated video/animation output (too large to push)
+outputs/video/
 
 # Keep generated digests/reviews, ignore other output clutter
 outputs/*
