@@ -1,6 +1,706 @@
 # AI Health Literature Review — All Digests
 
 ---
+## Source file: [2026-04-15](outputs/digests/digest_2026-04-15.md)
+
+# 🔬 AI Health Literature Review — Daily Digest
+**Date:** 2026-04-15 (Wednesday) | **Papers analyzed:** 18 | **New in DB:** +18
+
+---
+
+## 📊 Executive Summary
+**Top themes today:** 
+**Priority breakdown:** 🔴 0 · 🟡 0 · ⚪ 18
+
+**Trending:** 🔴 Adaptive AI Evaluation
+
+## 🏆 Featured Papers
+
+---
+
+## 🔍 Cross-Analysis
+
+**Cross-theme papers:** 0/18 address multiple themes simultaneously.
+**Gaps today:** No papers found for: `AI_EVAL_VALID, PARTICIPATORY_GOV, ADAPTATIVE_REGULATION, EVIDENCE_IMPLEMENT, CLINICAL_HEALTH_AI`
+
+## 📈 Topic Distribution
+
+| Theme | Papers |
+|-------|--------|
+
+## 🎯 Priority Queue
+
+
+---
+
+*Generated: 2026-04-15T09:03:17.745683*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+*Sources: arXiv · PubMed · JMIR · Cureus · Front Med · Nature Medicine · Lancet*
+
+---
+
+## Source file: [2026-04-14_v3](outputs/digests/digest_2026-04-14_v3.md)
+
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-04-14 (Tuesday) | **Papers ranked:** 100 | **New:** +27
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 16 · 🟡 81 · ⚪ 3
+**Top themes:** `AI_EVAL_VALID` (43), `PARTICIPATORY_GOV` (23), `ADAPTIVE_REGULATION` (20), `CLINICAL_HEALTH_AI` (16), `EVIDENCE_IMPLEMENT` (14)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 Prediction of Early-onset Preeclampsia Using Deep Learning: A Scoping Review of Clinical and Imaging Models.
+
+**Source:** PUBMED | **Score:** `9.0` | **Themes:** `AI_EVAL_VALID` `EVIDENCE_IMPLEMENT`
+**Authors:** ["Wagner Rios-Garcia", "Kelly Broncano-Rivera", "MariaFe-Martinez-Acuna", "Abigail D Via-Y-Rada-Torr
+**Venue:** Pregnancy hypertension | **Published:** 2026-04-03
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41935450/)
+
+> This scoping review aimed to map the available evidence on deep learning (DL) models for predicting early-onset preeclampsia (EOPE), focusing on both clinical and imaging-based approaches. A comprehensive search of five databases identified 15 eligible studies published between 2018 and 2025. DL and machine learning (ML) models demonstrated heterog...
+
+**Summary:** This scoping review aimed to map the available evidence on deep learning (DL) models for predicting early-onset preeclampsia (EOPE), focusing on both clinical and imaging-based approaches. A comprehen...
+
+
+### 🔴 A CT-based model integrating deep learning features radiomics and body composition for preoperative prediction of microsatellite instability in colorectal cancer: a multicenter study.
+
+**Source:** PUBMED | **Score:** `9.0` | **Themes:** `AI_EVAL_VALID` `EVIDENCE_IMPLEMENT`
+**Authors:** ["Kaiting Han", "Cuiling Zhu", "Zhenyu Xu", "Yongxi Ouyang", "Diliang He", "Xuanming He", "Linwen Hu
+**Venue:** European journal of radiology | **Published:** 2026-03-31
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41935453/)
+
+> The precise prediction by MSI plays a key role in the perioperative treatment and prognosis of colorectal cancer (CRC) patients. This study seeks to establish an interpretable deep learning radiomics model using enhanced CT images to improve the preoperative prediction of microsatellite instability (MSI) in CRC. The retrospective study analyzed 873...
+
+**Summary:** This multicenter retrospective study developed and validated an interpretable deep learning radiomics model to preoperatively predict microsatellite instability (MSI) status in colorectal cancer (CRC)...
+
+
+### 🔴 Ecological Validity Missing in AI-Assisted Clinical Decision Support Research: Why Real-World Context Matters
+
+**Source:** SEMANTICSCHOLAR | **Score:** `9.0` | **Themes:** `CLINICAL_HEALTH_AI` `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Tommaso Turchi, D. Mikhaylova, Miriana Troccoli, Alessio Malizia, M. G. Cimino
+**Venue:** ACM SIGCHI Italian Chapter International Conference on Computer-Human Interaction | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/d65b3997f9ee3728ab5ffb6a999a457914c5320e)
+
+> This paper presents a critical perspective on the ecological validity challenges in evaluating AI-assisted decision-making tools for healthcare, illustrated through insights from a case study on oral cancer diagnosis. We argue that current experimental approaches often fail to capture the complexities of clinical environments in three critical dime...
+
+
+### 🔴 Exploring AI and ML in managing overlap between cardiovascular disease and asthma or COPD: a scoping review.
+
+**Source:** PUBMED | **Score:** `8.5` | **Themes:** `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** ["Luigino Calzetta", "Mario Cazzola", "Elena Pistocchini", "Shima Gholamalishahi", "Rossella Laitano
+**Venue:** Respiratory medicine | **Published:** 2026-04-04
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41941973/)
+
+> Cardiovascular disease (CVD) is a major comorbidity in asthma and chronic obstructive pulmonary disease (COPD), yet the contribution of artificial intelligence (AI) and machine learning (ML) to CVD risk assessment and management in these conditions remains insufficiently characterized. This scoping review identified the main original full-text stud...
+
+**Summary:** This scoping review aimed to characterize the application of artificial intelligence (AI) and machine learning (ML) in assessing and managing the comorbidity between cardiovascular disease (CVD) and a...
+
+
+### 🔴 AI-based Clinical Decision Support for Primary Care: A Real-World Study
+
+**Source:** SEMANTICSCHOLAR | **Score:** `8.5` | **Themes:** `CLINICAL_HEALTH_AI` `AI_EVAL_VALID` `EVIDENCE_IMPLEMENT`
+**Authors:** R. Korom, Sarah Kiptinness, Najib Adan, Kassim Said, Catherine Ithuli
+**Venue:** arXiv.org | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/5c5299ab486eb67a79c8ffcf607446e9f5f1fbfe)
+
+> We evaluate the impact of large language model-based clinical decision support in live care. In partnership with Penda Health, a network of primary care clinics in Nairobi, Kenya, we studied AI Consult, a tool that serves as a safety net for clinicians by identifying potential documentation and clinical decision-making errors. AI Consult integrates...
+
+
+### 🔴 Predictive neuroimaging biomarkers of major depressive disorder treatment response: An umbrella review.
+
+**Source:** PUBMED | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Yasmin Esmaeilian", "Ahmadreza Samimi", "Sajjad Mousavi", "Iman Kiani", "Giulia Cattarinussi", "Ho
+**Venue:** Psychiatry and clinical neurosciences | **Published:** 2026-04-05
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41935973/)
+
+> Major depressive disorder (MDD) is a heterogeneous condition with varied responses to pharmacological, psychotherapeutic, and neuromodulation interventions. Identifying neuroimaging biomarkers predictive of treatment response could facilitate personalized treatment selection. This umbrella review synthesized findings from systematic reviews and met...
+
+**Summary:** This umbrella review synthesized evidence from systematic reviews and meta-analyses to identify neuroimaging biomarkers predictive of treatment response in Major Depressive Disorder (MDD). It found th...
+
+
+### 🔴 Retrieval Is Not Enough: Why Organizational AI Needs Epistemic Infrastructure
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Federico Bottino, Carlo Ferrero, Nicholas Dosio, Pierfrancesco Beneventano
+**Venue:** arXiv | **Published:** 2026-04-13
+
+[🔗 Link](https://arxiv.org/abs/2604.11759)
+
+> Organizational knowledge used by AI agents typically lacks epistemic structure: retrieval systems surface semantically relevant content without distinguishing binding decisions from abandoned hypotheses, contested claims from settled ones, or known facts from unresolved questions. We argue that the ceiling on organizational AI is not retrieval fide...
+
+
+### 🔴 Towards Automated Pentesting with Large Language Models
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `ADAPTIVE_REGULATION` `AI_EVAL_VALID`
+**Authors:** Ricardo Bessa, Rui Claro, João Trindade, João Lourenço
+**Venue:** arXiv | **Published:** 2026-04-13
+
+[🔗 Link](https://arxiv.org/abs/2604.11772)
+
+> Large Language Models (LLMs) are redefining offensive cybersecurity by allowing the generation of harmful machine code with minimal human intervention. While attackers take advantage of dark LLMs such as XXXGPT and WolfGPT to produce malicious code, ethical hackers can follow similar approaches to automate traditional pentesting workflows. In this ...
+
+
+### 🔴 LottieGPT: Tokenizing Vector Animation for Autoregressive Generation
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `EVIDENCE_IMPLEMENT` `ADAPTIVE_REGULATION`
+**Authors:** Junhao Chen, Kejun Gao, Yuehan Cui, Mingze Sun, Mingjin Chen
+**Venue:** arXiv | **Published:** 2026-04-13
+
+[🔗 Link](https://arxiv.org/abs/2604.11792)
+
+> Despite rapid progress in video generation, existing models are incapable of producing vector animation, a dominant and highly expressive form of multimedia on the Internet. Vector animations offer resolution-independence, compactness, semantic structure, and editable parametric motion representations, yet current generative models operate exclusiv...
+
+
+### 🔴 CLSGen: A Dual-Head Fine-Tuning Framework for Joint Probabilistic Classification and Verbalized Explanation
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `CLINICAL_HEALTH_AI` `AI_EVAL_VALID`
+**Authors:** WonJin Yoon, Kangyu Zhu, Ian Bulovic, Autumn Sehy, Yanjun Gao
+**Venue:** arXiv | **Published:** 2026-04-13
+
+[🔗 Link](https://arxiv.org/abs/2604.11801)
+
+> With the recent progress of Large Language Models (LLMs), there is a growing interest in applying these models to solve complex and challenging problems. Modern LLMs, capable of processing long contexts and generating verbalized explanations, offer significant potential in addressing real-world applications. However, a critical hurdle in deploying ...
+
+
+### 🔴 De Jure: Iterative LLM Self-Refinement for Structured Extraction of Regulatory Rules
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** ["Keerat Guliani", "Deepkamal Gill", "David Landsman", "Nima Eshraghi", "Krishna Kumar", "Lovedeep G
+**Venue:** arXiv | **Published:** 2026-04-02
+
+[📄 arXiv](https://arxiv.org/abs/arxi) · [PDF](https://arxiv.org/pdf/arxi)
+
+> Regulatory documents encode legally binding obligations that LLM-based systems must respect. Yet converting dense, hierarchically structured legal text into machine-readable rules remains a costly, expert-intensive process. We present De Jure, a fully automated, domain-agnostic pipeline for extracting structured regulatory rules from raw documents,...
+
+**Summary:** Regulatory documents encode legally binding obligations that LLM-based systems must respect. Yet converting dense, hierarchically structured legal text into machine-readable rules remains a costly, ex...
+
+
+### 🔴 Quantum-inspired fused explainable deep learning framework for early enamel caries classification in intraoral photographs.
+
+**Source:** PUBMED | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Zohaib Khurshid", "Zeeshan Habib", "Falk Schwendicke", "Thanaphum Osathanon"]
+**Venue:** Odontology | **Published:** 2026-04-05
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41935999/)
+
+> The visual detection of early enamel caries in intraoral photographs is challenging due to subtle lesion appearance and diagnostic subjectivity. This study aimed to develop and validate an explainable, quantum-simulated deep learning framework for the automated classification of enamel caries severity from intraoral photographs. A hybrid framework ...
+
+**Summary:** The visual detection of early enamel caries in intraoral photographs is challenging due to subtle lesion appearance and diagnostic subjectivity. This study aimed to develop and validate an explainable...
+
+
+### 🔴 A deep learning-based multimodal model with automated body composition analysis predicts prognosis in advanced clear cell renal cell carcinoma.
+
+**Source:** PUBMED | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Youwei Chi", "Hanzheng Wang", "Qingsong Zou", "Fengze Sun", "Chunhai Hu", "Chu Liu", "Qian Li", "B
+**Venue:** Scientific reports | **Published:** 2026-04-04
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41935094/)
+
+> Clear cell renal cell carcinoma (ccRCC) is an aggressive malignancy with a high risk of postoperative recurrence. Body composition has emerged as a prognostic marker, but its clinical use is hindered by manual measurement methods and poorly interpretable models. This study aimed to develop an automated, interpretable prediction model integrating de...
+
+**Summary:** Clear cell renal cell carcinoma (ccRCC) is an aggressive malignancy with a high risk of postoperative recurrence. Body composition has emerged as a prognostic marker, but its clinical use is hindered ...
+
+
+### 🔴 Biochemical biomarker-Driven deep learning framework with SHAP-based feature interpretation for diabetes classification.
+
+**Source:** PUBMED | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Salman Khan"]
+**Venue:** Biophysical chemistry | **Published:** 2026-04-01
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41935405/)
+
+> Diabetes mellitus is a long-term metabolic condition that develops when the body cannot produce insulin effectively or use it properly. Individuals usually progress through a clinical spectrum that begins with normal glucose regulation, moves into a prediabetic state, and may eventually advance to type 2 diabetes. The continuous global rise in diab...
+
+**Summary:** This study proposes a deep learning framework combining a Deep Neural Network (DNN) with feature ranking and a statistical algorithm to improve early diabetes classification. Using biochemical biomark...
+
+
+### 🔴 Physics-Informed State Space Models for Reliable Solar Irradiance Forecasting in Off-Grid Systems
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Mohammed Ezzaldin Babiker Abdullah
+**Venue:** arXiv | **Published:** 2026-04-13
+
+[🔗 Link](https://arxiv.org/abs/2604.11807)
+
+> The stable operation of autonomous off-grid photovoltaic systems dictates reliance on solar forecasting algorithms that respect atmospheric thermodynamics. Contemporary deep learning models consistently exhibit critical anomalies, primarily severe temporal phase lags during cloud transients and physically impossible nocturnal power generation. To r...
+
+
+### 🔴 A Mechanistic Analysis of Looped Reasoning Language Models
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `EVIDENCE_IMPLEMENT` `ADAPTIVE_REGULATION`
+**Authors:** Hugh Blayney, Álvaro Arroyo, Johan Obando-Ceron, Pablo Samuel Castro, Aaron Courville
+**Venue:** arXiv | **Published:** 2026-04-13
+
+[🔗 Link](https://arxiv.org/abs/2604.11791)
+
+> Reasoning has become a central capability in large language models. Recent research has shown that reasoning performance can be improved by looping an LLM's layers in the latent dimension, resulting in looped reasoning language models. Despite promising results, few works have investigated how their internal dynamics differ from those of standard f...
+
+
+
+## 📚 Supporting Papers (Priority 2, top 7)
+
+### 🟡 Validation of a Risk-Prediction Model in the Presence of Outcome Misclassification.
+
+**Source:** PUBMED | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Runjia Zou", "Brian D Williamson", "Susan M Shortreed", "R Yates Coley"]
+**Venue:** Statistics in medicine | **Published:** 2026-04-01
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41930736/)
+
+> Electronic health records (EHRs) provide a rich data source for building prediction models to improve the quality of care. However, EHR data are prone to measurement error, and outcomes used to evaluate prediction model performance may be misclassified. Comparing risk predictions to misclassified outcomes will result in unreliable estimates of a pr...
+
+**Summary:** Electronic health records (EHRs) provide a rich data source for building prediction models to improve the quality of care. However, EHR data are prone to measurement error, and outcomes used to evalua...
+
+
+### 🟡 Trapped bosons in mean field QED, nonlinear resonance cascades and dynamical BEC formation
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Thomas Chen, Ali Mezher
+**Venue:** arXiv | **Published:** 2026-04-13
+
+[🔗 Link](https://arxiv.org/abs/2604.11756)
+
+> In this paper, we study a system of bosons trapped in a confining potential, interacting with a quantized field of coherent photons in the mean field description of non-relativistic Quantum Electrodynamics (QED) obtained by [N. Leopold and P. Pickl , 2017]. We derive the effective nonlinear cascade equations governing the emission and absorption of...
+
+
+### 🟡 The nature of tilted supercritical accretion discs
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** P. Chris Fragile, Matthew J. Middleton, Brooks Brasseur, Deepika A. Bollimpalli, Zach Smith
+**Venue:** arXiv | **Published:** 2026-04-13
+
+[🔗 Link](https://arxiv.org/abs/2604.11794)
+
+> In this paper, we report on the first 3D general relativistic radiation magnetohydrodynamic simulations of large supercritical accretion discs that are tilted with respect to the black hole spin axis. We explore a range of black hole spin parameters (from $a_* = -0.9$ to 0.9), initial tilts (in the range from $β_0 = 0^\circ$ to $30^\circ$), and tar...
+
+
+### 🟡 OmniShow: Unifying Multimodal Conditions for Human-Object Interaction Video Generation
+
+**Source:** ARXIV | **Score:** `6.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** Donghao Zhou, Guisheng Liu, Hao Yang, Jiatong Li, Jingyu Lin
+**Venue:** arXiv | **Published:** 2026-04-13
+
+[🔗 Link](https://arxiv.org/abs/2604.11804)
+
+> In this work, we study Human-Object Interaction Video Generation (HOIVG), which aims to synthesize high-quality human-object interaction videos conditioned on text, reference images, audio, and pose. This task holds significant practical value for automating content creation in real-world applications, such as e-commerce demonstrations, short video...
+
+
+### 🟡 Budget-Aware Uncertainty for Radiotherapy Segmentation QA Using nnU-Net
+
+**Source:** ARXIV | **Score:** `6.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** Ricardo Coimbra Brioso, Lorenzo Mondo, Damiano Dei, Nicola Lambri, Pietro Mancosu
+**Venue:** arXiv | **Published:** 2026-04-13
+
+[🔗 Link](https://arxiv.org/abs/2604.11798)
+
+> Accurate delineation of the Clinical Target Volume (CTV) is essential for radiotherapy planning, yet remains time-consuming and difficult to assess, especially for complex treatments such as Total Marrow and Lymph Node Irradiation (TMLI). While deep learning-based auto-segmentation can reduce workload, safe clinical deployment requires reliable cue...
+
+
+### 🟡 Disentangled Point Diffusion for Precise Object Placement
+
+**Source:** ARXIV | **Score:** `6.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** Lyuxing He, Eric Cai, Shobhit Aggarwal, Jianjun Wang, David Held
+**Venue:** arXiv | **Published:** 2026-04-13
+
+[🔗 Link](https://arxiv.org/abs/2604.11793)
+
+> Recent advances in robotic manipulation have highlighted the effectiveness of learning from demonstration. However, while end-to-end policies excel in expressivity and flexibility, they struggle both in generalizing to novel object geometries and in attaining a high degree of precision. An alternative, object-centric approach frames the task as pre...
+
+
+### 🟡 ClawGuard: A Runtime Security Framework for Tool-Augmented LLM Agents Against Indirect Prompt Injection
+
+**Source:** ARXIV | **Score:** `6.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** Wei Zhao, Zhe Li, Peixin Zhang, Jun Sun
+**Venue:** arXiv | **Published:** 2026-04-13
+
+[🔗 Link](https://arxiv.org/abs/2604.11790)
+
+> Tool-augmented Large Language Model (LLM) agents have demonstrated impressive capabilities in automating complex, multi-step real-world tasks, yet remain vulnerable to indirect prompt injection. Adversaries exploit this weakness by embedding malicious instructions within tool-returned content, which agents directly incorporate into their conversati...
+
+
+
+## ⚪ Supplementary (Priority 1, top 5)
+
+### ⚪ A comparative analysis of AI scribes versus human documentation in simulated general practice consultations.
+
+**Source:** PUBMED | **Score:** `3.5` | **Themes:** 
+**Authors:** ["Darran Foo", "Janice Tan", "Sean Stevens", "Amandeep Hansra", "Helen Wilcox"]
+**Venue:** Australian journal of general practice | **Published:** 2026-04-01
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41942089/)
+
+> Artificial intelligence (AI) scribes are emerging as transformative tools in healthcare to automatically generate clinical documentation from patient-clinician encounters. The aim of this study was to compare documentation quality between AI scribes and human-generated notes in simulated general practice consultations. This was a cross-sectional st...
+
+**Summary:** This study compared the quality of clinical documentation generated by commercially available AI scribes versus human-generated notes in simulated general practice consultations. Using standardized ex...
+
+
+### ⚪ From prediction to action: a retrospective observational study on the real-world implementation of Critical Interventions (CrIs), an AI-based clinical decision support system changing clinical behavior in the emergency department
+
+**Source:** SEMANTICSCHOLAR | **Score:** `3.5` | **Themes:** `CLINICAL_HEALTH_AI`
+**Authors:** Hansol Chang, J. Yu, Hyunjung Park, Yeejun Song, Sejin Heo
+**Venue:** BMC Medical Informatics and Decision Making | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/11855a6c39258799f3d5d87cd418b8cc43761e62)
+
+> Optimal emergency department (ED) care for critically ill patients relies on prompt recognition and initiation of necessary interventions. The Critical Interventions (CrIs) system was designed to predict the need for urgent procedures, including arterial line insertion, oxygen therapy, high-flow nasal cannula (HFNC), intubation, and inotropes or va...
+
+
+### ⚪ Real-World Feasibility of Generative Large Language Models for Clinical Decision Support in Benign Prostatic Hyperplasia.
+
+**Source:** SEMANTICSCHOLAR | **Score:** `3.5` | **Themes:** `CLINICAL_HEALTH_AI`
+**Authors:** Yuqi Li, Chunyang Meng, Lei Peng, Yang Zeng, Xu Li
+**Venue:** International Journal of Surgery | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/ca5cf9264d753c39a709603f8248c048b35de3bf)
+
+> BACKGROUND
+Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and elderly men, often accompanied by lower urinary tract symptoms (LUTS) that significantly impact patients' quality of life. It has emerged as a major public health challenge worldwide. In recent years, artificial intelligence (AI), particularly large language m...
+
+
+---
+
+## 🔍 Cross-Analysis
+**Multi-theme papers:** 15/100
+
+## 📈 Theme Distribution
+
+| Theme | Count |
+|-------|-------|
+| `AI_EVAL_VALID` | ██████████ 43 |
+| `PARTICIPATORY_GOV` | ██████████ 23 |
+| `ADAPTIVE_REGULATION` | ██████████ 20 |
+| `CLINICAL_HEALTH_AI` | ██████████ 16 |
+| `EVIDENCE_IMPLEMENT` | ██████████ 14 |
+
+---
+
+*Generated: 2026-04-14T14:57:01.080180*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+
+---
+
+## Source file: [2026-04-14_v2](outputs/digests/digest_2026-04-14_v2.md)
+
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-04-14 (Tuesday) | **Papers ranked:** 25 | **New:** +88
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 13 · 🟡 11 · ⚪ 1
+**Top themes:** `AI_EVAL_VALID` (24), `EVIDENCE_IMPLEMENT` (4), `CLINICAL_HEALTH_AI` (4), `PARTICIPATORY_GOV` (2), `ADAPTIVE_REGULATION` (1)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 From Pilot Trap to Institutional Capacity: A Governance Framework for Sustainable Clinical AI Implementation in Health Systems.
+
+**Source:** PUBMED | **Score:** `14.5` | **Themes:** `AI_EVAL_VALID` `EVIDENCE_IMPLEMENT` `PARTICIPATORY_GOV` `CLINICAL_HEALTH_AI`
+**Authors:** ["Jin Tian", "Zengren Zhao", "Longmei Tang", "Yongzhao Song", "Yuchang Li", "Nan Jiang"]
+**Venue:** Journal of medical Internet research | **Published:** 2026-04-06
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41942350/)
+
+> Clinical artificial intelligence (AI) applications frequently fail to transition from short-term pilot projects into sustained components of routine clinical care, a phenomenon referred to in this viewpoint as the pilot trap. This persistent gap reflects not only technical or regulatory limitations but also insufficient governance capacity within h...
+
+**Summary:** The paper addresses the "pilot trap" in clinical AI, where projects fail to transition from short-term demonstrations to sustained routine care. It argues that the core issue is a lack of developed go...
+
+
+### 🔴 Targeted Real-Time Assessment of Chronic Pain (TRAC-Pain) in Youth: Protocol for a Digital Biosignature Development Through a Prospective Observational Cohort Study.
+
+**Source:** PUBMED | **Score:** `11.0` | **Themes:** `AI_EVAL_VALID` `EVIDENCE_IMPLEMENT` `CLINICAL_HEALTH_AI`
+**Authors:** ["Anna H Bailes", "Chi-Hung Shu", "Alan Chang", "Sahrish Masood", "Nicole Jehl", "Aliyah Davis", "Je
+**Venue:** JMIR research protocols | **Published:** 2026-04-06
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41942112/)
+
+> Approximately 1 in 5 children and adolescents live with chronic pain, with musculoskeletal (MSK) pain being one of the most prevalent subtypes. Unfortunately, some studies show that less than half of youth (<18 years) experience improvements with existing evidence-based treatments. Self-report measures-the current gold standard for monitoring the p...
+
+**Summary:** The TRAC-Pain study aims to develop a digital biosignature of chronic musculoskeletal (MSK) pain in youth (14-24 years) using continuous data from an Apple Watch combined with daily ecological momenta...
+
+
+### 🔴 [Simulated consciousness, pseudo-empathy and the illusion of attachment: what can psychiatry do with artificial intelligence?].
+
+**Source:** PUBMED | **Score:** `10.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV` `CLINICAL_HEALTH_AI`
+**Authors:** ["Szabolcs K\u00e9ri"]
+**Venue:** Orvosi hetilap | **Published:** 2026-04-05
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41936035/)
+
+> Over the past decade, the burden of mental disorders has grown while services remain capacity-constrained, pushing generative artificial intelligence toward psychiatric practice. This narrative review outlines how large language and multimodal models work and where they fail (hallucinations, goal drift, model drift), then appraises the evidence acr...
+
+**Summary:** This narrative review examines the integration of generative artificial intelligence (AI), particularly large language models (LLMs) and multimodal systems, into psychiatric practice. It addresses the...
+
+
+### 🔴 Prediction of Early-onset Preeclampsia Using Deep Learning: A Scoping Review of Clinical and Imaging Models.
+
+**Source:** PUBMED | **Score:** `9.0` | **Themes:** `AI_EVAL_VALID` `EVIDENCE_IMPLEMENT`
+**Authors:** ["Wagner Rios-Garcia", "Kelly Broncano-Rivera", "MariaFe-Martinez-Acuna", "Abigail D Via-Y-Rada-Torr
+**Venue:** Pregnancy hypertension | **Published:** 2026-04-03
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41935450/)
+
+> This scoping review aimed to map the available evidence on deep learning (DL) models for predicting early-onset preeclampsia (EOPE), focusing on both clinical and imaging-based approaches. A comprehensive search of five databases identified 15 eligible studies published between 2018 and 2025. DL and machine learning (ML) models demonstrated heterog...
+
+**Summary:** This scoping review aimed to map the available evidence on deep learning (DL) models for predicting early-onset preeclampsia (EOPE), focusing on both clinical and imaging-based approaches. A comprehen...
+
+
+### 🔴 A CT-based model integrating deep learning features radiomics and body composition for preoperative prediction of microsatellite instability in colorectal cancer: a multicenter study.
+
+**Source:** PUBMED | **Score:** `9.0` | **Themes:** `AI_EVAL_VALID` `EVIDENCE_IMPLEMENT`
+**Authors:** ["Kaiting Han", "Cuiling Zhu", "Zhenyu Xu", "Yongxi Ouyang", "Diliang He", "Xuanming He", "Linwen Hu
+**Venue:** European journal of radiology | **Published:** 2026-03-31
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41935453/)
+
+> The precise prediction by MSI plays a key role in the perioperative treatment and prognosis of colorectal cancer (CRC) patients. This study seeks to establish an interpretable deep learning radiomics model using enhanced CT images to improve the preoperative prediction of microsatellite instability (MSI) in CRC. The retrospective study analyzed 873...
+
+**Summary:** This multicenter retrospective study developed and validated an interpretable deep learning radiomics model to preoperatively predict microsatellite instability (MSI) status in colorectal cancer (CRC)...
+
+
+### 🔴 Exploring AI and ML in managing overlap between cardiovascular disease and asthma or COPD: a scoping review.
+
+**Source:** PUBMED | **Score:** `8.5` | **Themes:** `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** ["Luigino Calzetta", "Mario Cazzola", "Elena Pistocchini", "Shima Gholamalishahi", "Rossella Laitano
+**Venue:** Respiratory medicine | **Published:** 2026-04-04
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41941973/)
+
+> Cardiovascular disease (CVD) is a major comorbidity in asthma and chronic obstructive pulmonary disease (COPD), yet the contribution of artificial intelligence (AI) and machine learning (ML) to CVD risk assessment and management in these conditions remains insufficiently characterized. This scoping review identified the main original full-text stud...
+
+**Summary:** This scoping review aimed to characterize the application of artificial intelligence (AI) and machine learning (ML) in assessing and managing the comorbidity between cardiovascular disease (CVD) and a...
+
+
+### 🔴 Predictive neuroimaging biomarkers of major depressive disorder treatment response: An umbrella review.
+
+**Source:** PUBMED | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Yasmin Esmaeilian", "Ahmadreza Samimi", "Sajjad Mousavi", "Iman Kiani", "Giulia Cattarinussi", "Ho
+**Venue:** Psychiatry and clinical neurosciences | **Published:** 2026-04-05
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41935973/)
+
+> Major depressive disorder (MDD) is a heterogeneous condition with varied responses to pharmacological, psychotherapeutic, and neuromodulation interventions. Identifying neuroimaging biomarkers predictive of treatment response could facilitate personalized treatment selection. This umbrella review synthesized findings from systematic reviews and met...
+
+**Summary:** This umbrella review synthesized evidence from systematic reviews and meta-analyses to identify neuroimaging biomarkers predictive of treatment response in Major Depressive Disorder (MDD). It found th...
+
+
+### 🔴 De Jure: Iterative LLM Self-Refinement for Structured Extraction of Regulatory Rules
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** ["Keerat Guliani", "Deepkamal Gill", "David Landsman", "Nima Eshraghi", "Krishna Kumar", "Lovedeep G
+**Venue:** arXiv | **Published:** 2026-04-02
+
+[📄 arXiv](https://arxiv.org/abs/arxi) · [PDF](https://arxiv.org/pdf/arxi)
+
+> Regulatory documents encode legally binding obligations that LLM-based systems must respect. Yet converting dense, hierarchically structured legal text into machine-readable rules remains a costly, expert-intensive process. We present De Jure, a fully automated, domain-agnostic pipeline for extracting structured regulatory rules from raw documents,...
+
+**Summary:** Regulatory documents encode legally binding obligations that LLM-based systems must respect. Yet converting dense, hierarchically structured legal text into machine-readable rules remains a costly, ex...
+
+
+### 🔴 Building and validating machine learning models to predict appendiceal perforation during conservative treatment of fecalith-associated appendicitis: a 20-algorithm multicenter retrospective analysis.
+
+**Source:** PUBMED | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Youlong Zhu", "Jiawei Feng", "Ruming Liu", "Wang Ren", "Xiao Ma", "Ning Wang", "Longbo Gong", "Fei
+**Venue:** Scientific reports | **Published:** 2026-04-06
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41942541/)
+
+> Fecalith-associated appendicitis presents unique challenges in conservative management due to increased perforation risk. Early identification of patients at high risk for appendiceal perforation during conservative treatment remains crucial for optimal clinical decision-making. To develop and validate machine learning-based prediction models for a...
+
+**Summary:** Fecalith-associated appendicitis presents unique challenges in conservative management due to increased perforation risk. Early identification of patients at high risk for appendiceal perforation duri...
+
+
+### 🔴 Investigation of multimodal deep learning models for predicting ovarian tumor malignancy based on ultrasound images and clinical information - a comprehensive comparative study against readers and O-RADS.
+
+**Source:** PUBMED | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Lei Lai", "Chen Chen", "Yahan Zhou", "Vicky Yang Wang", "Mengjiao Zhu", "Zhiyan Jin", "Yan Wu", "C
+**Venue:** BMC medical imaging | **Published:** 2026-04-06
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41942868/)
+
+> As the second deadly cancer affecting women globally, precise and timely classification of ovarian tumors plays an instrumental role in improving the rate of curing and reducing the rate of mortality. This study was set out to comprehensively investigate the effectiveness of deep learning model for classifying benign and malignant ovarian tumors, u...
+
+**Summary:** As the second deadly cancer affecting women globally, precise and timely classification of ovarian tumors plays an instrumental role in improving the rate of curing and reducing the rate of mortality....
+
+
+### 🔴 Quantum-inspired fused explainable deep learning framework for early enamel caries classification in intraoral photographs.
+
+**Source:** PUBMED | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Zohaib Khurshid", "Zeeshan Habib", "Falk Schwendicke", "Thanaphum Osathanon"]
+**Venue:** Odontology | **Published:** 2026-04-05
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41935999/)
+
+> The visual detection of early enamel caries in intraoral photographs is challenging due to subtle lesion appearance and diagnostic subjectivity. This study aimed to develop and validate an explainable, quantum-simulated deep learning framework for the automated classification of enamel caries severity from intraoral photographs. A hybrid framework ...
+
+**Summary:** The visual detection of early enamel caries in intraoral photographs is challenging due to subtle lesion appearance and diagnostic subjectivity. This study aimed to develop and validate an explainable...
+
+
+### 🔴 A deep learning-based multimodal model with automated body composition analysis predicts prognosis in advanced clear cell renal cell carcinoma.
+
+**Source:** PUBMED | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Youwei Chi", "Hanzheng Wang", "Qingsong Zou", "Fengze Sun", "Chunhai Hu", "Chu Liu", "Qian Li", "B
+**Venue:** Scientific reports | **Published:** 2026-04-04
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41935094/)
+
+> Clear cell renal cell carcinoma (ccRCC) is an aggressive malignancy with a high risk of postoperative recurrence. Body composition has emerged as a prognostic marker, but its clinical use is hindered by manual measurement methods and poorly interpretable models. This study aimed to develop an automated, interpretable prediction model integrating de...
+
+**Summary:** Clear cell renal cell carcinoma (ccRCC) is an aggressive malignancy with a high risk of postoperative recurrence. Body composition has emerged as a prognostic marker, but its clinical use is hindered ...
+
+
+### 🔴 Biochemical biomarker-Driven deep learning framework with SHAP-based feature interpretation for diabetes classification.
+
+**Source:** PUBMED | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Salman Khan"]
+**Venue:** Biophysical chemistry | **Published:** 2026-04-01
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41935405/)
+
+> Diabetes mellitus is a long-term metabolic condition that develops when the body cannot produce insulin effectively or use it properly. Individuals usually progress through a clinical spectrum that begins with normal glucose regulation, moves into a prediabetic state, and may eventually advance to type 2 diabetes. The continuous global rise in diab...
+
+**Summary:** This study proposes a deep learning framework combining a Deep Neural Network (DNN) with feature ranking and a statistical algorithm to improve early diabetes classification. Using biochemical biomark...
+
+
+
+## 📚 Supporting Papers (Priority 2, top 7)
+
+### 🟡 Development, validation, and visualization of a novel nomogram for predicting clinical outcomes of postoperative cervical cancer patients.
+
+**Source:** PUBMED | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Yanqi Liu", "Jia You", "Dandan Liu", "Liang Wen", "Huimin Liu", "Chenglei Gu", "Wentian Zhao", "Hu
+**Venue:** Scientific reports | **Published:** 2026-04-06
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41942534/)
+
+> To develop a context-aware multi-instance learning (TransMIL) model based on whole-slide pathological images and integrate it with clinical parameters, thereby constructing a multimodal model for prognostic prediction in postoperative cervical cancer patients. Data (including pathological images and clinical information) were collected from patient...
+
+**Summary:** This study developed and validated a multimodal clinical-Pathomics nomogram to predict overall survival (OS) and disease-free survival (DFS) in postoperative cervical cancer patients. The model integr...
+
+
+### 🟡 AI Models for Surgical Decision Support in Spontaneous Intracerebral Hemorrhage: A Systematic Review in Relation to Trials and Guidelines.
+
+**Source:** PUBMED | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Helbert de Oliveira Manduca Palmiero", "Carlos Gilberto Carlotti", "Eberval Gadelha Figueiredo"]
+**Venue:** Neurocritical care | **Published:** 2026-04-06
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41942817/)
+
+> Artificial intelligence (AI) applications for spontaneous intracerebral hemorrhage (ICH) are rapidly expanding, particularly in perioperative imaging analysis and surgical decision support. Because most predictive AI models are developed using independent clinical datasets, they are not expected to explicitly reproduce randomized trial protocols or...
+
+**Summary:** Artificial intelligence (AI) applications for spontaneous intracerebral hemorrhage (ICH) are rapidly expanding, particularly in perioperative imaging analysis and surgical decision support. Because mo...
+
+
+### 🟡 Validation of a Risk-Prediction Model in the Presence of Outcome Misclassification.
+
+**Source:** PUBMED | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Runjia Zou", "Brian D Williamson", "Susan M Shortreed", "R Yates Coley"]
+**Venue:** Statistics in medicine | **Published:** 2026-04-01
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41930736/)
+
+> Electronic health records (EHRs) provide a rich data source for building prediction models to improve the quality of care. However, EHR data are prone to measurement error, and outcomes used to evaluate prediction model performance may be misclassified. Comparing risk predictions to misclassified outcomes will result in unreliable estimates of a pr...
+
+**Summary:** Electronic health records (EHRs) provide a rich data source for building prediction models to improve the quality of care. However, EHR data are prone to measurement error, and outcomes used to evalua...
+
+
+### 🟡 JUÁ - A Benchmark for Information Retrieval in Brazilian Legal Text Collections
+
+**Source:** ARXIV | **Score:** `6.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Jayr Pereira", "Leandro Fernandes", "Erick de Brito", "Roberto Lotufo", "Luiz Bonifacio"]
+**Venue:** arXiv | **Published:** 2026-04-07
+
+[📄 arXiv](https://arxiv.org/abs/arxi) · [PDF](https://arxiv.org/pdf/arxi)
+
+> Legal information retrieval in Portuguese remains difficult to evaluate systematically because available datasets differ widely in document type, query style, and relevance definition. We present \textsc{JUÁ}, a public benchmark for Brazilian legal retrieval designed to support more reproducible and comparable evaluation across heterogeneous legal ...
+
+**Summary:** JUÁ is a public benchmark for Brazilian legal information retrieval that unifies heterogeneous collections (jurisprudence, legislation, regulation, question‑driven search) under shared evaluation prot...
+
+
+### 🟡 RoSHI: A Versatile Robot-oriented Suit for Human Data In-the-Wild
+
+**Source:** ARXIV | **Score:** `5.5` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Wenjing Margaret Mao", "Jefferson Ng", "Luyang Hu", "Daniel Gehrig", "Antonio Loquercio"]
+**Venue:** arXiv | **Published:** 2026-04-08
+
+[📄 arXiv](https://arxiv.org/abs/arxi) · [PDF](https://arxiv.org/pdf/arxi)
+
+> Scaling up robot learning will likely require human data containing rich and long-horizon interactions in the wild. Existing approaches for collecting such data trade off portability, robustness to occlusion, and global consistency. We introduce RoSHI, a hybrid wearable that fuses low-cost sparse IMUs with the Project Aria glasses to estimate the f...
+
+
+### 🟡 Action Images: End-to-End Policy Learning via Multiview Video Generation
+
+**Source:** ARXIV | **Score:** `5.5` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Haoyu Zhen", "Zixian Gao", "Qiao Sun", "Yilin Zhao", "Yuncong Yang", "Yilun Du", "Tsun-Hsuan Wang"
+**Venue:** arXiv | **Published:** 2026-04-07
+
+[📄 arXiv](https://arxiv.org/abs/arxi) · [PDF](https://arxiv.org/pdf/arxi)
+
+> World action models (WAMs) have emerged as a promising direction for robot policy learning, as they can leverage powerful video backbones to model the future states. However, existing approaches often rely on separate action modules, or use action representations that are not pixel-grounded, making it difficult to fully exploit the pretrained knowl...
+
+**Summary:** The paper introduces Action Images, a unified world action model (WAM) that reformulates...
+
+
+### 🟡 The Progress of Gout Prediction Models Based on Multi-source Data.
+
+**Source:** PUBMED | **Score:** `5.5` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Wenrui Shi", "Hongzhu Qu", "Xiangdong Fang"]
+**Venue:** Current rheumatology reviews | **Published:** 2026-03-30
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41936104/)
+
+> Gout, a highly serious inflammatory disease that is caused by monosodium urate crystals, is becoming an increasingly significant health concern. Artificial Intelligence and multi-omics-based research have made significant gains for the early detection and prevention of gout based on diverse approaches. This review intends to summarize current advan...
+
+**Summary:** This review synthesizes research on gout prediction models utilizing multi-source data, including clinical features and various omics (genomics, microbiomics, radiomics, metabolomics). It finds that m...
+
+
+
+## ⚪ Supplementary (Priority 1, top 5)
+
+### ⚪ A comparative analysis of AI scribes versus human documentation in simulated general practice consultations.
+
+**Source:** PUBMED | **Score:** `3.5` | **Themes:** 
+**Authors:** ["Darran Foo", "Janice Tan", "Sean Stevens", "Amandeep Hansra", "Helen Wilcox"]
+**Venue:** Australian journal of general practice | **Published:** 2026-04-01
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41942089/)
+
+> Artificial intelligence (AI) scribes are emerging as transformative tools in healthcare to automatically generate clinical documentation from patient-clinician encounters. The aim of this study was to compare documentation quality between AI scribes and human-generated notes in simulated general practice consultations. This was a cross-sectional st...
+
+**Summary:** This study compared the quality of clinical documentation generated by commercially available AI scribes versus human-generated notes in simulated general practice consultations. Using standardized ex...
+
+
+---
+
+## 🔍 Cross-Analysis
+**Multi-theme papers:** 7/25
+
+## 📈 Theme Distribution
+
+| Theme | Count |
+|-------|-------|
+| `AI_EVAL_VALID` | ██████████ 24 |
+| `EVIDENCE_IMPLEMENT` | ████ 4 |
+| `CLINICAL_HEALTH_AI` | ████ 4 |
+| `PARTICIPATORY_GOV` | ██ 2 |
+| `ADAPTIVE_REGULATION` | █ 1 |
+
+---
+
+*Generated: 2026-04-14T14:53:02.996411*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+
+---
+
 ## Source file: [2026-04-14](outputs/digests/digest_2026-04-14.md)
 
 # 🔬 AI Health Literature Review — Daily Digest

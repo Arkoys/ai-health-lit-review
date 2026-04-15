@@ -2,6 +2,12 @@
 
 ## Latest Digests
 
+### [2026-04-15](outputs/digests/digest_2026-04-15.md)
+
+### [2026-04-14_v3](outputs/digests/digest_2026-04-14_v3.md)
+
+### [2026-04-14_v2](outputs/digests/digest_2026-04-14_v2.md)
+
 ### [2026-04-14](outputs/digests/digest_2026-04-14.md)
 
 ### [2026-04-13](outputs/digests/digest_2026-04-13.md)
@@ -23,10 +29,4 @@
 ### [2026-04-10_v4](outputs/digests/digest_2026-04-10_v4.md)
 
 ### [2026-04-10_v3](outputs/digests/digest_2026-04-10_v3.md)
-
-### [2026-04-10_v2](outputs/digests/digest_2026-04-10_v2.md)
-
-### [2026-04-10](outputs/digests/digest_2026-04-10.md)
-
-### [2026-04-08](outputs/digests/digest_2026-04-08.md)
 
