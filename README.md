@@ -85,37 +85,47 @@ Papers are scored and filtered around 5 themes:
 
 ```mermaid
 flowchart TB
-    subgraph THEMES["Research Themes"]
-        T1["AI Eval/Valid"]
-        T2["Participatory Gov"]
-        T3["Adaptive Regulation"]
-        T4["Evidence/Implementation"]
-        T5["Clinical Health AI"]
-    end
 
-    subgraph SOURCES["Data Sources"]
-        ARXIV["arXiv API"]
-        PUBMED["PubMed API"]
-    end
+%% --- THEMES ---
+subgraph THEMES["Research Themes"]
+direction TB
+    T1["AI Eval/Valid"]
+    T2["Participatory Gov"]
+    T3["Adaptive Regulation"]
+    T4["Evidence/Implementation"]
+    T5["Clinical Health AI"]
+end
 
-    subgraph PIPELINE["Daily Pipeline"]
-        C1["1. Collect — fetch papers"]
-        C2["2. Deduplicate"]
-        C3["3. Score — rank by theme + venue + recency"]
-        C4["4. Store — save to papers.json"]
-        C5["5. Digest — generate markdown"]
-        C6["6. Push — commit to GitHub"]
-    end
+%% --- SOURCES ---
+subgraph SOURCES["Data Sources"]
+direction TB
+    ARXIV["arXiv API"]
+    PUBMED["PubMed API"]
+end
 
-    subgraph OUTPUTS["Outputs"]
-        O1["Daily digest"]
-        O2["Weekly synthesis"]
-        O3["Trends matrix"]
-        O4["SQLite database"]
-    end
+%% --- PIPELINE ---
+subgraph PIPELINE["Daily Pipeline"]
+direction TB
+    C1["Collect<br/>fetch papers"]
+    C2["Deduplicate"]
+    C3["Score<br/>theme + venue + recency"]
+    C4["Store<br/>papers.json"]
+    C5["Digest<br/>generate markdown"]
+    C6["Push<br/>commit to GitHub"]
+end
 
-    THEMES -->|"search queries"| SOURCES
-    SOURCES --> C1
-    C1 --> C2 --> C3 --> C4 --> C5 --> C6
-    C6 --> OUTPUTS
+%% --- OUTPUTS ---
+subgraph OUTPUTS["Outputs"]
+direction TB
+    O1["Daily digest"]
+    O2["Weekly synthesis"]
+    O3["Trends matrix"]
+    O4["SQLite DB"]
+end
+
+%% --- MAIN VERTICAL FLOW ---
+THEMES -->|"queries"| SOURCES
+SOURCES --> C1
+C1 --> C2 --> C3 --> C4 --> C5 --> C6
+C6 --> OUTPUTS
 ```
