@@ -1,6 +1,43 @@
 # AI Health Literature Review — All Digests
 
 ---
+## Source file: [2026-04-23](outputs/digests/digest_2026-04-23.md)
+
+# 🔬 AI Health Literature Review — Daily Digest
+**Date:** 2026-04-23 (Thursday) | **Papers analyzed:** 17 | **New in DB:** +0
+
+---
+
+## 📊 Executive Summary
+**Top themes today:** 
+**Priority breakdown:** 🔴 0 · 🟡 0 · ⚪ 17
+
+
+## 🏆 Featured Papers
+
+---
+
+## 🔍 Cross-Analysis
+
+**Cross-theme papers:** 0/17 address multiple themes simultaneously.
+**Gaps today:** No papers found for: `AI_EVAL_VALID, PARTICIPATORY_GOV, ADAPTATIVE_REGULATION, EVIDENCE_IMPLEMENT, CLINICAL_HEALTH_AI`
+
+## 📈 Topic Distribution
+
+| Theme | Papers |
+|-------|--------|
+
+## 🎯 Priority Queue
+
+
+---
+
+*Generated: 2026-04-23T09:02:50.332575*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+*Sources: arXiv · PubMed · JMIR · Cureus · Front Med · Nature Medicine · Lancet*
+
+---
+
 ## Source file: [2026-04-22](outputs/digests/digest_2026-04-22.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
