@@ -2,6 +2,8 @@
 
 ## Latest Digests
 
+### [2026-04-24](outputs/digests/digest_2026-04-24.md)
+
 ### [2026-04-23](outputs/digests/digest_2026-04-23.md)
 
 ### [2026-04-22](outputs/digests/digest_2026-04-22.md)
@@ -27,6 +29,4 @@
 ### [2026-04-14](outputs/digests/digest_2026-04-14.md)
 
 ### [2026-04-13](outputs/digests/digest_2026-04-13.md)
-
-### [2026-04-12](outputs/digests/digest_2026-04-12.md)
 
