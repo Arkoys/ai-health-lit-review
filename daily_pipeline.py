@@ -52,22 +52,27 @@ def load_env():
 # ─── Paper Collection ─────────────────────────────────────────────────────────
 
 SEARCH_QUERIES = {
+    # arXiv queries: use cat:cs.* + health/AI terms + theme keywords
+    # ti: field search is unreliable on arXiv — use cat: + all: combination instead
     "arxiv": [
-        # Query 1: had 5 '(' but 3 ')' — removed leading '(' before all:AI
-        ("all:AI+governance+OR+all:algorithmic+accountability+OR+all:AI+regulation)+AND+(ti:health+OR+ti:clinical+OR+ti:medical)", 6),
-        ("ti:adaptive+regulation+OR+ti:regulatory+sandbox+OR+ti:learning+regulatory)+AND+(ti:health+OR+ti:clinical+OR+ti:medical)", 5),
-        ("ti:participatory+governance+OR+ti:stakeholder+engagement+OR+ti:co-design+AI)+AND+(ti:health+OR+ti:medical)", 4),
-        # Query 4: had 4 '(' but 3 ')' — removed leading '('
-        ("all:AI+evidence+OR+all:implementation+NASSS+OR+all:uptake+OR+all:adoption)+AND+(ti:AI+OR+ti:artificial+intelligence)+AND+(ti:health+OR+ti:clinical)", 4),
-        # Query 5: had 4 '(' but 3 ')' — removed leading '('
-        ("all:AI+evaluation+OR+all:AI+validation+OR+all:post-deployment+monitoring)+AND+(ti:health+OR+ti:medical)", 5),
+        # AI_EVAL_VALID: AI evaluation, validation, bias, fairness in health context
+        ("(cat:cs.AI+OR+cat:cs.LG+OR+cat:cs.CV)+AND+(all:health+OR+all:clinical+OR+all:medical+OR+all:healthcare)+AND+(all:evaluation+OR+all:validation+OR+all:bias+OR+all:fairness+OR+all:explainability+OR+all:safety+OR+all:robustness)", 8),
+        # PARTICIPATORY_GOV: stakeholder, citizen, co-design in health AI
+        ("(cat:cs.AI+OR+cat:cs.SC+OR+cat:cs.HC)+AND+(all:health+OR+all:clinical+OR+all:medical)+AND+(all:participatory+OR+all:stakeholder+OR+all:citizen+OR+all:accountability+OR+all:co-design+OR+all:democratic+OR+all:public+engagement)", 8),
+        # ADAPTIVE_REGULATION: adaptive/lifecycle regulation, FDA, sandboxes for health AI
+        ("(cat:cs.AI+OR+cat:cs.SC+OR+cat:cs.ET)+AND+(all:health+OR+all:clinical+OR+all:medical)+AND+(all:adaptive+OR+all:regulatory+sandbox+OR+all:FDA+OR+all:MDR+OR+all:lifecycle+OR+all:iterative+OR+all:post-market+OR+all:continuous+monitoring)", 8),
+        # EVIDENCE_IMPLEMENT: implementation, adoption, NASSS, evidence for health AI
+        ("(cat:cs.AI+OR+cat:cs.HC+OR+cat:cs.IR)+AND+(all:health+OR+all:clinical+OR+all:medical)+AND+(all:implementation+OR+all:adoption+OR+all:evidence+OR+all:NASSS+OR+all:uptake+OR+all:scale-up+OR+all:translation)", 8),
+        # CLINICAL_HEALTH_AI: clinical AI systems, diagnostics, digital health
+        ("(cat:cs.CV+OR+cat:cs.AI+OR+cat:cs.CL)+AND+(all:clinical+OR+all:medical+OR+all:healthcare+OR+all:patient+OR+all:doctor+OR+all:radiology+OR+all:diagnostic)+AND+(all:AI+OR+all:machine+learning+OR+all:deep+learning+OR+all:LLM+OR+all:neural+OR+all:algorithm)", 8),
     ],
     "pubmed": [
-        ("AI+governance+healthcare[Title/Abstract]+AND+2020:2026[dp]", 5),
-        ("adaptive+regulation+medical+AI[Title/Abstract]+AND+2020:2026[dp]", 4),
-        ("participatory+AI+health[Title/Abstract]+AND+2020:2026[dp]", 4),
-        ("evidence+based+policy+AI+clinical[Title/Abstract]+AND+2020:2026[dp]", 4),
-        ("algorithmic+accountability+healthcare[Title/Abstract]+AND+2020:2026[dp]", 4),
+        # Each query targets one PhD theme with health AI intersection
+        ("(AI[Title/Abstract]+AND+(evaluation[Title/Abstract]+OR+validation[Title/Abstract]+OR+bias[Title/Abstract]+OR+fairness[Title/Abstract]+OR+explainability[Title/Abstract]))+AND+(health[Title/Abstract]+OR+clinical[Title/Abstract]+OR+medical[Title/Abstract]+OR+healthcare[Title/Abstract])+AND+2024:2026[dp]", 8),
+        ("(AI[Title/Abstract]+AND+(participatory[Title/Abstract]+OR+stakeholder[Title/Abstract]+OR+citizen[Title/Abstract]+OR+accountability[Title/Abstract]+OR+governance[Title/Abstract]+OR+co-design[Title/Abstract]))+AND+(health[Title/Abstract]+OR+clinical[Title/Abstract]+OR+medical[Title/Abstract])+AND+2024:2026[dp]", 8),
+        ("(AI[Title/Abstract]+AND+(adaptive+regulation[Title/Abstract]+OR+regulatory+sandbox[Title/Abstract]+OR+FDA[Title/Abstract]+OR+lifecycle[Title/Abstract]+OR+iterative[Title/Abstract]+OR+post-market[Title/Abstract]))+AND+(health[Title/Abstract]+OR+clinical[Title/Abstract]+OR+medical[Title/Abstract])+AND+2024:2026[dp]", 8),
+        ("(AI[Title/Abstract]+AND+(implementation[Title/Abstract]+OR+adoption[Title/Abstract]+OR+evidence[Title/Abstract]+OR+uptake[Title/Abstract]+OR+scale-up[Title/Abstract]+OR+NASSS[Title/Abstract]))+AND+(health[Title/Abstract]+OR+clinical[Title/Abstract]+OR+medical[Title/Abstract]+OR+digital[Title/Abstract])+AND+2024:2026[dp]", 8),
+        ("(clinical[Title/Abstract]+OR+medical[Title/Abstract]+OR+healthcare[Title/Abstract])+AND+(AI[Title/Abstract]+OR+machine+learning[Title/Abstract]+OR+deep+learning[Title/Abstract]+OR+digital+health[Title/Abstract]+OR+diagnostic[Title/Abstract])+AND+(safety[Title/Abstract]+OR+performance[Title/Abstract]+OR+validation[Title/Abstract]+OR+reliability[Title/Abstract])+AND+2024:2026[dp]", 8),
     ]
 }
 

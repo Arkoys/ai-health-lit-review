@@ -29,16 +29,25 @@ from typing import Optional
 PRIORITY_VENUES = {
     3: ["FAccT", "AIES", "NeurIPS", "ICML", "ICLR", "Nature Medicine",
         "JAMA", "The Lancet Digital Health", "Lancet", "Science",
-        "J Med Internet Res", "Implementation Science"],
+        "Medical Internet Research", "JMIR", "Implementation Science",
+        "Lancet Digit Health", "Nat Med",
+        "AI and Society", "Ethics", "Fairness", "FAT"],
     1.5: ["Frontiers in Medicine", "Front Med", "Cureus", "Health Affairs",
           "BMJ Global Health", "Nature Biomedical Engineering",
           "JAMA Network Open", "Journal of Medical Ethics",
-          "Science Technology & Human Values", "IEEE J Biomed Health Inform"],
+          "Science Technology & Human Values", "IEEE J Biomed Health Inform",
+          "Neurocritical Care", "BMC Medical Imaging", "European Journal of Radiology",
+          "Scientific Reports", "Nature Communications", "Cell Reports",
+          "PLOS Medicine", "BMJ", "BMJ Open",
+          "Pregnancy Hypertension", "Odontology", "Respiratory Medicine",
+          "Orvosi Hetilap", "Current Rheumatology Reviews",
+          "Biophysical Chemistry", "Psychiatry and Clinical Neurosciences",
+          "Australasian Journal of General Practice", "Statistics in Medicine"],
     0.5: ["arXiv", "medRxiv", "bioRxiv", "Preprint"],
 }
 
 METHODS_VENUE_DEFAULTS = {
-    "arXiv": "preliminary",     # preprints are often framework/proposal
+    "arXiv": "preliminary",
     "medRxiv": "preliminary",
     "bioRxiv": "preliminary",
 }

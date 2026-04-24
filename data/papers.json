@@ -2,9 +2,9 @@
   "metadata": {
     "created": "2026-04-10T01:00:53.003685",
     "source": "ai-health-lit-review SQLite migration",
-    "total_papers": 87,
+    "total_papers": 139,
     "version": "2.0",
-    "last_updated": "2026-04-22T09:02:23.257399"
+    "last_updated": "2026-04-24T12:25:07.851244"
   },
   "keyword_themes": {
     "AI_EVAL_VALID": [
@@ -2875,6 +2875,1600 @@
       "rank": null,
       "added_date": "2026-04-15",
       "added_via": "daily_pipeline"
+    },
+    {
+      "paper_id": "2604.21930v1",
+      "source": "arxiv",
+      "title": "Temporal Taskification in Streaming Continual Learning: A Source of Evaluation Instability",
+      "authors": "Nicolae Filat, Ahmed Hussain, Konstantinos Kalogiannis, Elena Burceanu",
+      "abstract": "Streaming Continual Learning (CL) typically converts a continuous stream into a sequence of discrete tasks through temporal partitioning. We argue that this temporal taskification step is not a neutral preprocessing choice, but a structural component of evaluation: different valid splits of the same stream can induce different CL regimes and therefore different benchmark conclusions. To study this effect, we introduce a taskification-level framework based on plasticity and stability profiles, a profile distance between taskifications, and Boundary-Profile Sensitivity (BPS), which diagnoses how strongly small boundary perturbations alter the induced regime before any CL model is trained. We evaluate continual finetuning, Experience Replay, Elastic Weight Consolidation, and Learning without Forgetting on network traffic forecasting with CESNET-Timeseries24, keeping the stream, model, and training budget fixed while varying only the temporal taskification. Across 9-, 30-, and 44-day splits, we observe substantial changes in forecasting error, forgetting, and backward transfer, showing that taskification alone can materially affect CL evaluation. We further find that shorter taskifications induce noisier distribution-level patterns, larger structural distances, and higher BPS, indicating greater sensitivity to boundary perturbations. These results show that benchmark conclusions in streaming CL depend not only on the learner and the data stream, but also on how that stream is taskified, motivating temporal taskification as a first-class evaluation variable.",
+      "url": "https://arxiv.org/abs/2604.21930",
+      "pdf_url": "https://arxiv.org/pdf/2604.21930",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID"
+      ],
+      "scores": {
+        "composite": 6.0,
+        "theme_score": 2,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.206100",
+      "last_updated": "2026-04-24T12:22:49.206104",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21928v1",
+      "source": "arxiv",
+      "title": "Evaluation of Automatic Speech Recognition Using Generative Large Language Models",
+      "authors": "Thibault Bañeras-Roux, Shashi Kumar, Driss Khalil, Sergio Burdisso, Petr Motlicek",
+      "abstract": "Automatic Speech Recognition (ASR) is traditionally evaluated using Word Error Rate (WER), a metric that is insensitive to meaning. Embedding-based semantic metrics are better correlated with human perception, but decoder-based Large Language Models (LLMs) remain underexplored for this task. This paper evaluates their relevance through three approaches: (1) selecting the best hypothesis between two candidates, (2) computing semantic distance using generative embeddings, and (3) qualitative classification of errors. On the HATS dataset, the best LLMs achieve 92--94\\% agreement with human annotators for hypothesis selection, compared to 63\\% for WER, also outperforming semantic metrics. Embeddings from decoder-based LLMs show performance comparable to encoder models. Finally, LLMs offer a promising direction for interpretable and semantic ASR evaluation.",
+      "url": "https://arxiv.org/abs/2604.21928",
+      "pdf_url": "https://arxiv.org/pdf/2604.21928",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID"
+      ],
+      "scores": {
+        "composite": 4.5,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.206237",
+      "last_updated": "2026-04-24T12:22:49.206239",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21927v1",
+      "source": "arxiv",
+      "title": "Fine-Tuning Regimes Define Distinct Continual Learning Problems",
+      "authors": "Paul-Tiberiu Iordache, Elena Burceanu",
+      "abstract": "Continual learning (CL) studies how models acquire tasks sequentially while retaining previously learned knowledge. Despite substantial progress in benchmarking CL methods, comparative evaluations typically keep the fine-tuning regime fixed. In this paper, we argue that the fine-tuning regime, defined by the trainable parameter subspace, is itself a key evaluation variable. We formalize adaptation regimes as projected optimization over fixed trainable subspaces, showing that changing the trainable depth alters the effective update signal through which both current task fitting and knowledge preservation operate. This analysis motivates the hypothesis that method comparisons need not be invariant across regimes. We test this hypothesis in task incremental CL, five trainable depth regimes, and four standard methods: online EWC, LwF, SI, and GEM. Across five benchmark datasets, namely MNIST, Fashion MNIST, KMNIST, QMNIST, and CIFAR-100, and across 11 task orders per dataset, we find that the relative ranking of methods is not consistently preserved across regimes. We further show that deeper adaptation regimes are associated with larger update magnitudes, higher forgetting, and a stronger relationship between the two. These results show that comparative conclusions in CL can depend strongly on the chosen fine-tuning regime, motivating regime-aware evaluation protocols that treat trainable depth as an explicit experimental factor.",
+      "url": "https://arxiv.org/abs/2604.21927",
+      "pdf_url": "https://arxiv.org/pdf/2604.21927",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID"
+      ],
+      "scores": {
+        "composite": 4.5,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.206379",
+      "last_updated": "2026-04-24T12:22:49.206380",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21920v1",
+      "source": "arxiv",
+      "title": "First measurement of wind line formation regions in an early O-type star",
+      "authors": "D. Pauli, T. N. Parsons, R. K. Prinja",
+      "abstract": "Massive stars with their strong ionizing radiation and strong stellar winds are the key feedback agents of the universe. Stellar winds of massive stars are often measured by fitting resonance lines in the UV using non-LTE stellar atmosphere models. So far, the line formation regions of these lines have not been measured empirically, preventing a comparison to the model's structures. We aim to conduct the first measurement of the resonance line formation regions in an early-type eclipsing binary in the SMC, namely AzV 75. We employ TESS and ASAS-SN photometry in combination with radial velocity measurements from multi-epoch HST UV spectra to derive the ephemeris. We examine the intensity changes in the C IV and N V resonance lines in the UV and combine them with a light-curve analysis to estimate the region in the wind where these lines are formed. AzV 75 has an orbital period P=165.66d, eccentricity e=0.42, mass ratio q=0.72, and inclination i=85.77°. With this orbital configuration, no secondary eclipse is expected. We report that the optically thick UV resonance lines exhibit flattening and shortening of the absorption trough, and weakening of their emission features, as they approach the phase of the expected secondary eclipse, while the continuum UV flux appears to remain unaffected. We illustrate that this can be explained by the primary's optically thick wind eclipsing the secondary star. The C IV and N V resonance line formation regions in the primary star extend up to 316 Rsol. The measured extend of the formation regions of resonance lines in a stellar wind are important benchmarks for 1D as well as 3D non-LTE stellar atmosphere models. A first comparison to 1D-stellar atmosphere models indicates that a classical beta-law with an exponent of beta=0.5 instead of beta=0.8 might be favoured for the primary star's velocity field.",
+      "url": "https://arxiv.org/abs/2604.21920",
+      "pdf_url": "https://arxiv.org/pdf/2604.21920",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID"
+      ],
+      "scores": {
+        "composite": 4.5,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.206585",
+      "last_updated": "2026-04-24T12:22:49.206587",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21919v1",
+      "source": "arxiv",
+      "title": "Algorithmic Locality via Provable Convergence in Quantum Tensor Networks",
+      "authors": "Siddhant Midha, Yifan F. Zhang, Daniel Malz, Dmitry A. Abanin, Sarang Gopalakrishnan",
+      "abstract": "Belief propagation has recently emerged as a powerful framework for evaluating tensor networks in higher dimensions, combining computational efficiency with provable analytical guarantees. In this work, we develop the first end-to-end theory of tensor network belief propagation for a class of projected entangled pair states satisfying \\emph{strong injectivity}. We show that when the injectivity parameter exceeds a constant threshold, BP fixed points can be found efficiently, and a cluster-corrected BP algorithm computes physical quantities to $1/\\mathrm{poly}(N)$ error in $\\mathrm{poly}(N)$ time for an $N$ qubit system. We identify a striking phenomenon we term \\emph{algorithmic locality}: local perturbations of the tensor network affect the BP fixed point with an influence decaying rapidly with distance. As a result, updates to the fixed point after a local perturbation can be carried out using only local recomputation. Moreover, through the cluster expansion, this locality extends to observables, implying that local expectation values can be approximated from local data with controlled accuracy. Our results provide the first rigorous guarantee for the effectiveness of tensor-network belief propagation on a wide class of many-body states, bridging a gap between widely used numerical practice and provable algorithmic performance.",
+      "url": "https://arxiv.org/abs/2604.21919",
+      "pdf_url": "https://arxiv.org/pdf/2604.21919",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID"
+      ],
+      "scores": {
+        "composite": 6.0,
+        "theme_score": 2,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.206699",
+      "last_updated": "2026-04-24T12:22:49.206701",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21917v1",
+      "source": "arxiv",
+      "title": "CrossCommitVuln-Bench: A Dataset of Multi-Commit Python Vulnerabilities Invisible to Per-Commit Static Analysis",
+      "authors": "Arunabh Majumdar",
+      "abstract": "We present CrossCommitVuln-Bench, a curated benchmark of 15 real-world Python vulnerabilities (CVEs) in which the exploitable condition was introduced across multiple commits - each individually benign to per-commit static analysis - but collectively critical. We manually annotate each CVE with its contributing commit chain, a structured rationale for why each commit evades per-commit analysis, and baseline evaluations using Semgrep and Bandit in both per-commit and cumulative scanning modes. Our central finding: the per-commit detection rate (CCDR) is 13% across all 15 vulnerabilities - 87% of chains are invisible to per-commit SAST. Critically, both per-commit detections are qualitatively poor: one occurs on commits framed as security fixes (where developers suppress the alert), and the other detects only the minor hardcoded-key component while completely missing the primary vulnerability (200+ unprotected API endpoints). Even in cumulative mode (full codebase present), the detection rate is only 27%, confirming that snapshot-based SAST tools often miss vulnerabilities whose introduction spans multiple commits. The dataset, annotation schema, evaluation scripts, and reproducible baselines are released under open-source licenses to support research on cross-commit vulnerability detection.",
+      "url": "https://arxiv.org/abs/2604.21917",
+      "pdf_url": "https://arxiv.org/pdf/2604.21917",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID"
+      ],
+      "scores": {
+        "composite": 5.5,
+        "theme_score": 2,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.206824",
+      "last_updated": "2026-04-24T12:22:49.206826",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21916v1",
+      "source": "arxiv",
+      "title": "MathDuels: Evaluating LLMs as Problem Posers and Solvers",
+      "authors": "Zhiqiu Xu, Shibo Jin, Shreya Arya, Mayur Naik",
+      "abstract": "As frontier language models attain near-ceiling performance on static mathematical benchmarks, existing evaluations are increasingly unable to differentiate model capabilities, largely because they cast models solely as solvers of fixed problem sets. We introduce MathDuels, a self-play benchmark in which models occupy dual roles: each authors math problems under adversarial prompting and solves problems authored by every other participant. Problems are produced through a three-stage generation pipeline (meta-prompting, problem generation, and difficulty amplification), and validated by an independent verifier that excludes ill-posed questions. A Rasch model (Rasch, 1993) jointly estimates solver abilities and problem difficulties; author quality is derived from the difficulties of each model's authored problems. Experiments across 19 frontier models reveal that authoring and solving capabilities are partially decoupled, and that dual-role evaluation reveals capability separations invisible in single-role benchmarks. As newer models enter the arena, they produce problems that defeat previously dominant solvers, so the benchmark's difficulty co-evolves with participant strength rather than saturating at a fixed ceiling. We host a public leaderboard that updates as new models are released.",
+      "url": "https://arxiv.org/abs/2604.21916",
+      "pdf_url": "https://arxiv.org/pdf/2604.21916",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID"
+      ],
+      "scores": {
+        "composite": 5.5,
+        "theme_score": 2,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.206937",
+      "last_updated": "2026-04-24T12:22:49.206938",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21914v1",
+      "source": "arxiv",
+      "title": "VistaBot: View-Robust Robot Manipulation via Spatiotemporal-Aware View Synthesis",
+      "authors": "Songen Gu, Yuhang Zheng, Weize Li, Yupeng Zheng, Yating Feng",
+      "abstract": "Recently, end-to-end robotic manipulation models have gained significant attention for their generalizability and scalability. However, they often suffer from limited robustness to camera viewpoint changes when training with a fixed camera. In this paper, we propose VistaBot, a novel framework that integrates feed-forward geometric models with video diffusion models to achieve view-robust closed-loop manipulation without requiring camera calibration at test time. Our approach consists of three key components: 4D geometry estimation, view synthesis latent extraction, and latent action learning. VistaBot is integrated into both action-chunking (ACT) and diffusion-based ($π_0$) policies and evaluated across simulation and real-world tasks. We further introduce the View Generalization Score (VGS) as a new metric for comprehensive evaluation of cross-view generalization. Results show that VistaBot improves VGS by 2.79$\\times$ and 2.63$\\times$ over ACT and $π_0$, respectively, while also achieving high-quality novel view synthesis. Our contributions include a geometry-aware synthesis model, a latent action planner, a new benchmark metric, and extensive validation across diverse environments. The code and models will be made publicly available.",
+      "url": "https://arxiv.org/abs/2604.21914",
+      "pdf_url": "https://arxiv.org/pdf/2604.21914",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID"
+      ],
+      "scores": {
+        "composite": 6.0,
+        "theme_score": 2,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.207062",
+      "last_updated": "2026-04-24T12:22:49.207064",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21922v1",
+      "source": "arxiv",
+      "title": "Characterizing Streaming Decidability of CSPs via Non-Redundancy",
+      "authors": "Amatya Sharma, Santhoshini Velusamy",
+      "abstract": "We study the single-pass streaming complexity of deciding satisfiability of Constraint Satisfaction Problems (CSPs). A CSP is specified by a constraint language $Γ$, that is, a finite set of $k$-ary relations over the domain $[q] = \\{0, \\dots, q-1\\}$. An instance of $\\mathsf{CSP}(Γ)$ consists of $m$ constraints over $n$ variables $x_1, \\ldots, x_n$ taking values in $[q]$. Each constraint $C_i$ is of the form $\\{R_i,(x_{i_1} + λ_{i_1}, \\ldots, x_{i_k} + λ_{i_k})\\}$, where $R_i \\in Γ$ and $λ_{i_1}, \\ldots, λ_{i_k} \\in [q]$ are constants; it is satisfied if and only if $(x_{i_1} + λ_{i_1}, \\ldots, x_{i_k} + λ_{i_k}) \\in R_i$, where addition is modulo $q$. In the streaming model, constraints arrive one by one, and the goal is to determine, using minimum memory, whether there exists an assignment satisfying all constraints. For $k$-SAT, Vu (TCS 2024) proves an optimal $Ω(n^k)$ space lower bound, while for general CSPs, Chou, Golovnev, Sudan, and Velusamy (JACM 2024) establish an $Ω(n)$ lower bound; a complete characterization has remained open. We close this gap by showing that the single-pass streaming space complexity of $\\mathsf{CSP}(Γ)$ is precisely governed by its non-redundancy, a structural parameter introduced by Bessiere, Carbonnel, and Katsirelos (AAAI 2020). The non-redundancy $\\mathsf{NRD}_n(Γ)$ is the maximum number of constraints over $n$ variables such that every constraint $C$ is non-redundant, i.e., there exists an assignment satisfying all constraints except $C$. We prove that the single-pass streaming complexity of $\\mathsf{CSP}(Γ)$ is characterized, up to a logarithmic factor, by $\\mathsf{NRD}_n(Γ)$.",
+      "url": "https://arxiv.org/abs/2604.21922",
+      "pdf_url": "https://arxiv.org/pdf/2604.21922",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 4.5,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.207255",
+      "last_updated": "2026-04-24T12:22:49.207256",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21910v1",
+      "source": "arxiv",
+      "title": "From Research Question to Scientific Workflow: Leveraging Agentic AI for Science Automation",
+      "authors": "Bartosz Balis, Michal Orzechowski, Piotr Kica, Michal Dygas, Michal Kuszewski",
+      "abstract": "Scientific workflow systems automate execution -- scheduling, fault tolerance, resource management -- but not the semantic translation that precedes it. Scientists still manually convert research questions into workflow specifications, a task requiring both domain knowledge and infrastructure expertise. We propose an agentic architecture that closes this gap through three layers: an LLM interprets natural language into structured intents (semantic layer); validated generators produce reproducible workflow DAGs (deterministic layer); and domain experts author ``Skills'': markdown documents encoding vocabulary mappings, parameter constraints, and optimization strategies (knowledge layer). This decomposition confines LLM non-determinism to intent extraction: identical intents always yield identical workflows. We implement and evaluate the architecture on the 1000 Genomes population genetics workflow and Hyperflow WMS running on Kubernetes. In an ablation study on 150 queries, Skills raise full-match intent accuracy from 44% to 83%; skill-driven deferred workflow generation reduces data transfer by 92\\%; and the end-to-end pipeline completes queries on Kubernetes with LLM overhead below 15 seconds and cost under $0.001 per query.",
+      "url": "https://arxiv.org/abs/2604.21910",
+      "pdf_url": "https://arxiv.org/pdf/2604.21910",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 6.0,
+        "theme_score": 2,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.207363",
+      "last_updated": "2026-04-24T12:22:49.207364",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21905v1",
+      "source": "arxiv",
+      "title": "Low-Rank Adaptation Redux for Large Models",
+      "authors": "Bingcong Li, Yilang Zhang, Georgios B. Giannakis",
+      "abstract": "Low-rank adaptation (LoRA) has emerged as the de facto standard for parameter-efficient fine-tuning (PEFT) of foundation models, enabling the adaptation of billion-parameter networks with minimal computational and memory overhead. Despite its empirical success and rapid proliferation of variants, it remains elusive which architectural choices, optimization techniques, and deployment constraints should guide practical method selection. This overview revisits LoRA through the lens of signal processing (SP), bridging modern adapter designs with classical low-rank modeling tools and inverse problems, as well as highlighting how SP principles can inform principled advances of fine-tuning approaches. Rather than providing a comprehensive enumeration and empirical comparisons of LoRA variants, emphasis is placed on the technical mechanisms underpinning these approaches to justify their effectiveness. These advances are categorized into three complementary axes: architectural design, efficient optimization, and pertinent applications. The first axis builds on singular value decomposition (SVD)-based factorization, rank-augmentation constructions, and cross-layer tensorization, while the second axis deals with initialization, alternating solvers, gauge-invariant optimization, and parameterization-aware methods. Beyond fine-tuning, emerging applications of LoRA are accounted across the entire lifecycle of large models, ranging from pre- and post-training to serving/deployment. Finally, open research directions are outlined at the confluence of SP and deep learning to catalyze a bidirectional frontier: classical SP tools provide a principled vocabulary for designing principled PEFT methods, while the unique challenges facing modern deep learning, especially the overwhelming scale and prohibitive overhead, also offer new research lines benefiting the SP community in return.",
+      "url": "https://arxiv.org/abs/2604.21905",
+      "pdf_url": "https://arxiv.org/pdf/2604.21905",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 4.5,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.207528",
+      "last_updated": "2026-04-24T12:22:49.207546",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21904v1",
+      "source": "arxiv",
+      "title": "UniGenDet: A Unified Generative-Discriminative Framework for Co-Evolutionary Image Generation and Generated Image Detection",
+      "authors": "Yanran Zhang, Wenzhao Zheng, Yifei Li, Bingyao Yu, Yu Zheng",
+      "abstract": "In recent years, significant progress has been made in both image generation and generated image detection. Despite their rapid, yet largely independent, development, these two fields have evolved distinct architectural paradigms: the former predominantly relies on generative networks, while the latter favors discriminative frameworks. A recent trend in both domains is the use of adversarial information to enhance performance, revealing potential for synergy. However, the significant architectural divergence between them presents considerable challenges. Departing from previous approaches, we propose UniGenDet: a Unified generative-discriminative framework for co-evolutionary image Generation and generated image Detection. To bridge the task gap, we design a symbiotic multimodal self-attention mechanism and a unified fine-tuning algorithm. This synergy allows the generation task to improve the interpretability of authenticity identification, while authenticity criteria guide the creation of higher-fidelity images. Furthermore, we introduce a detector-informed generative alignment mechanism to facilitate seamless information exchange. Extensive experiments on multiple datasets demonstrate that our method achieves state-of-the-art performance. Code: \\href{https://github.com/Zhangyr2022/UniGenDet}{https://github.com/Zhangyr2022/UniGenDet}.",
+      "url": "https://arxiv.org/abs/2604.21904",
+      "pdf_url": "https://arxiv.org/pdf/2604.21904",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "PARTICIPATORY_GOV",
+        "AI_EVAL_VALID"
+      ],
+      "scores": {
+        "composite": 8.0,
+        "theme_score": 4,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 3,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.207653",
+      "last_updated": "2026-04-24T12:22:49.207655",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21896v1",
+      "source": "arxiv",
+      "title": "Nemobot Games: Crafting Strategic AI Gaming Agents for Interactive Learning with Large Language Models",
+      "authors": "Chee Wei Tan, Yuchen Wang, Shangxin Guo",
+      "abstract": "This paper introduces a new paradigm for AI game programming, leveraging large language models (LLMs) to extend and operationalize Claude Shannon's taxonomy of game-playing machines. Central to this paradigm is Nemobot, an interactive agentic engineering environment that enables users to create, customize, and deploy LLM-powered game agents while actively engaging with AI-driven strategies. The LLM-based chatbot, integrated within Nemobot, demonstrates its capabilities across four distinct classes of games. For dictionary-based games, it compresses state-action mappings into efficient, generalized models for rapid adaptability. In rigorously solvable games, it employs mathematical reasoning to compute optimal strategies and generates human-readable explanations for its decisions. For heuristic-based games, it synthesizes strategies by combining insights from classical minimax algorithms (see, e.g., shannon1950chess) with crowd-sourced data. Finally, in learning-based games, it utilizes reinforcement learning with human feedback and self-critique to iteratively refine strategies through trial-and-error and imitation learning. Nemobot amplifies this framework by offering a programmable environment where users can experiment with tool-augmented generation and fine-tuning of strategic game agents. From strategic games to role-playing games, Nemobot demonstrates how AI agents can achieve a form of self-programming by integrating crowdsourced learning and human creativity to iteratively refine their own logic. This represents a step toward the long-term goal of self-programming AI.",
+      "url": "https://arxiv.org/abs/2604.21896",
+      "pdf_url": "https://arxiv.org/pdf/2604.21896",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "PARTICIPATORY_GOV",
+        "ADAPTIVE_REGULATION"
+      ],
+      "scores": {
+        "composite": 7.0,
+        "theme_score": 4,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 3,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.207779",
+      "last_updated": "2026-04-24T12:22:49.207781",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21891v1",
+      "source": "arxiv",
+      "title": "A Multi-Stage Warm-Start Deep Learning Framework for Unit Commitment",
+      "authors": "Muhy Eddin Za'ter, Anna Van Boven, Bri-Mathias Hodge, Kyri Baker",
+      "abstract": "Maintaining instantaneous balance between electricity supply and demand is critical for reliability and grid instability. System operators achieve this through solving the task of Unit Commitment (UC),ca high dimensional large-scale Mixed-integer Linear Programming (MILP) problem that is strictly and heavily governed by the grid physical constraints. As grid integrate variable renewable sources, and new technologies such as long duration storage in the grid, UC must be optimally solved for multi-day horizons and potentially with greater frequency. Therefore, traditional MILP solvers increasingly struggle to compute solutions within these tightening operational time limits. To bypass these computational bottlenecks, this paper proposes a novel framework utilizing a transformer-based architecture to predict generator commitment schedules over a 72-hour horizon. Also, because raw predictions in highly dimensional spaces often yield physically infeasible results, the pipeline integrates the self-attention network with deterministic post-processing heuristics that systematically enforce minimum up/down times and minimize excess capacity. Finally, these refined predictions are utilized as a warm start for a downstream MILP solver, while employing a confidence-based variable fixation strategy to drastically reduce the combinatorial search space. Validated on a single-bus test system, the complete multi-stage pipeline achieves 100\\% feasibility and significantly accelerates computation times. Notably, in approximately 20\\% of test instances, the proposed model reached a feasible operational schedule with a lower overall system cost than relying solely on the solver.",
+      "url": "https://arxiv.org/abs/2604.21891",
+      "pdf_url": "https://arxiv.org/pdf/2604.21891",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "PARTICIPATORY_GOV",
+        "AI_EVAL_VALID"
+      ],
+      "scores": {
+        "composite": 8.0,
+        "theme_score": 4,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 3,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.207890",
+      "last_updated": "2026-04-24T12:22:49.207891",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21931v1",
+      "source": "arxiv",
+      "title": "Seeing Fast and Slow: Learning the Flow of Time in Videos",
+      "authors": "Yen-Siang Wu, Rundong Luo, Jingsen Zhu, Tao Tu, Ali Farhadi",
+      "abstract": "How can we tell whether a video has been sped up or slowed down? How can we generate videos at different speeds? Although videos have been central to modern computer vision research, little attention has been paid to perceiving and controlling the passage of time. In this paper, we study time as a learnable visual concept and develop models for reasoning about and manipulating the flow of time in videos. We first exploit the multimodal cues and temporal structure naturally present in videos to learn, in a self-supervised manner, to detect speed changes and estimate playback speed. We then show that these learned temporal reasoning models enable us to curate the largest slow-motion video dataset to date from noisy in-the-wild sources. Such slow-motion footage, typically filmed by high-speed cameras, contains substantially richer temporal detail than standard videos. Using this data, we further develop models capable of temporal control, including speed-conditioned video generation, which produces motion at specified playback speed, and temporal super-resolution, which tranforms low-FPS, blurry videos into high-FPS sequences with fine-grained temporal details. Our findings highlight time as a manipulable, perceptual dimension in video learning, opening doors to temporally controllable video generation, temporal forensics detection, and potentially richer world-models that understand how events unfold over time.",
+      "url": "https://arxiv.org/abs/2604.21931",
+      "pdf_url": "https://arxiv.org/pdf/2604.21931",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "ADAPTIVE_REGULATION"
+      ],
+      "scores": {
+        "composite": 4.5,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.208070",
+      "last_updated": "2026-04-24T12:22:49.208072",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21924v1",
+      "source": "arxiv",
+      "title": "Long-Horizon Manipulation via Trace-Conditioned VLA Planning",
+      "authors": "Isabella Liu, An-Chieh Cheng, Rui Yan, Geng Chen, Ri-Zhao Qiu",
+      "abstract": "Long-horizon manipulation remains challenging for vision-language-action (VLA) policies: real tasks are multi-step, progress-dependent, and brittle to compounding execution errors. We present LoHo-Manip, a modular framework that scales short-horizon VLA execution to long-horizon instruction following via a dedicated task-management VLM. The manager is decoupled from the executor and is invoked in a receding-horizon manner: given the current observation, it predicts a progress-aware remaining plan that combines (i) a subtask sequence with an explicit done + remaining split as lightweight language memory, and (ii) a visual trace -- a compact 2D keypoint trajectory prompt specifying where to go and what to approach next. The executor VLA is adapted to condition on the rendered trace, thereby turning long-horizon decision-making into repeated local control by following the trace. Crucially, predicting the remaining plan at each step yields an implicit closed loop: failed steps persist in subsequent outputs, and traces update accordingly, enabling automatic continuation and replanning without hand-crafted recovery logic or brittle visual-history buffers. Extensive experiments spanning embodied planning, long-horizon reasoning, trajectory prediction, and end-to-end manipulation in simulation and on a real Franka robot demonstrate strong gains in long-horizon success, robustness, and out-of-distribution generalization. Project page: https://www.liuisabella.com/LoHoManip",
+      "url": "https://arxiv.org/abs/2604.21924",
+      "pdf_url": "https://arxiv.org/pdf/2604.21924",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "ADAPTIVE_REGULATION",
+        "AI_EVAL_VALID"
+      ],
+      "scores": {
+        "composite": 8.0,
+        "theme_score": 4,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 3,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.208184",
+      "last_updated": "2026-04-24T12:22:49.208186",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21923v1",
+      "source": "arxiv",
+      "title": "The Sample Complexity of Multicalibration",
+      "authors": "Natalie Collina, Jiuyao Lu, Georgy Noarov, Aaron Roth",
+      "abstract": "We study the minimax sample complexity of multicalibration in the batch setting. A learner observes $n$ i.i.d. samples from an unknown distribution and must output a (possibly randomized) predictor whose population multicalibration error, measured by Expected Calibration Error (ECE), is at most $\\varepsilon$ with respect to a given family of groups. For every fixed $κ> 0$, in the regime $|G|\\le \\varepsilon^{-κ}$, we prove that $\\widetildeΘ(\\varepsilon^{-3})$ samples are necessary and sufficient, up to polylogarithmic factors. The lower bound holds even for randomized predictors, and the upper bound is realized by a randomized predictor obtained via an online-to-batch reduction. This separates the sample complexity of multicalibration from that of marginal calibration, which scales as $\\widetildeΘ(\\varepsilon^{-2})$, and shows that mean-ECE multicalibration is as difficult in the batch setting as it is in the online setting, in contrast to marginal calibration which is strictly more difficult in the online setting. In contrast we observe that for $κ= 0$, the sample complexity of multicalibration remains $\\widetildeΘ(\\varepsilon^{-2})$ exhibiting a sharp threshold phenomenon. More generally, we establish matching upper and lower bounds, up to polylogarithmic factors, for a weighted $L_p$ multicalibration metric for all $1 \\le p \\le 2$, with optimal exponent $3/p$. We also extend the lower-bound template to a regular class of elicitable properties, and combine it with the online upper bounds of Hu et al. (2025) to obtain matching bounds for calibrating properties including expectiles and bounded-density quantiles.",
+      "url": "https://arxiv.org/abs/2604.21923",
+      "pdf_url": "https://arxiv.org/pdf/2604.21923",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "ADAPTIVE_REGULATION"
+      ],
+      "scores": {
+        "composite": 4.5,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.208362",
+      "last_updated": "2026-04-24T12:22:49.208363",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21918v1",
+      "source": "arxiv",
+      "title": "Wave physics as a choreographic notation for partner dance",
+      "authors": "Fernando Ramiro-Manzano",
+      "abstract": "The wave is considered a paradigm in dance and connects bodily expression with nature. Although wave concepts such as propagation and phase have proven to be powerful tools for dance analysis, many aspects of bodily expression, including partner dance, have been investigated using numerical approaches and neural networks. Complementarily, compact analytical models have been especially successful for describing human motion, particularly gait. Here, we leverage wave-physics concepts to provide a comprehensive wave-based and oscillatory analytical characterization of expressive motion in partner dance. We apply this framework to Bachata Sensual, a dance style in which the wave is the leitmotif. We analyse three dance couples (Phase I) performing five movement sequences and one composite. The sequences exhibit multiple wave phenomena, from time-dependent interference to the generation-like emergence of harmonics. Within this wave-physics perspective, the formalism can be viewed as a choreographic motion notation. As an illustrative acoustic analogy, harmonic components extracted under boundary conditions can be mapped to audible frequencies, forming musical dyads. Within certain limits and not rigidly constrained by body morphology, modal response can be tuned to underpin fluid motion, adapting across musical timescales and movement patterns. Overall, this wave-physics notation highlights connections between partner-dance expressivity and harmonic nature.",
+      "url": "https://arxiv.org/abs/2604.21918",
+      "pdf_url": "https://arxiv.org/pdf/2604.21918",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "ADAPTIVE_REGULATION"
+      ],
+      "scores": {
+        "composite": 5.0,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.208489",
+      "last_updated": "2026-04-24T12:22:49.208490",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21929v1",
+      "source": "arxiv",
+      "title": "Subsystem-Resolved Spectral Theory for Quantum Many-Body Hamiltonians",
+      "authors": "MD Nahidul Hasan Sabit",
+      "abstract": "We study spectral properties of quantum many-body Hamiltonians through a subsystem-based framework. Given a Hamiltonian of the form $H = \\sum_{X \\subseteq Λ} Φ(X)$ acting on a tensor product Hilbert space, we associate to each subset $S \\subseteq Λ$ a subsystem Hamiltonian $H_S$ and its spectrum $\\mathcal{S}(S) = σ(H_S)$. This produces a family of spectra indexed by subsystems, allowing spectral data to be organized according to interaction structure. We show that subsystem Hamiltonians admit local approximations: $H_S$ can be approximated by operators supported on finite neighborhoods with an error bounded by $\\|H_S - H_{S,r}\\| \\le |S| e^{-μr} \\|Φ\\|_μ$. As a consequence, subsystem spectra are stable under truncation in the sense that $d_H(\\mathcal{S}(S), σ(H_{S,r})) \\le |S| e^{-μr} \\|Φ\\|_μ.$ We then prove that for disjoint subsets $S_1, S_2 \\subseteq Λ$, the subsystem spectrum is approximately additive: $d_H\\big(\\mathcal{S}(S_1 \\cup S_2), \\mathcal{S}(S_1) + \\mathcal{S}(S_2)\\big) \\le (|S_1| + |S_2|) e^{-μD} \\|Φ\\|_μ,$ where $D = d(S_1, S_2)$. In the finite-range case, this relation becomes exact. The results show that spectral properties reflect the locality of interactions not only at the level of operators, but also at the level of spectra. The framework provides a way to study many-body systems in which interaction geometry directly shapes spectral behavior.",
+      "url": "https://arxiv.org/abs/2604.21929",
+      "pdf_url": "https://arxiv.org/pdf/2604.21929",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "EVIDENCE_IMPLEMENT"
+      ],
+      "scores": {
+        "composite": 5.0,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.208814",
+      "last_updated": "2026-04-24T12:22:49.208817",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21921v1",
+      "source": "arxiv",
+      "title": "Context Unrolling in Omni Models",
+      "authors": "Ceyuan Yang, Zhijie Lin, Yang Zhao, Fei Xiao, Hao He",
+      "abstract": "We present Omni, a unified multimodal model natively trained on diverse modalities, including text, images, videos, 3D geometry, and hidden representations. We find that such training enables Context Unrolling, where the model explicitly reasons across multiple modal representations before producing predictions. This process enables the model to aggregate complementary information across heterogeneous modalities, facilitating a more faithful approximation of the shared multimodal knowledge manifold and improving downstream reasoning fidelity. As a result, Omni achieves strong performance on both multimodal generation and understanding benchmarks, while demonstrating advanced multimodal reasoning capabilities, including in-context generation of text, image, video, and 3D geometry.",
+      "url": "https://arxiv.org/abs/2604.21921",
+      "pdf_url": "https://arxiv.org/pdf/2604.21921",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "EVIDENCE_IMPLEMENT"
+      ],
+      "scores": {
+        "composite": 5.5,
+        "theme_score": 2,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.208921",
+      "last_updated": "2026-04-24T12:22:49.208923",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21915v1",
+      "source": "arxiv",
+      "title": "Vista4D: Video Reshooting with 4D Point Clouds",
+      "authors": "Kuan Heng Lin, Zhizheng Liu, Pablo Salamanca, Yash Kant, Ryan Burgert",
+      "abstract": "We present Vista4D, a robust and flexible video reshooting framework that grounds the input video and target cameras in a 4D point cloud. Specifically, given an input video, our method re-synthesizes the scene with the same dynamics from a different camera trajectory and viewpoint. Existing video reshooting methods often struggle with depth estimation artifacts of real-world dynamic videos, while also failing to preserve content appearance and failing to maintain precise camera control for challenging new trajectories. We build a 4D-grounded point cloud representation with static pixel segmentation and 4D reconstruction to explicitly preserve seen content and provide rich camera signals, and we train with reconstructed multiview dynamic data for robustness against point cloud artifacts during real-world inference. Our results demonstrate improved 4D consistency, camera control, and visual quality compared to state-of-the-art baselines under a variety of videos and camera paths. Moreover, our method generalizes to real-world applications such as dynamic scene expansion and 4D scene recomposition. See our project page for results, code, and models: https://eyeline-labs.github.io/Vista4D",
+      "url": "https://arxiv.org/abs/2604.21915",
+      "pdf_url": "https://arxiv.org/pdf/2604.21915",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "CLINICAL_HEALTH_AI",
+        "AI_EVAL_VALID",
+        "ADAPTIVE_REGULATION"
+      ],
+      "scores": {
+        "composite": 10.0,
+        "theme_score": 6,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 3,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.209019",
+      "last_updated": "2026-04-24T12:22:49.209021",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21898v1",
+      "source": "arxiv",
+      "title": "Institutionalizing Best Practices in Research Computing: A Framework and Case Study for Improving User Onboarding",
+      "authors": "Ayush Chaturvedi, Rob Pokorney, Elyn Fritz-Waters, Charlotte Rouse, Gary Bax",
+      "abstract": "Research computing centers around the world struggle with onboarding new users. Subject matter experts, researchers, and principal investigators are often overwhelmed by the complex infrastructure and software offerings designed to support diverse research domains at large academic and national institutions. As a result, users frequently fall into confusion and complexity to access these resources, despite the availability of documentation, tutorials, interactive trainings and other similar resources. Through this work, we present a framework designed to improve new-user onboarding experience. We also present an empirical validation through its application within the Research Infrastructure Services at Washington University in St. Louis.",
+      "url": "https://arxiv.org/abs/2604.21898",
+      "pdf_url": "https://arxiv.org/pdf/2604.21898",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "CLINICAL_HEALTH_AI",
+        "AI_EVAL_VALID"
+      ],
+      "scores": {
+        "composite": 8.0,
+        "theme_score": 4,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 3,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.209099",
+      "last_updated": "2026-04-24T12:22:49.209100",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21886v1",
+      "source": "arxiv",
+      "title": "The Dyson Minds 2025 Workshop: SETI around Black Holes",
+      "authors": "Olivia Curtis, Van Hunter Adams, Daniel Angerhausen, Joseph Bates, Anamaria Berea",
+      "abstract": "The Dyson Minds 2025 Workshop, held at the Center for Brains, Minds & Machines at MIT and organized by Penn State, MIT, and The Ultraintelligence Foundation, brought together researchers in astrophysics, engineering, artificial intelligence, computer science, and philosophy to examine \"Dyson Minds\" -- large-scale post-biological intelligences powered by energy harvested from supermassive black holes (SMBHs). Building on the ideas of F. J. Dyson (1960, 1966) and I. J. Good (1966), participants explored the physical, engineering, behavioral, and observational consequences of civilizations embodied as machinery operating near the universe's most powerful energy sources. The workshop aimed to develop new observational strategies capable of detecting signatures of such systems. Despite the highly cross-disciplinary scope, discussions centered on how a Dyson Mind might be constructed, how it might behave, and how those factors would shape strategies for the search for extraterrestrial intelligence. Key themes included the thermodynamic, mechanical, and stability limits of Dyson swarms; the trade-offs between power availability and communication latency in distributed minds; and how observability changes depending on whether Dyson Minds act as coherent entities or as loosely coordinated collectives. Across these topics, the consensus was that details of architecture and behavior strongly influence observational signatures. A major recommendation was to apply anomaly-detection methods to archival datasets, including those from WISE, JWST, and the Event Horizon Telescope, to identify unusual sources potentially overlooked by standard reduction pipelines. By integrating insights from multiple disciplines, the meeting advanced concrete, observation-focused strategies for future technosignature searches around SMBHs.",
+      "url": "https://arxiv.org/abs/2604.21886",
+      "pdf_url": "https://arxiv.org/pdf/2604.21886",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "PARTICIPATORY_GOV",
+        "ADAPTIVE_REGULATION"
+      ],
+      "scores": {
+        "composite": 7.0,
+        "theme_score": 4,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 3,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.209262",
+      "last_updated": "2026-04-24T12:22:49.209264",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21879v1",
+      "source": "arxiv",
+      "title": "Addressing Image Authenticity When Cameras Use Generative AI",
+      "authors": "Umar Masud, Abhijith Punnappurath, Luxi Zhao, David B. Lindell, Michael S. Brown",
+      "abstract": "The ability of generative AI (GenAI) methods to photorealistically alter camera images has raised awareness about the authenticity of images shared online. Interestingly, images captured directly by our cameras are considered authentic and faithful. However, with the increasing integration of deep-learning modules into cameras' capture-time hardware -- namely, the image signal processor (ISP) -- there is now a potential for hallucinated content in images directly output by our cameras. Hallucinated capture-time image content is typically benign, such as enhanced edges or texture, but in certain operations, such as AI-based digital zoom or low-light image enhancement, hallucinations can potentially alter the semantics and interpretation of the image content. As a result, users may not realize that the content in their camera images is not authentic. This paper addresses this issue by enabling users to recover the 'unhallucinated' version of the camera image to avoid misinterpretation of the image content. Our approach works by optimizing an image-specific multi-layer perceptron (MLP) decoder together with a modality-specific encoder so that, given the camera image, we can recover the image before hallucinated content was added. The encoder and MLP are self-contained and can be applied post-capture to the image without requiring access to the camera ISP. Moreover, the encoder and MLP decoder require only 180 KB of storage and can be readily saved as metadata within standard image formats such as JPEG and HEIC.",
+      "url": "https://arxiv.org/abs/2604.21879",
+      "pdf_url": "https://arxiv.org/pdf/2604.21879",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 4.5,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.209409",
+      "last_updated": "2026-04-24T12:22:49.209411",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21909v1",
+      "source": "arxiv",
+      "title": "Directional Confusions Reveal Divergent Inductive Biases Through Rate-Distortion Geometry in Human and Machine Vision",
+      "authors": "Leyla Roksan Caglar, Pedro A. M. Mediano, Baihan Lin",
+      "abstract": "Humans and modern vision models can reach similar classification accuracy while making systematically different kinds of mistakes - differing not in how often they err, but in who gets mistaken for whom, and in which direction. We show that these directional confusions reveal distinct inductive biases that are invisible to accuracy alone. Using matched human and deep vision model responses on a natural-image categorization task under 12 perturbation types, we quantify asymmetry in confusion matrices and link it to generalization geometry through a Rate-Distortion (RD) framework, summarized by three geometric signatures (slope (beta), curvature (kappa)) and efficiency (AUC). We find that humans exhibit broad but weak asymmetries, whereas deep vision models show sparser, stronger directional collapses. Robustness training reduces global asymmetry but fails to recover the human-like breadth-strength profile of graded similarity. Mechanistic simulations further show that different asymmetry organizations shift the RD frontier in opposite directions, even when matched for performance. Together, these results position directional confusions and RD geometry as compact, interpretable signatures of inductive bias under distribution shift.",
+      "url": "https://arxiv.org/abs/2604.21909",
+      "pdf_url": "https://arxiv.org/pdf/2604.21909",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID"
+      ],
+      "scores": {
+        "composite": 5.0,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.209557",
+      "last_updated": "2026-04-24T12:22:49.209559",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21902v1",
+      "source": "arxiv",
+      "title": "A Universal Quantum Information Preserving Photonic Switch for Scalable Quantum Networks",
+      "authors": "Jiapeng Zhao, Stéphane Vinet, Amir Minoofar, Michael Kilzer, Lucas Wang",
+      "abstract": "Quantum networks are a keystone of the quantum internet. However, existing implementations remain largely confined to static point-to-point links due to the absence of a switching paradigm capable of dynamically routing fragile quantum entanglement without introducing decoherence. Here, we propose the Universal Quantum Switch, a foundational building block allowing on-demand, non-blocking, and encoding-agnostic routing of quantum information, as well as seamless modality conversion between disparate quantum platforms. We develop a prototype in thin-film lithium niobate and experimentally demonstrate robust switching with $\\le 4\\%$ decoherence via thermo-optic modulation and high-speed electro-optic switching of arbitrary entangled states at 1 MHz. Moreover, we show that our platform can support reconfiguration speeds up to 1 GHz. To our knowledge, this work represents the first demonstration of multi-node dynamic entanglement distribution at these speeds. Complementing these experimental results, we project the architecture's scalability, showing dimension-independent decoherence, and provide a scalable, interoperable building block for heterogeneous quantum network fabrics.",
+      "url": "https://arxiv.org/abs/2604.21902",
+      "pdf_url": "https://arxiv.org/pdf/2604.21902",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID",
+        "ADAPTIVE_REGULATION"
+      ],
+      "scores": {
+        "composite": 8.0,
+        "theme_score": 4,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 3,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.209656",
+      "last_updated": "2026-04-24T12:22:49.209657",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2604.21926v1",
+      "source": "arxiv",
+      "title": "Seeing Without Eyes: 4D Human-Scene Understanding from Wearable IMUs",
+      "authors": "Hao-Yu Hsu, Tianhang Cheng, Jing Wen, Alexander G. Schwing, Shenlong Wang",
+      "abstract": "Understanding human activities and their surrounding environments typically relies on visual perception, yet cameras pose persistent challenges in privacy, safety, energy efficiency, and scalability. We explore an alternative: 4D perception without vision. Its goal is to reconstruct human motion and 3D scene layouts purely from everyday wearable sensors. For this we introduce IMU-to-4D, a framework that repurposes large language models for non-visual spatiotemporal understanding of human-scene dynamics. IMU-to-4D uses data from a few inertial sensors from earbuds, watches, or smartphones and predicts detailed 4D human motion together with coarse scene structure. Experiments across diverse human-scene datasets show that IMU-to-4D yields more coherent and temporally stable results than SoTA cascaded pipelines, suggesting wearable motion sensors alone can support rich 4D understanding.",
+      "url": "https://arxiv.org/abs/2604.21926",
+      "pdf_url": "https://arxiv.org/pdf/2604.21926",
+      "published_date": "2026-04-23",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID",
+        "ADAPTIVE_REGULATION"
+      ],
+      "scores": {
+        "composite": 8.0,
+        "theme_score": 4,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 3,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.209737",
+      "last_updated": "2026-04-24T12:22:49.209738",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "ss:7caca59244e1770bfd94d92fe73cce1bde9b05c7",
+      "source": "semanticscholar",
+      "title": "Navigating regulatory and policy challenges for AI enabled combination devices",
+      "authors": "S. Santra, Preet Kukreja, Kinshuk Saxena, Sanyam Gandhi, Om V. Singh",
+      "abstract": "In recent years, the Artificial Intelligence (AI) has enabled conventional Combination Devices (CDs) to innovate in healthcare merging with technology sectors. However, the challenges like reliance on predicate devices in US Food and Drug Administration (FDA's 510(k) pathway, especially for perpetually updating AI are stressed. Though the European Union (EU's new Medical Device Regulations address software and AI, fitting adaptive algorithms into conformity assessments remains difficult. The urgent need for frameworks cognizant of AI risks like model degradation and data biases is emphasized. Insights from recalled devices and case studies elucidate challenges in regulatory navigation for manufacturers. Adaptive policy frameworks balancing patient safeguards and rapid innovation are proposed. Recommendations target regulators and policy makers, advocating global standards to enable safe, effective and equitable AI adoption. This article aims to examine AI-enabled combination device regulation, inspecting US and EU strategies as well as obstacles for manufacturers and regulators.",
+      "url": "https://www.semanticscholar.org/paper/7caca59244e1770bfd94d92fe73cce1bde9b05c7",
+      "pdf_url": "https://doi.org/10.3389/fmedt.2024.1473350",
+      "published_date": "2024-01-01",
+      "venue": "Frontiers in Medical Technology",
+      "doi": "10.3389/fmedt.2024.1473350",
+      "themes": [
+        "ADAPTIVE_REGULATION",
+        "EVIDENCE_IMPLEMENT"
+      ],
+      "scores": {
+        "composite": 6.0,
+        "theme_score": 4,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 1
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.209847",
+      "last_updated": "2026-04-24T12:22:49.209848",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "ss:37453bba51312c14c911b237652eaeffff5d8e43",
+      "source": "semanticscholar",
+      "title": "The illusion of safety: A report to the FDA on AI healthcare product approvals",
+      "authors": "R. Abulibdeh, L. A. Celi, E. Sejdić",
+      "abstract": "Artificial intelligence is rapidly transforming healthcare, offering promising advancements in diagnosis, treatment, and patient outcomes. However, concerns regarding the regulatory oversight of artificial intelligence driven medical technologies have emerged, particularly with the U.S. Food and Drug Administration’s current approval processes. This paper critically examines the U.S. Food and Drug Administration’s regulatory framework for artificial intelligence powered healthcare products, highlighting gaps in safety evaluations, post-market surveillance, and ethical considerations. Artificial intelligence’s continuous learning capabilities introduce unique risks, as algorithms evolve beyond their initial validation, potentially leading to performance degradation and biased outcomes. Although the U.S. Food and Drug Administration has taken steps to address these challenges, such as artificial intelligence/machine learning-based software as a medical device action plan and proposed regulatory adjustments, significant weaknesses remain, particularly in real-time monitoring, transparency and bias mitigation. This paper argues for a more adaptive, community-engaged regulatory approach that mandates extensive post-market evaluations, requires artificial intelligence developers to disclose training data sources, and establishes enforceable standards for fairness, equity, and accountability. A patient-centered regulatory framework must also integrate diverse perspectives to ensure artificial intelligence technologies serve all populations equitably. By fostering an agile, transparent, and ethics-driven oversight system, the U.S. Food and Drug Administration can balance innovation with patient safety, ensuring that artificial intelligence-driven medical technologies enhance, rather than compromise, healthcare outcomes.",
+      "url": "https://www.semanticscholar.org/paper/37453bba51312c14c911b237652eaeffff5d8e43",
+      "pdf_url": "",
+      "published_date": "2025-01-01",
+      "venue": "PLOS Digital Health",
+      "doi": "10.1371/journal.pdig.0000866",
+      "themes": [
+        "ADAPTIVE_REGULATION",
+        "AI_EVAL_VALID",
+        "PARTICIPATORY_GOV",
+        "CLINICAL_HEALTH_AI"
+      ],
+      "scores": {
+        "composite": 9.0,
+        "theme_score": 7,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 1
+      },
+      "priority": 3,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.209995",
+      "last_updated": "2026-04-24T12:22:49.209996",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "ss:6fe6e3d9ebc672124b43149fb8de1915c8c4796d",
+      "source": "semanticscholar",
+      "title": "FDA-Approved Artificial Intelligence and Machine Learning (AI/ML)-Enabled Medical Devices: An Updated Landscape",
+      "authors": "Geeta Joshi, Aditi Jain, Shalini Reddy Araveeti, Sabin Adhikari, Harshit Garg",
+      "abstract": "As artificial intelligence (AI) has been highly advancing in the last decade, machine learning (ML)-enabled medical devices are increasingly used in healthcare. In this study, we collected publicly available information on AI/ML-enabled medical devices approved by the FDA in the United States, as of the latest update on 19 October 2023. We performed comprehensive analysis of a total of 691 FDA-approved artificial intelligence and machine learning (AI/ML)-enabled medical devices and offer an in-depth analysis of clearance pathways, approval timeline, regulation type, medical specialty, decision type, recall history, etc. We found a significant surge in approvals since 2018, with clear dominance of the radiology specialty in the application of machine learning tools, attributed to the abundant data from routine clinical data. The study also reveals a reliance on the 510(k)-clearance pathway, emphasizing its basis on substantial equivalence and often bypassing the need for new clinical trials. Also, it notes an underrepresentation of pediatric-focused devices and trials, suggesting an opportunity for expansion in this demographic. Moreover, the geographical limitation of clinical trials, primarily within the United States, points to a need for more globally inclusive trials to encompass diverse patient demographics. This analysis not only maps the current landscape of AI/ML-enabled medical devices but also pinpoints trends, potential gaps, and areas for future exploration, clinical trial practices, and regulatory approaches. In conclusion, our analysis sheds light on the current state of FDA-approved AI/ML-enabled medical devices and prevailing trends, contributing to a wider comprehension.",
+      "url": "https://www.semanticscholar.org/paper/6fe6e3d9ebc672124b43149fb8de1915c8c4796d",
+      "pdf_url": "https://www.mdpi.com/2079-9292/13/3/498/pdf?version=1706111663",
+      "published_date": "2024-01-01",
+      "venue": "Electronics",
+      "doi": "10.3390/electronics13030498",
+      "themes": [
+        "ADAPTIVE_REGULATION"
+      ],
+      "scores": {
+        "composite": 3.5,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 0.5
+      },
+      "priority": 1,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.210176",
+      "last_updated": "2026-04-24T12:22:49.210178",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "ss:c222df39f6861098a33bb8b1ad86cee14c06074c",
+      "source": "semanticscholar",
+      "title": "FDA Perspective on the Regulation of Artificial Intelligence in Health Care and Biomedicine.",
+      "authors": "Haider J. Warraich, Troy Tazbaz, R. Califf",
+      "abstract": "Importance\nAdvances in artificial intelligence (AI) must be matched by efforts to better understand and evaluate how AI performs across health care and biomedicine as well as develop appropriate regulatory frameworks. This Special Communication reviews the history of the US Food and Drug Administration's (FDA) regulation of AI; presents potential uses of AI in medical product development, clinical research, and clinical care; and presents concepts that merit consideration as the regulatory system adapts to AI's unique challenges.\n\n\nObservations\nThe FDA has authorized almost 1000 AI-enabled medical devices and has received hundreds of regulatory submissions for drugs that used AI in their discovery and development. Health AI regulation needs to be coordinated across all regulated industries, the US government, and with international organizations. Regulators will need to advance flexible mechanisms to keep up with the pace of change in AI across biomedicine and health care. Sponsors need to be transparent about and regulators need proficiency in evaluating the use of AI in premarket development. A life cycle management approach incorporating recurrent local postmarket performance monitoring should be central to health AI development. Special mechanisms to evaluate large language models and their uses are needed. Approaches are necessary to balance the needs of the entire spectrum of health ecosystem interests, from large firms to start-ups. The evaluation and regulatory system will need to focus on patient health outcomes to balance the use of AI for financial optimization for developers, payers, and health systems.\n\n\nConclusions and Relevance\nStrong oversight by the FDA protects the long-term success of industries by focusing on evaluation to advance regulated technologies that improve health. The FDA will continue to play a central role in ensuring safe, effective, and trustworthy AI tools to improve the lives of patients and clinicians alike. However, all involved",
+      "url": "https://www.semanticscholar.org/paper/c222df39f6861098a33bb8b1ad86cee14c06074c",
+      "pdf_url": "",
+      "published_date": "2024-01-01",
+      "venue": "Journal of the American Medical Association (JAMA)",
+      "doi": "10.1001/jama.2024.21451",
+      "themes": [
+        "ADAPTIVE_REGULATION",
+        "AI_EVAL_VALID",
+        "CLINICAL_HEALTH_AI"
+      ],
+      "scores": {
+        "composite": 10.0,
+        "theme_score": 5,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 3,
+        "methods": 1
+      },
+      "priority": 3,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.210295",
+      "last_updated": "2026-04-24T12:22:49.210297",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "ss:981e7694a91e9af418a2483724f5a4cbba904864",
+      "source": "semanticscholar",
+      "title": "Post-Marketing Surveillance and Regulation of the Pharmaceutical and Medical Device Market: Exploring the Possibilities of Healthcare Artificial Intelligence Applications",
+      "authors": "Darrell Norman Burrell",
+      "abstract": "The U.S. Food and Drug Administration (FDA) serves as the nation’s principal regulatory authority for ensuring the safety, efficacy, and quality of prescription drugs and medical devices across their entire life cycle, from early development and clinical testing to market approval and post-marketing surveillance. While pre-market trials are essential, they often cannot detect rare or long-term adverse drug reactions (ADRs) or device failures, leaving critical safety gaps once products enter real-world use. This study examines how artificial intelligence (AI) can enhance post-marketing surveillance (PMS) to create a more accurate, secure, and responsive system that protects patients and fosters public trust. Using a multi-phased qualitative design, we convened subject matter experts. Participants engaged in pre-session questionnaires, homogeneous small-group discussions, and a full-group consensus process, culminating in a fifteen-point master list of recommendations. Central findings emphasize that AI’s ability to perform rapid signal detection, integrate heterogeneous data sources (from electronic health records and pharmacogenetic profiles to social media and law enforcement data), and predict emerging safety risks must be paired with mandatory human oversight, algorithmic explainability, and rigorous privacy protections. The expert consensus recommends FDA-led governance frameworks, including AI model certification and continuous performance auditing, as well as industry-wide adoption of privacy-by-design principles and real-time feedback mechanisms. These results provide a roadmap for policymakers, regulators, and healthcare leaders to leverage AI as a strategic asset in post-marketing surveillance, thereby enhancing patient safety, protecting healthcare infrastructure, and reinforcing the security and integrity of the U.S. pharmacovigilance system.",
+      "url": "https://www.semanticscholar.org/paper/981e7694a91e9af418a2483724f5a4cbba904864",
+      "pdf_url": "",
+      "published_date": "2025-01-01",
+      "venue": "Public Governance, Regulation and Law",
+      "doi": "10.61093/pgrl.1(1).51-64.2025",
+      "themes": [
+        "ADAPTIVE_REGULATION",
+        "AI_EVAL_VALID",
+        "EVIDENCE_IMPLEMENT",
+        "CLINICAL_HEALTH_AI"
+      ],
+      "scores": {
+        "composite": 9.0,
+        "theme_score": 7,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 1
+      },
+      "priority": 3,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.210498",
+      "last_updated": "2026-04-24T12:22:49.210500",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "ss:9b55f763dac5f72478d0a0cd3b4c8ee4fc8fe3e8",
+      "source": "semanticscholar",
+      "title": "Artificial intelligence in healthcare: global implementation, legal regulation, problems and ethical issues",
+      "authors": "D. Korabelnikov, A. I. Lamotkin",
+      "abstract": "Objective: To analyze the legal and ethical aspects of regulating artificial intelligence (AI) in medicine in key jurisdictions (United States, European Union, China, Russia), to identify regulatory gaps, ethical dilemmas and prospects for harmonization of standards.Material and methods. National and international regulatory documents (GDPR, AI Act, FDA, NMPA), scientific publications, clinical cases and regulatory initiatives (IMDRF, WHO) were reviewed. Methods for comparative legal analysis and systematization of ethical and legal norms were used.Results. Considerable differences in approaches to AI regulation were identified, including flexibility in the US, the ethical centricity in the EU, centralization in China and an emerging framework in Russia. Key issues were emphasized, such as algorithmic bias, AI transparency, responsibility, and the conflict between innovation and security.Conclusion. The harmonization of international standards, the introduction of dynamic regulation and the strengthening of interdisciplinary cooperation should be pursued to achieve a balance between innovation and the protection of patients' rights.",
+      "url": "https://www.semanticscholar.org/paper/9b55f763dac5f72478d0a0cd3b4c8ee4fc8fe3e8",
+      "pdf_url": "",
+      "published_date": "2025-01-01",
+      "venue": "FARMAKOEKONOMIKA. Modern Pharmacoeconomics and Pharmacoepidemiology",
+      "doi": "10.17749/2070-4909/farmakoekonomika.2025.328",
+      "themes": [
+        "ADAPTIVE_REGULATION",
+        "AI_EVAL_VALID"
+      ],
+      "scores": {
+        "composite": 6.0,
+        "theme_score": 4,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 1
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.210644",
+      "last_updated": "2026-04-24T12:22:49.210646",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "ss:9cb51471e41ddaeaae6f93513f4ce20128248cfd",
+      "source": "semanticscholar",
+      "title": "Ethical and legal considerations in healthcare AI: innovation and policy for safe and fair use",
+      "authors": "Tuan D. Pham",
+      "abstract": "Artificial intelligence (AI) is transforming healthcare by enhancing diagnostics, personalizing medicine and improving surgical precision. However, its integration into healthcare systems raises significant ethical and legal challenges. This review explores key ethical principles—autonomy, beneficence, non-maleficence, justice, transparency and accountability—highlighting their relevance in AI-driven decision-making. Legal challenges, including data privacy and security, liability for AI errors, regulatory approval processes, intellectual property and cross-border regulations, are also addressed. As AI systems become increasingly autonomous, questions of responsibility and fairness must be carefully considered, particularly with the potential for biased algorithms to amplify healthcare disparities. This paper underscores the importance of multi-disciplinary collaboration between technologists, healthcare providers, legal experts and policymakers to create adaptive, globally harmonized frameworks. Public engagement is emphasized as essential for fostering trust and ensuring ethical AI adoption. With AI technologies advancing rapidly, a flexible regulatory environment that evolves with innovation is critical. Aligning AI innovation with ethical and legal imperatives will lead to a safer, more equitable healthcare system for all.",
+      "url": "https://www.semanticscholar.org/paper/9cb51471e41ddaeaae6f93513f4ce20128248cfd",
+      "pdf_url": "https://doi.org/10.1098/rsos.241873",
+      "published_date": "2025-01-01",
+      "venue": "Royal Society Open Science",
+      "doi": "10.1098/rsos.241873",
+      "themes": [
+        "ADAPTIVE_REGULATION",
+        "AI_EVAL_VALID",
+        "PARTICIPATORY_GOV",
+        "EVIDENCE_IMPLEMENT",
+        "CLINICAL_HEALTH_AI"
+      ],
+      "scores": {
+        "composite": 14.0,
+        "theme_score": 9,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 3,
+        "methods": 1
+      },
+      "priority": 3,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.210774",
+      "last_updated": "2026-04-24T12:22:49.210776",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "ss:ffdae9b41bd79a5d59beb0f074c7ea9cf893d092",
+      "source": "semanticscholar",
+      "title": "Generative AI’s healthcare professional role creep: a cross-sectional evaluation of publicly accessible, customised health-related GPTs",
+      "authors": "Bianca Chu, N. Modi, B. Menz, Stephen Bacchi, G. Kichenadasse",
+      "abstract": "Introduction Generative artificial intelligence (AI) is advancing rapidly; an important consideration is the public’s increasing ability to customise foundational AI models to create publicly accessible applications tailored for specific tasks. This study aims to evaluate the accessibility and functionality descriptions of customised GPTs on the OpenAI GPT store that provide health-related information or assistance to patients and healthcare professionals. Methods We conducted a cross-sectional observational study of the OpenAI GPT store from September 2 to 6, 2024, to identify publicly accessible customised GPTs with health-related functions. We searched across general medicine, psychology, oncology, cardiology, and immunology applications. Identified GPTs were assessed for their name, description, intended audience, and usage. Regulatory status was checked across the U.S. Food and Drug Administration (FDA), European Union Medical Device Regulation (EU MDR), and Australian Therapeutic Goods Administration (TGA) databases. Results A total of 1,055 customised, health-related GPTs targeting patients and healthcare professionals were identified, which had collectively been used in over 360,000 conversations. Of these, 587 were psychology-related, 247 were in general medicine, 105 in oncology, 52 in cardiology, 30 in immunology, and 34 in other health specialties. Notably, 624 of the identified GPTs included healthcare professional titles (e.g., doctor, nurse, psychiatrist, oncologist) in their names and/or descriptions, suggesting they were taking on such roles. None of the customised GPTs identified were FDA, EU MDR, or TGA-approved. Discussion This study highlights the rapid emergence of publicly accessible, customised, health-related GPTs. The findings raise important questions about whether current AI medical device regulations are keeping pace with rapid technological advancements. The results also highlight the potential “role creep” in AI chatbots, where publicl",
+      "url": "https://www.semanticscholar.org/paper/ffdae9b41bd79a5d59beb0f074c7ea9cf893d092",
+      "pdf_url": "https://doi.org/10.3389/fpubh.2025.1584348",
+      "published_date": "2025-01-01",
+      "venue": "Frontiers in Public Health",
+      "doi": "10.3389/fpubh.2025.1584348",
+      "themes": [
+        "ADAPTIVE_REGULATION",
+        "AI_EVAL_VALID"
+      ],
+      "scores": {
+        "composite": 7.0,
+        "theme_score": 4,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 2
+      },
+      "priority": 3,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.210959",
+      "last_updated": "2026-04-24T12:22:49.210961",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "dblp:conf/ukicer/Chinaka25",
+      "source": "dblp",
+      "title": "Developing K-12 Teachers' Understanding of Fairness, Accountability, Transparency and Ethics (FATE) in AI Education.",
+      "authors": "Lynda Chinaka",
+      "abstract": "",
+      "url": "https://dblp.org/rec/conf/ukicer/Chinaka25",
+      "pdf_url": "",
+      "published_date": "2025-01-01",
+      "venue": "UKICER",
+      "doi": "10.1145/3754508.3754535",
+      "themes": [
+        "AI_EVAL_VALID",
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 5.5,
+        "theme_score": 4,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.211014",
+      "last_updated": "2026-04-24T12:22:49.211016",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "dblp:journals/caeai/MemarianD23",
+      "source": "dblp",
+      "title": "Fairness, Accountability, Transparency, and Ethics (FATE) in Artificial Intelligence (AI) and higher education: A systematic review.",
+      "authors": "Bahar Memarian, Tenzin Doleck",
+      "abstract": "",
+      "url": "https://dblp.org/rec/journals/caeai/MemarianD23",
+      "pdf_url": "",
+      "published_date": "2023-01-01",
+      "venue": "Comput. Educ. Artif. Intell.",
+      "doi": "10.1016/J.CAEAI.2023.100152",
+      "themes": [
+        "AI_EVAL_VALID",
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 6.5,
+        "theme_score": 4,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 1.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.211067",
+      "last_updated": "2026-04-24T12:22:49.211068",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "dblp:journals/aiedu/BoginaHKT22",
+      "source": "dblp",
+      "title": "Educating Software and AI Stakeholders About Algorithmic Fairness, Accountability, Transparency and Ethics.",
+      "authors": "Veronika Bogina, Alan Hartman, Tsvi Kuflik, Avital Shulner-Tal",
+      "abstract": "",
+      "url": "https://dblp.org/rec/journals/aiedu/BoginaHKT22",
+      "pdf_url": "",
+      "published_date": "2022-01-01",
+      "venue": "Int. J. Artif. Intell. Educ.",
+      "doi": "10.1007/S40593-021-00248-0",
+      "themes": [
+        "AI_EVAL_VALID",
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 5.5,
+        "theme_score": 4,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.211116",
+      "last_updated": "2026-04-24T12:22:49.211117",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "dblp:journals/corr/abs-2208-00681",
+      "source": "dblp",
+      "title": "The Many Facets of Trust in AI: Formalizing the Relation Between Trust and Fairness, Accountability, and Transparency.",
+      "authors": "Bran Knowles, John T. Richards, Frens Kroeger",
+      "abstract": "",
+      "url": "https://dblp.org/rec/journals/corr/abs-2208-00681",
+      "pdf_url": "",
+      "published_date": "2022-01-01",
+      "venue": "CoRR",
+      "doi": "10.48550/ARXIV.2208.00681",
+      "themes": [
+        "AI_EVAL_VALID",
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 5.5,
+        "theme_score": 4,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.211167",
+      "last_updated": "2026-04-24T12:22:49.211168",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "dblp:journals/sigir/KleanthousOBGHK21",
+      "source": "dblp",
+      "title": "Report on the CyCAT winter school on fairness, accountability, transparency and ethics (FATE) in AI.",
+      "authors": "Styliani Kleanthous, Jahna Otterbacher, Jo Bates, Fausto Giunchiglia, Frank Hopfgartner",
+      "abstract": "",
+      "url": "https://dblp.org/rec/journals/sigir/KleanthousOBGHK21",
+      "pdf_url": "",
+      "published_date": "2021-01-01",
+      "venue": "SIGIR Forum",
+      "doi": "10.1145/3476415.3476419",
+      "themes": [
+        "AI_EVAL_VALID",
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 5.5,
+        "theme_score": 4,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.211215",
+      "last_updated": "2026-04-24T12:22:49.211217",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "dblp:journals/titb/Shaban-NejadMBB21",
+      "source": "dblp",
+      "title": "Guest Editorial Explainable AI: Towards Fairness, Accountability, Transparency and Trust in Healthcare.",
+      "authors": "Arash Shaban-Nejad, Martin Michalowski, John S. Brownstein, David L. Buckeridge",
+      "abstract": "",
+      "url": "https://dblp.org/rec/journals/titb/Shaban-NejadMBB21",
+      "pdf_url": "",
+      "published_date": "2021-01-01",
+      "venue": "IEEE J. Biomed. Health Informatics",
+      "doi": "10.1109/JBHI.2021.3088832",
+      "themes": [
+        "AI_EVAL_VALID",
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 5.5,
+        "theme_score": 4,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.211264",
+      "last_updated": "2026-04-24T12:22:49.211265",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "dblp:conf/www/Vassermann21",
+      "source": "dblp",
+      "title": "AI Principles in Identifying Toxicity in Online Conversation: Keynote at the Third Workshop on Fairness, Accountability, Transparency, Ethics and Society on the Web.",
+      "authors": "Lucy Vasserman",
+      "abstract": "",
+      "url": "https://dblp.org/rec/conf/www/Vassermann21",
+      "pdf_url": "",
+      "published_date": "2021-01-01",
+      "venue": "WWW",
+      "doi": "10.1145/3442442.3452307",
+      "themes": [
+        "AI_EVAL_VALID",
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 5.5,
+        "theme_score": 4,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.211315",
+      "last_updated": "2026-04-24T12:22:49.211317",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "dblp:conf/fat/AhmadTE20",
+      "source": "dblp",
+      "title": "Fairness, accountability, transparency in AI at scale: lessons from national programs.",
+      "authors": "Muhammad Aurangzeb Ahmad, Ankur Teredesai, Carly Eckert",
+      "abstract": "",
+      "url": "https://dblp.org/rec/conf/fat/AhmadTE20",
+      "pdf_url": "",
+      "published_date": "2020-01-01",
+      "venue": "FAT*",
+      "doi": "10.1145/3351095.3375690",
+      "themes": [
+        "AI_EVAL_VALID",
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 8.5,
+        "theme_score": 4,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 3,
+        "methods": 0.5
+      },
+      "priority": 3,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.211360",
+      "last_updated": "2026-04-24T12:22:49.211361",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "dblp:conf/fllm/QureshiS25",
+      "source": "dblp",
+      "title": "Responsible AI to AI Governance: An Awareness-Driven, Culture-Conditioned Model in Healthcare.",
+      "authors": "Omer Aftab Qureshi, Loubna Saad Saoud",
+      "abstract": "",
+      "url": "https://dblp.org/rec/conf/fllm/QureshiS25",
+      "pdf_url": "",
+      "published_date": "2025-01-01",
+      "venue": "FLLM",
+      "doi": "10.1109/FLLM67465.2025.11390955",
+      "themes": [
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 3.5,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 0.5
+      },
+      "priority": 1,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.211407",
+      "last_updated": "2026-04-24T12:22:49.211408",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "dblp:conf/ijcnn/Skubis25",
+      "source": "dblp",
+      "title": "AI Governance: Ethics of Trustworthy AI in Healthcare.",
+      "authors": "Ida Skubis",
+      "abstract": "",
+      "url": "https://dblp.org/rec/conf/ijcnn/Skubis25",
+      "pdf_url": "",
+      "published_date": "2025-01-01",
+      "venue": "IJCNN",
+      "doi": "10.1109/IJCNN64981.2025.11229217",
+      "themes": [
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 3.5,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 0.5
+      },
+      "priority": 1,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.211449",
+      "last_updated": "2026-04-24T12:22:49.211450",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "dblp:conf/biostec/ChandradevaM26",
+      "source": "dblp",
+      "title": "AI-Based Software as a Medical Device: Bridging EU MDR Compliance with ISO/IEC 80001 and 81001 Cybersecurity Governance in Healthcare Systems.",
+      "authors": "Lakshika Chandradeva, Silvana Togneri MacMahon",
+      "abstract": "",
+      "url": "https://dblp.org/rec/conf/biostec/ChandradevaM26",
+      "pdf_url": "",
+      "published_date": "2026-01-01",
+      "venue": "BIOSTEC",
+      "doi": "",
+      "themes": [
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 4.0,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.211500",
+      "last_updated": "2026-04-24T12:22:49.211501",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "dblp:journals/corr/abs-2601-15630",
+      "source": "dblp",
+      "title": "Agentic AI Governance and Lifecycle Management in Healthcare.",
+      "authors": "Chandra Prakash, Mary Lind, Avneesh Sisodia",
+      "abstract": "",
+      "url": "https://dblp.org/rec/journals/corr/abs-2601-15630",
+      "pdf_url": "",
+      "published_date": "2026-01-01",
+      "venue": "CoRR",
+      "doi": "10.48550/ARXIV.2601.15630",
+      "themes": [
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 4.0,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.211554",
+      "last_updated": "2026-04-24T12:22:49.211556",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "dblp:journals/corr/abs-2603-07924",
+      "source": "dblp",
+      "title": "Semantic Risk Scoring of Aggregated Metrics: An AI-Driven Approach for Healthcare Data Governance.",
+      "authors": "Mohammed Omer Shakeel Ahmed",
+      "abstract": "",
+      "url": "https://dblp.org/rec/journals/corr/abs-2603-07924",
+      "pdf_url": "",
+      "published_date": "2026-01-01",
+      "venue": "CoRR",
+      "doi": "10.48550/ARXIV.2603.07924",
+      "themes": [
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 4.0,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.211602",
+      "last_updated": "2026-04-24T12:22:49.211603",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "dblp:journals/bise/BartschBBBBDFJLRSW25",
+      "source": "dblp",
+      "title": "Governance of High-Risk AI Systems in Healthcare and Credit Scoring.",
+      "authors": "Sebastian Clemens Bartsch, Oliver Behn, Alexander Benlian, Roger Brownsword, Sebastian Bücker",
+      "abstract": "",
+      "url": "https://dblp.org/rec/journals/bise/BartschBBBBDFJLRSW25",
+      "pdf_url": "",
+      "published_date": "2025-01-01",
+      "venue": "Bus. Inf. Syst. Eng.",
+      "doi": "10.1007/S12599-025-00944-4",
+      "themes": [
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 3.5,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 0.5
+      },
+      "priority": 1,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.211648",
+      "last_updated": "2026-04-24T12:22:49.211649",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "dblp:journals/fdgth/FieldsBTJARABAHS25",
+      "source": "dblp",
+      "title": "Governance for anti-racist AI in healthcare: integrating racism-related stress in psychiatric algorithms for Black Americans.",
+      "authors": "Christopher T. Fields, Carmen Black, Jannat K. Thind, Oluwole Jegede, Damla Aksen",
+      "abstract": "",
+      "url": "https://dblp.org/rec/journals/fdgth/FieldsBTJARABAHS25",
+      "pdf_url": "",
+      "published_date": "2025-01-01",
+      "venue": "Frontiers Digit. Health",
+      "doi": "10.3389/FDGTH.2025.1492736",
+      "themes": [
+        "PARTICIPATORY_GOV"
+      ],
+      "scores": {
+        "composite": 3.5,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 0.5
+      },
+      "priority": 1,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.211699",
+      "last_updated": "2026-04-24T12:22:49.211701",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "dblp:journals/ijmi/OlawadeWTMBH25",
+      "source": "dblp",
+      "title": "Evaluating AI adoption in healthcare: Insights from the information governance professionals in the United Kingdom.",
+      "authors": "David B. Olawade, Kusal Weerasinghe, Jennifer Teke, Maines Msiska, Stergios Boussios",
+      "abstract": "",
+      "url": "https://dblp.org/rec/journals/ijmi/OlawadeWTMBH25",
+      "pdf_url": "",
+      "published_date": "2025-01-01",
+      "venue": "Int. J. Medical Informatics",
+      "doi": "10.1016/J.IJMEDINF.2025.105909",
+      "themes": [
+        "PARTICIPATORY_GOV",
+        "EVIDENCE_IMPLEMENT"
+      ],
+      "scores": {
+        "composite": 5.5,
+        "theme_score": 4,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.211750",
+      "last_updated": "2026-04-24T12:22:49.211751",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "dblp:journals/corr/abs-2512-03098",
+      "source": "dblp",
+      "title": "An AI Implementation Science Study to Improve Trustworthy Data in a Large Healthcare System.",
+      "authors": "Benoit Louis Marteau, Andrew Hornback, Shaun Q. Y. Tan, Christian Lowson, Jason Woloff",
+      "abstract": "",
+      "url": "https://dblp.org/rec/journals/corr/abs-2512-03098",
+      "pdf_url": "",
+      "published_date": "2025-01-01",
+      "venue": "CoRR",
+      "doi": "10.48550/ARXIV.2512.03098",
+      "themes": [
+        "EVIDENCE_IMPLEMENT"
+      ],
+      "scores": {
+        "composite": 3.5,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0,
+        "venue": 0,
+        "methods": 0.5
+      },
+      "priority": 1,
+      "rank": null,
+      "added_date": "2026-04-24",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-04-24T12:22:49.211795",
+      "last_updated": "2026-04-24T12:22:49.211797",
+      "processing_status": "pending_review"
     }
   ]
 }
