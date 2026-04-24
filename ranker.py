@@ -220,6 +220,7 @@ def score_paper(paper: dict) -> dict:
 
     return {
         **paper,
+        "score": round(composite, 1),
         "themes": themes,
         "scores": {
             "composite": round(composite, 1),
