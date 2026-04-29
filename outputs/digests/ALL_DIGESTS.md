@@ -1,6 +1,984 @@
 # AI Health Literature Review — All Digests
-*Last updated: 2026-04-24 12:25*
+*Last updated: 2026-04-28 09:04*
 ---
+## Source: [digest_2026-04-28.md](outputs/digests/digest_2026-04-28.md)
+
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-04-28 (Tuesday) | **Papers ranked:** 100 | **New:** +8
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 8 · 🟡 83 · ⚪ 9
+**Top themes:** `AI_EVAL_VALID` (38), `PARTICIPATORY_GOV` (29), `ADAPTIVE_REGULATION` (24), `EVIDENCE_IMPLEMENT` (14), `CLINICAL_HEALTH_AI` (11)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 OpenMRF: A Modular, Vendor-Neutral Open-Source Framework for Reproducible Magnetic Resonance Fingerprinting using Pulseq
+
+**Source:** ARXIV | **Score:** `12.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID` `ADAPTIVE_REGULATION` `EVIDENCE_IMPLEMENT`
+**Authors:** Tom Griesler, Jannik Stebani, Sydney Kaplan, Ivaylo Angelov, Petra Albert
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22713)
+
+> Purpose: Widespread adoption and methodological advancement of Magnetic Resonance Fingerprinting (MRF) are limited by the lack of unified, reproducible implementation frameworks and fragmented open-source tools. To address these barriers, we introduce OpenMRF - a comprehensive Pulseq-based solution - designed to enable consistent, reproducible, and...
+
+
+### 🔴 Inter-Stance: A Dyadic Multimodal Corpus for Conversational Stance Analysis
+
+**Source:** ARXIV | **Score:** `9.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Xiang Zhang, Xiaotian Li, Taoyue Wang, Nan Bi, Xin Zhou
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22739)
+
+> Social interactions dominate our perceptions of the world and shape our daily behavior by attaching social meaning to acts as simple and spontaneous as gestures, facial expressions, voice, and speech. People mimic and otherwise respond to each other's postures, facial expressions, mannerisms, and other verbal and nonverbal behavior, and form apprai...
+
+
+### 🔴 Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Meng Chu, Xuan Billy Zhang, Kevin Qinghong Lin, Lingdong Kong, Jize Zhang
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22748)
+
+> As AI systems move from generating text to accomplishing goals through sustained interaction, the ability to model environment dynamics becomes a central bottleneck. Agents that manipulate objects, navigate software, coordinate with others, or design experiments require predictive environment models, yet the term world model carries different meani...
+
+
+### 🔴 Multiplex Hypergraph Modeling of Higher Order Structures in Psychometric Networks
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID`
+**Authors:** Francesca Possenti, Laura Girelli, Paolo Tieri, Manuela Petti
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22744)
+
+> Psychiatric disorders have been traditionally conceptualized as latent conditions producing observable symptoms, but recent studies suggest that psychopathology may emerge from symptoms interactions. Psychometric networking model these relations focusing on pairwise associations but overlooks higher-order dependencies arising among groups of variab...
+
+
+### 🔴 ATRS: Adaptive Trajectory Re-splitting via a Shared Neural Policy for Parallel Optimization
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `CLINICAL_HEALTH_AI` `ADAPTIVE_REGULATION`
+**Authors:** Jiajun Yu, Guodong Liu, Li Wang, Pengxiang Zhou, Wentao Liu
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22715)
+
+> Parallel trajectory optimization via the Alternating Direction Method of Multipliers (ADMM) has emerged as a scalable approach to long-horizon motion planning. However, existing frameworks typically decompose the problem into parallel subproblems based on a predefined fixed structure. Such structural rigidity often causes optimization stagnation in...
+
+
+### 🔴 Generative Modeling of Neurodegenerative Brain Anatomy with 4D Longitudinal Diffusion Model
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** Nivetha Jayakumar, Swakshar Deb, Bahram Jafrasteh, Qingyu Zhao, Miaomiao Zhang
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22700)
+
+> Understanding and predicting the progression of neurodegenerative diseases remains a major challenge in medical AI, with significant implications for early diagnosis, disease monitoring, and treatment planning. However, most available longitudinal neuroimaging datasets are temporally sparse with a few follow-up scans per subject. This scarcity of t...
+
+
+### 🔴 How Do AI Agents Spend Your Money? Analyzing and Predicting Token Consumption in Agentic Coding Tasks
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `AI_EVAL_VALID` `EVIDENCE_IMPLEMENT`
+**Authors:** Longju Bai, Zhemin Huang, Xingyao Wang, Jiao Sun, Rada Mihalcea
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22750)
+
+> The wide adoption of AI agents in complex human workflows is driving rapid growth in LLM token consumption. When agents are deployed on tasks that require a significant amount of tokens, three questions naturally arise: (1) Where do AI agents spend the tokens? (2) Which models are more token-efficient? and (3) Can agents predict their token usage b...
+
+
+### 🔴 Time-Localized Parametric Decomposition of Respiratory Airflow for Sub-Breath Analysis
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Victoria Ribeiro Rodrigues, Paul W. Davenport, Nicholas J. Napoli
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22695)
+
+> Respiratory airflow signals provide critical insight into breathing mechanics, yet conventional analysis methods remain limited in their ability to characterize the internal structure of individual breaths. Traditional approaches treat airflow as a quasi-periodic signal and rely on global descriptors such as tidal volume or peak flow, obscuring sub...
+
+
+
+## 📚 Supporting Papers (Priority 2, top 7)
+
+### 🟡 Representational Harms in LLM-Generated Narratives Against Global Majority Nationalities
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID` `EVIDENCE_IMPLEMENT`
+**Authors:** Ilana Nguyen, Harini Suresh, Thema Monroe-White, Evan Shieh
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22749)
+
+> Large language models (LLMs) are increasingly used for text generation tasks from everyday use to high-stakes enterprise and government applications, including simulated interviews with asylum seekers. While many works highlight the new potential applications of LLMs, there are risks of LLMs encoding and perpetuating harmful biases about non-domina...
+
+
+### 🟡 Code for All: Educational Applications of the "Vibe Coding" Hackathon in Programming Education across All Skill Levels
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Ashley J. Chen, Yijia Cao, Minghao Shao, Ramesh Karri, Muhammad Shafique
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22747)
+
+> The emergence of large language models has enabled vibe coding, a natural language approach to programming in which users describe intent and AI generates or revises code, potentially broadening access to programming while preserving meaningful learning outcomes. We investigate its educational value through a month-long online hackathon that welcom...
+
+
+### 🟡 Revisiting confinement scalings and fusion performance with a perspective optimized for extrapolation
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Jalal Butt, Geert Verdoolaege, Ghent University, Stanley M. Kaye, Egemen Kolemen
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22728)
+
+> Recent advances in high-temperature-superconductor technology have made substantially higher toroidal magnetic fields technologically accessible, reopening the design space for compact, high-field tokamak reactors. Because reactor performance projections remain anchored to empirical confinement scalings, the recent update to the ITPA global H-mode ...
+
+
+### 🟡 Neural Recovery of Historical Lexical Structure in Bantu Languages from Modern Data
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `ADAPTIVE_REGULATION` `AI_EVAL_VALID`
+**Authors:** Hillary Mutisya, John Mugane
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22730)
+
+> We investigate whether neural models trained exclusively on modern morphological data can recover cross-lingual lexical structure consistent with historical reconstruction. Using BantuMorph v7, a transformer over Bantu morphological paradigms, we analyze 14 Eastern and Southern Bantu languages, extract encoder embeddings for their noun and verb lem...
+
+
+### 🟡 When AI Meets Terahertz: A Survey on the Symbiosis of Artificial Intelligence and Terahertz Networks
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Chong Han, Jingting Jiang, Zhengdong Hu, Meixia Tao, Wenjun Zhang
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22706)
+
+> The Terahertz (THz) band (0.1-10 THz) has emerged as a critical frontier for future communication systems, offering ultra-wide bandwidths that enable Terabits-per-second (Tbps) wireless links and high-precision sensing and imaging. However, practical deployment of THz systems is hindered by unique challenges, including intricate channel characteris...
+
+
+### 🟡 Mechanical Scaling Laws and Deformation Behavior of Nanoporous Tantalum Microparticles
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** J. I. Ramallo, N. Vázquez von Bibow, M. A. Monclús, I. McCue, M. C. Fuertes
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22726)
+
+> The mechanical scaling laws of dealloyed nanoporous metals depart from classical Gibson-Ashby predictions for open-cell foams due to a decreased connectivity in their solid network. However, these scaling relations have been established almost exclusively on nanoporous gold produced by electrochemical dealloying, and it is an outstanding question w...
+
+
+### 🟡 Evaluation of the effects of 3GPP-specific beamforming and channel estimation on the 3D EIRP profile of a 5G gNB
+
+**Source:** ARXIV | **Score:** `6.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** Armed Tusha, Joshua Roy Palathinkal, Monisha Ghosh
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22710)
+
+> Spatial domain exploitation through 3D beamforming serves as a critical technology enabler for performance enhancement in the Fifth Generation New Radio (5G NR) specification. This is realized at the gNodeB (gNB) through the integration of massive antenna element arrays that facilitates 3D spatial multiplexing. However, these systems with high-dire...
+
+
+
+## ⚪ Supplementary (Priority 1, top 5)
+
+### ⚪ A comparative analysis of AI scribes versus human documentation in simulated general practice consultations.
+
+**Source:** PUBMED | **Score:** `3.5` | **Themes:** 
+**Authors:** ["Darran Foo", "Janice Tan", "Sean Stevens", "Amandeep Hansra", "Helen Wilcox"]
+**Venue:** Australian journal of general practice | **Published:** 2026-04-01
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41942089/)
+
+> Artificial intelligence (AI) scribes are emerging as transformative tools in healthcare to automatically generate clinical documentation from patient-clinician encounters. The aim of this study was to compare documentation quality between AI scribes and human-generated notes in simulated general practice consultations. This was a cross-sectional st...
+
+**Summary:** This study compared the quality of clinical documentation generated by commercially available AI scribes versus human-generated notes in simulated general practice consultations. Using standardized ex...
+
+
+### ⚪ From prediction to action: a retrospective observational study on the real-world implementation of Critical Interventions (CrIs), an AI-based clinical decision support system changing clinical behavior in the emergency department
+
+**Source:** SEMANTICSCHOLAR | **Score:** `3.5` | **Themes:** `CLINICAL_HEALTH_AI`
+**Authors:** Hansol Chang, J. Yu, Hyunjung Park, Yeejun Song, Sejin Heo
+**Venue:** BMC Medical Informatics and Decision Making | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/11855a6c39258799f3d5d87cd418b8cc43761e62)
+
+> Optimal emergency department (ED) care for critically ill patients relies on prompt recognition and initiation of necessary interventions. The Critical Interventions (CrIs) system was designed to predict the need for urgent procedures, including arterial line insertion, oxygen therapy, high-flow nasal cannula (HFNC), intubation, and inotropes or va...
+
+
+### ⚪ Real-World Feasibility of Generative Large Language Models for Clinical Decision Support in Benign Prostatic Hyperplasia.
+
+**Source:** SEMANTICSCHOLAR | **Score:** `3.5` | **Themes:** `CLINICAL_HEALTH_AI`
+**Authors:** Yuqi Li, Chunyang Meng, Lei Peng, Yang Zeng, Xu Li
+**Venue:** International Journal of Surgery | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/ca5cf9264d753c39a709603f8248c048b35de3bf)
+
+> BACKGROUND
+Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and elderly men, often accompanied by lower urinary tract symptoms (LUTS) that significantly impact patients' quality of life. It has emerged as a major public health challenge worldwide. In recent years, artificial intelligence (AI), particularly large language m...
+
+
+### ⚪ FDA-Approved Artificial Intelligence and Machine Learning (AI/ML)-Enabled Medical Devices: An Updated Landscape
+
+**Source:** SEMANTICSCHOLAR | **Score:** `3.5` | **Themes:** `ADAPTIVE_REGULATION`
+**Authors:** Geeta Joshi, Aditi Jain, Shalini Reddy Araveeti, Sabin Adhikari, Harshit Garg
+**Venue:** Electronics | **Published:** 2024-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/6fe6e3d9ebc672124b43149fb8de1915c8c4796d)
+
+> As artificial intelligence (AI) has been highly advancing in the last decade, machine learning (ML)-enabled medical devices are increasingly used in healthcare. In this study, we collected publicly available information on AI/ML-enabled medical devices approved by the FDA in the United States, as of the latest update on 19 October 2023. We performe...
+
+
+### ⚪ Responsible AI to AI Governance: An Awareness-Driven, Culture-Conditioned Model in Healthcare.
+
+**Source:** DBLP | **Score:** `3.5` | **Themes:** `PARTICIPATORY_GOV`
+**Authors:** Omer Aftab Qureshi, Loubna Saad Saoud
+**Venue:** FLLM | **Published:** 2025-01-01
+
+[🔗 DBLP](https://dblp.org/rec/conf/fllm/QureshiS25)
+
+
+---
+
+## 🔍 Cross-Analysis
+**Multi-theme papers:** 14/100
+
+## 📈 Theme Distribution
+
+| Theme | Count |
+|-------|-------|
+| `AI_EVAL_VALID` | ██████████ 38 |
+| `PARTICIPATORY_GOV` | ██████████ 29 |
+| `ADAPTIVE_REGULATION` | ██████████ 24 |
+| `EVIDENCE_IMPLEMENT` | ██████████ 14 |
+| `CLINICAL_HEALTH_AI` | ██████████ 11 |
+
+---
+
+*Generated: 2026-04-28T09:04:05.551592*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+
+---
+
+## Source: [digest_2026-04-27.md](outputs/digests/digest_2026-04-27.md)
+
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-04-27 (Monday) | **Papers ranked:** 100 | **New:** +26
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 0 · 🟡 91 · ⚪ 9
+**Top themes:** `AI_EVAL_VALID` (35), `PARTICIPATORY_GOV` (35), `ADAPTIVE_REGULATION` (14), `EVIDENCE_IMPLEMENT` (13), `CLINICAL_HEALTH_AI` (9)
+
+## 🏆 Featured Papers (Priority 3)
+
+
+## 📚 Supporting Papers (Priority 2, top 7)
+
+### 🟡 Context Unrolling in Omni Models
+
+**Source:** ARXIV | **Score:** `5.5` | **Themes:** `EVIDENCE_IMPLEMENT`
+**Authors:** Ceyuan Yang, Zhijie Lin, Yang Zhao, Fei Xiao, Hao He
+**Venue:** arXiv | **Published:** 2026-04-23
+
+[🔗 Link](https://arxiv.org/abs/2604.21921)
+
+> We present Omni, a unified multimodal model natively trained on diverse modalities, including text, images, videos, 3D geometry, and hidden representations. We find that such training enables Context Unrolling, where the model explicitly reasons across multiple modal representations before producing predictions. This process enables the model to ag...
+
+
+### 🟡 Developing K-12 Teachers' Understanding of Fairness, Accountability, Transparency and Ethics (FATE) in AI Education.
+
+**Source:** DBLP | **Score:** `5.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV`
+**Authors:** Lynda Chinaka
+**Venue:** UKICER | **Published:** 2025-01-01
+
+[🔗 DBLP](https://dblp.org/rec/conf/ukicer/Chinaka25)
+
+
+### 🟡 Educating Software and AI Stakeholders About Algorithmic Fairness, Accountability, Transparency and Ethics.
+
+**Source:** DBLP | **Score:** `5.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV`
+**Authors:** Veronika Bogina, Alan Hartman, Tsvi Kuflik, Avital Shulner-Tal
+**Venue:** Int. J. Artif. Intell. Educ. | **Published:** 2022-01-01
+
+[🔗 DBLP](https://dblp.org/rec/journals/aiedu/BoginaHKT22)
+
+
+### 🟡 The Many Facets of Trust in AI: Formalizing the Relation Between Trust and Fairness, Accountability, and Transparency.
+
+**Source:** DBLP | **Score:** `5.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV`
+**Authors:** Bran Knowles, John T. Richards, Frens Kroeger
+**Venue:** CoRR | **Published:** 2022-01-01
+
+[🔗 DBLP](https://dblp.org/rec/journals/corr/abs-2208-00681)
+
+
+### 🟡 Report on the CyCAT winter school on fairness, accountability, transparency and ethics (FATE) in AI.
+
+**Source:** DBLP | **Score:** `5.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV`
+**Authors:** Styliani Kleanthous, Jahna Otterbacher, Jo Bates, Fausto Giunchiglia, Frank Hopfgartner
+**Venue:** SIGIR Forum | **Published:** 2021-01-01
+
+[🔗 DBLP](https://dblp.org/rec/journals/sigir/KleanthousOBGHK21)
+
+
+### 🟡 Guest Editorial Explainable AI: Towards Fairness, Accountability, Transparency and Trust in Healthcare.
+
+**Source:** DBLP | **Score:** `5.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV`
+**Authors:** Arash Shaban-Nejad, Martin Michalowski, John S. Brownstein, David L. Buckeridge
+**Venue:** IEEE J. Biomed. Health Informatics | **Published:** 2021-01-01
+
+[🔗 DBLP](https://dblp.org/rec/journals/titb/Shaban-NejadMBB21)
+
+
+### 🟡 AI Principles in Identifying Toxicity in Online Conversation: Keynote at the Third Workshop on Fairness, Accountability, Transparency, Ethics and Society on the Web.
+
+**Source:** DBLP | **Score:** `5.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV`
+**Authors:** Lucy Vasserman
+**Venue:** WWW | **Published:** 2021-01-01
+
+[🔗 DBLP](https://dblp.org/rec/conf/www/Vassermann21)
+
+
+
+## ⚪ Supplementary (Priority 1, top 5)
+
+### ⚪ A comparative analysis of AI scribes versus human documentation in simulated general practice consultations.
+
+**Source:** PUBMED | **Score:** `3.5` | **Themes:** 
+**Authors:** ["Darran Foo", "Janice Tan", "Sean Stevens", "Amandeep Hansra", "Helen Wilcox"]
+**Venue:** Australian journal of general practice | **Published:** 2026-04-01
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41942089/)
+
+> Artificial intelligence (AI) scribes are emerging as transformative tools in healthcare to automatically generate clinical documentation from patient-clinician encounters. The aim of this study was to compare documentation quality between AI scribes and human-generated notes in simulated general practice consultations. This was a cross-sectional st...
+
+**Summary:** This study compared the quality of clinical documentation generated by commercially available AI scribes versus human-generated notes in simulated general practice consultations. Using standardized ex...
+
+
+### ⚪ From prediction to action: a retrospective observational study on the real-world implementation of Critical Interventions (CrIs), an AI-based clinical decision support system changing clinical behavior in the emergency department
+
+**Source:** SEMANTICSCHOLAR | **Score:** `3.5` | **Themes:** `CLINICAL_HEALTH_AI`
+**Authors:** Hansol Chang, J. Yu, Hyunjung Park, Yeejun Song, Sejin Heo
+**Venue:** BMC Medical Informatics and Decision Making | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/11855a6c39258799f3d5d87cd418b8cc43761e62)
+
+> Optimal emergency department (ED) care for critically ill patients relies on prompt recognition and initiation of necessary interventions. The Critical Interventions (CrIs) system was designed to predict the need for urgent procedures, including arterial line insertion, oxygen therapy, high-flow nasal cannula (HFNC), intubation, and inotropes or va...
+
+
+### ⚪ Real-World Feasibility of Generative Large Language Models for Clinical Decision Support in Benign Prostatic Hyperplasia.
+
+**Source:** SEMANTICSCHOLAR | **Score:** `3.5` | **Themes:** `CLINICAL_HEALTH_AI`
+**Authors:** Yuqi Li, Chunyang Meng, Lei Peng, Yang Zeng, Xu Li
+**Venue:** International Journal of Surgery | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/ca5cf9264d753c39a709603f8248c048b35de3bf)
+
+> BACKGROUND
+Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and elderly men, often accompanied by lower urinary tract symptoms (LUTS) that significantly impact patients' quality of life. It has emerged as a major public health challenge worldwide. In recent years, artificial intelligence (AI), particularly large language m...
+
+
+### ⚪ FDA-Approved Artificial Intelligence and Machine Learning (AI/ML)-Enabled Medical Devices: An Updated Landscape
+
+**Source:** SEMANTICSCHOLAR | **Score:** `3.5` | **Themes:** `ADAPTIVE_REGULATION`
+**Authors:** Geeta Joshi, Aditi Jain, Shalini Reddy Araveeti, Sabin Adhikari, Harshit Garg
+**Venue:** Electronics | **Published:** 2024-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/6fe6e3d9ebc672124b43149fb8de1915c8c4796d)
+
+> As artificial intelligence (AI) has been highly advancing in the last decade, machine learning (ML)-enabled medical devices are increasingly used in healthcare. In this study, we collected publicly available information on AI/ML-enabled medical devices approved by the FDA in the United States, as of the latest update on 19 October 2023. We performe...
+
+
+### ⚪ Responsible AI to AI Governance: An Awareness-Driven, Culture-Conditioned Model in Healthcare.
+
+**Source:** DBLP | **Score:** `3.5` | **Themes:** `PARTICIPATORY_GOV`
+**Authors:** Omer Aftab Qureshi, Loubna Saad Saoud
+**Venue:** FLLM | **Published:** 2025-01-01
+
+[🔗 DBLP](https://dblp.org/rec/conf/fllm/QureshiS25)
+
+
+---
+
+## 🔍 Cross-Analysis
+**Multi-theme papers:** 7/100
+
+## 📈 Theme Distribution
+
+| Theme | Count |
+|-------|-------|
+| `AI_EVAL_VALID` | ██████████ 35 |
+| `PARTICIPATORY_GOV` | ██████████ 35 |
+| `ADAPTIVE_REGULATION` | ██████████ 14 |
+| `EVIDENCE_IMPLEMENT` | ██████████ 13 |
+| `CLINICAL_HEALTH_AI` | █████████ 9 |
+
+---
+
+*Generated: 2026-04-27T09:02:37.703117*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+
+---
+
+## Source: [digest_2026-04-26.md](outputs/digests/digest_2026-04-26.md)
+
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-04-26 (Sunday) | **Papers ranked:** 100 | **New:** +0
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 0 · 🟡 91 · ⚪ 9
+**Top themes:** `AI_EVAL_VALID` (35), `PARTICIPATORY_GOV` (35), `ADAPTIVE_REGULATION` (14), `EVIDENCE_IMPLEMENT` (13), `CLINICAL_HEALTH_AI` (9)
+
+## 🏆 Featured Papers (Priority 3)
+
+
+## 📚 Supporting Papers (Priority 2, top 7)
+
+### 🟡 Context Unrolling in Omni Models
+
+**Source:** ARXIV | **Score:** `5.5` | **Themes:** `EVIDENCE_IMPLEMENT`
+**Authors:** Ceyuan Yang, Zhijie Lin, Yang Zhao, Fei Xiao, Hao He
+**Venue:** arXiv | **Published:** 2026-04-23
+
+[🔗 Link](https://arxiv.org/abs/2604.21921)
+
+> We present Omni, a unified multimodal model natively trained on diverse modalities, including text, images, videos, 3D geometry, and hidden representations. We find that such training enables Context Unrolling, where the model explicitly reasons across multiple modal representations before producing predictions. This process enables the model to ag...
+
+
+### 🟡 Developing K-12 Teachers' Understanding of Fairness, Accountability, Transparency and Ethics (FATE) in AI Education.
+
+**Source:** DBLP | **Score:** `5.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV`
+**Authors:** Lynda Chinaka
+**Venue:** UKICER | **Published:** 2025-01-01
+
+[🔗 DBLP](https://dblp.org/rec/conf/ukicer/Chinaka25)
+
+
+### 🟡 Educating Software and AI Stakeholders About Algorithmic Fairness, Accountability, Transparency and Ethics.
+
+**Source:** DBLP | **Score:** `5.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV`
+**Authors:** Veronika Bogina, Alan Hartman, Tsvi Kuflik, Avital Shulner-Tal
+**Venue:** Int. J. Artif. Intell. Educ. | **Published:** 2022-01-01
+
+[🔗 DBLP](https://dblp.org/rec/journals/aiedu/BoginaHKT22)
+
+
+### 🟡 The Many Facets of Trust in AI: Formalizing the Relation Between Trust and Fairness, Accountability, and Transparency.
+
+**Source:** DBLP | **Score:** `5.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV`
+**Authors:** Bran Knowles, John T. Richards, Frens Kroeger
+**Venue:** CoRR | **Published:** 2022-01-01
+
+[🔗 DBLP](https://dblp.org/rec/journals/corr/abs-2208-00681)
+
+
+### 🟡 Report on the CyCAT winter school on fairness, accountability, transparency and ethics (FATE) in AI.
+
+**Source:** DBLP | **Score:** `5.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV`
+**Authors:** Styliani Kleanthous, Jahna Otterbacher, Jo Bates, Fausto Giunchiglia, Frank Hopfgartner
+**Venue:** SIGIR Forum | **Published:** 2021-01-01
+
+[🔗 DBLP](https://dblp.org/rec/journals/sigir/KleanthousOBGHK21)
+
+
+### 🟡 Guest Editorial Explainable AI: Towards Fairness, Accountability, Transparency and Trust in Healthcare.
+
+**Source:** DBLP | **Score:** `5.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV`
+**Authors:** Arash Shaban-Nejad, Martin Michalowski, John S. Brownstein, David L. Buckeridge
+**Venue:** IEEE J. Biomed. Health Informatics | **Published:** 2021-01-01
+
+[🔗 DBLP](https://dblp.org/rec/journals/titb/Shaban-NejadMBB21)
+
+
+### 🟡 AI Principles in Identifying Toxicity in Online Conversation: Keynote at the Third Workshop on Fairness, Accountability, Transparency, Ethics and Society on the Web.
+
+**Source:** DBLP | **Score:** `5.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV`
+**Authors:** Lucy Vasserman
+**Venue:** WWW | **Published:** 2021-01-01
+
+[🔗 DBLP](https://dblp.org/rec/conf/www/Vassermann21)
+
+
+
+## ⚪ Supplementary (Priority 1, top 5)
+
+### ⚪ A comparative analysis of AI scribes versus human documentation in simulated general practice consultations.
+
+**Source:** PUBMED | **Score:** `3.5` | **Themes:** 
+**Authors:** ["Darran Foo", "Janice Tan", "Sean Stevens", "Amandeep Hansra", "Helen Wilcox"]
+**Venue:** Australian journal of general practice | **Published:** 2026-04-01
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41942089/)
+
+> Artificial intelligence (AI) scribes are emerging as transformative tools in healthcare to automatically generate clinical documentation from patient-clinician encounters. The aim of this study was to compare documentation quality between AI scribes and human-generated notes in simulated general practice consultations. This was a cross-sectional st...
+
+**Summary:** This study compared the quality of clinical documentation generated by commercially available AI scribes versus human-generated notes in simulated general practice consultations. Using standardized ex...
+
+
+### ⚪ From prediction to action: a retrospective observational study on the real-world implementation of Critical Interventions (CrIs), an AI-based clinical decision support system changing clinical behavior in the emergency department
+
+**Source:** SEMANTICSCHOLAR | **Score:** `3.5` | **Themes:** `CLINICAL_HEALTH_AI`
+**Authors:** Hansol Chang, J. Yu, Hyunjung Park, Yeejun Song, Sejin Heo
+**Venue:** BMC Medical Informatics and Decision Making | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/11855a6c39258799f3d5d87cd418b8cc43761e62)
+
+> Optimal emergency department (ED) care for critically ill patients relies on prompt recognition and initiation of necessary interventions. The Critical Interventions (CrIs) system was designed to predict the need for urgent procedures, including arterial line insertion, oxygen therapy, high-flow nasal cannula (HFNC), intubation, and inotropes or va...
+
+
+### ⚪ Real-World Feasibility of Generative Large Language Models for Clinical Decision Support in Benign Prostatic Hyperplasia.
+
+**Source:** SEMANTICSCHOLAR | **Score:** `3.5` | **Themes:** `CLINICAL_HEALTH_AI`
+**Authors:** Yuqi Li, Chunyang Meng, Lei Peng, Yang Zeng, Xu Li
+**Venue:** International Journal of Surgery | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/ca5cf9264d753c39a709603f8248c048b35de3bf)
+
+> BACKGROUND
+Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and elderly men, often accompanied by lower urinary tract symptoms (LUTS) that significantly impact patients' quality of life. It has emerged as a major public health challenge worldwide. In recent years, artificial intelligence (AI), particularly large language m...
+
+
+### ⚪ FDA-Approved Artificial Intelligence and Machine Learning (AI/ML)-Enabled Medical Devices: An Updated Landscape
+
+**Source:** SEMANTICSCHOLAR | **Score:** `3.5` | **Themes:** `ADAPTIVE_REGULATION`
+**Authors:** Geeta Joshi, Aditi Jain, Shalini Reddy Araveeti, Sabin Adhikari, Harshit Garg
+**Venue:** Electronics | **Published:** 2024-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/6fe6e3d9ebc672124b43149fb8de1915c8c4796d)
+
+> As artificial intelligence (AI) has been highly advancing in the last decade, machine learning (ML)-enabled medical devices are increasingly used in healthcare. In this study, we collected publicly available information on AI/ML-enabled medical devices approved by the FDA in the United States, as of the latest update on 19 October 2023. We performe...
+
+
+### ⚪ Responsible AI to AI Governance: An Awareness-Driven, Culture-Conditioned Model in Healthcare.
+
+**Source:** DBLP | **Score:** `3.5` | **Themes:** `PARTICIPATORY_GOV`
+**Authors:** Omer Aftab Qureshi, Loubna Saad Saoud
+**Venue:** FLLM | **Published:** 2025-01-01
+
+[🔗 DBLP](https://dblp.org/rec/conf/fllm/QureshiS25)
+
+
+---
+
+## 🔍 Cross-Analysis
+**Multi-theme papers:** 7/100
+
+## 📈 Theme Distribution
+
+| Theme | Count |
+|-------|-------|
+| `AI_EVAL_VALID` | ██████████ 35 |
+| `PARTICIPATORY_GOV` | ██████████ 35 |
+| `ADAPTIVE_REGULATION` | ██████████ 14 |
+| `EVIDENCE_IMPLEMENT` | ██████████ 13 |
+| `CLINICAL_HEALTH_AI` | █████████ 9 |
+
+---
+
+*Generated: 2026-04-26T09:02:18.850776*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+
+---
+
+## Source: [digest_2026-04-25.md](outputs/digests/digest_2026-04-25.md)
+
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-04-25 (Saturday) | **Papers ranked:** 100 | **New:** +52
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 18 · 🟡 73 · ⚪ 9
+**Top themes:** `AI_EVAL_VALID` (60), `PARTICIPATORY_GOV` (29), `ADAPTIVE_REGULATION` (21), `CLINICAL_HEALTH_AI` (9), `EVIDENCE_IMPLEMENT` (7)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 UniGenDet: A Unified Generative-Discriminative Framework for Co-Evolutionary Image Generation and Generated Image Detection
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Yanran Zhang, Wenzhao Zheng, Yifei Li, Bingyao Yu, Yu Zheng
+**Venue:** arXiv | **Published:** 2026-04-23
+
+[🔗 Link](https://arxiv.org/abs/2604.21904)
+
+> In recent years, significant progress has been made in both image generation and generated image detection. Despite their rapid, yet largely independent, development, these two fields have evolved distinct architectural paradigms: the former predominantly relies on generative networks, while the latter favors discriminative frameworks. A recent tre...
+
+
+### 🔴 A Multi-Stage Warm-Start Deep Learning Framework for Unit Commitment
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Muhy Eddin Za'ter, Anna Van Boven, Bri-Mathias Hodge, Kyri Baker
+**Venue:** arXiv | **Published:** 2026-04-23
+
+[🔗 Link](https://arxiv.org/abs/2604.21891)
+
+> Maintaining instantaneous balance between electricity supply and demand is critical for reliability and grid instability. System operators achieve this through solving the task of Unit Commitment (UC),ca high dimensional large-scale Mixed-integer Linear Programming (MILP) problem that is strictly and heavily governed by the grid physical constraint...
+
+
+### 🔴 Long-Horizon Manipulation via Trace-Conditioned VLA Planning
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `ADAPTIVE_REGULATION` `AI_EVAL_VALID`
+**Authors:** Isabella Liu, An-Chieh Cheng, Rui Yan, Geng Chen, Ri-Zhao Qiu
+**Venue:** arXiv | **Published:** 2026-04-23
+
+[🔗 Link](https://arxiv.org/abs/2604.21924)
+
+> Long-horizon manipulation remains challenging for vision-language-action (VLA) policies: real tasks are multi-step, progress-dependent, and brittle to compounding execution errors. We present LoHo-Manip, a modular framework that scales short-horizon VLA execution to long-horizon instruction following via a dedicated task-management VLM. The manager...
+
+
+### 🔴 Institutionalizing Best Practices in Research Computing: A Framework and Case Study for Improving User Onboarding
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `CLINICAL_HEALTH_AI` `AI_EVAL_VALID`
+**Authors:** Ayush Chaturvedi, Rob Pokorney, Elyn Fritz-Waters, Charlotte Rouse, Gary Bax
+**Venue:** arXiv | **Published:** 2026-04-23
+
+[🔗 Link](https://arxiv.org/abs/2604.21898)
+
+> Research computing centers around the world struggle with onboarding new users. Subject matter experts, researchers, and principal investigators are often overwhelmed by the complex infrastructure and software offerings designed to support diverse research domains at large academic and national institutions. As a result, users frequently fall into ...
+
+
+### 🔴 A Universal Quantum Information Preserving Photonic Switch for Scalable Quantum Networks
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Jiapeng Zhao, Stéphane Vinet, Amir Minoofar, Michael Kilzer, Lucas Wang
+**Venue:** arXiv | **Published:** 2026-04-23
+
+[🔗 Link](https://arxiv.org/abs/2604.21902)
+
+> Quantum networks are a keystone of the quantum internet. However, existing implementations remain largely confined to static point-to-point links due to the absence of a switching paradigm capable of dynamically routing fragile quantum entanglement without introducing decoherence. Here, we propose the Universal Quantum Switch, a foundational buildi...
+
+
+### 🔴 Seeing Without Eyes: 4D Human-Scene Understanding from Wearable IMUs
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Hao-Yu Hsu, Tianhang Cheng, Jing Wen, Alexander G. Schwing, Shenlong Wang
+**Venue:** arXiv | **Published:** 2026-04-23
+
+[🔗 Link](https://arxiv.org/abs/2604.21926)
+
+> Understanding human activities and their surrounding environments typically relies on visual perception, yet cameras pose persistent challenges in privacy, safety, energy efficiency, and scalability. We explore an alternative: 4D perception without vision. Its goal is to reconstruct human motion and 3D scene layouts purely from everyday wearable se...
+
+
+### 🔴 De Jure: Iterative LLM Self-Refinement for Structured Extraction of Regulatory Rules
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** ["Keerat Guliani", "Deepkamal Gill", "David Landsman", "Nima Eshraghi", "Krishna Kumar", "Lovedeep G
+**Venue:** arXiv | **Published:** 2026-04-02
+
+[📄 arXiv](https://arxiv.org/abs/arxi) · [PDF](https://arxiv.org/pdf/arxi)
+
+> Regulatory documents encode legally binding obligations that LLM-based systems must respect. Yet converting dense, hierarchically structured legal text into machine-readable rules remains a costly, expert-intensive process. We present De Jure, a fully automated, domain-agnostic pipeline for extracting structured regulatory rules from raw documents,...
+
+**Summary:** Regulatory documents encode legally binding obligations that LLM-based systems must respect. Yet converting dense, hierarchically structured legal text into machine-readable rules remains a costly, ex...
+
+
+### 🔴 Building and validating machine learning models to predict appendiceal perforation during conservative treatment of fecalith-associated appendicitis: a 20-algorithm multicenter retrospective analysis.
+
+**Source:** PUBMED | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Youlong Zhu", "Jiawei Feng", "Ruming Liu", "Wang Ren", "Xiao Ma", "Ning Wang", "Longbo Gong", "Fei
+**Venue:** Scientific reports | **Published:** 2026-04-06
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41942541/)
+
+> Fecalith-associated appendicitis presents unique challenges in conservative management due to increased perforation risk. Early identification of patients at high risk for appendiceal perforation during conservative treatment remains crucial for optimal clinical decision-making. To develop and validate machine learning-based prediction models for a...
+
+**Summary:** Fecalith-associated appendicitis presents unique challenges in conservative management due to increased perforation risk. Early identification of patients at high risk for appendiceal perforation duri...
+
+
+### 🔴 Investigation of multimodal deep learning models for predicting ovarian tumor malignancy based on ultrasound images and clinical information - a comprehensive comparative study against readers and O-RADS.
+
+**Source:** PUBMED | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Lei Lai", "Chen Chen", "Yahan Zhou", "Vicky Yang Wang", "Mengjiao Zhu", "Zhiyan Jin", "Yan Wu", "C
+**Venue:** BMC medical imaging | **Published:** 2026-04-06
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41942868/)
+
+> As the second deadly cancer affecting women globally, precise and timely classification of ovarian tumors plays an instrumental role in improving the rate of curing and reducing the rate of mortality. This study was set out to comprehensively investigate the effectiveness of deep learning model for classifying benign and malignant ovarian tumors, u...
+
+**Summary:** As the second deadly cancer affecting women globally, precise and timely classification of ovarian tumors plays an instrumental role in improving the rate of curing and reducing the rate of mortality....
+
+
+### 🔴 Quantum-inspired fused explainable deep learning framework for early enamel caries classification in intraoral photographs.
+
+**Source:** PUBMED | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Zohaib Khurshid", "Zeeshan Habib", "Falk Schwendicke", "Thanaphum Osathanon"]
+**Venue:** Odontology | **Published:** 2026-04-05
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41935999/)
+
+> The visual detection of early enamel caries in intraoral photographs is challenging due to subtle lesion appearance and diagnostic subjectivity. This study aimed to develop and validate an explainable, quantum-simulated deep learning framework for the automated classification of enamel caries severity from intraoral photographs. A hybrid framework ...
+
+**Summary:** The visual detection of early enamel caries in intraoral photographs is challenging due to subtle lesion appearance and diagnostic subjectivity. This study aimed to develop and validate an explainable...
+
+
+### 🔴 A deep learning-based multimodal model with automated body composition analysis predicts prognosis in advanced clear cell renal cell carcinoma.
+
+**Source:** PUBMED | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Youwei Chi", "Hanzheng Wang", "Qingsong Zou", "Fengze Sun", "Chunhai Hu", "Chu Liu", "Qian Li", "B
+**Venue:** Scientific reports | **Published:** 2026-04-04
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41935094/)
+
+> Clear cell renal cell carcinoma (ccRCC) is an aggressive malignancy with a high risk of postoperative recurrence. Body composition has emerged as a prognostic marker, but its clinical use is hindered by manual measurement methods and poorly interpretable models. This study aimed to develop an automated, interpretable prediction model integrating de...
+
+**Summary:** Clear cell renal cell carcinoma (ccRCC) is an aggressive malignancy with a high risk of postoperative recurrence. Body composition has emerged as a prognostic marker, but its clinical use is hindered ...
+
+
+### 🔴 Biochemical biomarker-Driven deep learning framework with SHAP-based feature interpretation for diabetes classification.
+
+**Source:** PUBMED | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Salman Khan"]
+**Venue:** Biophysical chemistry | **Published:** 2026-04-01
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41935405/)
+
+> Diabetes mellitus is a long-term metabolic condition that develops when the body cannot produce insulin effectively or use it properly. Individuals usually progress through a clinical spectrum that begins with normal glucose regulation, moves into a prediabetic state, and may eventually advance to type 2 diabetes. The continuous global rise in diab...
+
+**Summary:** This study proposes a deep learning framework combining a Deep Neural Network (DNN) with feature ranking and a statistical algorithm to improve early diabetes classification. Using biochemical biomark...
+
+
+### 🔴 Physics-Informed State Space Models for Reliable Solar Irradiance Forecasting in Off-Grid Systems
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Mohammed Ezzaldin Babiker Abdullah
+**Venue:** arXiv | **Published:** 2026-04-13
+
+[🔗 Link](https://arxiv.org/abs/2604.11807)
+
+> The stable operation of autonomous off-grid photovoltaic systems dictates reliance on solar forecasting algorithms that respect atmospheric thermodynamics. Contemporary deep learning models consistently exhibit critical anomalies, primarily severe temporal phase lags during cloud transients and physically impossible nocturnal power generation. To r...
+
+
+### 🔴 A Mechanistic Analysis of Looped Reasoning Language Models
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `EVIDENCE_IMPLEMENT` `ADAPTIVE_REGULATION`
+**Authors:** Hugh Blayney, Álvaro Arroyo, Johan Obando-Ceron, Pablo Samuel Castro, Aaron Courville
+**Venue:** arXiv | **Published:** 2026-04-13
+
+[🔗 Link](https://arxiv.org/abs/2604.11791)
+
+> Reasoning has become a central capability in large language models. Recent research has shown that reasoning performance can be improved by looping an LLM's layers in the latent dimension, resulting in looped reasoning language models. Despite promising results, few works have investigated how their internal dynamics differ from those of standard f...
+
+
+### 🔴 Prioritizing human-AI collaboration in healthcare: the TRIAD framework for trustworthy governance, real-world, and integrated adaptive deployment
+
+**Source:** SEMANTICSCHOLAR | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** Jia Li, Zilong Zhou, Zhen‐chang Wang, Han Lv
+**Venue:** Military Medical Research | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/af5ed5354bf871ea35c607fd37adabddb9686cef)
+
+> Artificial intelligence (AI) and big data are reshaping the healthcare landscape. However, clinical value depends on how well systems augment clinicians and fit into routine workflows. To this end, we introduce the TRIAD framework: trustworthy governance, real-world clinical value, and integrated adaptive deployment, to guide the development, valid...
+
+
+### 🔴 Nemobot Games: Crafting Strategic AI Gaming Agents for Interactive Learning with Large Language Models
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Chee Wei Tan, Yuchen Wang, Shangxin Guo
+**Venue:** arXiv | **Published:** 2026-04-23
+
+[🔗 Link](https://arxiv.org/abs/2604.21896)
+
+> This paper introduces a new paradigm for AI game programming, leveraging large language models (LLMs) to extend and operationalize Claude Shannon's taxonomy of game-playing machines. Central to this paradigm is Nemobot, an interactive agentic engineering environment that enables users to create, customize, and deploy LLM-powered game agents while a...
+
+
+### 🔴 The Dyson Minds 2025 Workshop: SETI around Black Holes
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Olivia Curtis, Van Hunter Adams, Daniel Angerhausen, Joseph Bates, Anamaria Berea
+**Venue:** arXiv | **Published:** 2026-04-23
+
+[🔗 Link](https://arxiv.org/abs/2604.21886)
+
+> The Dyson Minds 2025 Workshop, held at the Center for Brains, Minds & Machines at MIT and organized by Penn State, MIT, and The Ultraintelligence Foundation, brought together researchers in astrophysics, engineering, artificial intelligence, computer science, and philosophy to examine "Dyson Minds" -- large-scale post-biological intelligences power...
+
+
+### 🔴 Generative AI’s healthcare professional role creep: a cross-sectional evaluation of publicly accessible, customised health-related GPTs
+
+**Source:** SEMANTICSCHOLAR | **Score:** `7.0` | **Themes:** `ADAPTIVE_REGULATION` `AI_EVAL_VALID`
+**Authors:** Bianca Chu, N. Modi, B. Menz, Stephen Bacchi, G. Kichenadasse
+**Venue:** Frontiers in Public Health | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/ffdae9b41bd79a5d59beb0f074c7ea9cf893d092)
+
+> Introduction Generative artificial intelligence (AI) is advancing rapidly; an important consideration is the public’s increasing ability to customise foundational AI models to create publicly accessible applications tailored for specific tasks. This study aims to evaluate the accessibility and functionality descriptions of customised GPTs on the Op...
+
+
+
+## 📚 Supporting Papers (Priority 2, top 7)
+
+### 🟡 Development, validation, and visualization of a novel nomogram for predicting clinical outcomes of postoperative cervical cancer patients.
+
+**Source:** PUBMED | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Yanqi Liu", "Jia You", "Dandan Liu", "Liang Wen", "Huimin Liu", "Chenglei Gu", "Wentian Zhao", "Hu
+**Venue:** Scientific reports | **Published:** 2026-04-06
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41942534/)
+
+> To develop a context-aware multi-instance learning (TransMIL) model based on whole-slide pathological images and integrate it with clinical parameters, thereby constructing a multimodal model for prognostic prediction in postoperative cervical cancer patients. Data (including pathological images and clinical information) were collected from patient...
+
+**Summary:** This study developed and validated a multimodal clinical-Pathomics nomogram to predict overall survival (OS) and disease-free survival (DFS) in postoperative cervical cancer patients. The model integr...
+
+
+### 🟡 AI Models for Surgical Decision Support in Spontaneous Intracerebral Hemorrhage: A Systematic Review in Relation to Trials and Guidelines.
+
+**Source:** PUBMED | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Helbert de Oliveira Manduca Palmiero", "Carlos Gilberto Carlotti", "Eberval Gadelha Figueiredo"]
+**Venue:** Neurocritical care | **Published:** 2026-04-06
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41942817/)
+
+> Artificial intelligence (AI) applications for spontaneous intracerebral hemorrhage (ICH) are rapidly expanding, particularly in perioperative imaging analysis and surgical decision support. Because most predictive AI models are developed using independent clinical datasets, they are not expected to explicitly reproduce randomized trial protocols or...
+
+**Summary:** Artificial intelligence (AI) applications for spontaneous intracerebral hemorrhage (ICH) are rapidly expanding, particularly in perioperative imaging analysis and surgical decision support. Because mo...
+
+
+### 🟡 Validation of a Risk-Prediction Model in the Presence of Outcome Misclassification.
+
+**Source:** PUBMED | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID`
+**Authors:** ["Runjia Zou", "Brian D Williamson", "Susan M Shortreed", "R Yates Coley"]
+**Venue:** Statistics in medicine | **Published:** 2026-04-01
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41930736/)
+
+> Electronic health records (EHRs) provide a rich data source for building prediction models to improve the quality of care. However, EHR data are prone to measurement error, and outcomes used to evaluate prediction model performance may be misclassified. Comparing risk predictions to misclassified outcomes will result in unreliable estimates of a pr...
+
+**Summary:** Electronic health records (EHRs) provide a rich data source for building prediction models to improve the quality of care. However, EHR data are prone to measurement error, and outcomes used to evalua...
+
+
+### 🟡 Trapped bosons in mean field QED, nonlinear resonance cascades and dynamical BEC formation
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Thomas Chen, Ali Mezher
+**Venue:** arXiv | **Published:** 2026-04-13
+
+[🔗 Link](https://arxiv.org/abs/2604.11756)
+
+> In this paper, we study a system of bosons trapped in a confining potential, interacting with a quantized field of coherent photons in the mean field description of non-relativistic Quantum Electrodynamics (QED) obtained by [N. Leopold and P. Pickl , 2017]. We derive the effective nonlinear cascade equations governing the emission and absorption of...
+
+
+### 🟡 The nature of tilted supercritical accretion discs
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** P. Chris Fragile, Matthew J. Middleton, Brooks Brasseur, Deepika A. Bollimpalli, Zach Smith
+**Venue:** arXiv | **Published:** 2026-04-13
+
+[🔗 Link](https://arxiv.org/abs/2604.11794)
+
+> In this paper, we report on the first 3D general relativistic radiation magnetohydrodynamic simulations of large supercritical accretion discs that are tilted with respect to the black hole spin axis. We explore a range of black hole spin parameters (from $a_* = -0.9$ to 0.9), initial tilts (in the range from $β_0 = 0^\circ$ to $30^\circ$), and tar...
+
+
+### 🟡 Real-World Evaluation of Large Language Models in Healthcare (RWE-LLM): A New Realm of AI Safety & Validation
+
+**Source:** SEMANTICSCHOLAR | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** MD MHA¹ Meenesh Bhimani, BS¹ Alex Miller, P. M. Jonathan D. Agnew, Markel Sanz Ausin, BA¹ Mariska Ra
+**Venue:** medRxiv | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/1fe644e3b971a52cc57b1b5ddc4cba5408cf1a8d)
+
+> Background: The deployment of artificial intelligence (AI) in healthcare necessitates robust safety validation frameworks, particularly for systems directly interacting with patients. While theoretical frameworks exist, there remains a critical gap between abstract principles and practical implementation. Traditional LLM benchmarking approaches pro...
+
+
+### 🟡 Fairness, Accountability, Transparency, and Ethics (FATE) in Artificial Intelligence (AI) and higher education: A systematic review.
+
+**Source:** DBLP | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV`
+**Authors:** Bahar Memarian, Tenzin Doleck
+**Venue:** Comput. Educ. Artif. Intell. | **Published:** 2023-01-01
+
+[🔗 DBLP](https://dblp.org/rec/journals/caeai/MemarianD23)
+
+
+
+## ⚪ Supplementary (Priority 1, top 5)
+
+### ⚪ A comparative analysis of AI scribes versus human documentation in simulated general practice consultations.
+
+**Source:** PUBMED | **Score:** `3.5` | **Themes:** 
+**Authors:** ["Darran Foo", "Janice Tan", "Sean Stevens", "Amandeep Hansra", "Helen Wilcox"]
+**Venue:** Australian journal of general practice | **Published:** 2026-04-01
+
+[🔗 PubMed](https://pubmed.ncbi.nlm.nih.gov/41942089/)
+
+> Artificial intelligence (AI) scribes are emerging as transformative tools in healthcare to automatically generate clinical documentation from patient-clinician encounters. The aim of this study was to compare documentation quality between AI scribes and human-generated notes in simulated general practice consultations. This was a cross-sectional st...
+
+**Summary:** This study compared the quality of clinical documentation generated by commercially available AI scribes versus human-generated notes in simulated general practice consultations. Using standardized ex...
+
+
+### ⚪ From prediction to action: a retrospective observational study on the real-world implementation of Critical Interventions (CrIs), an AI-based clinical decision support system changing clinical behavior in the emergency department
+
+**Source:** SEMANTICSCHOLAR | **Score:** `3.5` | **Themes:** `CLINICAL_HEALTH_AI`
+**Authors:** Hansol Chang, J. Yu, Hyunjung Park, Yeejun Song, Sejin Heo
+**Venue:** BMC Medical Informatics and Decision Making | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/11855a6c39258799f3d5d87cd418b8cc43761e62)
+
+> Optimal emergency department (ED) care for critically ill patients relies on prompt recognition and initiation of necessary interventions. The Critical Interventions (CrIs) system was designed to predict the need for urgent procedures, including arterial line insertion, oxygen therapy, high-flow nasal cannula (HFNC), intubation, and inotropes or va...
+
+
+### ⚪ Real-World Feasibility of Generative Large Language Models for Clinical Decision Support in Benign Prostatic Hyperplasia.
+
+**Source:** SEMANTICSCHOLAR | **Score:** `3.5` | **Themes:** `CLINICAL_HEALTH_AI`
+**Authors:** Yuqi Li, Chunyang Meng, Lei Peng, Yang Zeng, Xu Li
+**Venue:** International Journal of Surgery | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/ca5cf9264d753c39a709603f8248c048b35de3bf)
+
+> BACKGROUND
+Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and elderly men, often accompanied by lower urinary tract symptoms (LUTS) that significantly impact patients' quality of life. It has emerged as a major public health challenge worldwide. In recent years, artificial intelligence (AI), particularly large language m...
+
+
+### ⚪ FDA-Approved Artificial Intelligence and Machine Learning (AI/ML)-Enabled Medical Devices: An Updated Landscape
+
+**Source:** SEMANTICSCHOLAR | **Score:** `3.5` | **Themes:** `ADAPTIVE_REGULATION`
+**Authors:** Geeta Joshi, Aditi Jain, Shalini Reddy Araveeti, Sabin Adhikari, Harshit Garg
+**Venue:** Electronics | **Published:** 2024-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/6fe6e3d9ebc672124b43149fb8de1915c8c4796d)
+
+> As artificial intelligence (AI) has been highly advancing in the last decade, machine learning (ML)-enabled medical devices are increasingly used in healthcare. In this study, we collected publicly available information on AI/ML-enabled medical devices approved by the FDA in the United States, as of the latest update on 19 October 2023. We performe...
+
+
+### ⚪ Responsible AI to AI Governance: An Awareness-Driven, Culture-Conditioned Model in Healthcare.
+
+**Source:** DBLP | **Score:** `3.5` | **Themes:** `PARTICIPATORY_GOV`
+**Authors:** Omer Aftab Qureshi, Loubna Saad Saoud
+**Venue:** FLLM | **Published:** 2025-01-01
+
+[🔗 DBLP](https://dblp.org/rec/conf/fllm/QureshiS25)
+
+
+---
+
+## 🔍 Cross-Analysis
+**Multi-theme papers:** 27/100
+
+## 📈 Theme Distribution
+
+| Theme | Count |
+|-------|-------|
+| `AI_EVAL_VALID` | ██████████ 60 |
+| `PARTICIPATORY_GOV` | ██████████ 29 |
+| `ADAPTIVE_REGULATION` | ██████████ 21 |
+| `CLINICAL_HEALTH_AI` | █████████ 9 |
+| `EVIDENCE_IMPLEMENT` | ███████ 7 |
+
+---
+
+*Generated: 2026-04-25T09:02:32.995499*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+
+---
+
 ## Source: [digest_2026-04-24_v3.md](outputs/digests/digest_2026-04-24_v3.md)
 
 # 🔬 AI Health Literature Review — Daily Digest v2

@@ -1,6 +1,80 @@
 # AI Health Literature Review — Short Digest
-*Last updated: 2026-04-24 12:25*
+*Last updated: 2026-04-28 09:04*
 ---
+### digest_2026-04-28.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-04-28 (Tuesday) | **Papers ranked:** 100 | **New:** +8
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 8 · 🟡 83 · ⚪ 9
+**Top themes:** `AI_EVAL_VALID` (38), `PARTICIPATORY_GOV` (29), `ADAPTIVE_REGULATION` (24), `EVIDENCE_IMPLEMENT` (14), `CLINICAL_HEALTH_AI` (11)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 OpenMRF: A Modular, Vendor-Neutral Open-Source Frame...
+
+---
+
+### digest_2026-04-27.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-04-27 (Monday) | **Papers ranked:** 100 | **New:** +26
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 0 · 🟡 91 · ⚪ 9
+**Top themes:** `AI_EVAL_VALID` (35), `PARTICIPATORY_GOV` (35), `ADAPTIVE_REGULATION` (14), `EVIDENCE_IMPLEMENT` (13), `CLINICAL_HEALTH_AI` (9)
+
+## 🏆 Featured Papers (Priority 3)
+
+
+## 📚 Supporting Papers (Priority 2, top 7)
+
+### 🟡 Context ...
+
+---
+
+### digest_2026-04-26.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-04-26 (Sunday) | **Papers ranked:** 100 | **New:** +0
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 0 · 🟡 91 · ⚪ 9
+**Top themes:** `AI_EVAL_VALID` (35), `PARTICIPATORY_GOV` (35), `ADAPTIVE_REGULATION` (14), `EVIDENCE_IMPLEMENT` (13), `CLINICAL_HEALTH_AI` (9)
+
+## 🏆 Featured Papers (Priority 3)
+
+
+## 📚 Supporting Papers (Priority 2, top 7)
+
+### 🟡 Context U...
+
+---
+
+### digest_2026-04-25.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-04-25 (Saturday) | **Papers ranked:** 100 | **New:** +52
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 18 · 🟡 73 · ⚪ 9
+**Top themes:** `AI_EVAL_VALID` (60), `PARTICIPATORY_GOV` (29), `ADAPTIVE_REGULATION` (21), `CLINICAL_HEALTH_AI` (9), `EVIDENCE_IMPLEMENT` (7)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 UniGenDet: A Unified Generative-Discriminative Fram...
+
+---
+
 ### digest_2026-04-24_v3.md
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-04-24 (Friday) | **Papers ranked:** 100 | **New:** +0
