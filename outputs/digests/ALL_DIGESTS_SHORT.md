@@ -1,6 +1,74 @@
 # AI Health Literature Review — Short Digest
-*Last updated: 2026-04-28 09:04*
+*Last updated: 2026-05-08 09:03*
 ---
+### digest_2026-05-08.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-05-08 (Friday) | **Papers ranked:** 100 | **New:** +0
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 27 · 🟡 73 · ⚪ 0
+**Top themes:** `AI_EVAL_VALID` (51), `ADAPTIVE_REGULATION` (34), `PARTICIPATORY_GOV` (30), `EVIDENCE_IMPLEMENT` (18), `CLINICAL_HEALTH_AI` (9)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 OpenMRF: A Modular, Vendor-Neutral Open-Source Framew...
+
+---
+
+### digest_2026-05-07.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-05-07 (Thursday) | **Papers ranked:** 100 | **New:** +0
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 27 · 🟡 73 · ⚪ 0
+**Top themes:** `AI_EVAL_VALID` (51), `ADAPTIVE_REGULATION` (34), `PARTICIPATORY_GOV` (30), `EVIDENCE_IMPLEMENT` (18), `CLINICAL_HEALTH_AI` (9)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 OpenMRF: A Modular, Vendor-Neutral Open-Source Fram...
+
+---
+
+### digest_2026-05-01.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-05-01 (Friday) | **Papers ranked:** 100 | **New:** +23
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 16 · 🟡 78 · ⚪ 6
+**Top themes:** `AI_EVAL_VALID` (46), `PARTICIPATORY_GOV` (33), `ADAPTIVE_REGULATION` (26), `EVIDENCE_IMPLEMENT` (16), `CLINICAL_HEALTH_AI` (9)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 OpenMRF: A Modular, Vendor-Neutral Open-Source Frame...
+
+---
+
+### digest_2026-04-30.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-04-30 (Thursday) | **Papers ranked:** 100 | **New:** +8
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 10 · 🟡 81 · ⚪ 9
+**Top themes:** `AI_EVAL_VALID` (42), `PARTICIPATORY_GOV` (28), `ADAPTIVE_REGULATION` (24), `EVIDENCE_IMPLEMENT` (14), `CLINICAL_HEALTH_AI` (10)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 OpenMRF: A Modular, Vendor-Neutral Open-Source Fra...
+
+---
+
 ### digest_2026-04-28.md
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-04-28 (Tuesday) | **Papers ranked:** 100 | **New:** +8
