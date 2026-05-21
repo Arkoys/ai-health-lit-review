@@ -2,9 +2,9 @@
   "metadata": {
     "created": "2026-04-10T01:00:53.003685",
     "source": "ai-health-lit-review SQLite migration",
-    "total_papers": 246,
+    "total_papers": 263,
     "version": "2.0",
-    "last_updated": "2026-05-13T09:04:50.577360"
+    "last_updated": "2026-05-21T20:50:33.644107"
   },
   "keyword_themes": {
     "AI_EVAL_VALID": [
@@ -8014,6 +8014,484 @@
       "created_at": "2026-05-09T09:03:54.731542",
       "last_updated": "2026-05-09T09:03:54.731543",
       "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "ss:bf7fd44beaf7f754084e4d32a66653337510f911",
+      "source": "semanticscholar",
+      "title": "Evidence-Driven AI Governance for Healthcare: A PEARL-PATHWAY Analysis of Madinah",
+      "authors": "Roba Alsaigh, Rashid Mehmood, Iyad A. Katib, Abdulaziz A. Almuzaini, S. Albouq",
+      "abstract": "The rapid integration of artificial intelligence (AI) into healthcare systems has intensified the need for governance frameworks that ensure safety, accountability, ethical, and sustainable deployment. However, existing AI governance approaches are primarily articulated through high-level ethical and regulatory principles, with limited operational guidance tailored to specific healthcare contexts. This challenge is particularly evident in dynamic settings such as Al Madinah, Saudi Arabia, where demographic diversity, evolving healthcare needs, and large-scale public health pressures, including the presence of millions of visitors annually during Hajj and Umrah, require adaptive and context-aware governance. This study presents an evidence-driven approach to AI governance analysis that directly links empirical healthcare needs with regulatory frameworks. It integrates the PEARL framework to systematically analyse an initial corpus of 4,277 healthcare publications related to Madinah, refined to 243 articles through inclusion and exclusion criteria, extracting structured representations of healthcare priorities, with the PATHWAY framework to evaluate alignment between these needs and both Saudi Arabian and international AI governance frameworks. This enables a systematic assessment of governance applicability, identification of gaps, and analysis of associated risks. The results reveal that while existing frameworks provide strong foundations in terms of privacy, ethics, and risk-based regulation, they lack operational pathways tailored to domain-specific healthcare requirements and local contexts. Key gaps are identified in areas including epidemiological surveillance, behavioural health, maternal and paediatric care, environmental health integration, and generative AI in public health communication. By bridging empirical evidence with governance analysis, this study advances a structured approach to domain-informed and context-sensitive AI governance. It contributes ",
+      "url": "https://www.semanticscholar.org/paper/bf7fd44beaf7f754084e4d32a66653337510f911",
+      "pdf_url": "",
+      "published_date": "2026-01-01",
+      "venue": "International Journal of Advanced Computer Science and Applications",
+      "doi": "10.14569/ijacsa.2026.0170421",
+      "themes": [
+        "PARTICIPATORY_GOV",
+        "AI_EVAL_VALID",
+        "ADAPTIVE_REGULATION"
+      ],
+      "score": 11.5,
+      "scores": {
+        "composite": 11.5,
+        "theme_score": 6,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 3,
+        "methods": 1
+      },
+      "priority": 3,
+      "rank": null,
+      "added_date": "2026-05-14",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-05-14T09:03:45.783161",
+      "last_updated": "2026-05-14T09:03:45.783164",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "ss:94447651cc7a0d032fd9d08377ba46abcdea125e",
+      "source": "semanticscholar",
+      "title": "Ethical AI Governance in Healthcare CRM Systems",
+      "authors": "B. Dabbara",
+      "abstract": "Artificial Intelligence (AI) is reshaping healthcare customer relationship management (CRM) systems by enabling intelligent patient engagement, predictive care coordination, workflow automation, and personalized communication. However, deploying AI in healthcare raises complex ethical challenges related to privacy, fairness, transparency, accountability, and regulatory compliance. Unlike traditional sectors, healthcare decisions can directly affect patient well-being, access to services, and trust in institutions. This paper proposes a comprehensive framework for Ethical AI Governance in healthcare CRM systems built on the Salesforce ecosystem. The model integrates Salesforce Health Cloud, Salesforce Data Cloud, Einstein AI, Salesforce Shield, automation tools, analytics, and interoperability layers to build trusted enterprise AI systems. The study presents a reference architecture, a governance operating model, a measurable KPI framework, and an implementation roadmap for responsible AI in healthcare. The findings show that ethical AI governance is not merely a compliance requirement but a strategic enabler of scalable, patient-centric digital transformation. This paper offers a practical, publishable blueprint for healthcare organizations, system architects, regulators, and enterprise leaders adopting AI-enabled CRM platforms.",
+      "url": "https://www.semanticscholar.org/paper/94447651cc7a0d032fd9d08377ba46abcdea125e",
+      "pdf_url": "",
+      "published_date": "2026-01-01",
+      "venue": "International Journal for Sciences and Technology",
+      "doi": "10.71097/ijsat.v17.i2.11021",
+      "themes": [
+        "PARTICIPATORY_GOV",
+        "AI_EVAL_VALID"
+      ],
+      "score": 9.5,
+      "scores": {
+        "composite": 9.5,
+        "theme_score": 4,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 3,
+        "methods": 1
+      },
+      "priority": 3,
+      "rank": null,
+      "added_date": "2026-05-14",
+      "added_via": "daily_pipeline_v2",
+      "created_at": "2026-05-14T09:03:45.783295",
+      "last_updated": "2026-05-14T09:03:45.783296",
+      "processing_status": "pending_review"
+    },
+    {
+      "paper_id": "2605.21186v1",
+      "source": "arxiv",
+      "title": "SAM-Sode: Towards Faithful Explanations for Tiny Bacteria Detection",
+      "authors": "Wanying Tan, Shuo Yan, Dazhi Huang, Yazheng Liu, Zili Shao",
+      "abstract": "Interpretability in object detection provides crucial confidence support for clinical auxiliary diagnosis. However, in tiny bacteria detection, traditional explanation methods often suffer from blurred foreground boundaries and diffuse feature attribution due to the extreme sparsity of target morphological features and severe interference from complex backgrounds. Such limitations hinder the provision of logically coherent morphological evidence. To bridge this gap, we propose a novel eXplainable AI (XAI) framework, SAM-Sode. The framework innovatively transforms initial feature attribution maps into geometry-aware prompts, leveraging the prior knowledge of the foundation model (SAM3) to achieve spatial refinement and morphological reconstruction of the explanatory mappings. Furthermore, we introduce a dual-constraint mechanism based on physical significance and geometric alignment to perform instance-level denoising, generating coherent explanations that better align with human expert intuition. Experimental results on our self-constructed bacteria dataset with complex circuit backgrounds (containing 2,524 images) and other public datasets demonstrate that the proposed method effectively suppresses background redundancy and significantly enhances the decision-making transparency of tiny object detection.",
+      "url": "https://arxiv.org/abs/2605.21186",
+      "pdf_url": "https://arxiv.org/pdf/2605.21186",
+      "published_date": "2026-05-20",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID"
+      ],
+      "score": 6.0,
+      "scores": {
+        "composite": 6.0,
+        "theme_score": 2,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-05-21",
+      "added_via": "daily_pipeline"
+    },
+    {
+      "paper_id": "2605.20525v1",
+      "source": "arxiv",
+      "title": "NeuroQA: A Large-Scale Image-Grounded Benchmark for 3D Brain MRI Understanding",
+      "authors": "Mohammad H. Abbasi, Favour Nerrise, Shaurnav Ghosh, Ridvan Yesiloglu, Yuncong Mao",
+      "abstract": "We present NeuroQA, a large-scale benchmark for visual question answering in 3D brain magnetic resonance imaging (MRI), with 56,953 QA pairs from 12,977 subjects across 12 datasets. It spans ages 5-104 and five clinical domains: Alzheimer's, Parkinson's, tumors, white matter disease, and neurodevelopment. Unlike prior medical Visual Question Answering (VQA) efforts that operate on 2D slices or rely on narrow diagnostic labels, NeuroQA pairs every item with a full 3D volume. It evaluates 11 clinically grounded reasoning skills across Yes/No, multiple-choice, and open-ended formats. Of the 203 templates, 131 are image-grounded (answerable from a 3-plane viewer) and 72 are image-informed (ground truth from quantitative volumetry or clinical instruments). To remove text-only shortcuts, we apply answer-distribution refinement, reducing closed-format text-only accuracy from $>$80% to 44.6%; image necessity is assessed separately through an image-grounding protocol released with the benchmark. A 38-rule deterministic pipeline and two rounds of expert review verify every QA pair against FreeSurfer measurements, metadata, or radiology report fields, with zero same-subject contradictions across templates. We conduct a clinician evaluation in which two clinicians independently assess 100 frozen test items on a three-plane viewer. On closed-format (Yes/No + multiple-choice) test-public items, the best zero-shot vision-language model and a supervised 3D CNN baseline reach 47.5% and 43.7% accuracy respectively, both below the 49.4% text-only majority-template floor. NeuroQA adopts a two-tier release with public QA pairs for open-access datasets and reproducible generation scripts for datasets restricted by data use agreements (DUAs), plus subject-level splits, a held-out private test set, and an online leaderboard.",
+      "url": "https://arxiv.org/abs/2605.20525",
+      "pdf_url": "https://arxiv.org/pdf/2605.20525",
+      "published_date": "2026-05-19",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID"
+      ],
+      "score": 5.5,
+      "scores": {
+        "composite": 5.5,
+        "theme_score": 2,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-05-21",
+      "added_via": "daily_pipeline"
+    },
+    {
+      "paper_id": "2605.20405v1",
+      "source": "arxiv",
+      "title": "Disentangling Sampling from Training Budget in Class-Imbalanced CT Body Composition Segmentation",
+      "authors": "Iason Skylitsis, Dimitrios Karkalousos, Ivana Išgum",
+      "abstract": "Class imbalance is a fundamental challenge in medical image segmentation, where frequent classes typically dominate training at the expense of rare classes. Loss-based approaches mitigate imbalance by reweighting the per-pixel loss within the batch, while sampling strategies control which images enter the batch. Yet neither explicitly controls which classes appear within the batch, leaving rare-class exposure only partially rebalanced. In this work, we adopt episodic sampling from few-shot learning to promote class-balanced batch construction in a fully supervised setting. We decouple episodic sampling from its conventional metric-learning context and evaluate it in body composition segmentation in CT. We compare episodic sampling against random and weighted sampling on nine muscle and adipose tissues, derived from 210 scans of the public SAROS dataset. Training is performed under full- and low-data regimes, with additional comparisons under matched training iteration budgets. Under full-data training, all three strategies performed comparably (mean Dice 0.882 for episodic, 0.878 for random and weighted). Under low-data training, episodic sampling outperformed random and weighted (0.787 vs. 0.758 and 0.762), driven by a 12-fold difference in training iterations. Under matched training budgets, random and weighted overfit earlier, while episodic improved for approximately three times more iterations before plateauing. Our findings identify the training iteration budget as under-recognized confound in sampling strategies, motivating iteration-aware evaluation protocols for small datasets. Furthermore, the residual advantage of episodic sampling is consistent with an implicit regularization effect of class-balanced batches, offering a low-cost, model-agnostic strategy for class-imbalanced medical image segmentation. Code is available at https://github.com/iasonsky/episodic-sampling.",
+      "url": "https://arxiv.org/abs/2605.20405",
+      "pdf_url": "https://arxiv.org/pdf/2605.20405",
+      "published_date": "2026-05-19",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID"
+      ],
+      "score": 4.5,
+      "scores": {
+        "composite": 4.5,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-05-21",
+      "added_via": "daily_pipeline"
+    },
+    {
+      "paper_id": "2605.17859v2",
+      "source": "arxiv",
+      "title": "Multi-site PPG: An In-the-Wild Physiological Dataset from Emerging Multi-site Wearables",
+      "authors": "Jiayi Shao, Jiaying Ye, Shengyao Liu, Zachary Englhardt, Girish Narayanswamy",
+      "abstract": "Wearables are widely used for mobile health monitoring, and photoplethysmography (PPG) is a key sensing modality for heart rate and related physiological measurements. However, public in-the-wild PPG datasets remain largely wrist-centric or limited to short, controlled studies, constraining research on emerging wearable form factors. We present Multi-site PPG, an in-the-wild physiological dataset collected from four custom-developed unobtrusive wearables: a smart earring, ring, watch, and necklace. Each device records green and infrared reflective PPG, 3-axis acceleration, and temperature with timestamps for cross-device alignment, while a Polar H10 chest strap provides reference electrocardiogram (ECG). Participants wore the devices for multiple days during daytime activities while continuing their normal routines. The dataset contains over 350 hours of raw data and 230-290 hours of modeling-ready 8-second windows per wearable. We benchmark heuristic, supervised, and self-supervised heart-rate estimation methods, showing substantial body-site differences: the best methods achieve mean absolute errors (MAEs) of 2.30 bpm on the earring, 5.13 bpm on the ring, 8.37 bpm on the watch, and 8.68 bpm on the necklace. We further analyze motion effects and evaluate multi-site and PPG-accelerometer fusion, demonstrating the dataset's value for robust physiological sensing across emerging wearable form factors.",
+      "url": "https://arxiv.org/abs/2605.17859",
+      "pdf_url": "https://arxiv.org/pdf/2605.17859",
+      "published_date": "2026-05-18",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [],
+      "score": 3.5,
+      "scores": {
+        "composite": 3.5,
+        "theme_score": 0,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 0.5
+      },
+      "priority": 1,
+      "rank": null,
+      "added_date": "2026-05-21",
+      "added_via": "daily_pipeline"
+    },
+    {
+      "paper_id": "2605.17746v1",
+      "source": "arxiv",
+      "title": "Agents for Experiments, Experiments for Agents: A Design Grammar for AI-Enabled Experimental Science",
+      "authors": "Yingjie Zhang, Chun Feng, Weizhang Zhu, Tianshu Sun",
+      "abstract": "AI systems are becoming active participants in organizational and knowledge work. They increasingly interact with humans, coordinate workflows, and operate in multi-agent arrangements. Understanding their effects therefore requires more than measuring output accuracy; it requires evidence about mechanisms, delegation, feedback, and control. Experiments remain central to this task, but they also face a recursive challenge: we need experiments for agents to study these arrangements, and we may need agents for experiments to help search the expanding space of possible designs. Yet experimental conditions for human-AI and agentic workflows are still largely specified in prose, making them difficult to compare, reuse, or audit. We frame this as a problem of workflow representation, traceability, and governance in AI-enabled knowledge production. We introduce SEED (Structural Encoding for Experimental Discovery), a framework that represents experimental conditions as typed actor-flow graphs. SEED supports three design functions: describing conditions as interaction structures, evaluating structural novelty relative to encoded prior designs, and generating candidate designs under feasibility and governance constraints. We report a lightweight empirical feasibility test that compares graph-blind and SEEDguided generation in a medical-triage design task. In this diagnostic contrast, SEED-guided candidate designs show clearer actor-flow changes, assumptions, and governance checks, supporting the feasibility of the grammar as a design aid. The commentary closes by identifying governance tensions around novelty, replication, validity, diversity of inquiry, and accountability.",
+      "url": "https://arxiv.org/abs/2605.17746",
+      "pdf_url": "https://arxiv.org/pdf/2605.17746",
+      "published_date": "2026-05-18",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "PARTICIPATORY_GOV"
+      ],
+      "score": 6.0,
+      "scores": {
+        "composite": 6.0,
+        "theme_score": 2,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-05-21",
+      "added_via": "daily_pipeline"
+    },
+    {
+      "paper_id": "2605.18897v1",
+      "source": "arxiv",
+      "title": "Cross-Subject Intracranial EEG Reconstruction from Scalp Recordings Using Multi-Scale Cross-Attention Transformers",
+      "authors": "Tien-Dat Pham, Xuan-The Tran",
+      "abstract": "Intracranial EEG (iEEG) provides high-fidelity neural recordings essential for clinical and brain-computer interface applications, but acquiring these signals requires invasive surgery. While recent studies have attempted to estimate iEEG from non-invasive scalp EEG, most rely on patient-specific models, creating a circular dependency: if surgery is required to collect training data, the non-invasive model offers limited practical benefit. In this study, we address the challenge of cross-subject iEEG reconstruction by predicting intracranial signals for unseen patients using models trained on other individuals. We propose CAST (Cross-Attention Spatial-Temporal Transformer), a machine learning framework that translates scalp EEG into multi-channel iEEG waveforms through a two-stage transfer learning strategy. First, a temporal encoder extracts multi-scale neural representations at three different resolutions. Then, because electrode placements vary substantially across patients, a channel-aware decoder is calibrated using only a few minutes of data from the target subject. We evaluated the proposed method using leave-one-subject-out cross-validation on two public datasets comprising 1,282 iEEG channels. Experimental results demonstrate that CAST reconstructs cortical signals located near the scalp surface substantially better than deep subcortical activity. In highly observable sensorimotor regions, the model achieved peak correlations of up to r=0.864 in the precentral gyrus. Furthermore, with a channel selection strategy, CAST obtained a mean correlation of r=0.545 on viable subjects, outperforming previous within-subject baselines. These findings indicate that cortical iEEG signals can be reconstructed for unseen subjects from scalp EEG without extensive patient-specific training, and that only a brief calibration phase is sufficient to adapt the model to new hardware configurations.",
+      "url": "https://arxiv.org/abs/2605.18897",
+      "pdf_url": "https://arxiv.org/pdf/2605.18897",
+      "published_date": "2026-05-17",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID"
+      ],
+      "score": 6.0,
+      "scores": {
+        "composite": 6.0,
+        "theme_score": 2,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-05-21",
+      "added_via": "daily_pipeline"
+    },
+    {
+      "paper_id": "2605.17194v1",
+      "source": "arxiv",
+      "title": "Designing for Being-With: Presence Without Personhood in Conversational Human-AI Interaction",
+      "authors": "Hector Michael Fried, Robin Hill",
+      "abstract": "Conversational AI systems increasingly generate social presence through linguistic fluency, emotional mirroring, and continuity across interactions. While these qualities can support engagement, they also risk relational overreach-particularly in care-adjacent contexts where users may interpret fluent systems as empathic, competent, or authoritative. This position paper argues for a designerly alternative: being-with without becoming. Drawing on a program of research-through-design and design ethnography involving the design, deployment, and reflective analysis of conversational agents across public, educational, cultural, and care-adjacent settings, the paper introduces the concept of bounded relational presence. Bounded presence supports attentiveness, continuity, and responsiveness while explicitly avoiding claims of personhood, therapeutic authority, or human equivalence. Presence is reframed as a designable interaction quality that can be tuned, constrained, and deliberately withdrawn, rather than maximized as a performance goal. The contribution is not a deployed clinical system, but a set of designerly principles for shaping relational interaction in conversational HRI that emphasize relational coherence, honesty of limits, and accountable withdrawal.",
+      "url": "https://arxiv.org/abs/2605.17194",
+      "pdf_url": "https://arxiv.org/pdf/2605.17194",
+      "published_date": "2026-05-16",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [],
+      "score": 3.0,
+      "scores": {
+        "composite": 3.0,
+        "theme_score": 0,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 1,
+      "rank": null,
+      "added_date": "2026-05-21",
+      "added_via": "daily_pipeline"
+    },
+    {
+      "paper_id": "2605.17140v2",
+      "source": "arxiv",
+      "title": "UCSF-PDGM-VQA: Visual Question Answering dataset for brain tumor MRI interpretation",
+      "authors": "Shiv Ghosh, Junayd Lateef, Chih-Hua Liu, Yannan Yu, Andreas M. Rauschecker",
+      "abstract": "Brain tumor diagnosis is largely dependent on Magnetic Resonance Imaging (MRI) evaluation, which requires radiologists to synthesize thousands of images across multiple 3D sequences and longitudinal studies. This process requires advanced neuro-radiology training, poses substantial cognitive load, and is highly time-consuming. Despite increasing demands in radiology, this expertise is difficult to scale, straining the current health systems. Vision-Language Models (VLMs) provide an opportunity to reduce this burden through a semi-automated, interactive interpretation of complex brain MRIs. However, they are currently underutilized in neuro-oncology due to a lack of specialized benchmarks for evaluating them. We introduce a clinically relevant visual question answering (VQA) benchmark -- the UCSF-PDGM-VQA dataset -- consisting of 2,387 QA pairs from 473 glioma-related MRI studies in the public UCSF-PDGM dataset. We further establish a performance baseline for six state-of-the-art vision-language models (VLMs) and one large language model on this dataset. We find that current models are incapable of effectively processing multi-sequence, 3-dimensional MRI scans, thus resulting in a suppression of visual features and over-reliance on language priors, causing modality collapse. These findings underscore a critical deficiency in current model reliability and safety within clinical settings, necessitating the development of robust, domain-specific VLMs.",
+      "url": "https://arxiv.org/abs/2605.17140",
+      "pdf_url": "https://arxiv.org/pdf/2605.17140",
+      "published_date": "2026-05-16",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID"
+      ],
+      "score": 5.5,
+      "scores": {
+        "composite": 5.5,
+        "theme_score": 2,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-05-21",
+      "added_via": "daily_pipeline"
+    },
+    {
+      "paper_id": "2605.21295v1",
+      "source": "arxiv",
+      "title": "TimeSRL: Generalizable Time-Series Behavioral Modeling via Semantic RL-Tuned LLMs -- A Case Study in Mental Health",
+      "authors": "Yuang Fan, Lilin Xu, Millie Wu, Jingping Nie, Qingyu Chen",
+      "abstract": "Longitudinal passive sensing enables continuous health prediction, yet models often fail under cross-dataset distribution shifts. Traditional ML overfits cohort-specific artifacts, while Large Language Models (LLMs) struggle to reason reliably over long, heterogeneous time-series. We introduce TimeSRL, a two-stage LLM framework that routes predictions through an explicit semantic bottleneck. The model first abstracts raw signals into high-level natural language, then predicts behavioral outcomes from these abstractions alone. This forces the model to reason over semantic concepts that we argue generalize better than raw numbers. We optimize this process end-to-end using Group Relative Policy Optimization (GRPO) with Reinforcement Learning from Verifiable Rewards (RLVR), learning outcome-aligned abstractions without gold intermediate annotations. Instantiated on mental-health prediction, TimeSRL achieves state-of-the-art performance on a benchmark designed to stress-test cross-cohort generalization under a rigorous leave-one-dataset-out (LOSO) protocol, reducing mean absolute error (MAE) over strong non-LLM ML and LLM baselines by 3.1--10.1% and 9.5--44.1% for anxiety, and 3.2--9.6% and 27.4--57.6% for depression (all $p$s<0.05). TimeSRL significantly outperforms prior methods in cross-benchmark transfer across different sensing pipelines, rivaling its own within-domain performance without target-domain fine-tuning. These results demonstrate that semantic abstractions are reusable and point to a new direction for generalizable behavior modeling via RL-tuned LLMs.",
+      "url": "https://arxiv.org/abs/2605.21295",
+      "pdf_url": "https://arxiv.org/pdf/2605.21295",
+      "published_date": "2026-05-20",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [],
+      "score": 4.0,
+      "scores": {
+        "composite": 4.0,
+        "theme_score": 0,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-05-21",
+      "added_via": "daily_pipeline"
+    },
+    {
+      "paper_id": "2605.21154v1",
+      "source": "arxiv",
+      "title": "Automated ICD Classification of Psychiatric Diagnoses: From Classical NLP to Large Language Models",
+      "authors": "Fernando Ortega, Raúl Lara-Cabrera, Jorge Dueñas-Lerín, Alejandro de la Torre-Luque, Mercé Salvador Robert",
+      "abstract": "Mental health has become a global priority, leading to a massive administrative burden in the coding of clinical diagnoses. This study proposes the automation of psychiatric diagnostic analysis by mapping free-text descriptions to the International Classification of Diseases (ICD) using Natural Language Processing (NLP) and Machine Learning (ML) techniques. Utilizing a specialized dataset of 145,513 Spanish psychiatric descriptions, various text representation paradigms were evaluated, ranging from classical frequency-based models (BoW, TF-IDF) to state-of-the-art Large Language Models (LLMs) such as e5\\_large, BioLORD, and Llama-3-8B. Results indicate that transformer-based embeddings consistently outperform traditional methods by capturing implicit semantic cues and nuanced medical terminology. The e5\\_large model, through end-to-end fine-tuning, achieved the highest performance with a $F1_{micro}$ score of 0.866. This research demonstrates that adapting LLMs to specific clinical nomenclature is essential for overcoming the challenges of ``long-tail'' label distributions and the inherent ambiguity of psychiatric discourse.",
+      "url": "https://arxiv.org/abs/2605.21154",
+      "pdf_url": "https://arxiv.org/pdf/2605.21154",
+      "published_date": "2026-05-20",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [],
+      "score": 2.5,
+      "scores": {
+        "composite": 2.5,
+        "theme_score": 0,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 0.5
+      },
+      "priority": 1,
+      "rank": null,
+      "added_date": "2026-05-21",
+      "added_via": "daily_pipeline"
+    },
+    {
+      "paper_id": "2605.20751v1",
+      "source": "arxiv",
+      "title": "PACD-Net: Pseudo-Augmented Contrastive Distillation for Glycemic Control Estimation from SMBG",
+      "authors": "Canyu Lei, David Repaske, Jianxin Xie",
+      "abstract": "Effective diabetes management requires continuous monitoring of glycemic levels. Clinically, glycemic control is assessed using metrics such as Time in Range (TIR), Time Below Range (TBR), and Time Above Range (TAR), typically derived from continuous glucose monitoring (CGM). However, many patients rely on self-monitoring of blood glucose (SMBG) due to the high cost and limited accessibility of CGM. Unlike CGM, SMBG provides sparse and irregular measurements, making accurate estimation of these metrics challenging. Conventional supervised learning approaches struggle under such sparsity, leading to poor generalization and unstable performance. To address this, we propose PACD-Net, a self-supervised contrastive knowledge distillation framework for estimating glycemic control from SMBG. Pseudo-SMBG samples with richer temporal coverage are used as teacher signals to guide learning from sparse observations. In addition, multi-view contrastive learning enforces representation consistency across diverse sampling patterns. The model adopts a hybrid Swin Transformer-CNN backbone to capture temporal dependencies in sparse SMBG sequences. Experimental results demonstrate that PACD-Net consistently outperforms existing methods in estimating TAR, TIR, and TBR from real-world SMBG data, achieving improved accuracy as well as enhanced stability and generalization under extremely sparse observation settings. The proposed framework provides a practical tool for clinical SMBG interpretation and offers a generalizable approach for learning from sparse and irregularly sampled sensor data in broader applications.",
+      "url": "https://arxiv.org/abs/2605.20751",
+      "pdf_url": "https://arxiv.org/pdf/2605.20751",
+      "published_date": "2026-05-20",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID"
+      ],
+      "score": 6.0,
+      "scores": {
+        "composite": 6.0,
+        "theme_score": 2,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-05-21",
+      "added_via": "daily_pipeline"
+    },
+    {
+      "paper_id": "2605.20742v1",
+      "source": "arxiv",
+      "title": "VBFDD-Agent for Electric Vehicle Battery Fault Detection and Diagnosis: Descriptive Text Modeling of Battery Digital Signals",
+      "authors": "Joey Chan, Zhen Chen, Ershun Pan",
+      "abstract": "With the rapid proliferation of electric vehicles, the safety and reliability of lithium-ion batteries have become critical concerns. Effective anomaly detection is essential for ensuring safe battery operation. However, as battery systems and operating scenarios become increasingly complex, battery fault diagnosis and maintenance require stronger cross-domain adaptability and human-AI collaboration. Traditional fault detection and diagnosis methods are usually designed for specific scenarios and predefined workflows, making them less effective in complex real-world applications. To address the scarcity of open-source battery fault report corpora and the lack of unified maintenance knowledge representation, this study proposes a descriptive text modeling approach for battery signal reports. Monitoring signals, statistical features, anomaly records, and state assessment results are transformed into structured and readable natural language descriptions, forming a language corpus for battery health diagnosis and maintenance. Based on this corpus, we propose VBFDD-Agent, a vehicle battery fault detection and diagnosis agent for automotive-grade battery systems. VBFDD-Agent integrates descriptive battery-state texts, historical case retrieval, local maintenance manuals, and large language model reasoning to generate structured diagnostic results and maintenance recommendations. Experiments show that the proposed framework can accurately perform anomaly monitoring based on descriptive textual representations and provide flexible, efficient, and actionable maintenance suggestions. Expert evaluation further confirms the practical value of the generated recommendations. Overall, VBFDD-Agent extends traditional battery diagnosis from label prediction to interpretable and maintenance-oriented decision support.",
+      "url": "https://arxiv.org/abs/2605.20742",
+      "pdf_url": "https://arxiv.org/pdf/2605.20742",
+      "published_date": "2026-05-20",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID"
+      ],
+      "score": 6.0,
+      "scores": {
+        "composite": 6.0,
+        "theme_score": 2,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-05-21",
+      "added_via": "daily_pipeline"
+    },
+    {
+      "paper_id": "2605.20182v1",
+      "source": "arxiv",
+      "title": "Atoms of Thought: Universal EEG Representation Learning with Microstates",
+      "authors": "Xinyang Tian, Ruitao Liu, Ziyi Ye, Siyang Xue, Xin Wang",
+      "abstract": "Learning universal representations from electroencephalogram (EEG) signals is a cutting-edge approach in the field of neuroinformatics and brain-computer interfaces (BCIs). Conventionally, EEG is treated as a multivariate temporal signal, where time- or frequency-domain features are extracted for representation learning. This paper investigates a simple yet effective EEG representation, i.e., microstates. Microstates represent the building blocks of brain activity patterns at a microscopic time scale. We build a universal microstate tokenizer from a large medical EEG dataset by clustering continuous EEG signals into sequences of discrete microstates. The microstate tokenizer is then adopted universally across a series of downstream tasks, including sleep staging, emotion recognition, and motor imagery classification. Experimental results show that EEG representation learning with microstates outperforms traditional time-domain and frequency-domain features under different models and across different tasks. Further analysis shows that microstates offer greater interpretability and scalability, thereby opening up applications in both cognitive neuroscience and clinical research.",
+      "url": "https://arxiv.org/abs/2605.20182",
+      "pdf_url": "https://arxiv.org/pdf/2605.20182",
+      "published_date": "2026-05-19",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID"
+      ],
+      "score": 4.5,
+      "scores": {
+        "composite": 4.5,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-05-21",
+      "added_via": "daily_pipeline"
+    },
+    {
+      "paper_id": "2605.19940v1",
+      "source": "arxiv",
+      "title": "Robotics-Inspired Guardrails for Foundation Models in Socially Sensitive Domains",
+      "authors": "Rebecca Ramnauth, Drazen Brscic, Brian Scassellati",
+      "abstract": "Foundation models are increasingly deployed in socially sensitive domains such as education, mental health, and caregiving, where failures are often cumulative and context-dependent. Existing guardrail approaches -- ranging from training-time alignment to prompting, decoding constraints, and post-hoc moderation -- primarily provide empirical risk reduction rather than enforceable behavioral guarantees, and largely treat safety as a property of individual outputs rather than interaction trajectories. We reframe guardrails as a problem of runtime behavioral control over interaction trajectories, drawing on robotics to introduce formal constructs for constraint enforcement in uncertain, closed-loop systems. We instantiate these ideas in the Grounded Observer framework and apply it across three real-world deployments: small talk, in-home autism therapy, and behavioral de-escalation in schools. Across settings, the framework enables runtime interventions that mitigate drift into undesirable interaction regimes while adapting to diverse social contexts. We discuss extensions to the framework and propose research directions toward stronger guarantees.",
+      "url": "https://arxiv.org/abs/2605.19940",
+      "pdf_url": "https://arxiv.org/pdf/2605.19940",
+      "published_date": "2026-05-19",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "AI_EVAL_VALID"
+      ],
+      "score": 5.0,
+      "scores": {
+        "composite": 5.0,
+        "theme_score": 2,
+        "novelty": 1.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 1
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-05-21",
+      "added_via": "daily_pipeline"
+    },
+    {
+      "paper_id": "2605.19201v1",
+      "source": "arxiv",
+      "title": "On-Device Continual Learning with Dual-Stage Buffer and Dynamic Loss for Point-of-Care Pneumonia Diagnosis",
+      "authors": "Danu Kim",
+      "abstract": "Deep learning models detect pneumonia from chest X-rays with high accuracy, but the performance declines under domain shifts caused by differences in devices, patients, or institutions. We present PneumoNet, a domain-incremental learning method for point-of-care pneumonia diagnosis in resource-limited settings. PneumoNet combines a lightweight CNN for on-device prediction, a dual-stage balanced buffer for class-balanced replay, and a dynamic class-weighted loss to correct training-batch imbalances. Evaluated on a domain-shifted PneumoniaMNIST dataset simulating five realistic domain change scenarios, PneumoNet achieves 86.6% accuracy with 1.4% forgetting while being smaller and faster than existing baselines. These results highlight PneumoNet's potential to enable adaptive, privacy-preserving diagnostic AI directly on point-of-care medical devices in real-world and pandemic-ready healthcare.",
+      "url": "https://arxiv.org/abs/2605.19201",
+      "pdf_url": "https://arxiv.org/pdf/2605.19201",
+      "published_date": "2026-05-19",
+      "venue": "arXiv",
+      "doi": "",
+      "themes": [
+        "ADAPTIVE_REGULATION",
+        "CLINICAL_HEALTH_AI"
+      ],
+      "score": 6.5,
+      "scores": {
+        "composite": 6.5,
+        "theme_score": 3,
+        "novelty": 2.0,
+        "recency": 0.5,
+        "venue": 0.5,
+        "methods": 0.5
+      },
+      "priority": 2,
+      "rank": null,
+      "added_date": "2026-05-21",
+      "added_via": "daily_pipeline"
     }
   ]
 }

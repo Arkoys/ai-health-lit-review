@@ -1,7 +1,894 @@
 # AI Health Literature Review — All Digests
-*Last updated: 2026-05-13 09:04*
+
 ---
-## Source: [digest_2026-05-13.md](outputs/digests/digest_2026-05-13.md)
+## Source file: [2026-05-21_v6](outputs/digests/digest_2026-05-21_v6.md)
+
+# 🔬 AI Health Literature Review — Daily Digest
+**Date:** 2026-05-21 (Thursday) | **Papers analyzed:** 46 | **New in DB:** +0
+
+---
+
+## 📊 Executive Summary
+**Top themes today:** `AI_EVAL_VALID` (9 papers), `ADAPTIVE_REGULATION` (1 papers), `CLINICAL_HEALTH_AI` (1 papers), `PARTICIPATORY_GOV` (1 papers)
+**Priority breakdown:** 🔴 1 · 🟡 11 · ⚪ 34
+
+**Trending:** 🔴 Adaptive AI Evaluation · 🟡 Governance Frameworks · 🟡 Evidence Synthesis
+
+## 🏆 Featured Papers
+
+### 🔴 On-Device Continual Learning with Dual-Stage Buffer and Dynamic Loss for Point-of-Care Pneumonia Diagnosis
+
+**Authors:** Danu Kim | **Source:** arxiv | **Published:** 2026-05-19
+**Venue:** arXiv | **Priority:** Must Read | **Score:** `7.5`
+**Score breakdown:** theme `4` + novelty `2.0` + recency `0.5` + venue `0.5` + methods `0.5`
+**Links:** [arXiv](https://arxiv.org/abs/2605.19201) · [PDF](https://arxiv.org/pdf/2605.19201)
+**Themes:** `ADAPTIVE_REGULATION`, `CLINICAL_HEALTH_AI`
+
+> Deep learning models detect pneumonia from chest X-rays with high accuracy, but the performance declines under domain shifts caused by differences in devices, patients, or institutions. We present PneumoNet, a domain-incremental learning method for point-of-care pneumonia diagnosis in resource-limited settings. PneumoNet combines a lightweight CNN…
+
+
+## 📚 Supporting Papers
+
+### 🟡 SAM-Sode: Towards Faithful Explanations for Tiny Bacteria Detection
+
+**Authors:** Wanying Tan, Shuo Yan, Dazhi Huang, Yazheng Liu, Zili Shao | **Source:** arxiv | **Published:** 2026-05-20
+**Venue:** arXiv | **Priority:** Important | **Score:** `6.0`
+**Score breakdown:** theme `2` + novelty `2.0` + recency `0.5` + venue `0.5` + methods `1`
+**Links:** [arXiv](https://arxiv.org/abs/2605.21186) · [PDF](https://arxiv.org/pdf/2605.21186)
+**Themes:** `AI_EVAL_VALID`
+
+> Interpretability in object detection provides crucial confidence support for clinical auxiliary diagnosis. However, in tiny bacteria detection, traditional explanation methods often suffer from blurred foreground boundaries and diffuse feature attribution due to the extreme sparsity of target morphological features and severe interference from comp…
+
+
+### 🟡 Agents for Experiments, Experiments for Agents: A Design Grammar for AI-Enabled Experimental Science
+
+**Authors:** Yingjie Zhang, Chun Feng, Weizhang Zhu, Tianshu Sun | **Source:** arxiv | **Published:** 2026-05-18
+**Venue:** arXiv | **Priority:** Important | **Score:** `6.0`
+**Score breakdown:** theme `2` + novelty `2.0` + recency `0.5` + venue `0.5` + methods `1`
+**Links:** [arXiv](https://arxiv.org/abs/2605.17746) · [PDF](https://arxiv.org/pdf/2605.17746)
+**Themes:** `PARTICIPATORY_GOV`
+
+> AI systems are becoming active participants in organizational and knowledge work. They increasingly interact with humans, coordinate workflows, and operate in multi-agent arrangements. Understanding their effects therefore requires more than measuring output accuracy; it requires evidence about mechanisms, delegation, feedback, and control. Experim…
+
+
+### 🟡 Cross-Subject Intracranial EEG Reconstruction from Scalp Recordings Using Multi-Scale Cross-Attention Transformers
+
+**Authors:** Tien-Dat Pham, Xuan-The Tran | **Source:** arxiv | **Published:** 2026-05-17
+**Venue:** arXiv | **Priority:** Important | **Score:** `6.0`
+**Score breakdown:** theme `2` + novelty `2.0` + recency `0.5` + venue `0.5` + methods `1`
+**Links:** [arXiv](https://arxiv.org/abs/2605.18897) · [PDF](https://arxiv.org/pdf/2605.18897)
+**Themes:** `AI_EVAL_VALID`
+
+> Intracranial EEG (iEEG) provides high-fidelity neural recordings essential for clinical and brain-computer interface applications, but acquiring these signals requires invasive surgery. While recent studies have attempted to estimate iEEG from non-invasive scalp EEG, most rely on patient-specific models, creating a circular dependency: if surgery i…
+
+
+### 🟡 PACD-Net: Pseudo-Augmented Contrastive Distillation for Glycemic Control Estimation from SMBG
+
+**Authors:** Canyu Lei, David Repaske, Jianxin Xie | **Source:** arxiv | **Published:** 2026-05-20
+**Venue:** arXiv | **Priority:** Important | **Score:** `6.0`
+**Score breakdown:** theme `2` + novelty `2.0` + recency `0.5` + venue `0.5` + methods `1`
+**Links:** [arXiv](https://arxiv.org/abs/2605.20751) · [PDF](https://arxiv.org/pdf/2605.20751)
+**Themes:** `AI_EVAL_VALID`
+
+> Effective diabetes management requires continuous monitoring of glycemic levels. Clinically, glycemic control is assessed using metrics such as Time in Range (TIR), Time Below Range (TBR), and Time Above Range (TAR), typically derived from continuous glucose monitoring (CGM). However, many patients rely on self-monitoring of blood glucose (SMBG) du…
+
+
+### 🟡 VBFDD-Agent for Electric Vehicle Battery Fault Detection and Diagnosis: Descriptive Text Modeling of Battery Digital Signals
+
+**Authors:** Joey Chan, Zhen Chen, Ershun Pan | **Source:** arxiv | **Published:** 2026-05-20
+**Venue:** arXiv | **Priority:** Important | **Score:** `6.0`
+**Score breakdown:** theme `2` + novelty `2.0` + recency `0.5` + venue `0.5` + methods `1`
+**Links:** [arXiv](https://arxiv.org/abs/2605.20742) · [PDF](https://arxiv.org/pdf/2605.20742)
+**Themes:** `AI_EVAL_VALID`
+
+> With the rapid proliferation of electric vehicles, the safety and reliability of lithium-ion batteries have become critical concerns. Effective anomaly detection is essential for ensuring safe battery operation. However, as battery systems and operating scenarios become increasingly complex, battery fault diagnosis and maintenance require stronger…
+
+
+### 🟡 NeuroQA: A Large-Scale Image-Grounded Benchmark for 3D Brain MRI Understanding
+
+**Authors:** Mohammad H. Abbasi, Favour Nerrise, Shaurnav Ghosh, Ridvan Yesiloglu, Yuncong Mao | **Source:** arxiv | **Published:** 2026-05-19
+**Venue:** arXiv | **Priority:** Important | **Score:** `5.5`
+**Score breakdown:** theme `2` + novelty `2.0` + recency `0.5` + venue `0.5` + methods `0.5`
+**Links:** [arXiv](https://arxiv.org/abs/2605.20525) · [PDF](https://arxiv.org/pdf/2605.20525)
+**Themes:** `AI_EVAL_VALID`
+
+> We present NeuroQA, a large-scale benchmark for visual question answering in 3D brain magnetic resonance imaging (MRI), with 56,953 QA pairs from 12,977 subjects across 12 datasets. It spans ages 5-104 and five clinical domains: Alzheimer's, Parkinson's, tumors, white matter disease, and neurodevelopment. Unlike prior medical Visual Question Answer…
+
+
+### 🟡 UCSF-PDGM-VQA: Visual Question Answering dataset for brain tumor MRI interpretation
+
+**Authors:** Shiv Ghosh, Junayd Lateef, Chih-Hua Liu, Yannan Yu, Andreas M. Rauschecker | **Source:** arxiv | **Published:** 2026-05-16
+**Venue:** arXiv | **Priority:** Important | **Score:** `5.5`
+**Score breakdown:** theme `2` + novelty `2.0` + recency `0.5` + venue `0.5` + methods `0.5`
+**Links:** [arXiv](https://arxiv.org/abs/2605.17140) · [PDF](https://arxiv.org/pdf/2605.17140)
+**Themes:** `AI_EVAL_VALID`
+
+> Brain tumor diagnosis is largely dependent on Magnetic Resonance Imaging (MRI) evaluation, which requires radiologists to synthesize thousands of images across multiple 3D sequences and longitudinal studies. This process requires advanced neuro-radiology training, poses substantial cognitive load, and is highly time-consuming. Despite increasing de…
+
+
+---
+
+## 🔍 Cross-Analysis
+
+**Cross-theme papers:** 1/46 address multiple themes simultaneously.
+**Gaps today:** No papers found for: `ADAPTATIVE_REGULATION, EVIDENCE_IMPLEMENT`
+
+## 📈 Topic Distribution
+
+| Theme | Papers |
+|-------|--------|
+| AI_EVAL_VALID | █████████ 9 |
+| ADAPTIVE_REGULATION | █ 1 |
+| CLINICAL_HEALTH_AI | █ 1 |
+| PARTICIPATORY_GOV | █ 1 |
+
+## 🎯 Priority Queue
+
+1. **On-Device Continual Learning with Dual-Stage Buffer and Dynamic Loss for Point-o** [🔗 arXiv](https://arxiv.org/abs/2605.19201)
+
+---
+
+*Generated: 2026-05-21T20:50:33.663602*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+*Sources: arXiv · PubMed · JMIR · Cureus · Front Med · Nature Medicine · Lancet*
+
+---
+
+## Source file: [2026-05-21_v5](outputs/digests/digest_2026-05-21_v5.md)
+
+# 🔬 AI Health Literature Review — Daily Digest
+**Date:** 2026-05-21 (Thursday) | **Papers analyzed:** 7 | **New in DB:** +7
+
+---
+
+## 📊 Executive Summary
+**Top themes today:** `AI_EVAL_VALID` (4 papers), `ADAPTIVE_REGULATION` (1 papers), `CLINICAL_HEALTH_AI` (1 papers)
+**Priority breakdown:** 🔴 1 · 🟡 5 · ⚪ 1
+
+**Trending:** 🔴 Adaptive AI Evaluation · 🟡 Governance Frameworks
+
+## 🏆 Featured Papers
+
+### 🔴 On-Device Continual Learning with Dual-Stage Buffer and Dynamic Loss for Point-of-Care Pneumonia Diagnosis
+
+**Authors:** Danu Kim | **Source:** arxiv | **Published:** 2026-05-19
+**Venue:** arXiv | **Priority:** Must Read | **Score:** `7.5`
+**Score breakdown:** theme `4` + novelty `2.0` + recency `0.5` + venue `0.5` + methods `0.5`
+**Links:** [arXiv](https://arxiv.org/abs/2605.19201) · [PDF](https://arxiv.org/pdf/2605.19201)
+**Themes:** `ADAPTIVE_REGULATION`, `CLINICAL_HEALTH_AI`
+
+> Deep learning models detect pneumonia from chest X-rays with high accuracy, but the performance declines under domain shifts caused by differences in devices, patients, or institutions. We present PneumoNet, a domain-incremental learning method for point-of-care pneumonia diagnosis in resource-limited settings. PneumoNet combines a lightweight CNN…
+
+
+## 📚 Supporting Papers
+
+### 🟡 PACD-Net: Pseudo-Augmented Contrastive Distillation for Glycemic Control Estimation from SMBG
+
+**Authors:** Canyu Lei, David Repaske, Jianxin Xie | **Source:** arxiv | **Published:** 2026-05-20
+**Venue:** arXiv | **Priority:** Important | **Score:** `6.0`
+**Score breakdown:** theme `2` + novelty `2.0` + recency `0.5` + venue `0.5` + methods `1`
+**Links:** [arXiv](https://arxiv.org/abs/2605.20751) · [PDF](https://arxiv.org/pdf/2605.20751)
+**Themes:** `AI_EVAL_VALID`
+
+> Effective diabetes management requires continuous monitoring of glycemic levels. Clinically, glycemic control is assessed using metrics such as Time in Range (TIR), Time Below Range (TBR), and Time Above Range (TAR), typically derived from continuous glucose monitoring (CGM). However, many patients rely on self-monitoring of blood glucose (SMBG) du…
+
+
+### 🟡 VBFDD-Agent for Electric Vehicle Battery Fault Detection and Diagnosis: Descriptive Text Modeling of Battery Digital Signals
+
+**Authors:** Joey Chan, Zhen Chen, Ershun Pan | **Source:** arxiv | **Published:** 2026-05-20
+**Venue:** arXiv | **Priority:** Important | **Score:** `6.0`
+**Score breakdown:** theme `2` + novelty `2.0` + recency `0.5` + venue `0.5` + methods `1`
+**Links:** [arXiv](https://arxiv.org/abs/2605.20742) · [PDF](https://arxiv.org/pdf/2605.20742)
+**Themes:** `AI_EVAL_VALID`
+
+> With the rapid proliferation of electric vehicles, the safety and reliability of lithium-ion batteries have become critical concerns. Effective anomaly detection is essential for ensuring safe battery operation. However, as battery systems and operating scenarios become increasingly complex, battery fault diagnosis and maintenance require stronger…
+
+
+### 🟡 Robotics-Inspired Guardrails for Foundation Models in Socially Sensitive Domains
+
+**Authors:** Rebecca Ramnauth, Drazen Brscic, Brian Scassellati | **Source:** arxiv | **Published:** 2026-05-19
+**Venue:** arXiv | **Priority:** Important | **Score:** `5.0`
+**Score breakdown:** theme `2` + novelty `1.0` + recency `0.5` + venue `0.5` + methods `1`
+**Links:** [arXiv](https://arxiv.org/abs/2605.19940) · [PDF](https://arxiv.org/pdf/2605.19940)
+**Themes:** `AI_EVAL_VALID`
+
+> Foundation models are increasingly deployed in socially sensitive domains such as education, mental health, and caregiving, where failures are often cumulative and context-dependent. Existing guardrail approaches -- ranging from training-time alignment to prompting, decoding constraints, and post-hoc moderation -- primarily provide empirical risk r…
+
+
+### 🟡 Atoms of Thought: Universal EEG Representation Learning with Microstates
+
+**Authors:** Xinyang Tian, Ruitao Liu, Ziyi Ye, Siyang Xue, Xin Wang | **Source:** arxiv | **Published:** 2026-05-19
+**Venue:** arXiv | **Priority:** Important | **Score:** `4.5`
+**Score breakdown:** theme `2` + novelty `1.0` + recency `0.5` + venue `0.5` + methods `0.5`
+**Links:** [arXiv](https://arxiv.org/abs/2605.20182) · [PDF](https://arxiv.org/pdf/2605.20182)
+**Themes:** `AI_EVAL_VALID`
+
+> Learning universal representations from electroencephalogram (EEG) signals is a cutting-edge approach in the field of neuroinformatics and brain-computer interfaces (BCIs). Conventionally, EEG is treated as a multivariate temporal signal, where time- or frequency-domain features are extracted for representation learning. This paper investigates a s…
+
+
+### 🟡 TimeSRL: Generalizable Time-Series Behavioral Modeling via Semantic RL-Tuned LLMs -- A Case Study in Mental Health
+
+**Authors:** Yuang Fan, Lilin Xu, Millie Wu, Jingping Nie, Qingyu Chen | **Source:** arxiv | **Published:** 2026-05-20
+**Venue:** arXiv | **Priority:** Important | **Score:** `4.0`
+**Score breakdown:** theme `0` + novelty `2.0` + recency `0.5` + venue `0.5` + methods `1`
+**Links:** [arXiv](https://arxiv.org/abs/2605.21295) · [PDF](https://arxiv.org/pdf/2605.21295)
+
+> Longitudinal passive sensing enables continuous health prediction, yet models often fail under cross-dataset distribution shifts. Traditional ML overfits cohort-specific artifacts, while Large Language Models (LLMs) struggle to reason reliably over long, heterogeneous time-series. We introduce TimeSRL, a two-stage LLM framework that routes predicti…
+
+
+---
+
+## 🔍 Cross-Analysis
+
+**Cross-theme papers:** 1/7 address multiple themes simultaneously.
+**Gaps today:** No papers found for: `PARTICIPATORY_GOV, ADAPTATIVE_REGULATION, EVIDENCE_IMPLEMENT`
+
+## 📈 Topic Distribution
+
+| Theme | Papers |
+|-------|--------|
+| AI_EVAL_VALID | ████ 4 |
+| ADAPTIVE_REGULATION | █ 1 |
+| CLINICAL_HEALTH_AI | █ 1 |
+
+## 🎯 Priority Queue
+
+1. **On-Device Continual Learning with Dual-Stage Buffer and Dynamic Loss for Point-o** [🔗 arXiv](https://arxiv.org/abs/2605.19201)
+
+---
+
+*Generated: 2026-05-21T20:48:59.784038*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+*Sources: arXiv · PubMed · JMIR · Cureus · Front Med · Nature Medicine · Lancet*
+
+---
+
+## Source file: [2026-05-21_v4](outputs/digests/digest_2026-05-21_v4.md)
+
+# 🔬 AI Health Literature Review — Daily Digest
+**Date:** 2026-05-21 (Thursday) | **Papers analyzed:** 8 | **New in DB:** +8
+
+---
+
+## 📊 Executive Summary
+**Top themes today:** `AI_EVAL_VALID` (5 papers), `PARTICIPATORY_GOV` (1 papers)
+**Priority breakdown:** 🔴 0 · 🟡 6 · ⚪ 2
+
+**Trending:** 🔴 Adaptive AI Evaluation · 🟡 Governance Frameworks · 🟡 Evidence Synthesis
+
+## 🏆 Featured Papers
+
+## 📚 Supporting Papers
+
+### 🟡 SAM-Sode: Towards Faithful Explanations for Tiny Bacteria Detection
+
+**Authors:** Wanying Tan, Shuo Yan, Dazhi Huang, Yazheng Liu, Zili Shao | **Source:** arxiv | **Published:** 2026-05-20
+**Venue:** arXiv | **Priority:** Important | **Score:** `6.0`
+**Score breakdown:** theme `2` + novelty `2.0` + recency `0.5` + venue `0.5` + methods `1`
+**Links:** [arXiv](https://arxiv.org/abs/2605.21186) · [PDF](https://arxiv.org/pdf/2605.21186)
+**Themes:** `AI_EVAL_VALID`
+
+> Interpretability in object detection provides crucial confidence support for clinical auxiliary diagnosis. However, in tiny bacteria detection, traditional explanation methods often suffer from blurred foreground boundaries and diffuse feature attribution due to the extreme sparsity of target morphological features and severe interference from comp…
+
+
+### 🟡 Agents for Experiments, Experiments for Agents: A Design Grammar for AI-Enabled Experimental Science
+
+**Authors:** Yingjie Zhang, Chun Feng, Weizhang Zhu, Tianshu Sun | **Source:** arxiv | **Published:** 2026-05-18
+**Venue:** arXiv | **Priority:** Important | **Score:** `6.0`
+**Score breakdown:** theme `2` + novelty `2.0` + recency `0.5` + venue `0.5` + methods `1`
+**Links:** [arXiv](https://arxiv.org/abs/2605.17746) · [PDF](https://arxiv.org/pdf/2605.17746)
+**Themes:** `PARTICIPATORY_GOV`
+
+> AI systems are becoming active participants in organizational and knowledge work. They increasingly interact with humans, coordinate workflows, and operate in multi-agent arrangements. Understanding their effects therefore requires more than measuring output accuracy; it requires evidence about mechanisms, delegation, feedback, and control. Experim…
+
+
+### 🟡 Cross-Subject Intracranial EEG Reconstruction from Scalp Recordings Using Multi-Scale Cross-Attention Transformers
+
+**Authors:** Tien-Dat Pham, Xuan-The Tran | **Source:** arxiv | **Published:** 2026-05-17
+**Venue:** arXiv | **Priority:** Important | **Score:** `6.0`
+**Score breakdown:** theme `2` + novelty `2.0` + recency `0.5` + venue `0.5` + methods `1`
+**Links:** [arXiv](https://arxiv.org/abs/2605.18897) · [PDF](https://arxiv.org/pdf/2605.18897)
+**Themes:** `AI_EVAL_VALID`
+
+> Intracranial EEG (iEEG) provides high-fidelity neural recordings essential for clinical and brain-computer interface applications, but acquiring these signals requires invasive surgery. While recent studies have attempted to estimate iEEG from non-invasive scalp EEG, most rely on patient-specific models, creating a circular dependency: if surgery i…
+
+
+### 🟡 NeuroQA: A Large-Scale Image-Grounded Benchmark for 3D Brain MRI Understanding
+
+**Authors:** Mohammad H. Abbasi, Favour Nerrise, Shaurnav Ghosh, Ridvan Yesiloglu, Yuncong Mao | **Source:** arxiv | **Published:** 2026-05-19
+**Venue:** arXiv | **Priority:** Important | **Score:** `5.5`
+**Score breakdown:** theme `2` + novelty `2.0` + recency `0.5` + venue `0.5` + methods `0.5`
+**Links:** [arXiv](https://arxiv.org/abs/2605.20525) · [PDF](https://arxiv.org/pdf/2605.20525)
+**Themes:** `AI_EVAL_VALID`
+
+> We present NeuroQA, a large-scale benchmark for visual question answering in 3D brain magnetic resonance imaging (MRI), with 56,953 QA pairs from 12,977 subjects across 12 datasets. It spans ages 5-104 and five clinical domains: Alzheimer's, Parkinson's, tumors, white matter disease, and neurodevelopment. Unlike prior medical Visual Question Answer…
+
+
+### 🟡 UCSF-PDGM-VQA: Visual Question Answering dataset for brain tumor MRI interpretation
+
+**Authors:** Shiv Ghosh, Junayd Lateef, Chih-Hua Liu, Yannan Yu, Andreas M. Rauschecker | **Source:** arxiv | **Published:** 2026-05-16
+**Venue:** arXiv | **Priority:** Important | **Score:** `5.5`
+**Score breakdown:** theme `2` + novelty `2.0` + recency `0.5` + venue `0.5` + methods `0.5`
+**Links:** [arXiv](https://arxiv.org/abs/2605.17140) · [PDF](https://arxiv.org/pdf/2605.17140)
+**Themes:** `AI_EVAL_VALID`
+
+> Brain tumor diagnosis is largely dependent on Magnetic Resonance Imaging (MRI) evaluation, which requires radiologists to synthesize thousands of images across multiple 3D sequences and longitudinal studies. This process requires advanced neuro-radiology training, poses substantial cognitive load, and is highly time-consuming. Despite increasing de…
+
+
+### 🟡 Disentangling Sampling from Training Budget in Class-Imbalanced CT Body Composition Segmentation
+
+**Authors:** Iason Skylitsis, Dimitrios Karkalousos, Ivana Išgum | **Source:** arxiv | **Published:** 2026-05-19
+**Venue:** arXiv | **Priority:** Important | **Score:** `4.5`
+**Score breakdown:** theme `2` + novelty `1.0` + recency `0.5` + venue `0.5` + methods `0.5`
+**Links:** [arXiv](https://arxiv.org/abs/2605.20405) · [PDF](https://arxiv.org/pdf/2605.20405)
+**Themes:** `AI_EVAL_VALID`
+
+> Class imbalance is a fundamental challenge in medical image segmentation, where frequent classes typically dominate training at the expense of rare classes. Loss-based approaches mitigate imbalance by reweighting the per-pixel loss within the batch, while sampling strategies control which images enter the batch. Yet neither explicitly controls whic…
+
+
+---
+
+## 🔍 Cross-Analysis
+
+**Cross-theme papers:** 0/8 address multiple themes simultaneously.
+**Gaps today:** No papers found for: `ADAPTATIVE_REGULATION, EVIDENCE_IMPLEMENT, CLINICAL_HEALTH_AI`
+
+## 📈 Topic Distribution
+
+| Theme | Papers |
+|-------|--------|
+| AI_EVAL_VALID | █████ 5 |
+| PARTICIPATORY_GOV | █ 1 |
+
+## 🎯 Priority Queue
+
+
+---
+
+*Generated: 2026-05-21T20:48:20.032902*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+*Sources: arXiv · PubMed · JMIR · Cureus · Front Med · Nature Medicine · Lancet*
+
+---
+
+## Source file: [2026-05-21_v3](outputs/digests/digest_2026-05-21_v3.md)
+
+# 🔬 AI Health Literature Review — Daily Digest
+**Date:** 2026-05-21 (Thursday) | **Papers analyzed:** 31 | **New in DB:** +0
+
+---
+
+## 📊 Executive Summary
+**Top themes today:** 
+**Priority breakdown:** 🔴 0 · 🟡 0 · ⚪ 31
+
+
+## 🏆 Featured Papers
+
+---
+
+## 🔍 Cross-Analysis
+
+**Cross-theme papers:** 0/31 address multiple themes simultaneously.
+**Gaps today:** No papers found for: `AI_EVAL_VALID, PARTICIPATORY_GOV, ADAPTATIVE_REGULATION, EVIDENCE_IMPLEMENT, CLINICAL_HEALTH_AI`
+
+## 📈 Topic Distribution
+
+| Theme | Papers |
+|-------|--------|
+
+## 🎯 Priority Queue
+
+
+---
+
+*Generated: 2026-05-21T20:46:35.499803*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+*Sources: arXiv · PubMed · JMIR · Cureus · Front Med · Nature Medicine · Lancet*
+
+---
+
+## Source file: [2026-05-21_v2](outputs/digests/digest_2026-05-21_v2.md)
+
+# 🔬 AI Health Literature Review — Daily Digest
+**Date:** 2026-05-21 (Thursday) | **Papers analyzed:** 31 | **New in DB:** +0
+
+---
+
+## 📊 Executive Summary
+**Top themes today:** 
+**Priority breakdown:** 🔴 0 · 🟡 0 · ⚪ 31
+
+
+## 🏆 Featured Papers
+
+---
+
+## 🔍 Cross-Analysis
+
+**Cross-theme papers:** 0/31 address multiple themes simultaneously.
+**Gaps today:** No papers found for: `AI_EVAL_VALID, PARTICIPATORY_GOV, ADAPTATIVE_REGULATION, EVIDENCE_IMPLEMENT, CLINICAL_HEALTH_AI`
+
+## 📈 Topic Distribution
+
+| Theme | Papers |
+|-------|--------|
+
+## 🎯 Priority Queue
+
+
+---
+
+*Generated: 2026-05-21T20:45:44.260541*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+*Sources: arXiv · PubMed · JMIR · Cureus · Front Med · Nature Medicine · Lancet*
+
+---
+
+## Source file: [2026-05-21](outputs/digests/digest_2026-05-21.md)
+
+# 🔬 AI Health Literature Review — Daily Digest
+**Date:** 2026-05-21 (Thursday) | **Papers analyzed:** 31 | **New in DB:** +0
+
+---
+
+## 📊 Executive Summary
+**Top themes today:** 
+**Priority breakdown:** 🔴 0 · 🟡 0 · ⚪ 31
+
+
+## 🏆 Featured Papers
+
+---
+
+## 🔍 Cross-Analysis
+
+**Cross-theme papers:** 0/31 address multiple themes simultaneously.
+**Gaps today:** No papers found for: `AI_EVAL_VALID, PARTICIPATORY_GOV, ADAPTATIVE_REGULATION, EVIDENCE_IMPLEMENT, CLINICAL_HEALTH_AI`
+
+## 📈 Topic Distribution
+
+| Theme | Papers |
+|-------|--------|
+
+## 🎯 Priority Queue
+
+
+---
+
+*Generated: 2026-05-21T20:40:04.177378*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+*Sources: arXiv · PubMed · JMIR · Cureus · Front Med · Nature Medicine · Lancet*
+
+---
+
+## Source file: [2026-05-14](outputs/digests/digest_2026-05-14.md)
+
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-05-14 (Thursday) | **Papers ranked:** 100 | **New:** +2
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 28 · 🟡 72 · ⚪ 0
+**Top themes:** `AI_EVAL_VALID` (59), `ADAPTIVE_REGULATION` (29), `PARTICIPATORY_GOV` (28), `EVIDENCE_IMPLEMENT` (18), `CLINICAL_HEALTH_AI` (9)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 OpenMRF: A Modular, Vendor-Neutral Open-Source Framework for Reproducible Magnetic Resonance Fingerprinting using Pulseq
+
+**Source:** ARXIV | **Score:** `12.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID` `ADAPTIVE_REGULATION` `EVIDENCE_IMPLEMENT`
+**Authors:** Tom Griesler, Jannik Stebani, Sydney Kaplan, Ivaylo Angelov, Petra Albert
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22713)
+
+> Purpose: Widespread adoption and methodological advancement of Magnetic Resonance Fingerprinting (MRF) are limited by the lack of unified, reproducible implementation frameworks and fragmented open-source tools. To address these barriers, we introduce OpenMRF - a comprehensive Pulseq-based solution - designed to enable consistent, reproducible, and...
+
+
+### 🔴 Leadership Challenges in Implementing AI Governance Frameworks in Sub-Saharan African Healthcare Systems: A Conceptual Analysis
+
+**Source:** SEMANTICSCHOLAR | **Score:** `11.0` | **Themes:** `PARTICIPATORY_GOV` `EVIDENCE_IMPLEMENT` `CLINICAL_HEALTH_AI`
+**Authors:** Ashley Timean, Oluchi Jane Maduka
+**Venue:** International journal of research and innovation in social science | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/48816ceed442327a097e22a1b4a318b6d26e4714)
+
+> Artificial intelligence (AI) is transforming healthcare delivery worldwide, offering diagnostic precision and operational efficiency. However, in Sub-Saharan Africa, the implementation of AI systems outpaces the development of ethical and institutional safeguards. This conceptual paper examines how leadership styles, ethical orientations, and insti...
+
+
+### 🔴 Shaping the future of AI in healthcare through ethics and governance
+
+**Source:** SEMANTICSCHOLAR | **Score:** `11.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID` `EVIDENCE_IMPLEMENT`
+**Authors:** Rabai Bouderhem
+**Venue:** Humanities and Social Sciences Communications | **Published:** 2024-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/8fabf24a07f006bd2097584770afd3953aadc4a6)
+
+> The purpose of this research is to identify and evaluate the technical, ethical and regulatory challenges related to the use of Artificial Intelligence (AI) in healthcare. The potential applications of AI in healthcare seem limitless and vary in their nature and scope, ranging from privacy, research, informed consent, patient autonomy, accountabili...
+
+
+### 🔴 AI-DRIVEN ETHICAL GOVERNANCE: BALANCING INNOVATION AND ACCOUNTABILITY IN DATA-INTENSIVE ENTERPRISES
+
+**Source:** SEMANTICSCHOLAR | **Score:** `11.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Razak Abdul
+**Venue:** International journal of engineering science and advanced technology | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/f92013538bb10bb2c723fd6bb6ccb46e4d8a0e1d)
+
+> Artificial intelligence (AI) is reshaping the global economy and redefining the relationship between innovation and accountability. Across industries such as finance, healthcare, and retail, organizations rely on AI to streamline processes, personalize consumer experiences, and generate predictive insights. However, this transformative power introd...
+
+
+### 🔴 Inter-Stance: A Dyadic Multimodal Corpus for Conversational Stance Analysis
+
+**Source:** ARXIV | **Score:** `9.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Xiang Zhang, Xiaotian Li, Taoyue Wang, Nan Bi, Xin Zhou
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22739)
+
+> Social interactions dominate our perceptions of the world and shape our daily behavior by attaching social meaning to acts as simple and spontaneous as gestures, facial expressions, voice, and speech. People mimic and otherwise respond to each other's postures, facial expressions, mannerisms, and other verbal and nonverbal behavior, and form apprai...
+
+
+### 🔴 Governance and Accountability of AI Agents in U.S. Healthcare Systems: Ethical and Regulatory Perspectives
+
+**Source:** SEMANTICSCHOLAR | **Score:** `9.5` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Emmanuel Ahaiwe, Godwin Okwara, On Mbanefo, Kelvin Ebo Rabbles, Philip Williams Appiah-Agyei
+**Venue:** Journal of Advances in Medical and Pharmaceutical Sciences | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/e676d1d843bb4bfc5e4dfa53a8e471b59ae33b8b)
+
+> AI agents are moving from pilot to routine use in U.S. healthcare, yet evidence, transparency, and governance remain uneven. This systematic review examined how lifecycle safeguards spanning design, validation, deployment, and post-market monitoring affect patient outcomes and institutional reliability. The article is hinged on a systematic review....
+
+
+### 🔴 Navigating Algorithmic Accountability and Ethical Governance in Autonomous Data Analytics Systems: Toward Transparent, Bias-Resistant, and Human-Centric AI Frameworks for Critical Decision-Making
+
+**Source:** SEMANTICSCHOLAR | **Score:** `9.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Saifuddin Mohammed
+**Venue:** International Journal of Innovative Science and Research Technology | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/893593307007ca1b47e4688559e13dbe396cefd0)
+
+> Intelligent data analytics systems that operate without human intervention and are powered by AI are being
+progressively intertwined with the decision-making processes that have a significant impact in different sectors like
+healthcare, finance, and criminal justice. Though these systems, in theory, make the work more efficient and insightful, thei...
+
+
+### 🔴 Democratizing AI Governance: Balancing Expertise and Public Participation
+
+**Source:** SEMANTICSCHOLAR | **Score:** `8.5` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Lucile Ter-Minassian
+**Venue:** arXiv.org | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/609afda5c3e72dd35563dd5bc20c1ed29433c14e)
+
+> The development and deployment of artificial intelligence (AI) systems, with their profound societal impacts, raise critical challenges for governance. Historically, technological innovations have been governed by concentrated expertise with limited public input. However, AI's pervasive influence across domains such as healthcare, employment, and j...
+
+
+### 🔴 Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Meng Chu, Xuan Billy Zhang, Kevin Qinghong Lin, Lingdong Kong, Jize Zhang
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22748)
+
+> As AI systems move from generating text to accomplishing goals through sustained interaction, the ability to model environment dynamics becomes a central bottleneck. Agents that manipulate objects, navigate software, coordinate with others, or design experiments require predictive environment models, yet the term world model carries different meani...
+
+
+### 🔴 Multiplex Hypergraph Modeling of Higher Order Structures in Psychometric Networks
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID`
+**Authors:** Francesca Possenti, Laura Girelli, Paolo Tieri, Manuela Petti
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22744)
+
+> Psychiatric disorders have been traditionally conceptualized as latent conditions producing observable symptoms, but recent studies suggest that psychopathology may emerge from symptoms interactions. Psychometric networking model these relations focusing on pairwise associations but overlooks higher-order dependencies arising among groups of variab...
+
+
+### 🔴 ATRS: Adaptive Trajectory Re-splitting via a Shared Neural Policy for Parallel Optimization
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `CLINICAL_HEALTH_AI` `ADAPTIVE_REGULATION`
+**Authors:** Jiajun Yu, Guodong Liu, Li Wang, Pengxiang Zhou, Wentao Liu
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22715)
+
+> Parallel trajectory optimization via the Alternating Direction Method of Multipliers (ADMM) has emerged as a scalable approach to long-horizon motion planning. However, existing frameworks typically decompose the problem into parallel subproblems based on a predefined fixed structure. Such structural rigidity often causes optimization stagnation in...
+
+
+### 🔴 Generative Modeling of Neurodegenerative Brain Anatomy with 4D Longitudinal Diffusion Model
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** Nivetha Jayakumar, Swakshar Deb, Bahram Jafrasteh, Qingyu Zhao, Miaomiao Zhang
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22700)
+
+> Understanding and predicting the progression of neurodegenerative diseases remains a major challenge in medical AI, with significant implications for early diagnosis, disease monitoring, and treatment planning. However, most available longitudinal neuroimaging datasets are temporally sparse with a few follow-up scans per subject. This scarcity of t...
+
+
+### 🔴 World-R1: Reinforcing 3D Constraints for Text-to-Video Generation
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Weijie Wang, Xiaoxuan He, Youping Gu, Yifan Yang, Zeyu Zhang
+**Venue:** arXiv | **Published:** 2026-04-27
+
+[🔗 Link](https://arxiv.org/abs/2604.24764)
+
+> Recent video foundation models demonstrate impressive visual synthesis but frequently suffer from geometric inconsistencies. While existing methods attempt to inject 3D priors via architectural modifications, they often incur high computational costs and limit scalability. We propose World-R1, a framework that aligns video generation with 3D constr...
+
+
+### 🔴 HERMES++: Toward a Unified Driving World Model for 3D Scene Understanding and Generation
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Xin Zhou, Dingkang Liang, Xiwu Chen, Feiyang Tan, Dingyuan Zhang
+**Venue:** arXiv | **Published:** 2026-04-30
+
+[🔗 Link](https://arxiv.org/abs/2604.28196)
+
+> Driving world models serve as a pivotal technology for autonomous driving by simulating environmental dynamics. However, existing approaches predominantly focus on future scene generation, often overlooking comprehensive 3D scene understanding. Conversely, while Large Language Models (LLMs) demonstrate impressive reasoning capabilities, they lack t...
+
+
+### 🔴 Generalizable Sparse-View 3D Reconstruction from Unconstrained Images
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Vinayak Gupta, Chih-Hao Lin, Shenlong Wang, Anand Bhattad, Jia-Bin Huang
+**Venue:** arXiv | **Published:** 2026-04-30
+
+[🔗 Link](https://arxiv.org/abs/2604.28193)
+
+> Reconstructing 3D scenes from sparse, unposed images remains challenging under real-world conditions with varying illumination and transient occlusions. Existing methods rely on scene-specific optimization using appearance embeddings or dynamic masks, which requires extensive per-scene training and fails under sparse views. Moreover, evaluations on...
+
+
+### 🔴 LaST-R1: Reinforcing Action via Adaptive Physical Latent Reasoning for VLA Models
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Hao Chen, Jiaming Liu, Zhonghao Yan, Nuowei Han, Renrui Zhang
+**Venue:** arXiv | **Published:** 2026-04-30
+
+[🔗 Link](https://arxiv.org/abs/2604.28192)
+
+> Vision-Language-Action (VLA) models have increasingly incorporated reasoning mechanisms for complex robotic manipulation. However, existing approaches share a critical limitation: whether employing explicit linguistic reasoning that suffers from latency and discretization, or utilizing more expressive continuous latent reasoning, they are predomina...
+
+
+### 🔴 FlashRT: Towards Computationally and Memory Efficient Red-Teaming for Prompt Injection and Knowledge Corruption
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Yanting Wang, Chenlong Yin, Ying Chen, Jinyuan Jia
+**Venue:** arXiv | **Published:** 2026-04-30
+
+[🔗 Link](https://arxiv.org/abs/2604.28157)
+
+> Long-context large language models (LLMs)-for example, Gemini-3.1-Pro and Qwen-3.5-are widely used to empower many real-world applications, such as retrieval-augmented generation, autonomous agents, and AI assistants. However, security remains a major concern for their widespread deployment, with threats such as prompt injection and knowledge corru...
+
+
+### 🔴 Stop Holding Your Breath: CT-Informed Gaussian Splatting for Dynamic Bronchoscopy
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Andrea Dunn Beltran, Daniel Rho, Aarav Mehta, Xinqi Xiong, Raúl San José Estépar
+**Venue:** arXiv | **Published:** 2026-04-30
+
+[🔗 Link](https://arxiv.org/abs/2604.28179)
+
+> Bronchoscopic navigation relies on registering endoscopic video to a preoperative CT scan, but respiratory motion deforms the airway by 5-20 mm, creating CT-to-body divergence that limits localization accuracy. In practice, this is mitigated through breath-hold protocols, which attempt to match the intraoperative anatomy to a static CT, but are dif...
+
+
+### 🔴 How Do AI Agents Spend Your Money? Analyzing and Predicting Token Consumption in Agentic Coding Tasks
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `AI_EVAL_VALID` `EVIDENCE_IMPLEMENT`
+**Authors:** Longju Bai, Zhemin Huang, Xingyao Wang, Jiao Sun, Rada Mihalcea
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22750)
+
+> The wide adoption of AI agents in complex human workflows is driving rapid growth in LLM token consumption. When agents are deployed on tasks that require a significant amount of tokens, three questions naturally arise: (1) Where do AI agents spend the tokens? (2) Which models are more token-efficient? and (3) Can agents predict their token usage b...
+
+
+### 🔴 Conflict-Aware Harmonized Rotational Gradient for Multiscale Kinetic Regimes
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Zhangyong Liang
+**Venue:** arXiv | **Published:** 2026-04-27
+
+[🔗 Link](https://arxiv.org/abs/2604.24745)
+
+> In this paper, we propose a harmonized rotational gradient method, termed HRGrad, for simultaneously tackling multiscale time-dependent kinetic problems with varying small parameters. These parameters exhibit asymptotic transitions from microscopic to macroscopic physics, making it a challenging multi-task problem to solve over all ranges simultane...
+
+
+### 🔴 Visual Generation in the New Era: An Evolution from Atomic Mapping to Agentic World Modeling
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Keming Wu, Zuhao Yang, Kaichen Zhang, Shizun Wang, Haowei Zhu
+**Venue:** arXiv | **Published:** 2026-04-30
+
+[🔗 Link](https://arxiv.org/abs/2604.28185)
+
+> Recent visual generation models have made major progress in photorealism, typography, instruction following, and interactive editing, yet they still struggle with spatial reasoning, persistent state, long-horizon consistency, and causal understanding. We argue that the field should move beyond appearance synthesis toward intelligent visual generati...
+
+
+### 🔴 AEGIS: A Holistic Benchmark for Evaluating Forensic Analysis of AI-Generated Academic Images
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Bo Zhang, Tzu-Yen Ma, Zichen Tang, Junpeng Ding, Zirui Wang
+**Venue:** arXiv | **Published:** 2026-04-30
+
+[🔗 Link](https://arxiv.org/abs/2604.28177)
+
+> We introduce AEGIS, A holistic benchmark for Evaluating forensic analysis of AI-Generated academic ImageS. Compared to existing benchmarks, AEGIS features three key advances: (1) Domain-Specific Complexity: covering seven academic categories with 39 fine-grained subtypes, exposing intrinsic forensic difficulty, where even GPT-5.1 reaches 48.80% ove...
+
+
+### 🔴 Strait: Perceiving Priority and Interference in ML Inference Serving
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Haidong Zhao, Nikolaos Georgantas
+**Venue:** arXiv | **Published:** 2026-04-30
+
+[🔗 Link](https://arxiv.org/abs/2604.28175)
+
+> Machine learning (ML) inference serving systems host deep neural network (DNN) models and schedule incoming inference requests across deployed GPUs. However, limited support for task prioritization and insufficient latency estimation under concurrent execution may restrict their applicability in on-premises scenarios. We present \emph{Strait}, a se...
+
+
+### 🔴 OmniRobotHome: A Multi-Camera Platform for Real-Time Multiadic Human-Robot Interaction
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `ADAPTIVE_REGULATION` `AI_EVAL_VALID`
+**Authors:** Junyoung Lee, Sookwan Han, Jeonghwan Kim, Inhee Lee, Mingi Choi
+**Venue:** arXiv | **Published:** 2026-04-30
+
+[🔗 Link](https://arxiv.org/abs/2604.28197)
+
+> Human-robot collaboration has been studied primarily in dyadic or sequential settings. However, real homes require multiadic collaboration, where multiple humans and robots share a workspace, acting concurrently on interleaved subtasks with tight spatial and temporal coupling. This regime remains underexplored because close-proximity interaction be...
+
+
+### 🔴 Intern-Atlas: A Methodological Evolution Graph as Research Infrastructure for AI Scientists
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Yujun Wu, Dongxu Zhang, Xinchen Li, Jinhang Xu, Yiling Duan
+**Venue:** arXiv | **Published:** 2026-04-30
+
+[🔗 Link](https://arxiv.org/abs/2604.28158)
+
+> Existing research infrastructure is fundamentally document-centric, providing citation links between papers but lacking explicit representations of methodological evolution. In particular, it does not capture the structured relationships that explain how and why research methods emerge, adapt, and build upon one another. With the rise of AI-driven ...
+
+
+### 🔴 AI Co-Mathematician: Accelerating Mathematicians with Agentic AI
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Daniel Zheng, Ingrid von Glehn, Yori Zwols, Iuliya Beloshapka, Lars Buesing
+**Venue:** arXiv | **Published:** 2026-05-07
+
+[🔗 Link](https://arxiv.org/abs/2605.06651)
+
+> We introduce the AI co-mathematician, a workbench for mathematicians to interactively leverage AI agents to pursue open-ended research. The AI co-mathematician is optimized to provide holistic support for the exploratory and iterative reality of mathematical workflows, including ideation, literature search, computational exploration, theorem provin...
+
+
+### 🔴 Time-Localized Parametric Decomposition of Respiratory Airflow for Sub-Breath Analysis
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Victoria Ribeiro Rodrigues, Paul W. Davenport, Nicholas J. Napoli
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22695)
+
+> Respiratory airflow signals provide critical insight into breathing mechanics, yet conventional analysis methods remain limited in their ability to characterize the internal structure of individual breaths. Traditional approaches treat airflow as a quasi-periodic signal and rely on global descriptors such as tidal volume or peak flow, obscuring sub...
+
+
+### 🔴 Enhancement of superconducting stiffness in hybrid superconducting-metallic bilayers
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `EVIDENCE_IMPLEMENT` `ADAPTIVE_REGULATION`
+**Authors:** J. E. Ebot, Lorenzo Pizzino, Sam Mardazad, Johannes S. Hofmann, Thierry Giamarchi
+**Venue:** arXiv | **Published:** 2026-04-30
+
+[🔗 Link](https://arxiv.org/abs/2604.28187)
+
+> Boosting superconductivity by metallic reservoirs is the essence of Kivelson's bilayer proposal. One layer provides pairing to the electrons, while the weakly coupled metal provides additional phase coherence to those pairs by mediating extended-range pair-pair coupling. Demonstrating significant and unambiguous performance gains with strong-coupli...
+
+
+
+## 📚 Supporting Papers (Priority 2, top 7)
+
+### 🟡 Representational Harms in LLM-Generated Narratives Against Global Majority Nationalities
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID` `EVIDENCE_IMPLEMENT`
+**Authors:** Ilana Nguyen, Harini Suresh, Thema Monroe-White, Evan Shieh
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22749)
+
+> Large language models (LLMs) are increasingly used for text generation tasks from everyday use to high-stakes enterprise and government applications, including simulated interviews with asylum seekers. While many works highlight the new potential applications of LLMs, there are risks of LLMs encoding and perpetuating harmful biases about non-domina...
+
+
+### 🟡 Code for All: Educational Applications of the "Vibe Coding" Hackathon in Programming Education across All Skill Levels
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Ashley J. Chen, Yijia Cao, Minghao Shao, Ramesh Karri, Muhammad Shafique
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22747)
+
+> The emergence of large language models has enabled vibe coding, a natural language approach to programming in which users describe intent and AI generates or revises code, potentially broadening access to programming while preserving meaningful learning outcomes. We investigate its educational value through a month-long online hackathon that welcom...
+
+
+### 🟡 Revisiting confinement scalings and fusion performance with a perspective optimized for extrapolation
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Jalal Butt, Geert Verdoolaege, Ghent University, Stanley M. Kaye, Egemen Kolemen
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22728)
+
+> Recent advances in high-temperature-superconductor technology have made substantially higher toroidal magnetic fields technologically accessible, reopening the design space for compact, high-field tokamak reactors. Because reactor performance projections remain anchored to empirical confinement scalings, the recent update to the ITPA global H-mode ...
+
+
+### 🟡 Neural Recovery of Historical Lexical Structure in Bantu Languages from Modern Data
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `ADAPTIVE_REGULATION` `AI_EVAL_VALID`
+**Authors:** Hillary Mutisya, John Mugane
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22730)
+
+> We investigate whether neural models trained exclusively on modern morphological data can recover cross-lingual lexical structure consistent with historical reconstruction. Using BantuMorph v7, a transformer over Bantu morphological paradigms, we analyze 14 Eastern and Southern Bantu languages, extract encoder embeddings for their noun and verb lem...
+
+
+### 🟡 When AI Meets Terahertz: A Survey on the Symbiosis of Artificial Intelligence and Terahertz Networks
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Chong Han, Jingting Jiang, Zhengdong Hu, Meixia Tao, Wenjun Zhang
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22706)
+
+> The Terahertz (THz) band (0.1-10 THz) has emerged as a critical frontier for future communication systems, offering ultra-wide bandwidths that enable Terabits-per-second (Tbps) wireless links and high-precision sensing and imaging. However, practical deployment of THz systems is hindered by unique challenges, including intricate channel characteris...
+
+
+### 🟡 Mechanical Scaling Laws and Deformation Behavior of Nanoporous Tantalum Microparticles
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** J. I. Ramallo, N. Vázquez von Bibow, M. A. Monclús, I. McCue, M. C. Fuertes
+**Venue:** arXiv | **Published:** 2026-04-24
+
+[🔗 Link](https://arxiv.org/abs/2604.22726)
+
+> The mechanical scaling laws of dealloyed nanoporous metals depart from classical Gibson-Ashby predictions for open-cell foams due to a decreased connectivity in their solid network. However, these scaling relations have been established almost exclusively on nanoporous gold produced by electrochemical dealloying, and it is an outstanding question w...
+
+
+### 🟡 Chemical Taxonomy of $ω$~Centauri: Ten Populations Reveal a Multi-Phase Enrichment History
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `EVIDENCE_IMPLEMENT` `ADAPTIVE_REGULATION`
+**Authors:** Furkan Akbaba, Olcay Plevne, Timur Şahin, Sena Aleyna Şentürk
+**Venue:** arXiv | **Published:** 2026-04-30
+
+[🔗 Link](https://arxiv.org/abs/2604.28195)
+
+> $ω$~Centauri, the most massive globular cluster in the Milky Way, exhibits a level of stellar population complexity that has long resisted a unified chemical characterisation. We exploit high-resolution near-infrared spectroscopy from the Milky Way Mapper survey (MWM DR19) to construct one of the largest homogeneously analysed samples of $ω$~Cen me...
+
+
+---
+
+## 🔍 Cross-Analysis
+**Multi-theme papers:** 36/100
+
+## 📈 Theme Distribution
+
+| Theme | Count |
+|-------|-------|
+| `AI_EVAL_VALID` | ██████████ 59 |
+| `ADAPTIVE_REGULATION` | ██████████ 29 |
+| `PARTICIPATORY_GOV` | ██████████ 28 |
+| `EVIDENCE_IMPLEMENT` | ██████████ 18 |
+| `CLINICAL_HEALTH_AI` | █████████ 9 |
+
+---
+
+*Generated: 2026-05-14T09:03:45.810856*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+
+---
+
+## Source file: [2026-05-13](outputs/digests/digest_2026-05-13.md)
 
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-05-13 (Wednesday) | **Papers ranked:** 100 | **New:** +0
@@ -427,7 +1314,7 @@ healthcare, finance, and criminal justice. Though these systems, in theory, make
 
 ---
 
-## Source: [digest_2026-05-12.md](outputs/digests/digest_2026-05-12.md)
+## Source file: [2026-05-12](outputs/digests/digest_2026-05-12.md)
 
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-05-12 (Tuesday) | **Papers ranked:** 100 | **New:** +0
@@ -853,7 +1740,7 @@ healthcare, finance, and criminal justice. Though these systems, in theory, make
 
 ---
 
-## Source: [digest_2026-05-11.md](outputs/digests/digest_2026-05-11.md)
+## Source file: [2026-05-11](outputs/digests/digest_2026-05-11.md)
 
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-05-11 (Monday) | **Papers ranked:** 100 | **New:** +0
@@ -1279,7 +2166,7 @@ healthcare, finance, and criminal justice. Though these systems, in theory, make
 
 ---
 
-## Source: [digest_2026-05-09.md](outputs/digests/digest_2026-05-09.md)
+## Source file: [2026-05-09](outputs/digests/digest_2026-05-09.md)
 
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-05-09 (Saturday) | **Papers ranked:** 100 | **New:** +8
@@ -1694,7 +2581,7 @@ healthcare, finance, and criminal justice. Though these systems, in theory, make
 
 ---
 
-## Source: [digest_2026-05-08.md](outputs/digests/digest_2026-05-08.md)
+## Source file: [2026-05-08](outputs/digests/digest_2026-05-08.md)
 
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-05-08 (Friday) | **Papers ranked:** 100 | **New:** +0
@@ -2109,7 +2996,7 @@ healthcare, finance, and criminal justice. Though these systems, in theory, make
 
 ---
 
-## Source: [digest_2026-05-07.md](outputs/digests/digest_2026-05-07.md)
+## Source file: [2026-05-07](outputs/digests/digest_2026-05-07.md)
 
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-05-07 (Thursday) | **Papers ranked:** 100 | **New:** +0
@@ -2524,7 +3411,7 @@ healthcare, finance, and criminal justice. Though these systems, in theory, make
 
 ---
 
-## Source: [digest_2026-05-01.md](outputs/digests/digest_2026-05-01.md)
+## Source file: [2026-05-01](outputs/digests/digest_2026-05-01.md)
 
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-05-01 (Friday) | **Papers ranked:** 100 | **New:** +23
@@ -2868,7 +3755,7 @@ healthcare, finance, and criminal justice. Though these systems, in theory, make
 
 ---
 
-## Source: [digest_2026-04-30.md](outputs/digests/digest_2026-04-30.md)
+## Source file: [2026-04-30](outputs/digests/digest_2026-04-30.md)
 
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-04-30 (Thursday) | **Papers ranked:** 100 | **New:** +8
@@ -3153,7 +4040,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-28.md](outputs/digests/digest_2026-04-28.md)
+## Source file: [2026-04-28](outputs/digests/digest_2026-04-28.md)
 
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-04-28 (Tuesday) | **Papers ranked:** 100 | **New:** +8
@@ -3416,7 +4303,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-27.md](outputs/digests/digest_2026-04-27.md)
+## Source file: [2026-04-27](outputs/digests/digest_2026-04-27.md)
 
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-04-27 (Monday) | **Papers ranked:** 100 | **New:** +26
@@ -3579,7 +4466,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-26.md](outputs/digests/digest_2026-04-26.md)
+## Source file: [2026-04-26](outputs/digests/digest_2026-04-26.md)
 
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-04-26 (Sunday) | **Papers ranked:** 100 | **New:** +0
@@ -3742,7 +4629,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-25.md](outputs/digests/digest_2026-04-25.md)
+## Source file: [2026-04-25](outputs/digests/digest_2026-04-25.md)
 
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-04-25 (Saturday) | **Papers ranked:** 100 | **New:** +52
@@ -4131,7 +5018,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-24_v3.md](outputs/digests/digest_2026-04-24_v3.md)
+## Source file: [2026-04-24_v3](outputs/digests/digest_2026-04-24_v3.md)
 
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-04-24 (Friday) | **Papers ranked:** 100 | **New:** +0
@@ -4563,7 +5450,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-24_v2.md](outputs/digests/digest_2026-04-24_v2.md)
+## Source file: [2026-04-24_v2](outputs/digests/digest_2026-04-24_v2.md)
 
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-04-24 (Friday) | **Papers ranked:** 87 | **New:** +52
@@ -5036,7 +5923,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-24.md](outputs/digests/digest_2026-04-24.md)
+## Source file: [2026-04-24](outputs/digests/digest_2026-04-24.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-24 (Friday) | **Papers analyzed:** 18 | **New in DB:** +0
@@ -5073,7 +5960,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-23.md](outputs/digests/digest_2026-04-23.md)
+## Source file: [2026-04-23](outputs/digests/digest_2026-04-23.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-23 (Thursday) | **Papers analyzed:** 17 | **New in DB:** +0
@@ -5110,7 +5997,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-22.md](outputs/digests/digest_2026-04-22.md)
+## Source file: [2026-04-22](outputs/digests/digest_2026-04-22.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-22 (Wednesday) | **Papers analyzed:** 17 | **New in DB:** +0
@@ -5147,7 +6034,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-21.md](outputs/digests/digest_2026-04-21.md)
+## Source file: [2026-04-21](outputs/digests/digest_2026-04-21.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-21 (Tuesday) | **Papers analyzed:** 16 | **New in DB:** +0
@@ -5184,7 +6071,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-20.md](outputs/digests/digest_2026-04-20.md)
+## Source file: [2026-04-20](outputs/digests/digest_2026-04-20.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-20 (Monday) | **Papers analyzed:** 16 | **New in DB:** +0
@@ -5221,7 +6108,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-19.md](outputs/digests/digest_2026-04-19.md)
+## Source file: [2026-04-19](outputs/digests/digest_2026-04-19.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-19 (Sunday) | **Papers analyzed:** 17 | **New in DB:** +0
@@ -5273,7 +6160,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-18.md](outputs/digests/digest_2026-04-18.md)
+## Source file: [2026-04-18](outputs/digests/digest_2026-04-18.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-18 (Saturday) | **Papers analyzed:** 17 | **New in DB:** +0
@@ -5325,7 +6212,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-17.md](outputs/digests/digest_2026-04-17.md)
+## Source file: [2026-04-17](outputs/digests/digest_2026-04-17.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-17 (Friday) | **Papers analyzed:** 18 | **New in DB:** +0
@@ -5377,7 +6264,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-16.md](outputs/digests/digest_2026-04-16.md)
+## Source file: [2026-04-16](outputs/digests/digest_2026-04-16.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-16 (Thursday) | **Papers analyzed:** 18 | **New in DB:** +0
@@ -5429,7 +6316,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-15.md](outputs/digests/digest_2026-04-15.md)
+## Source file: [2026-04-15](outputs/digests/digest_2026-04-15.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-15 (Wednesday) | **Papers analyzed:** 18 | **New in DB:** +18
@@ -5467,7 +6354,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-14_v3.md](outputs/digests/digest_2026-04-14_v3.md)
+## Source file: [2026-04-14_v3](outputs/digests/digest_2026-04-14_v3.md)
 
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-04-14 (Tuesday) | **Papers ranked:** 100 | **New:** +27
@@ -5816,7 +6703,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-14_v2.md](outputs/digests/digest_2026-04-14_v2.md)
+## Source file: [2026-04-14_v2](outputs/digests/digest_2026-04-14_v2.md)
 
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-04-14 (Tuesday) | **Papers ranked:** 25 | **New:** +88
@@ -6129,7 +7016,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-14.md](outputs/digests/digest_2026-04-14.md)
+## Source file: [2026-04-14](outputs/digests/digest_2026-04-14.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-14 (Tuesday) | **Papers analyzed:** 19 | **New in DB:** +0
@@ -6167,7 +7054,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-13.md](outputs/digests/digest_2026-04-13.md)
+## Source file: [2026-04-13](outputs/digests/digest_2026-04-13.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-13 (Monday) | **Papers analyzed:** 18 | **New in DB:** +0
@@ -6204,7 +7091,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-12.md](outputs/digests/digest_2026-04-12.md)
+## Source file: [2026-04-12](outputs/digests/digest_2026-04-12.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-12 (Sunday) | **Papers analyzed:** 19 | **New in DB:** +0
@@ -6256,7 +7143,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-11.md](outputs/digests/digest_2026-04-11.md)
+## Source file: [2026-04-11](outputs/digests/digest_2026-04-11.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-11 (Saturday) | **Papers analyzed:** 19 | **New in DB:** +0
@@ -6308,7 +7195,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-10_v9.md](outputs/digests/digest_2026-04-10_v9.md)
+## Source file: [2026-04-10_v9](outputs/digests/digest_2026-04-10_v9.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-10 (Friday) | **Papers analyzed:** 1 | **New in DB:** +1
@@ -6360,7 +7247,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-10_v8.md](outputs/digests/digest_2026-04-10_v8.md)
+## Source file: [2026-04-10_v8](outputs/digests/digest_2026-04-10_v8.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-10 (Friday) | **Papers analyzed:** 19 | **New in DB:** +0
@@ -6412,7 +7299,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-10_v7.md](outputs/digests/digest_2026-04-10_v7.md)
+## Source file: [2026-04-10_v7](outputs/digests/digest_2026-04-10_v7.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-10 (Friday) | **Papers analyzed:** 19 | **New in DB:** +0
@@ -6464,7 +7351,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-10_v6.md](outputs/digests/digest_2026-04-10_v6.md)
+## Source file: [2026-04-10_v6](outputs/digests/digest_2026-04-10_v6.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-10 (Friday) | **Papers analyzed:** 19 | **New in DB:** +0
@@ -6516,7 +7403,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-10_v5.md](outputs/digests/digest_2026-04-10_v5.md)
+## Source file: [2026-04-10_v5](outputs/digests/digest_2026-04-10_v5.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-10 (Friday) | **Papers analyzed:** 18 | **New in DB:** +18
@@ -6568,7 +7455,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-10_v4.md](outputs/digests/digest_2026-04-10_v4.md)
+## Source file: [2026-04-10_v4](outputs/digests/digest_2026-04-10_v4.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-10 (Friday) | **Papers analyzed:** 0 | **New in DB:** +0
@@ -6605,7 +7492,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-10_v3.md](outputs/digests/digest_2026-04-10_v3.md)
+## Source file: [2026-04-10_v3](outputs/digests/digest_2026-04-10_v3.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-10 (Friday) | **Papers analyzed:** 0 | **New in DB:** +0
@@ -6642,7 +7529,7 @@ Benign prostatic hyperplasia (BPH) is a common condition among middle-aged and e
 
 ---
 
-## Source: [digest_2026-04-10_v2.md](outputs/digests/digest_2026-04-10_v2.md)
+## Source file: [2026-04-10_v2](outputs/digests/digest_2026-04-10_v2.md)
 
 # 🔬 AI Health Literature Review — Daily Digest
 **Date:** 2026-04-10 | **Papers analyzed:** 11 | **Priority:** 4 top picks
@@ -6827,7 +7714,7 @@ Despite being a major theme in the keyword framework, today's search returned ve
 
 ---
 
-## Source: [digest_2026-04-10.md](outputs/digests/digest_2026-04-10.md)
+## Source file: [2026-04-10](outputs/digests/digest_2026-04-10.md)
 
 # AI Health Literature Review - Daily Digest
 ## 2026-04-10
@@ -6966,7 +7853,7 @@ Despite being a major theme in the keyword framework, today's search returned ve
 
 ---
 
-## Source: [digest_2026-04-08.md](outputs/digests/digest_2026-04-08.md)
+## Source file: [2026-04-08](outputs/digests/digest_2026-04-08.md)
 
 # AI Health Literature Review - Daily Digest
 ## 2026-04-08
@@ -7051,7 +7938,7 @@ Need clearer reporting on external validation, subgroup performance, and real-wo
 
 ---
 
-## Source: [digest_2026-04-08-v2.md](outputs/digests/digest_2026-04-08-v2.md)
+## Source file: [2026-04-08](outputs/digests/digest_2026-04-08-v2.md)
 
 # AI Health Literature Daily Digest
 **Date**: 2026-04-08  
@@ -7236,7 +8123,7 @@ To capture more governance/policy papers in future:
 
 ---
 
-## Source: [digest_2026-04-07.md](outputs/digests/digest_2026-04-07.md)
+## Source file: [2026-04-07](outputs/digests/digest_2026-04-07.md)
 
 # AI Health Literature Review - Daily Digest
 ## 2026-04-07
@@ -7540,7 +8427,7 @@ Need clearer reporting on external validation, subgroup performance, and real-wo
 
 ---
 
-## Source: [digest_2026-04-06.md](outputs/digests/digest_2026-04-06.md)
+## Source file: [2026-04-06](outputs/digests/digest_2026-04-06.md)
 
 # AI Health Literature Review - Daily Digest
 ## 2026-04-06
@@ -7841,7 +8728,7 @@ Need clearer reporting on external validation, subgroup performance, and real-wo
 
 ---
 
-## Source: [digest_2026-04-05.md](outputs/digests/digest_2026-04-05.md)
+## Source file: [2026-04-05](outputs/digests/digest_2026-04-05.md)
 
 # AI Health Literature Review - Daily Digest
 ## 2026-04-05
