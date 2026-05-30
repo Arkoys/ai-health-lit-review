@@ -1,0 +1,135 @@
+% =============================================================================
+% 05_EVALUATION_METHODS — Analytical Synthesis of Evaluation Approaches
+% =============================================================================
+% Page target: ~2 pages
+% Structure: Retrospective evaluation → Prospective evaluation → Continuous monitoring
+% =============================================================================
+
+\section{Evaluation Methods: From Retrospective Validation to Lifecycle Monitoring}
+\label{sec:evaluation_methods}
+\addcontentsline{toc}{section}{Evaluation Methods}
+
+The evaluation of health AI systems occupies a spectrum ranging from
+single-site retrospective validation — the current norm — to prospective,
+longitudinal, ecologically grounded evaluation designs, and ultimately to
+continuous post-market monitoring frameworks. This section traces that arc
+analytically, showing how the field's evaluation practice has evolved, where
+it remains structurally inadequate, and what emerging methodological responses
+suggest about the requirements for a genuinely fit-for-purpose evaluation
+ecosystem.
+
+\subsection{Retrospective Evaluation: The Dominant Paradigm and Its Limits}
+\label{sec:retrospective}
+
+The prevailing evaluation paradigm in health AI relies on retrospective
+analysis of curated datasets, split into training, validation, and test sets
+within a single institution or health system. Performance is reported as
+aggregate metrics — primarily Area Under the Receiver Operating Characteristic
+Curve (AUC), accuracy, sensitivity, and specificity — computed on held-out
+test data from the same population as the training data.
+
+This approach has produced a structurally misleading evidence base.
+\citet{abulibdeh2025illusion} document the consequences with particular
+force: the majority of FDA-authorized AI devices were approved on the
+basis of single-site, premarket studies with no mandatory external validation
+and no continuous post-market monitoring. The result is what they term an
+\textbf{illusion of safety}: statistically precise performance estimates that
+conceal ecologically invalid assumptions about generalizability.
+
+The MSI colorectal cancer prediction study exemplifies the pattern
+quantitatively. Models reported AUCs of 0.882 in the training cohort,
+declining to 0.768 in the internal validation cohort, 0.803 in external
+validation cohort 1, and 0.751 in external validation cohort 2. This
+progressive performance degradation across increasingly distant populations
+is not an aberration — it is the expected pattern when evaluation conditions
+do not reflect the complexity of real clinical deployment.
+
+Three structural failures underpin this inadequacy. First, single-site
+retrospective evaluation captures neither the temporal dynamics of clinical
+decision-making nor the multi-professional workflows in which AI systems
+are embedded \citep{turchi2025ecological}. A single-point-in-time accuracy
+metric cannot represent the iterative, contextual, and socially situated
+nature of clinical reasoning. Second, standard evaluation metrics collapse
+qualitatively different clinical harms into a single number. A false-negative
+in cancer diagnosis carries a fundamentally different clinical weight than
+a false-positive, and the aggregated AUC obscures this asymmetry
+\citep{turchi2025ecological}. Third, retrospective evaluation is
+inherently incapable of detecting algorithmic drift: the degradation of
+model performance over time as input data distributions shift due to
+changes in patient populations, clinical practice, or the AI system's
+own continuous learning updates.
+
+\subsection{Prospective Longitudinal Evaluation: The Emerging Alternative}
+\label{sec:prospective}
+
+The methodological response to retrospective inadequacy has produced a
+growing body of prospective, multicenter evaluation designs. The TRAC-Pain
+protocol \citep{bailes2026trac} represents the most fully articulated
+example: a 12-week prospective observational cohort study combining
+continuous wearable sensor data — physiological, sleep, and physical
+activity metrics — with ecological momentary assessments (EMAs)
+administered multiple times daily. The design explicitly targets the
+temporal dynamics and contextual complexity that retrospective evaluation
+ignores, capturing the longitudinal pain experience rather than a
+single point-of-care assessment.
+
+This design represents a significant methodological advance along three
+dimensions simultaneously. First, the continuous wearable data stream
+provides objective, real-time performance signals rather than post-hoc
+accuracy metrics. Second, the EMA component captures patient-reported
+outcomes and contextual factors — pain interference, mood, fatigue —
+that are invisible to model performance metrics but central to clinical
+relevance. Third, the 12-week duration enables detection of performance
+evolution over time, addressing the drift detection problem that
+retrospective designs structurally cannot solve.
+
+However, prospective longitudinal evaluation of this kind remains the
+exception. The practical barriers are substantial: such designs are
+costly, time-consuming, require sustained institutional commitment,
+and are poorly aligned with the publication timelines and funding cycles
+that incentivize academic health AI research. The result is a field in
+which the methodological ideal is well understood but rarely implemented.
+
+\subsection{Continuous Monitoring and Drift Detection}
+\label{sec:continuous_monitoring}
+
+Between the extremes of single-shot retrospective evaluation and
+resource-intensive prospective cohort studies lies the operational
+requirement for continuous post-market monitoring of deployed AI systems.
+This is the dimension of evaluation most urgently under-developed in both
+practice and literature.
+
+\citet{warraich2024fda} identify continuous learning AI systems as requiring
+special regulatory attention precisely because the traditional pre-market
+validation paradigm cannot guarantee post-deployment performance. Yet mandatory
+post-market performance monitoring with standardized drift detection protocols
+is conspicuously absent from most regulatory frameworks reviewed. The FDA's
+adverse event reporting mechanism captures safety incidents after they occur
+but provides no proactive monitoring capability.
+
+The gap between this need and existing practice is addressed most directly
+by \citet{palama2026auditing}, whose Layer 3 (performance, safety, and drift
+monitoring) specifies the operational architecture for continuous monitoring:
+statistical process control methodologies applied to real-time model outputs,
+with alert thresholds and predefined escalation pathways tied to institutional
+decision authorities. The framework specifies that performance below a defined
+operational threshold triggers an automatic governance notification, cascading
+through defined stages from technical retraining to clinical review to market
+suspension.
+
+This operationalization is methodologically significant for two reasons.
+First, it reframes evaluation as an organizational process rather than a
+technical measurement event: the question is not only ``how accurate is
+the model?'' but ``who is responsible for knowing how accurate the model
+is at any given moment, and what must they do when it degrades?'' Second,
+it shifts the unit of evaluation from model performance in isolation to
+the sociotechnical system — model, clinicians, governance structure, and
+institutional infrastructure — within which performance is sustained.
+
+The ecological validity gap in evaluation methodology thus has a direct
+governance consequence: a model validated under ecologically invalid
+conditions generates misleading confidence estimates, which are then used
+by governance bodies to justify deployment decisions that the evaluation
+evidence does not support. Closing the ecological validity gap is not
+merely a methodological improvement — it is a precondition for governance
+that is honestly matched to the evidence.

@@ -1,0 +1,91 @@
+% =============================================================================
+% 06_DISCUSSION — Interpretation, Implications, Limitations, Agenda
+% =============================================================================
+% Page target: ~2 pages
+% Structure: Summary → Implications → Limitations → Research Agenda
+% =============================================================================
+
+\section{Discussion}
+\label{sec:discussion}
+\addcontentsline{toc}{section}{Discussion}
+
+This discussion interprets the synthesized findings presented in
+Section~\ref{sec:results} through an integrated analytical lens, examines
+their implications for research, policy, and clinical practice, acknowledges
+the limitations of this review, and concludes with a forward-looking
+research agenda identifying the most pressing unanswered questions at the
+intersection of health AI evaluation and governance.
+
+\subsection{Summary of Key Findings}
+\label{sec:discussion_summary}
+
+The three thematic findings presented in the results are analytically
+interdependent rather than independent. The \textbf{ecological validity
+gap} in evaluation methodology does not merely reflect a technical
+measurement problem — it has direct consequences for governance. When AI
+systems are validated under conditions that do not reflect real-world
+clinical complexity, governance frameworks based on those validations
+will be structurally misaligned with the phenomena they seek to govern.
+Similarly, the \textbf{governance capacity deficit} documented in health
+systems is not simply a matter of underinvestment — it is partly a
+consequence of evaluation frameworks that generate overconfident
+validation evidence (suggesting AI systems are more ready for deployment
+than they are), which reduces the perceived urgency of building
+pre-deployment governance infrastructure. Finally, the \textbf{pilot
+trap} can be understood as the downstream consequence of these two
+upstream failures: systems validated on inadequate evidence, governed
+by frameworks that assume absent capacity, predictably fail to transition
+to routine care.
+
+This interdependency implies that improving health AI outcomes requires
+simultaneous action across all three dimensions — better evaluation
+methodology, governance capacity investment, and implementation support
+— rather than sequential approaches that treat evaluation, governance,
+and implementation as separate phases.
+
+\subsection{Implications}
+\label{sec:discussion_implications}
+
+\subsubsection{Implications for AI Evaluation Research}
+
+The reviewed literature makes clear that the field needs a paradigm shift
+from single-site, retrospective evaluation to prospective, multicenter,
+ecologically grounded validation. This requires: (i) embedding AI evaluation
+within real clinical workflows rather than controlled experimental setups;
+(ii) adopting longitudinal evaluation designs that capture algorithmic drift
+and performance evolution over time; (iii) developing clinical harm-asymmetric
+performance metrics that reflect the differential consequences of false-positive
+and false-negative errors in specific clinical contexts; and (iv) mandating
+subgroup performance reporting to detect and quantify algorithmic bias across
+population strata. The TRAC-Pain protocol \citep{bailes2026trac} offers a
+methodological template that merits wider adoption and adaptation.
+
+\subsubsection{Implications for Regulatory and Policy Practice}
+
+The regulatory implications cut in two directions. First, current regulatory
+frameworks must evolve from one-time pre-market authorization toward
+\textbf{lifecycle-spanning governance} that mandates continuous post-market
+performance monitoring, requires disclosure of training data sources, and
+establishes enforceable equity and bias mitigation standards
+\citep{abulibdeh2025illusion, warraich2024fda}. Second, regulators must
+recognize that governance capacity in health systems is not pre-given and
+cannot be assumed — it must be actively built through implementation
+support, not just prescribed through standards \citep{tian2026pilottrap}.
+This suggests that regulatory frameworks should incorporate implementation
+support mechanisms, including regulatory sandboxes, technical assistance
+programs, and mandatory pre-deployment organizational readiness assessments.
+
+\subsubsection{Implications for Health Systems and Clinical Practice}
+
+For health systems, the reviewed evidence points to the need to invest
+in organizational governance infrastructure as a precondition for AI
+deployment, not as an afterthought. This includes: establishing clear
+accountability structures for AI-assisted clinical decisions; building
+cross-functional governance committees that bring together clinical,
+technical, legal, and patient representatives; developing operational
+protocols for model updates, performance monitoring, and incident
+response; and investing in workforce development to build algorithmic
+literacy and clinical-AI workflow integration skills at scale.
+
+\subsection{Limitations}
+\label{sec:discussion_limitations}

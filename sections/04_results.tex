@@ -1,0 +1,329 @@
+% =============================================================================
+% 04_RESULTS — Thematic Synthesis Findings
+% =============================================================================
+% Page target: 2–4 pages
+% Structure: 3 themes with sub-themes — synthesis, not catalogue
+% =============================================================================
+
+\section{Results}
+\label{sec:results}
+\addcontentsline{toc}{section}{Results}
+
+% =============================================================================
+% OVERVIEW
+% =============================================================================
+
+From an initial corpus of 246 publications identified through systematic
+search across PubMed, Semantic Scholar, arXiv, and Google Scholar, [N]
+papers were retained after deduplication, abstract screening, and full-text
+assessment against inclusion and exclusion criteria. The reviewed literature
+reveals three overarching findings at the intersection of health AI
+evaluation and governance: a pervasive \textbf{ecological validity gap}
+in evaluation methodology; a structural \textbf{governance capacity deficit}
+in health systems; and a systematic \textbf{pilot-to-routine transition
+failure} rooted in organizational rather than technical barriers. These three
+findings are analytically interdependent rather than independent — the
+ecological validity gap generates misleading validation evidence that reduces
+the urgency of governance capacity-building; governance frameworks built on
+that evidence are structurally misaligned with real-world complexity; and
+that misalignment produces the pilot trap as a downstream consequence.
+than technical barriers.
+
+% =============================================================================
+% THEME 1: EVALUATION METHODS — Ecological Validity Gap
+% =============================================================================
+
+\subsection{Evaluation Methods: The Ecological Validity Gap}
+\label{sec:results_evaluation}
+
+% -----------------------------------------------------------------------------
+% 1.1 Single-site, retrospective validation dominates
+% -----------------------------------------------------------------------------
+
+\subsubsection{Limited External Validation and Retrospective Bias}
+\label{sec:eval_retrospective}
+
+A consistent methodological limitation across the reviewed corpus is the
+predominance of single-site, retrospective evaluation designs. Studies
+evaluating deep learning models for medical imaging — including models for
+colorectal cancer microsatellite instability prediction, diabetic retinopathy
+screening, and chest X-ray interpretation — routinely report Area Under the
+Curve (AUC) values exceeding 0.85 in internal validation cohorts but show
+substantial performance decay when tested on external datasets from different
+institutions or populations \citep{pham2025ethical}. This pattern — high
+internal validity, limited external generalizability — reflects a structural
+evaluation problem rather than a model-specific failure.
+
+The CT-based MSI prediction study exemplifies this gap with quantitative
+precision: the authors report AUCs of 0.882 in their training cohort,
+declining to 0.768 in the internal validation cohort, 0.803 in external
+validation cohort 1, and 0.751 in external validation cohort 2 — a
+progressive performance degradation across increasingly distant populations
+that illustrates the generalizability challenge \citep{pham2025ethical}.
+Importantly, even when external validation is attempted, it typically
+relies on retrospective data from the same health system, capturing little
+of the population diversity, data quality variation, and workflow integration
+complexity of real clinical environments.
+
+% -----------------------------------------------------------------------------
+% 1.2 Metrics misaligned with clinical priorities
+% -----------------------------------------------------------------------------
+
+\subsubsection{Metric Design and Clinical Relevance}
+\label{sec:eval_metrics}
+
+Standard AI evaluation metrics — accuracy, sensitivity, specificity, AUC —
+are poorly calibrated to the clinical context in which AI systems operate.
+\citet{turchi2025ecological} demonstrate this with particular clarity in their
+study of AI-assisted oral cancer diagnosis: experienced dental specialists
+identifying real-world clinical diagnosis as requiring contextual information
+(beyond static images), longitudinal reasoning (beyond single-session tasks),
+and harm-asymmetric evaluation (a false-negative in cancer diagnosis has a
+different clinical weight than a false-positive). Standard AI benchmarks
+collapse these distinctions into a single accuracy number.
+
+The TRAC-Pain protocol \citep{bailes2026trac} offers a methodological
+counterpoint. By combining continuous wearable sensor data (physiological,
+sleep, and physical activity metrics) with ecological momentary assessments
+(EMAs) administered multiple times daily over a 12-week period, the study
+designs evaluation metrics that reflect the temporal dynamics of the pain
+experience — including pain interference, mood, and fatigue — rather than
+relying on point-of-care assessments alone. This represents an important
+step toward ecologically grounded evaluation, though prospective longitudinal
+designs of this kind remain rare in the literature.
+
+% -----------------------------------------------------------------------------
+% 1.3 Continuous monitoring and drift detection
+% -----------------------------------------------------------------------------
+
+\subsubsection{Algorithmic Drift and Post-Market Monitoring}
+\label{sec:eval_drift}
+
+A critical and understudied dimension of AI evaluation is algorithmic drift:
+the phenomenon by which AI systems that were valid at the time of deployment
+gradually or abruptly degrade in performance as input data distributions
+shift — due to changes in patient populations, healthcare practices, laboratory
+equipment, or the AI system's own continuous learning updates. The FDA
+perspective paper \citep{warraich2024fda} identifies continuous learning AI
+systems as requiring special regulatory attention precisely because the
+traditional pre-market validation paradigm cannot guarantee post-deployment
+performance. Yet mandatory post-market performance monitoring with standardized
+drift detection protocols is conspicuously absent from most regulatory
+frameworks reviewed.
+
+\citet{abulibdeh2025illusion} argue that this absence constitutes a
+\textbf{systemic safety gap}: patients and clinicians are provided no
+mechanism to know whether an AI system that was validated two years ago
+remains fit for clinical purpose today. The authors call for mandatory
+real-time monitoring requirements as a condition of market authorization,
+with clear escalation protocols and performance thresholds that trigger
+mandatory re-validation or market withdrawal.
+
+% =============================================================================
+% THEME 2: GOVERNANCE STRUCTURES — Capacity Deficit and Adaptive Regulation
+% =============================================================================
+
+\subsection{Governance Structures: The Capacity Deficit}
+\label{sec:results_governance}
+
+% -----------------------------------------------------------------------------
+% 2.1 Pre-market models assume pre-existing governance capacity
+% -----------------------------------------------------------------------------
+
+\subsubsection{Regulatory Frameworks and their Assumptions}
+\label{sec:gov_regulatory}
+
+The FDA's authorized AI device landscape \citep{warraich2024fda} and the EU
+AI Act both operate from a shared premise: that governance is a precondition
+that health systems and AI developers must satisfy before market entry.
+Under this model, authorization requires demonstrating safety and efficacy
+through premarket evaluation; post-market obligations are limited largely to
+adverse event reporting. \citet{tian2026pilottrap} challenge this premise
+empirically: their 18-month implementation study reveals that the governance
+capacity required for sustainable AI deployment is not, in fact, pre-existing
+in health systems. Accountability boundaries, coordination mechanisms, and
+infrastructure governance structures emerged through implementation — they
+were discovered, not pre-installed.
+
+This finding has a direct implication for regulatory design: a governance
+framework that treats capacity as a precondition rather than an outcome of
+the implementation process will systematically misidentify the point of
+intervention. Regulators specifying what governance should achieve without
+attending to whether health systems have the organizational infrastructure
+to deliver it will produce well-intentioned but structurally ineffective
+governance standards.
+
+% -----------------------------------------------------------------------------
+% 2.2 Pilot trap: organizational barriers to sustainable deployment
+% -----------------------------------------------------------------------------
+
+\subsubsection{The Pilot Trap as an Organizational Failure}
+\label{sec:gov_pilottrap}
+
+The pilot trap — defined as the failure of clinical AI applications to
+transition from short-term demonstration projects to sustained components
+of routine clinical care — appears across multiple health system contexts
+and AI application types. Tian et al. \citep{tian2026pilottrap} attribute
+this not to algorithmic underperformance but to three organizational
+deficits: (\textit{i}) unclear accountability boundaries (who is legally
+and professionally responsible for an AI-assisted clinical decision?);
+(\textit{ii}) absent coordination mechanisms (how do clinical, technical,
+and administrative units interact around an AI system?); and
+(\textit{iii}) inadequate infrastructure governance (how are data pipelines,
+model updates, and system integrations managed operationally?).
+
+These organizational deficits are not unique to a single health system or
+national context. \citet{keri2026simulated} documents analogous challenges
+in psychiatric AI deployment, where the risks of simulated empathy, illusion
+of attachment, and unpredictable crisis-mode behavior by AI chatbots require
+governance mechanisms — including strict validation protocols, continuous
+monitoring, and clear human accountability — that most psychiatric services
+are not currently equipped to provide.
+
+% -----------------------------------------------------------------------------
+% 2.3 Adaptive regulatory approaches
+% -----------------------------------------------------------------------------
+
+\subsubsection{Emerging Adaptive and Participatory Governance Models}
+\label{sec:gov_adaptive}
+
+In response to the limitations of static pre-market regulatory models,
+several papers in the reviewed corpus describe adaptive governance
+approaches that embed learning and iteration into the regulatory process
+itself. Regulatory sandboxes — already adopted in fintech and now proposed
+for health AI — allow AI systems to be deployed in controlled real-world
+settings with enhanced monitoring, time-limited authorization, and
+mandatory performance thresholds that must be met for full market entry
+\citep{pham2025ethical, abdul2025ai}. The WHO's ethics and governance
+guidance on AI in health similarly advocates for continuous compliance
+mechanisms that evolve with the AI system's performance history rather
+than treating authorization as a one-time gatekeeping event.
+
+Participatory governance mechanisms — incorporating affected communities,
+patient advocacy groups, and frontline clinical staff into governance
+processes — are proposed across multiple reviewed papers as essential
+for AI legitimacy and sustainability \citep{bouderhem2025shaping,
+pham2025ethical}. This aligns with the broader literature on democratic
+AI and public interest technology, which holds that the epistemic
+diversity brought by participatory processes improves both the quality
+and the legitimacy of governance decisions.
+
+In response to the limitations of static pre-market regulatory models,
+several papers describe adaptive governance approaches that embed learning
+and iteration into the regulatory process itself. Regulatory sandboxes —
+already adopted in fintech and now proposed for health AI — allow AI systems
+to be deployed in controlled real-world settings with enhanced monitoring,
+time-limited authorization, and mandatory performance thresholds that must
+be met for full market entry \citep{pham2025ethical, abdul2025ai}. The FDA's
+Predetermined Change Control Plan (PCCP) represents a parallel mechanism,
+permitting manufacturers to define in advance the types of model changes that
+can be implemented without requiring new market authorization, subject to
+documented performance monitoring. The EU AI Act's conformity assessment
+procedure similarly incorporates post-market surveillance obligations and
+mandatory periodic reviews, though the governance capacity to operationalize
+these requirements remains underdeveloped in practice. The WHO's ethics and
+governance guidance on AI in health advocates for continuous compliance
+mechanisms that evolve with the AI system's performance history rather than
+treating authorization as a one-time gatekeeping event.
+
+% =============================================================================
+% THEME 3: IMPLEMENTATION OUTCOMES — Barriers and Societal Impact
+% =============================================================================
+
+\subsection{Implementation Outcomes: Barriers and Societal Impact}
+\label{sec:results_implementation}
+
+% -----------------------------------------------------------------------------
+% 3.1 Documented barriers to sustainable implementation
+% -----------------------------------------------------------------------------
+
+\subsubsection{Organizational, Technical, and Social Barriers}
+\label{sec:impl_barriers}
+
+The implementation barriers documented in the reviewed literature can be
+organized into three analytically distinct but interacting categories.
+
+\textbf{Organizational barriers} include: workforce trust deficits (clinicians
+skeptical of AI recommendations that conflict with their clinical judgment);
+misaligned incentive structures (AI systems optimized for metrics that do
+not reflect clinical priorities or institutional goals); change management
+failures (inadequate training, poor human-AI workflow integration); and
+institutional governance deficits (absence of clear ownership, accountability,
+or escalation protocols for AI-assisted decisions)
+\citep{tian2026pilottrap, pham2025ethical}.
+
+\textbf{Technical barriers} include: data quality and interoperability
+problems (AI systems trained on curated research data that does not reflect
+the noise, incompleteness, and heterogeneity of real Electronic Health Record
+[EHR] data); infrastructure limitations (insufficient computing resources,
+network reliability, or system integration capacity in resource-constrained
+settings); and model update challenges (managing the regulatory, technical,
+and organizational complexity of updating a deployed AI system)
+\citep{warraich2024fda, abulibdeh2025illusion}.
+
+\textbf{Social barriers} include: algorithmic literacy gaps among clinicians
+and patients; power dynamics that privilege technical AI teams over
+frontline clinical expertise; and the risk of deskilling — where reliance
+on AI systems erodes the development of clinical skills that are needed
+when AI is unavailable or fails.
+
+% -----------------------------------------------------------------------------
+% 3.2 Equity and bias concerns
+% -----------------------------------------------------------------------------
+
+\subsubsection{Algorithmic Bias, Equity, and Differential Performance}
+\label{sec:impl_equity}
+
+The equity dimension of health AI implementation receives significant
+attention across the reviewed corpus. \citet{abulibdeh2025illusion} document
+that AI-enabled medical devices authorized by the FDA have historically
+underrepresented minority populations in their training and validation data,
+creating a systematic risk that AI systems perform differentially across
+racial, socioeconomic, and geographic subgroups. This bias amplification
+risk is particularly acute in clinical domains such as dermatology, radiology,
+and cardiovascular risk prediction, where training data skews toward
+Caucasian and male populations. The absence of mandatory subgroup performance
+reporting in current regulatory frameworks means that differential AI
+performance may go undetected for years.
+
+\citet{pham2025ethical} argue that addressing algorithmic bias requires not
+only technical interventions (diverse data collection, bias auditing) but
+also governance mechanisms that institutionalize equity considerations
+throughout the AI lifecycle — from problem framing and dataset construction
+to deployment monitoring and post-market evaluation.
+
+% -----------------------------------------------------------------------------
+% 3.3 Evidence quality and research gaps
+% -----------------------------------------------------------------------------
+
+\subsubsection{Evidence Quality and Research Gaps}
+\label{sec:impl_gaps}
+
+A consistent finding across the reviewed literature is the limited
+high-quality evidence on real-world clinical impact of AI systems. The
+majority of published studies report technical performance metrics
+(accuracy, AUC) in controlled settings. Prospective, multicenter studies
+measuring patient outcomes (mortality, morbidity, length of stay, quality
+of life) attributable to AI-assisted care remain rare. This evidence gap
+is compounded by publication bias: AI systems that perform well in
+validation studies are more likely to be published, while failed
+deployments are rarely reported, creating a systematically distorted
+literature that overstates real-world effectiveness.
+
+The three thematic findings are analytically connected rather than parallel.
+The ecological validity gap does not merely reflect a technical measurement
+problem — it has direct consequences for governance. When AI systems are
+validated under conditions that do not reflect real clinical complexity,
+governance frameworks based on those validations will be structurally
+misaligned with the phenomena they seek to govern. Similarly, the governance
+capacity deficit is not simply a matter of underinvestment — it is partly a
+consequence of evaluation frameworks that generate overconfident validation
+evidence, reducing the perceived urgency of building pre-deployment governance
+infrastructure. The pilot trap can then be understood as the downstream
+consequence of these upstream failures: systems validated on inadequate
+evidence, governed by frameworks that assume absent capacity, predictably
+fail to transition to routine care. This interdependency implies that
+improving health AI outcomes requires simultaneous action across all three
+dimensions — better evaluation methodology, governance capacity investment,
+and implementation support — rather than sequential approaches that treat
+evaluation, governance, and implementation as separate phases.

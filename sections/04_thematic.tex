@@ -1,0 +1,212 @@
+% =============================================================================
+% 04_THEMATIC_APPLICATION — Deep Analysis of Four Cornerstone Papers
+% =============================================================================
+% Page target: 3–4 pages
+% Structure: Introduction → Pham → Tian → Hussein → Alsaigh → Cross-cutting
+% =============================================================================
+
+\section{Thematic Application: Four Cornerstone Papers}
+\label{sec:thematic}
+\addcontentsline{toc}{section}{Thematic Application}
+
+The following four papers form the analytical foundation of this review.
+Each represents a distinct but complementary contribution to the intersection
+of health AI evaluation and governance, and together they constitute the
+primary evidence base from which the review's overarching arguments are
+constructed. Individually, they address evaluation methodologies, governance
+capacity, organizational maturity, and operational audit frameworks.
+Collectively, they reveal a coherent structural logic: from diagnosis of the
+problem, to diagnostic tools, to operational instruments.
+
+\subsection{Pham (2025): Ethical and Legal Framework for Health AI}
+\label{sec:pham}
+
+\citet{pham2025ethical} provide the broadest framing contribution among the
+four cornerstone papers. Published in the Royal Society Open Science, their
+review synthesizes ethical and legal considerations in healthcare AI across
+four dimensions: innovation, safety, fairness, and regulatory governance.
+Unlike papers that address a single facet of the problem, Pham's work maps
+the entire terrain — connecting the technical properties of AI systems to
+their societal implications and the regulatory architectures that govern them.
+
+Pham's central argument is that the deployment of AI in clinical settings
+raises a set of \textit{distinctive} ethical challenges that existing
+regulatory frameworks, designed for pharmaceuticals or conventional medical
+devices, are ill-equipped to address. These challenges include: the dynamic
+nature of continuously learning AI systems, which complicates the assumption
+of a fixed risk profile; the opacity of deep learning models, which defeats
+traditional disclosure-based regulatory strategies; the scalability of AI
+deployment, which can propagate biases at a population scale before
+individual clinicians are aware of the problem; and the distribution of
+accountability across developers, clinicians, health systems, and regulators,
+which no existing legal framework clearly resolves.
+
+The paper's primary contribution to this review is its integrative scope.
+Pham demonstrates that evaluation, governance, and implementation are not
+separate policy domains but interdependent dimensions of a single challenge.
+A validation methodology that ignores the conditions of real-world
+deployment will generate misleading performance estimates; a governance
+framework that ignores the organizational dynamics of implementation will
+fail even when its technical standards are met; and an implementation
+strategy that ignores the ethical stakes will erode the trust necessary
+for sustainable adoption. This integrative logic is the intellectual
+backbone of the present review.
+
+\subsection{Tian et al. (2026): The Pilot Trap and Institutional Capacity}
+\label{sec:tian}
+
+If Pham sets the broad framing, \citet{tian2026pilottrap} provide the
+empirical diagnosis. Published in the Journal of Medical Internet Research,
+their study is among the most methodologically rigorous accounts of health
+AI implementation available: an 18-month longitudinal qualitative case
+study of a provincial clinical AI platform in China, drawing on observation,
+interviews, and operational data from deployment start through routine use.
+
+The paper's conceptual centrepiece is the \textbf{pilot trap}: the observation
+that AI systems frequently demonstrate clinical value at the pilot stage but
+systematically fail to transition to routine care. The conventional explanation
+for this pattern — that the AI is insufficiently accurate or that clinicians
+resist technology — is rejected by Tian and colleagues on the basis of their
+fieldwork. In their study, the pilot phase was not the problem; the AI
+performed adequately within the controlled conditions of the pilot. The
+failure occurred precisely at the point of transition, driven by governance
+gaps: unclear accountability boundaries between the clinical team and the
+AI system; absent coordination mechanisms between departments; inadequate
+infrastructure for model updates; and organizational structures that had
+no role designated for managing AI lifecycle governance.
+
+Tian and colleagues' most important theoretical contribution is the
+\textbf{institutional capacity argument}: governance capacity is not a
+precondition that health systems possess or lack, but a capability that
+is \textit{built through the act of implementation itself}. This is a
+direct empirical challenge to the assumption shared by the FDA and the
+EU AI Act — that governance can be specified in advance and verified
+prior to deployment. The six-module governance framework they propose
+— institutional carrier formation, infrastructure governance, regulatory
+and ethical governance, interdisciplinary coordination, translational
+scaling, and lifecycle evaluation — was derived empirically from
+operational tensions observed during deployment. The modules are not
+prescriptive boxes to check before going live; they are analytical
+descriptions of what effective governance \textit{looks like when it
+emerges}.
+
+For this review, Tian's paper provides the evidence base for the claim
+that the governance deficit in health AI is not primarily a funding or
+technology problem, but a process problem: governance must be designed
+to evolve alongside the AI system, not specified once at the outset.
+
+\subsection{Hussein et al. (2026): A Governance Maturity Model}
+\label{sec:hussein}
+
+While Tian's contribution is diagnostic — identifying what goes wrong
+and why — \citet{hussein2026governance} offer a prescriptive response.
+Published in \textit{NPJ Digital Medicine}, their paper presents a
+\textbf{comprehensive maturity model for AI governance in healthcare},
+derived from a systematic review of existing frameworks and validated
+through expert consultation.
+
+The maturity model proposes five levels of organizational AI governance
+maturity, from ad hoc and reactive governance (Level 1: Initial/Ad Hoc)
+through to institutionalized, continuously improving governance ecosystems
+(Level 5: Leading).
+Each level is characterized by specific organizational capabilities:
+data governance infrastructure; algorithmic audit and monitoring systems;
+clinical governance integration; regulatory compliance mechanisms; and
+strategic AI leadership. The model serves two functions: as a diagnostic
+tool (enabling organizations to locate themselves on the maturity
+spectrum) and as a roadmap (identifying the capabilities that must be
+built to advance to the next stage).
+
+The paper's primary relevance to this review lies in its addressing
+of the participatory governance theme — the recognition that AI governance
+cannot be confined to technical and regulatory experts, and must incorporate
+clinical staff, patients, and communities. The maturity model includes
+criteria for stakeholder engagement, transparency mechanisms, and
+accountability structures, connecting the governance capacity conversation
+directly to the participatory governance literature reviewed in
+Section~\ref{sec:related_work}.
+
+Methodologically, the maturity model is notable for bridging the gap
+between conceptual framework and practical organizational assessment.
+Unlike governance taxonomies that describe what \textit{should} exist,
+Hussein's model provides measurable criteria for evaluating where
+a given organization stands — an important step toward operationalizing
+governance evaluation in health systems.
+
+\subsection{Alsaigh et al. (2026): Evidence-Driven Governance via PEARL-PATHWAY}
+\label{sec:alsaigh}
+
+The fourth cornerstone paper brings the operational dimension into sharpest
+focus. \citet{alsaigh2026pearl} address a specific and consequential
+question: how can empirical healthcare evidence be systematically linked to
+governance frameworks in a specific implementation context? Their answer —
+an evidence-driven approach integrating the PEARL framework with the PATHWAY
+analysis method, applied to the healthcare system of Al Madinah, Saudi Arabia
+— represents the most contextually grounded governance analysis among the
+four papers.
+
+The PEARL framework structures the analysis across four ethical pillars:
+\textbf{Proportionality} (governance burdens scaled to risk), \textbf{Equity}
+(fair distribution of AI benefits and harms across populations),
+\textbf{Accountability} (clear assignment of responsibility across actors),
+and \textbf{Legitimacy} (stakeholder endorsement and procedural fairness).
+The PATHWAY method then maps these pillars onto the operational realities
+of a specific healthcare system: extracting structured representations from
+a corpus of 4,277 healthcare publications refined to 243 articles meeting
+inclusion criteria, and evaluating the alignment between identified healthcare
+priorities and existing governance structures.
+
+The Al Madinah context is methodologically significant. The city's
+demographic diversity — including millions of Hajj and Umrah visitors annually
+— creates healthcare governance pressures that reveal the limitations of
+one-size-fits-all governance frameworks. The paper demonstrates that
+adaptive governance must be \textit{context-sensitive}: the same AI system
+deployed in different healthcare contexts requires different governance
+calibrations depending on patient population characteristics, resource
+availability, and institutional capacity. This directly extends Tian's
+institutional capacity argument and Hussein's maturity model into operationalized
+governance guidance.
+
+The framework's most important innovation is the \textbf{evidence-to-governance
+bridge}: rather than proposing governance principles from first principles
+or surveying existing frameworks abstractly, Alsaigh and colleagues extract
+governance requirements from empirical evidence of actual healthcare needs.
+This reverses the usual top-down logic of governance design — instead of
+asking ``what should governance achieve?'' they ask ``what does this context
+actually require?'' — and in doing so provides a replicable methodology for
+context-sensitive governance calibration that can be applied to other
+healthcare systems beyond Al Madinah.
+
+\subsection{Cross-Cutting Synthesis}
+\label{sec:cross_cutting}
+
+Viewed together, the four cornerstone papers form a coherent intellectual
+architecture for understanding and addressing the health AI evaluation
+and governance challenge.
+
+Pham provides the broadest frame: situating health AI governance within
+the larger challenge of ensuring that technological innovation serves
+clinical and societal benefit. Tian provides the empirical diagnosis:
+identifying the pilot trap as a governance failure, not a technical
+failure, and establishing that governance capacity is built through
+implementation. Hussein operationalizes this insight into a diagnostic
+tool: a maturity model that allows organizations to locate themselves
+on the governance capacity spectrum and to identify the specific gaps
+they must close. Alsaigh operationalizes it further into an operational
+instrument: a context-sensitive evidence-to-governance bridge with a
+replicable methodology for calibrating governance to local healthcare needs.
+
+The logical sequence from framing to diagnosis to diagnostic tool to
+operational instrument mirrors the three structural findings of this
+review: the ecological validity gap (evaluation failure), the governance
+capacity deficit (governance failure), and the pilot trap (implementation
+failure). Each paper illuminates a different node of this causal chain,
+and the failure to connect them — as separate streams of literature —
+is precisely the gap this review addresses.
+
+Furthermore, all four papers converge on the same underlying premise:
+that governance in health AI is not a static condition to be achieved
+but an \textit{ongoing organizational and institutional process}. This
+premise has direct implications for how health AI should be evaluated,
+regulated, and implemented — and it is the analytical thread that
+connects the remaining sections of this review.

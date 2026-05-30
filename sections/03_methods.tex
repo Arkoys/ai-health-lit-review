@@ -1,0 +1,179 @@
+% =============================================================================
+% 03_METHODS — Pipeline Design & Systematic Review Methodology
+% =============================================================================
+% Page target: ~2 pages
+% Structure: Pipeline Design → Search Strategy → Selection → Analysis
+% =============================================================================
+
+\section{Methods}
+\label{sec:methods}
+\addcontentsline{toc}{section}{Methods}
+
+This section has two components. First, it describes the automated
+literature collection pipeline built to support this review — the technical
+and conceptual architecture that enabled systematic coverage of a rapidly
+evolving literature. Second, it describes the systematic review methodology
+itself: the search strategy, selection criteria, quality assessment, and
+analytical framework applied to the gathered corpus.
+
+\subsection{Pipeline Design and Implementation}
+\label{sec:pipeline}
+
+The exponential growth of health AI literature between 2020 and 2026 rendered
+the traditional one-time database search inadequate for a comprehensive
+review. The volume of relevant publications — spanning computer science,
+clinical medicine, law, ethics, and implementation science — exceeds what
+any single research team can manually track. To address this, an automated
+daily literature collection and triage pipeline was designed and deployed.
+
+\subsubsection{Architecture Overview}
+
+The pipeline operates across five layers: \textbf{data collection},
+\textbf{paper scoring}, \textbf{LLM-based summarization},
+\textbf{storage and indexing}, and \textbf{dissemination}.
+
+Data collection is performed by \texttt{collector.py}, which queries multiple
+bibliographic sources on a daily schedule: arXiv (preprints from cs.AI,
+cs.LG, cs.CY, q-bio, eess.AS, and cs.CV), PubMed and PubMed Central (MEDLINE
+via E-utilities), Semantic Scholar, and DBLP (capturing top-tier AI-ethics
+venues including FAccT, AIES, and NeurIPS). Boolean search queries are
+constructed dynamically around the five thematic keyword groups defined
+for this review: AI Evaluation and Validation, Participatory Governance,
+Adaptive Regulation, Evidence and Implementation, and Clinical Health AI.
+Each query combination (e.g., \texttt{"AI evaluation" AND "healthcare"},
+\texttt{"participatory governance" AND "clinical AI"}) is submitted to each
+source, and results are aggregated with deduplication by DOI.
+
+Each collected paper is scored by \texttt{ranker.py} across six dimensions:
+theme relevance (composite score across the five thematic keyword groups),
+novelty (publication recency), venue prestige, methodological rigour, and
+an overall composite score. Papers scoring above a priority threshold are
+designated Priority 3 (highest), with the remainder split across Priority
+2 and Priority 1. This scoring enables focus of human review attention on
+the highest-value publications while maintaining systematic coverage of the
+literature landscape.
+
+Priority 3 papers are passed to \texttt{summarizer.py}, which uses a
+large language model (Gemini) to generate a structured summary for each
+paper. Each summary encodes: title, authors, year, source, country, AI
+system and method, evaluation method, governance dimension, main finding,
+thematic tags, priority score, and a free-text justification of relevance.
+These summaries are stored in both a JSON document store
+(\texttt{data/papers.json}) and a SQLite database (\texttt{data/papers.db}),
+enabling structured query, temporal tracking, and cross-paper analysis.
+
+Outputs are produced in three formats: daily digests (markdown files
+summarizing all papers collected in a given day), weekly synthesis reports
+(aggregating and cross-referencing the week's collection), and topic-trend
+matrices (tracking the proportion of papers assigned to each of the five
+thematic axes over time). Dissemination to the research team is automated
+via Telegram bot, with email as a secondary channel.
+
+The pipeline runs daily via a scheduled cron job (08:00, weekdays),
+ensuring that the review corpus is continuously refreshed as new
+publications appear. This design choice — continuous collection rather
+than a one-time snapshot — is methodologically significant: the health AI
+field evolves too rapidly for a static search to capture the current state
+of knowledge at the time of writing.
+
+\subsection{Search Strategy and Information Sources}
+\label{sec:search_strategy}
+
+For the systematic review itself, papers were retrieved from the pipeline
+database covering the period January 2020 to April 2026. The search was
+replicated across four electronic databases to ensure comprehensive
+coverage: \textbf{PubMed} (MEDLINE), \textbf{Semantic Scholar},
+\textbf{arXiv}, and \textbf{Google Scholar}. The search query was
+constructed around the five thematic axes described above, each comprising
+controlled vocabulary terms and free-text keywords:
+
+\begin{enumerate}[label=(\Roman*), itemsep=0.2em]
+\item \textbf{AI Evaluation and Validation} — ``AI evaluation,'' ``AI
+  validation,'' ``algorithmic auditing,'' ``model evaluation,'' ``bias
+  detection,'' ``robustness testing,'' ``post-deployment monitoring,''
+  ``continuous evaluation,'' ``explainability,'' ``safety evaluation.''
+
+\item \textbf{Participatory Governance} — ``participatory governance,''
+  ``stakeholder engagement,'' ``citizen participation,'' ``algorithmic
+  accountability,'' ``democratic AI,'' ``community-centered AI.''
+
+\item \textbf{Adaptive Regulation} — ``adaptive governance,'' ``agile
+  regulation,'' ``responsive regulation,'' ``regulatory sandboxes,''
+  ``living labs,'' ``evidence-based regulation,'' ``continuous compliance.''
+
+\item \textbf{Evidence and Implementation} — ``evidence-based policy,''
+  ``implementation science,'' ``knowledge translation,'' ``policy uptake,''
+  ``evidence gaps.''
+
+\item \textbf{Clinical Health AI} — ``clinical AI,'' ``medical AI,''
+  ``clinical decision support,'' ``diagnostic AI,'' ``predictive modeling in
+  healthcare,'' ``digital health,'' ``AI safety in healthcare.''
+
+\end{enumerate}
+
+Search strings were adapted for each database using Boolean operators
+(AND/OR) and database-specific syntax. No language restrictions were applied
+at the search stage; however, only English-language publications were
+retained after abstract screening. Preprints and peer-reviewed articles
+were both included given the rapid evolution of the field.
+
+\subsection{Selection Criteria}
+\label{sec:selection_criteria}
+
+Studies were included if they met all of the following criteria:
+
+\begin{itemize}[itemsep=0.2em]
+\item \textbf{Population:} Human health AI systems deployed in clinical,
+  sub-clinical, or community health settings; or AI systems evaluated for
+  direct or indirect clinical application.
+\item \textbf{Intervention:} Any AI-based intervention — including diagnostic
+  AI, predictive modeling, clinical decision support systems, natural language
+  processing for clinical text, wearable sensor analytics, and AI-assisted
+  therapeutic applications.
+\item \textbf{Outcomes:} Studies reporting on evaluation metrics, governance
+  structures, implementation barriers, regulatory frameworks, ethical
+  considerations, or societal impact of health AI.
+\item \textbf{Study design:} Peer-reviewed empirical studies (RCTs, cohort
+  studies, case studies, cross-sectional studies), systematic reviews,
+  scoping reviews, conceptual papers, and policy analyses. Animal studies,
+  purely computational studies without clinical application, and publications
+  in predatory journals were excluded.
+\item \textbf{Date range:} Published between 2020 and 2026.
+\end{itemize}
+
+\subsection{Quality Assessment}
+\label{sec:quality_assessment}
+
+Given the heterogeneous study designs included in this review, a modular
+quality appraisal approach was adopted. For empirical clinical studies,
+the \textbf{JBI Critical Appraisal Checklist} appropriate to the study
+design was applied. For conceptual and policy papers, a bespoke quality
+rubric assessed: (1) explicit statement of the research question or
+analytical aim; (2) transparency in methods (search strategy, selection
+criteria, data sources); (3) balanced representation of evidence including
+acknowledgment of limitations; and (4) clarity and logical coherence of
+argumentation. Studies were not excluded on the basis of quality alone;
+rather, quality appraisal scores weighted the interpretive confidence
+assigned to individual findings during synthesis.
+
+\subsection{Data Extraction and Analysis}
+\label{sec:data_extraction}
+
+Data were extracted using a standardized extraction form capturing: study
+metadata (authors, year, journal, country); study design; AI application
+domain; evaluation methods and metrics; governance and regulatory mechanisms
+described; implementation outcomes reported; and thematic codes assigned.
+Extraction was performed by the primary reviewer and verified by a secondary
+reviewer; discrepancies were resolved by discussion.
+
+Analysis followed a \textbf{thematic synthesis} approach, combining inductive
+coding of primary findings with a deductive framework organized around the
+three analytical dimensions defined in the research question: (i) evaluation
+methods and metrics; (ii) governance and regulatory frameworks; and
+(iii) implementation outcomes and barriers. Results are reported narratively
+organized by theme, with summary tables providing an overview of the
+included studies and their key characteristics.
+
+A PRISMA flow diagram is provided in Appendix~\ref{sec:prisma}. The review
+protocol was designed and reported following a modified PRISMA framework
+adapted for thematic synthesis of heterogeneous evidence.

@@ -1,0 +1,79 @@
+% =============================================================================
+% 01_INTRODUCTION — LiGHT Literature Review Introduction
+% =============================================================================
+% Page target: ~2 pages
+% Structure: Context → Scientific Context → Research Question → Scope → Outline
+% =============================================================================
+
+\section{Introduction}
+\label{sec:introduction}
+\addcontentsline{toc}{section}{Introduction}
+
+% =============================================================================
+% 1.1 CONTEXT — Broader societal and technological backdrop
+% =============================================================================
+
+\subsection{Background and Motivation}
+\label{sec:background}
+
+Health artificial intelligence has transitioned from a research curiosity to a clinical reality. As of 2024, the United States Food and Drug Administration (FDA) had authorized nearly 1,000 AI-enabled medical devices spanning diagnostic radiology, cardiac monitoring, ophthalmology, and oncology applications \citep{warraich2024fda}. The United Kingdom's National Health Service (NHS) has similarly deployed AI tools across multiple trusts, including AI-assisted diabetic retinopathy screening programs that have screened over one million patients and algorithmic triage systems embedded within primary care pathways \citep{nhs2024ai,price2024nhs}. In the United States, Epic Systems — one of the largest electronic health record vendors — has integrated large language models into its ambient documentation and clinical inbox summarization platforms, deploying these tools across hundreds of hospital systems and raising novel questions about institutional liability, data governance, and continuous performance monitoring \citep{epic2024llm,keri2026simulated}. The scale of deployment is accelerating: AI-powered digital health applications attracted over USD 20 billion in venture capital funding in 2023 alone, and major hospital networks in North America, Europe, and East Asia have established dedicated AI governance committees within the past three years.
+
+Despite this rapid uptake, a persistent pattern has emerged in the literature. Clinical AI applications frequently succeed in pilot studies but fail to become sustained components of routine clinical care --- a phenomenon that \citet{tian2026pilottrap} term the \textbf{pilot trap}. This gap between demonstrated efficacy in controlled settings and real-world effectiveness is not primarily a technical problem. As the reviewed literature reveals, it is deeply rooted in governance deficits: unclear accountability structures, absent post-market monitoring mechanisms, insufficient organizational capacity, and regulatory frameworks designed for static medical devices that cannot accommodate continuously evolving AI systems \citep{abulibdeh2025illusion,pham2025ethical}. The consequence is a growing corpus of deployed AI systems whose long-term clinical impact remains unevaluated, whose failure modes are poorly documented, and whose governance rests on assumptions of institutional readiness that have not yet been met in most health systems.
+
+% =============================================================================
+% 1.2 SCIENTIFIC CONTEXT — What is already known? What is the gap?
+% =============================================================================
+
+\subsection{Scientific Context and Knowledge Gap}
+\label{sec:scientific_context}
+
+A growing body of literature has examined individual facets of health AI deployment. Several reviews have addressed \textbf{AI evaluation methodologies} in isolation, focusing on metric design, benchmarking datasets, and technical validation protocols \citep[see e.g.][]{pham2025ethical}. Others have examined \textbf{regulatory approaches} to AI, including the FDA's Software Pre-Certification (Pre-Cert) Program and the European Union's AI Act \citep{warraich2024fda}. Still others have explored \textbf{ethical and participatory dimensions} of clinical AI, emphasizing the need for community engagement, transparency, and accountability \citep{bouderhem2025shaping}. Recently, \citet{hussein2026governance} proposed a maturity model for AI governance in healthcare, offering a structured assessment framework that maps organizational readiness across multiple governance dimensions. Similarly, \citet{palama2026auditing} presented a four-layer auditing and monitoring framework spanning bias detection, explainability, performance surveillance, and regulatory compliance, linking continuous monitoring to institutional decision-making hierarchies.
+
+However, no single review has yet synthesized these three streams --- \textbf{evaluation methods, governance structures, and implementation outcomes} --- through a unified analytical lens that takes seriously the specific challenges of real-world clinical deployment. Existing reviews tend to treat evaluation as a purely technical exercise and governance as a purely regulatory exercise, failing to account for the organizational, social, and temporal dynamics that determine whether an AI system ultimately benefits patients. \citet{tian2026pilottrap} have described this disconnect explicitly, demonstrating through an 18-month longitudinal study in China that the failure of AI systems to progress from pilot to routine care is attributable not to algorithmic inadequacy but to institutional bottlenecks: fragmented accountability, underfunded post-deployment infrastructure, and governance mechanisms that are misaligned with the iterative nature of adaptive AI systems. This review addresses that gap by systematically interrogating the intersection of evaluation practice, governance architecture, and implementation evidence in health AI.
+
+% =============================================================================
+% 1.3 RESEARCH QUESTION — The central question and sub-questions
+% =============================================================================
+
+\subsection{Research Question and Objectives}
+\label{sec:research_question}
+
+The central research question guiding this review is:
+
+\begin{center}
+\fbox{%
+\begin{minipage}{0.92\linewidth}
+\textit{What methods and frameworks exist for evaluating health AI systems in real-world deployment contexts, and how do governance structures shape their implementation, sustainability, and societal impact?}
+\end{minipage}%
+}
+\end{center}
+
+This question is operationalized through three sub-questions:
+
+\begin{enumerate}[label=(\Roman*), itemsep=0.3em]
+\item \textbf{Evaluation methods:} Which evaluation frameworks, metrics, and validation methodologies are used to assess the performance, reliability, robustness, and safety of clinical AI systems in post-deployment settings? How do these methods address bias detection, algorithmic drift, and generalizability across diverse patient populations?
+
+\item \textbf{Governance structures:} What regulatory, organizational, and participatory governance mechanisms have been proposed or implemented to ensure accountability, transparency, and equity in clinical AI deployment? How do these mechanisms interact across the regulatory lifecycle (pre-market authorization, post-market surveillance, adaptive updates)?
+
+\item \textbf{Implementation outcomes and barriers:} What are the documented barriers to sustainable clinical AI implementation, and what organizational, technical, and social factors determine whether AI systems transition from pilot projects to routine care? What does the evidence say about real-world clinical impact?
+\end{enumerate}
+
+% =============================================================================
+% 1.4 SCOPE AND DELIMITATION
+% =============================================================================
+
+\subsection{Scope and Delimitation}
+\label{sec:scope}
+
+This review focuses on peer-reviewed empirical and conceptual literature published between 2020 and 2026, covering AI systems deployed in or evaluated for direct or indirect clinical care --- including diagnostic AI, predictive modeling, clinical decision support, digital phenotyping, and AI-assisted therapeutic applications. Studies limited to pre-clinical or animal model settings, or focusing exclusively on administrative optimization without direct clinical relevance, are excluded. The review further delimits its scope to human health AI applications, thereby excluding veterinary, environmental, or non-clinical AI deployments, as these latter domains involve distinct regulatory regimes, evaluation criteria, and societal implication profiles that fall outside the scope of the present analysis.
+
+The review draws on a curated corpus extracted from PubMed, Semantic Scholar, arXiv, and Google Scholar using a keyword set organized across five thematic axes: \textit{AI Evaluation and Validation}, \textit{Participatory Governance}, \textit{Adaptive Regulation}, \textit{Evidence and Implementation}, and \textit{Clinical Health AI}. A full description of the search strategy and selection criteria is provided in Section~\ref{sec:methods}.
+
+% =============================================================================
+% 1.5 STRUCTURE — Roadmap of the report
+% =============================================================================
+
+\subsection{Report Structure}
+\label{sec:structure}
+
+The remainder of this report is organized as follows. Section~\ref{sec:related_work} situates this review within the existing literature on health AI evaluation and governance. Section~\ref{sec:methods} describes the systematic search strategy, selection criteria, and analytical approach. Section~\ref{sec:results} presents the synthesized findings across the three analytical dimensions defined above. Section~\ref{sec:discussion} discusses the implications of these findings for research, policy, and clinical practice, and articulates the key limitations of this review. Section~\ref{sec:conclusion} offers a concluding synthesis and a research agenda. Supplementary materials, including the full PRISMA flow diagram and the annotated bibliography, are provided in Appendix~\ref{sec:appendix}.

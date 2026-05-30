@@ -1,0 +1,196 @@
+% =============================================================================
+% 02_RELATED_WORK — Thematic Literature Review
+% =============================================================================
+% Page target: ~2 pages
+% Structure: Thematic organization — do NOT copy abstracts
+% Key instruction: synthesize, don't catalogue. Show analytical narrative.
+% =============================================================================
+
+\section{Related Work}
+\label{sec:related_work}
+\addcontentsline{toc}{section}{Related Work}
+
+The existing literature relevant to this review can be organized into three
+interlocking thematic streams: (\textit{i}) technical approaches to AI
+evaluation and validation; (\textit{ii}) regulatory and governance frameworks
+for clinical AI; and (\textit{iii}) implementation science perspectives on
+digital health and AI integration. These streams are not independent — the
+evaluation literature is shaped by regulatory definitions of valid performance,
+and the governance literature is increasingly informed by implementation
+outcomes in real clinical settings. This section draws out the analytical
+connections across these streams.
+
+% =============================================================================
+% 2.1 AI EVALUATION — technical validation methods and their limits
+% =============================================================================
+
+\subsection{AI Evaluation and Validation Methods}
+\label{sec:ai_evaluation}
+
+The technical evaluation of health AI has grown into a mature subfield,
+producing consensus guidelines on benchmarking, external validation, and
+reporting standards \citep{pham2025ethical}. However, a consistent weakness
+across the evaluation literature is the reliance on performance metrics
+computed in silico on curated retrospective datasets — an approach that
+systematically overstates real-world reliability. \citet{abulibdeh2025illusion}
+document this gap sharply in their critical analysis of FDA-approved AI
+devices: of the AI-enabled medical devices authorized by the FDA as of 2024,
+the majority were approved on the basis of single-site, pre-market studies
+with no mandatory external validation against independent datasets and no
+continuous post-market performance monitoring. The result is an
+\textbf{illusion of safety} — confidence intervals that are statistically
+precise but ecologically invalid.
+
+This ecological validity problem is further articulated by
+\citet{turchi2025ecological}, whose case study of AI-assisted oral cancer
+diagnosis reveals three systematic failures in how AI evaluation is designed:
+temporal dynamics of clinical decision-making are not captured by single-point
+accuracy metrics; the holistic nature of clinical reasoning (involving context,
+prior history, and social cues) is reducible neither to image-based inputs nor
+to single-session task performance; and standard performance metrics (accuracy,
+AUC) fail to reflect clinical priorities such as false-negative harm asymmetry
+or workflow integration burden. These failures are not merely technical — they
+reflect a structural misalignment between the epistemology of clinical validation
+and the operational realities of clinical environments.
+
+The methodological response to these failures is beginning to emerge.
+Prospective, multicenter evaluation designs — exemplified by the TRAC-Pain
+protocol \citep{bailes2026trac}, which uses continuous wearable sensor data
+combined with ecological momentary assessment over a 12-week longitudinal
+cohort — represent a more ecologically grounded approach to AI performance
+assessment. However, such designs remain the exception rather than the rule.
+Complementary to this, the bias detection literature has advanced subgroup
+performance evaluation, adversarial robustness testing, and distribution-shift
+benchmarks — such as ShiftCamel and similar frameworks — as essential
+components of pre-deployment evaluation. These methods interrogate model
+behavior across patient subgroups and under perturbed conditions, revealing
+failure modes that aggregate metrics conceal. Yet their adoption remains
+inconsistent in regulatory evaluation protocols, and there is no consensus
+on mandatory thresholds for fairness or robustness metrics prior to clinical
+deployment \citep{pham2025ethical}.
+
+% =============================================================================
+% 2.2 GOVERNANCE AND REGULATION — regulatory frameworks and their limits
+% =============================================================================
+
+\subsection{Governance and Regulatory Frameworks}
+\label{sec:governance}
+
+At the regulatory level, two major frameworks have shaped the governance
+landscape for health AI: the FDA's risk-based premarket review pathway — which,
+as \citet{warraich2024fda} document, has authorized nearly 1,000 AI-enabled
+medical devices — and the European Union's AI Act (2024), which classifies
+AI systems in clinical care as high-risk and subjects them to conformity
+assessment procedures prior to market entry. Both frameworks share a common
+assumption: that governance is a precondition that health systems must
+demonstrate before deployment. Against this assumption, the evidence from
+\citet{tian2026pilottrap} offers a powerful counterpoint.
+
+Based on an 18-month implementation study of a provincial clinical AI platform
+in China, Tian and colleagues argue that governance capacity is not
+pre-established but rather \textbf{built through implementation itself}. The
+six-module governance framework they propose — covering institutional carrier
+formation, infrastructure governance, regulatory and ethical governance,
+interdisciplinary coordination, translational scaling, and lifecycle evaluation
+— is derived empirically from operational tensions observed during deployment,
+not prescribed in advance. This represents a significant departure from the
+pre-market authorization model, which treats governance as a gatekeeping
+function rather than a developmental process.
+
+The tension between prescriptive regulatory standards and emergent governance
+capacity is further highlighted by \citet{abulibdeh2025illusion}, who argue
+that the FDA's current framework fails to mandate continuous post-market
+performance monitoring, does not require disclosure of training data sources,
+and lacks enforceable standards for fairness and bias mitigation. In response,
+they call for an \textbf{adaptive, community-engaged regulatory approach} that
+integrates mandatory post-market evaluations, algorithmic explainability
+requirements, and multi-stakeholder oversight. This is consistent with the
+broader ethical governance literature, which emphasizes that AI accountability
+cannot rest on technical compliance alone and must embed participatory
+mechanisms to ensure that AI systems reflect the values of the communities
+they affect \citep{bouderhem2025shaping, abdul2025ai}.
+
+The EU AI Act and the FDA's approach represent two structurally distinct
+regulatory postures with different implications for implementation. The EU's
+ex-ante model imposes conformity assessment and documentation requirements
+before market entry, effectively treating governance as a precondition to be
+verified prior to any real-world deployment. Implementation science suggests
+this approach faces a fundamental challenge: governance capacity is
+context-dependent, organization-specific, and emergent — qualities that cannot
+be fully assessed in a pre-market evaluation scenario \citep{tian2026pilottrap}.
+The FDA's ex-post posture — authorizing devices on the basis of premarket
+studies and relying on post-market surveillance to identify failures — is
+likewise problematic because it defers evidence generation to a period when
+the device is already in widespread clinical use, creating exposure to the
+harms that premarket evaluation was designed to prevent \citep{abulibdeh2025illusion}.
+Structured maturity models for AI governance \citep{hussein2026governance} and
+layered auditing frameworks linking continuous monitoring to institutional
+decision-making \citep{palama2026auditing} represent emerging approaches that
+seek to bridge this gap, operationalizing adaptive governance across the
+device lifecycle rather than treating it as a gatekeeping checkpoint.
+
+% =============================================================================
+% 2.3 IMPLEMENTATION OUTCOMES — from pilot to routine care
+% =============================================================================
+
+\subsection{Implementation Outcomes and Barriers}
+\label{sec:implementation}
+
+The implementation science literature offers a necessary corrective to the
+optimistic narrative that surrounds health AI deployment. The pilot trap
+phenomenon documented by \citet{tian2026pilottrap} is one of the most
+systematic accounts of why AI pilots fail to scale: the study found that the
+governance challenges — unclear accountability boundaries, absent coordination
+mechanisms, and inadequate infrastructure governance — are not side effects
+of underperforming algorithms but the primary barrier to transition from pilot
+to routine clinical care. This finding is corroborated by \citet{keri2026simulated},
+who documents in the psychiatric AI context the safety risks that emerge when
+AI systems are deployed without adequate validation, monitoring, and human
+accountability protocols. In psychiatry specifically, the risks of
+\textit{simulated consciousness} — where patients overattribute competence to
+AI systems — and of \textit{illusion of attachment} represent a qualitatively
+distinct failure mode that standard evaluation frameworks do not yet address.
+
+Against this backdrop, \citet{pham2025ethical} offer a synthesizing perspective
+that connects governance to implementation outcomes. Their multi-disciplinary
+framework — spanning technologists, healthcare providers, legal experts, and
+policymakers — emphasizes that safe and equitable AI deployment requires not
+only technical validation but also public engagement, transparent regulatory
+processes, and globally harmonized adaptive frameworks. This connects directly
+to the participatory governance literature, which holds that the legitimacy
+and sustainability of clinical AI ultimately depends on the degree to which
+affected communities are meaningfully included in governance processes.
+
+Implementation barriers to health AI integration are multi-dimensional and
+operate at organizational, technical, and social levels. At the organizational
+level, workforce trust remains a persistent challenge: clinicians who
+perceive AI systems as opaque or as threatening their professional autonomy
+are less likely to adopt them meaningfully, regardless of technical
+performance \citep{keri2026simulated}. Change management deficits — including
+inadequate training, misaligned incentive structures (where AI use is not
+rewarded or is penalized relative to productivity targets), and insufficient
+engagement of frontline staff in deployment decisions — compound this resistance.
+At the technical level, data quality inconsistencies, poor interoperability
+between AI systems and existing clinical information systems, and inadequate
+infrastructure for real-time monitoring create friction that is amplified in
+resource-constrained settings. The NASSS framework \citep[Non-Adoption,
+Abandonment, Scale-up, Spread, Sustainability]{greenhalgh2017nasps} provides
+a structured lens for analyzing these interacting barriers, identifying
+disease complexity, organizational readiness, and funding stability as key
+determinants of implementation success that are easily overlooked in
+technology-centric evaluation designs.
+
+At the social level, algorithmic literacy among both clinicians and patients
+mediates how AI outputs are interpreted and acted upon. Low algorithmic
+literacy can lead to both over-trust (treating AI recommendations as
+authoritative) and under-trust (dismissing useful outputs), each with
+distinct clinical consequences. Power dynamics also shape AI adoption:
+hierarchical structures in clinical environments can suppress front-line
+concerns about AI reliability, while institutional power asymmetries between
+technology vendors and healthcare organizations can prevent meaningful
+contractual accountability for AI failures \citep{abulibdeh2025illusion}.
+Addressing these social barriers requires governance mechanisms that are
+not merely procedural but are embedded in organizational cultures that
+value critical engagement with AI systems and maintain human accountability
+as a non-negotiable condition of deployment \citep{bouderhem2025shaping,
+abdul2025ai, hussein2026governance}.
