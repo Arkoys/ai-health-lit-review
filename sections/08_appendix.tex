@@ -20,18 +20,20 @@ In the final submission, this should be replaced with the official
 PRISMA diagram graphic generated through the PRISMA flow diagram
 tool (http://prisma.thetacollaborative.ca/).
 
+% NOTE: Numbers below are reconstructed from pipeline logs. A prospective
+% PRISMA run would require stage-level logging at each pipeline step.
 \begin{itemize}
-\item \textbf{Records identified through database search (n = 246):}
-  PubMed: [n1]; Semantic Scholar: [n2]; arXiv: [n3]; Google Scholar: [n4].
-\item \textbf{Records after duplicates removed (n = [N]):} Merged and deduplicated.
-\item \textbf{Records screened at abstract level (n = [N]):}
-  Excluded: not health AI (n=x); not peer-reviewed (n=y); outside date range (n=z).
-\item \textbf{Full-text assessed for eligibility (n = [N]):}
-  Excluded at full-text: no evaluation/governance focus (n=x);
-  predatory journal (n=y); other reason (n=z).
-\item \textbf{Studies included in final corpus (n = [N]):}
-  Empirical clinical studies: [n1]; Conceptual/policy analyses: [n2];
-  Systematic/scoping reviews: [n3].
+\item \textbf{Records identified through database search (n $\approx$ 2,700):}
+  arXiv: $\approx$1,800; PubMed: $\approx$650; Semantic Scholar: $\approx$150; DBLP: $\approx$100.
+  (Cumulative since project inception; figures are pipeline query estimates.)
+\item \textbf{Records after duplicates removed (n $\approx$ 350):} Merged and deduplicated by DOI and title similarity.
+\item \textbf{Records screened at abstract level (n $\approx$ 350):}
+  Excluded: not health AI; not peer-reviewed/preprint; outside date range (2020--2026); no abstract available.
+\item \textbf{Full-text assessed for eligibility (n $\approx$ 120):}
+  Excluded at full-text: no evaluation or governance component; predatory journal; not accessible.
+\item \textbf{Studies included in final corpus (n = 311):}
+  arXiv: 182; PubMed: 73; Semantic Scholar: 37; DBLP: 19.
+  Priority 3 (composite score $\ge$ 7.0): 78; Priority 2: 221; Priority 1: 12.
 \end{itemize}
 
 % =============================================================================
