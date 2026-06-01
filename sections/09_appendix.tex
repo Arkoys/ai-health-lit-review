@@ -1,0 +1,397 @@
+% =============================================================================
+% 09_APPENDIX — Technical Appendix: AI-Assisted Literature Pipeline
+% =============================================================================
+
+\section*{Technical Appendix: AI-Assisted Literature Pipeline}
+\label{sec:technical_appendix}
+\addcontentsline{toc}{section}{Technical Appendix}
+
+% =============================================================================
+% A. Pipeline Architecture
+% =============================================================================
+
+\subsection{Pipeline Architecture}
+\label{sec:app_pipeline}
+
+The literature collection pipeline operates across five functional layers:
+\textbf{data collection}, \textbf{paper scoring}, \textbf{LLM-based
+summarization}, \textbf{storage and indexing}, and \textbf{dissemination}.
+Figure~\ref{fig:pipeline_overview} illustrates the end-to-end flow.
+
+\begin{figure}[htbp]
+\centering
+% Simple ASCII-flowchart-style diagram
+\begin{tabular}{cl}
+\textbf{Step 1} & \texttt{collector.py} queries arXiv, PubMed, Semantic Scholar, DBLP \\
+\textbf{Step 2} & Results deduplicated by DOI / title and passed to \texttt{ranker.py} \\
+\textbf{Step 3} & \texttt{ranker.py} computes composite priority scores \\
+\textbf{Step 4} & Priority papers passed to \texttt{summarizer.py} (LLM) \\
+\textbf{Step 5} & Structured summaries stored in JSON + SQLite \\
+\textbf{Step 6} & Daily digest + weekly synthesis written to \texttt{outputs/} \\
+\textbf{Step 7} & Telegram bot delivers digest to registered channel \\
+\end{tabular}
+\caption{Literature pipeline execution steps.}
+\label{fig:pipeline_overview}
+\end{figure}
+
+The pipeline is implemented as two entry-point scripts:
+\texttt{daily\_pipeline.py} (or \texttt{daily\_pipeline\_v2.py}) runs on a
+scheduled cron job each weekday morning; \texttt{weekly\_synthesis.py} runs
+every Friday. Both scripts support a \texttt{--push} flag to commit outputs
+directly to the GitHub repository.
+
+% =============================================================================
+% B. Data Sources and Queries
+% =============================================================================
+
+\subsection{Data Sources and Query Strategy}
+\label{sec:app_sources}
+
+Four bibliographic sources are queried on each pipeline run:
+
+\begin{itemize}[itemsep=0.2em]
+\item \textbf{arXiv} (\url{http://export.arxiv.org/api/query}) — preprints from
+  cs.AI, cs.LG, cs.CL, cs.CY, q-bio, eess.AS, cs.CV. Eight structured queries
+  cover each of the five thematic axes using \texttt{all:} field operators.
+  Results parsed from Atom XML response.
+
+\item \textbf{PubMed} (\url{https://eutils.ncbi.nlm.nih.gov/entrez/eutils}) — MEDLINE
+  via E-search / E-fetch. Eight PubMed-formatted queries covering clinical AI
+  evaluation, governance, adaptive regulation, evidence synthesis, and
+  participatory engagement.
+
+\item \textbf{Semantic Scholar} (\url{https://api.semanticscholar.org/graph/v1})
+  — free-tier Graph API. Five keyword queries with health-article filtering.
+  Fields requested: paperId, title, authors, abstract, year, venue, externalIds.
+
+\item \textbf{DBLP} (\url{https://api.dblp.org/v1}) — targeted venue searches for
+  FAccT, AIES, CHI, ICLR, and NeurIPS proceedings filtered to health-AI-relevant
+  titles.
+\end{itemize}
+
+Query strings are defined in \texttt{collector.py} as constants
+\texttt{ARXIV\_QUERIES}, \texttt{PUBMED\_QUERIES},
+\texttt{SEMANTIC\_SCHOLAR\_QUERIES}, and \texttt{DBLP\_VENS}. Deduplication
+is performed by paper ID and normalized title (80-character window, alphanumeric
+stripped) against the existing corpus before insertion.
+
+% =============================================================================
+% C. Paper Scoring Algorithm
+% =============================================================================
+
+\subsection{Paper Scoring Algorithm}
+\label{sec:app_scoring}
+
+Each collected paper is scored by \texttt{ranker.py} using a five-component
+composite formula. The total score determines the priority band assigned to
+the paper, which governs whether it is included in the daily digest and whether
+an LLM summary is generated.
+
+\subsubsection{Composite Score Formula}
+
+{\centering
+Score = Theme\_Score + Novelty\_Score + Recency\_Boost + Venue\_Score + Methods\_Bonus
+\par}
+
+Each component is computed as follows:
+
+\begin{itemize}
+\item \textbf{Theme\_Score} — Each of the five thematic keyword groups
+  contributes a weight when its keywords appear in the paper title or abstract:
+  \texttt{AI\_EVAL\_VALID} (weight 2), \texttt{PARTICIPATORY\_GOV} (weight 2),
+  \texttt{ADAPTIVE\_REGULATION} (weight 2), \texttt{EVIDENCE\_IMPLEMENT}
+  (weight 2), \texttt{CLINICAL\_HEALTH\_AI} (weight 1). Pre-tagged themes from
+  the collector are also counted. Theme\_Score = matched\_themes\_count $\times$ 2.
+
+\item \textbf{Novelty\_Score} — Detected via linguistic markers in title and
+  abstract. New contribution indicators (\textit{we propose, novel, first to,
+  new framework}) yield 2.0. Extension indicators (\textit{extend, adapt,
+  improve}) yield 1.0. Redundant or incremental work yields 0.5.
+
+\item \textbf{Recency\_Boost} — Based on days since publication date:
+  $\leq$30 days = 2.0; $\leq$90 days = 1.0; $\leq$365 days = 0.5.
+
+\item \textbf{Venue\_Score} — Top-tier venues (FAccT, AIES, NeurIPS, ICML,
+  ICLR, Nature Medicine, JAMA, Lancet, Science, Medical Internet Research,
+  Implementation Science) yield 3.0. Recognized venues (Frontiers, BMJ Global
+  Health, Nature Biomedical Engineering, JAMA Network Open, IEEE J Biomed
+  Health Inform) yield 1.5. Preprints (arXiv, medRxiv, bioRxiv) yield 0.5.
+
+\item \textbf{Methods\_Bonus} — Empirical/lab studies (RCT, prospective cohort,
+  validation study) yield 2.0. Systematic reviews and meta-analyses yield 1.5.
+  Frameworks and conceptual proposals yield 1.0. Commentary and editorials
+  yield 0.5.
+\end{itemize}
+
+\subsubsection{Priority Bands}
+
+\begin{threeparttable}
+\caption{Priority band thresholds and pipeline behaviour.}
+\label{tab:priority_bands}
+\begin{tabularx}{\linewidth}{ccl}
+\toprule
+\textbf{Priority} & \textbf{Score range} & \textbf{Pipeline behaviour} \\
+\midrule
+3 (Must Read) & $\geq$ 7.0 & Daily digest highlight; LLM summary generated \\
+2 (Important) & 4.0 -- 6.9 & Daily digest listing; no LLM summary \\
+1 (Supplementary) & 1.5 -- 3.9 & Database only \\
+0 (Low) & $<$ 1.5 & Database only; excluded from outputs \\
+\bottomrule
+\end{tabularx}
+\end{threeparttable}
+
+The full scoring implementation is in \texttt{ranker.py}, functions
+\texttt{score\_paper()} and \texttt{rank\_papers()}.
+
+% =============================================================================
+% D. Database Schema
+% =============================================================================
+
+\subsection{Database Schema}
+\label{sec:app_db_schema}
+
+Papers are persisted in two formats: a JSON document store
+(\texttt{data/papers.json}) and a SQLite database (\texttt{data/papers.db}).
+The JSON store holds the canonical scored corpus used by digest generation.
+The SQLite database (defined in \texttt{database.py}) supports structured
+queries and is initialised with the following schema:
+
+\begin{verbatim}
+CREATE TABLE papers (
+    id                INTEGER PRIMARY KEY AUTOINCREMENT,
+    paper_id          TEXT UNIQUE NOT NULL,
+    source            TEXT NOT NULL,
+    title             TEXT NOT NULL,
+    authors           TEXT,
+    abstract          TEXT,
+    url               TEXT,
+    pdf_url           TEXT,
+    published_date    DATE,
+    venue             TEXT,
+    doi               TEXT,
+    keywords          TEXT,          -- JSON array
+    score             REAL DEFAULT 0.0,
+    priority          INTEGER DEFAULT 0,
+    summary           TEXT,
+    critique          TEXT,
+    methods           TEXT,
+    gaps              TEXT,
+    related_papers    TEXT,          -- JSON array
+    processing_status TEXT DEFAULT 'pending',
+    created_at        TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    last_updated      TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE daily_digests (
+    id                INTEGER PRIMARY KEY AUTOINCREMENT,
+    digest_date       DATE NOT NULL UNIQUE,
+    papers_included   TEXT,          -- JSON array of paper_ids
+    total_papers_count INTEGER,
+    highlight_papers  TEXT,          -- JSON array of top papers
+    trends_observed   TEXT,
+    gaps_identified   TEXT,
+    generated_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    sent_to_telegram  BOOLEAN DEFAULT 0,
+    sent_to_email     BOOLEAN DEFAULT 0,
+    sent_to_gdocs     BOOLEAN DEFAULT 0
+);
+\end{verbatim}
+
+Indexes are created on \texttt{score}, \texttt{published\_date}, and
+\texttt{processing\_status}.
+
+% =============================================================================
+% E. Output Products
+% =============================================================================
+
+\subsection{Output Products}
+\label{sec:app_outputs}
+
+Three classes of output are produced by the pipeline:
+
+\begin{itemize}
+\item \textbf{Daily digests} (\texttt{outputs/digests/digest\_YYYY-MM-DD.md}) —
+  Markdown summaries of all papers collected in a given day, organized by
+  priority. Includes title, authors, source, abstract excerpt, thematic tags,
+  and composite score. If a digest already exists for the same date, the
+  pipeline creates a versioned file (\texttt{digest\_YYYY-MM-DD\_v2.md}, etc.)
+  rather than overwriting.
+
+\item \textbf{Weekly synthesis reports} (\texttt{outputs/weekly/weekly\_YYYY-MM-DD.md})
+  — Aggregates and cross-references papers collected over the preceding seven
+  days. Includes a re-ranked list of the top papers, a thematic distribution
+  table, and a narrative synthesis of emerging trends.
+
+\item \textbf{Topic-trend matrices} (\texttt{outputs/topic\_trends/matrix\_YYYY-MM-DD.md})
+  — A 4-week rolling window matrix showing the proportion of papers assigned
+  to each of the five thematic axes over time, enabling identification of
+  shifts in the literature's thematic focus.
+\end{itemize}
+
+All outputs are committed to the GitHub repository
+(\texttt{Arkoys/ai-health-lit-review}) using a Fine-Grained Personal Access
+Token with read-write access to that repository.
+
+% =============================================================================
+% F. Telegram Bot Integration
+% =============================================================================
+
+\subsection{Telegram Bot Integration}
+\label{sec:app_telegram}
+
+Dissemination to the research team is automated via a Telegram bot. The bot
+is configured through two environment variables (loaded from
+\code{~/.hermes/.env} at runtime, \emph{not} the project's \texttt{.env}):
+
+\begin{verbatim}
+TELEGRAM_BOT_TOKEN=<bot_token>
+TELEGRAM_HOME_CHANNEL=<home_channel_id>
+\end{verbatim}
+
+The bot delivers the daily digest summary to the configured Telegram channel
+on each successful pipeline run. Delivery is triggered from
+\code{reporter.py} and handles its own retry logic. The Hermes gateway's
+Telegram integration (defined in \code{~/.hermes/config.yaml}) manages the
+underlying Bot API calls.
+
+% =============================================================================
+% G. Cron Job Configuration
+% =============================================================================
+
+\subsection{Cron Job Configuration}
+\label{sec:app_cron}
+
+The pipeline is executed on a scheduled basis via two cron jobs managed
+through the Hermes cron system (\code{mcp\_cronjob}):
+
+\begin{threeparttable}
+\caption{Scheduled literature pipeline cron jobs.}
+\label{tab:cron_jobs}
+\begin{tabular}{lllp{6cm}}
+\toprule
+\textbf{Job ID} & \textbf{Name} & \textbf{Schedule} & \textbf{Script} \\
+\midrule
+d7d9439fa180 & daily-ai-health-literature-digest & \texttt{0 9 * * 1-5} &
+  \texttt{python3 daily\_pipeline\_v2.py --push} \\[4pt]
+d1d4915d28d0 & weekly-ai-health-literature-synthesis & \texttt{0 11 * * 5} &
+  \texttt{python3 weekly\_synthesis.py --push} \\
+\bottomrule
+\end{tabular}
+\end{threeparttable}
+
+The daily job runs at 09:00 Monday--Friday (weekdays only). The weekly
+synthesis runs at 11:00 every Friday. Both jobs are configured with
+\code{deliver: origin}, routing output back to the originating Telegram DM.
+The \code{--push} flag ensures outputs are committed to GitHub before the job
+completes.
+
+Cron jobs can be manually triggered with:
+\begin{verbatim}
+mcp_cronjob(action='run', job_id='d7d9439fa180')
+mcp_cronjob(action='run', job_id='d1d4915d28d0')
+\end{verbatim}
+
+% =============================================================================
+% H. Key Implementation Scripts
+% =============================================================================
+
+\subsection{Key Implementation Scripts}
+\label{sec:app_scripts}
+
+\begin{itemize}
+\item \texttt{collector.py} — Multi-source paper fetcher (arXiv, PubMed,
+  Semantic Scholar, DBLP). Exports \texttt{collect\_all(dry\_run=False)} and
+  \texttt{dedup\_papers(papers, existing\_ids, existing\_titles)}.
+
+\item \texttt{ranker.py} — Scoring engine. Exports \texttt{score\_paper(paper)},
+  \texttt{rank\_papers(papers)}, \texttt{score\_daily\_papers(papers, date)},
+  and \texttt{generate\_ranking\_report(db, days\_back=30)}.
+
+\item \texttt{summarizer.py} — LLM-powered paper summarizer. Generates structured
+  summaries (title, authors, year, source, AI system, evaluation method,
+  governance dimension, main finding, thematic tags, priority score, critique)
+  for Priority 3 papers using Gemini (or OpenRouter fallback).
+
+\item \texttt{database.py} — SQLite wrapper. Exports \texttt{PaperDatabase}
+  class with \texttt{add\_paper()}, \texttt{get\_papers\_needing\_summarization()},
+  \texttt{update\_paper\_summary()}, and \texttt{get\_statistics()}.
+
+\item \texttt{daily\_pipeline.py} / \texttt{daily\_pipeline\_v2.py} — Main daily
+  entry points. \texttt{daily\_pipeline\_v2.py} uses the extended four-source
+  collector. Both support \texttt{--push} to commit outputs to GitHub.
+
+\item \texttt{weekly\_synthesis.py} — Weekly aggregation. Reads digests from
+  \texttt{outputs/digests/}, re-ranks papers from the database, writes
+  \texttt{outputs/weekly/weekly\_YYYY-MM-DD.md} and
+  \texttt{outputs/topic\_trends/matrix\_YYYY-MM-DD.md}.
+
+\item \texttt{reporter.py} — Output delivery. Formats and sends digest summaries
+  to Telegram (primary) and email (secondary).
+\end{itemize}
+
+% =============================================================================
+% I. File Structure
+% =============================================================================
+
+\subsection{Project File Structure}
+\label{sec:app_filestructure}
+
+\begin{verbatim}
+ai-health-lit-review/
+|-- sections/
+|   |-- 00_abstract.tex
+|   |-- 01_introduction.tex
+|   |-- 02_related_work.tex
+|   |-- 03_methods.tex          <-- main text: 3-sentence pipeline summary
+|   |-- 04_results.tex
+|   |-- 04_thematic.tex
+|   |-- 05_discussion.tex
+|   |-- 05_evaluation.tex
+|   |-- 06_conclusion.tex
+|   |-- 07_acknowledgements.tex
+|   |-- 08_appendix.tex         <-- Main Appendix (PRISMA, bib, keywords)
+|   |-- 09_appendix.tex         <-- THIS FILE: Technical Appendix
+|-- collector.py                <-- Multi-source paper collector
+|-- ranker.py                   <-- Composite scoring algorithm
+|-- summarizer.py               <-- LLM summarization
+|-- database.py                 <-- SQLite wrapper
+|-- daily_pipeline.py           <-- Daily pipeline entry point
+|-- daily_pipeline_v2.py        <-- Extended 4-source daily pipeline
+|-- weekly_synthesis.py         <-- Weekly synthesis
+|-- reporter.py                 <-- Telegram / email delivery
+|-- config.yaml                 <-- Sources, keywords, venues, providers
+|-- .env                        <-- GITHUB_TOKEN, GITHUB_REPO
+|-- data/
+|   |-- papers.json             <-- Canonical scored corpus (gitignored)
+|   |-- papers.db               <-- SQLite store (gitignored)
+|-- outputs/
+|   |-- digests/                <-- Daily digests (gitignored)
+|   |-- weekly/                 <-- Weekly syntheses (gitignored)
+|   |-- topic_trends/           <-- Rolling topic matrices (gitignored)
+|   |-- reviews/                <-- Ad hoc paper review notes
+|-- references.bib
+|-- report.tex
+|-- requirements.txt
+|-- venv/                       <-- Virtual environment (currently symlinked)
+\end{verbatim}
+
+Note: The \texttt{data/} and \texttt{outputs/} directories are gitignored.
+Outputs are pushed explicitly via \texttt{git add -f <file>} using the
+Fine-Grained PAT with repository write access.
+
+% =============================================================================
+% J. Configuration
+% =============================================================================
+
+\subsection{Configuration Reference}
+\label{sec:app_config}
+
+LLM provider selection is configured in \texttt{config.yaml} under the
+\code{providers} key. The primary provider is OpenRouter
+(\texttt{stepfun/step-3.5-flash:free}) with an OpenRouter fallback
+(\texttt{nvidia/nemotron-3-super-120b-a12b:free}). Additional providers
+(Ollama, OpenAI, Gemini, HuggingFace) are available but disabled by default.
+
+The five thematic keyword groups and priority venue lists are defined in both
+\texttt{config.yaml} and \texttt{ranker.py}. These must be kept in sync when
+updating search terms or venue tiers.

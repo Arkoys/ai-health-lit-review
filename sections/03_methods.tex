@@ -19,62 +19,14 @@ analytical framework applied to the gathered corpus.
 \subsection{Pipeline Design and Implementation}
 \label{sec:pipeline}
 
-The exponential growth of health AI literature between 2020 and 2026 rendered
-the traditional one-time database search inadequate for a comprehensive
-review. The volume of relevant publications — spanning computer science,
-clinical medicine, law, ethics, and implementation science — exceeds what
-any single research team can manually track. To address this, an automated
-daily literature collection and triage pipeline was designed and deployed.
-
-\subsubsection{Architecture Overview}
-
-The pipeline operates across five layers: \textbf{data collection},
-\textbf{paper scoring}, \textbf{LLM-based summarization},
-\textbf{storage and indexing}, and \textbf{dissemination}.
-
-Data collection is performed by \texttt{collector.py}, which queries multiple
-bibliographic sources on a daily schedule: arXiv (preprints from cs.AI,
-cs.LG, cs.CY, q-bio, eess.AS, and cs.CV), PubMed and PubMed Central (MEDLINE
-via E-utilities), Semantic Scholar, and DBLP (capturing top-tier AI-ethics
-venues including FAccT, AIES, and NeurIPS). Boolean search queries are
-constructed dynamically around the five thematic keyword groups defined
-for this review: AI Evaluation and Validation, Participatory Governance,
-Adaptive Regulation, Evidence and Implementation, and Clinical Health AI.
-Each query combination (e.g., \texttt{"AI evaluation" AND "healthcare"},
-\texttt{"participatory governance" AND "clinical AI"}) is submitted to each
-source, and results are aggregated with deduplication by DOI.
-
-Each collected paper is scored by \texttt{ranker.py} across six dimensions:
-theme relevance (composite score across the five thematic keyword groups),
-novelty (publication recency), venue prestige, methodological rigour, and
-an overall composite score. Papers scoring above a priority threshold are
-designated Priority 3 (highest), with the remainder split across Priority
-2 and Priority 1. This scoring enables focus of human review attention on
-the highest-value publications while maintaining systematic coverage of the
-literature landscape.
-
-Priority 3 papers are passed to \texttt{summarizer.py}, which uses a
-large language model (Gemini) to generate a structured summary for each
-paper. Each summary encodes: title, authors, year, source, country, AI
-system and method, evaluation method, governance dimension, main finding,
-thematic tags, priority score, and a free-text justification of relevance.
-These summaries are stored in both a JSON document store
-(\texttt{data/papers.json}) and a SQLite database (\texttt{data/papers.db}),
-enabling structured query, temporal tracking, and cross-paper analysis.
-
-Outputs are produced in three formats: daily digests (markdown files
-summarizing all papers collected in a given day), weekly synthesis reports
-(aggregating and cross-referencing the week's collection), and topic-trend
-matrices (tracking the proportion of papers assigned to each of the five
-thematic axes over time). Dissemination to the research team is automated
-via Telegram bot, with email as a secondary channel.
-
-The pipeline runs daily via a scheduled cron job (08:00, weekdays),
-ensuring that the review corpus is continuously refreshed as new
-publications appear. This design choice — continuous collection rather
-than a one-time snapshot — is methodologically significant: the health AI
-field evolves too rapidly for a static search to capture the current state
-of knowledge at the time of writing.
+The search was conducted via a semi-automated AI-assisted pipeline querying
+four databases (arXiv, PubMed, Semantic Scholar, DBLP) daily across five
+thematic axes spanning AI evaluation, participatory governance, adaptive
+regulation, evidence and implementation, and clinical health AI. Papers were
+scored using a multi-dimensional composite scoring algorithm and prioritized
+for human review. Full technical specifications — including the pipeline
+architecture, scoring dimensions, deployment scripts, and Telegram
+integration — are provided in Appendix~\ref{sec:technical_appendix}.
 
 \subsection{Search Strategy and Information Sources}
 \label{sec:search_strategy}

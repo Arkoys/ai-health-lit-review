@@ -2,114 +2,81 @@
 % 00_ABSTRACT — Literature Review Abstract
 % =============================================================================
 % Word count target: ~300 words
-% Structure: Context → Objective → Method → Findings → Implications
+% Structure: Three-gap framework (lead) → Method (condensed) → Findings →
+%           How the gaps relate → Implications
 % =============================================================================
 
 \begin{abstract}
-% -----------------------------------------------------------------------------
-% CONTEXT — Why does this matter? Set the societal/stakes context.
-% -----------------------------------------------------------------------------
-% [TODO: 2–3 sentences]
-% • AI is rapidly deployed in clinical settings worldwide.
-% • Unlike drugs, AI systems evolve post-deployment → continuous performance
-%   governance is structurally absent from traditional regulatory pathways.
-% • Gaps between pilot studies and routine care have been widely documented
-%   but insufficiently synthesized from a governance-and-evaluation angle.
-%
-The integration of artificial intelligence (AI) into healthcare systems has
-accelerated dramatically over the past five years, with hundreds of AI-enabled
-medical devices authorized by regulators such as the FDA and dozens of large
-language models entering clinical pilots. Unlike pharmaceutical products, AI
-systems are not static: they evolve through continuous learning, drift over
-time, and may perform differently under real-world conditions than in controlled
-validation studies. This poses a fundamental challenge to traditional
-regulatory frameworks designed for static medical devices.
 
 % -----------------------------------------------------------------------------
-% OBJECTIVE — What is the aim of this review? State the research question.
+% LEAD — Open with the three-gap framework as the central contribution.
 % -----------------------------------------------------------------------------
-% [TODO: 1–2 sentences]
-% • State the specific question this review addresses.
-% • Mention the thematic lens (evaluation methods + governance structures).
-% • Mention scope (real-world deployment, health AI broadly).
-%
-This literature review systematically examines the question of \textbf{how
-health AI systems are evaluated and governed in real-world deployment contexts}.
-Specifically, it asks: (\textit{i}) what evaluation frameworks and methods are
-used to assess AI performance, reliability, and safety post-deployment;
-(\textit{ii}) what governance structures shape the sustainable implementation
-of clinical AI; and (\textit{iii}) what gaps remain at the intersection of
-technical evaluation and societal impact.
+
+Despite rapid growth in research on artificial intelligence in healthcare,
+the literature remains fragmented across disciplinary silos that each
+address isolated facets of how AI is evaluated and governed, with little
+synthesis of how these dimensions interact in real-world deployment. This
+review proposes a \textbf{three-gap framework} as its central conceptual
+contribution, identifying three interlocking structural deficits that
+constrain the safe and equitable translation of clinical AI from pilot to
+routine care: the \textbf{ecological validity gap} between controlled
+validation studies and the realities of clinical practice; the
+\textbf{governance capacity gap} between the institutional preconditions
+emerging regulatory frameworks assume and the organizational readiness
+health systems possess; and the \textbf{accountability gap} that emerges
+when AI systems under continuous learning drift beyond their original
+validation parameters without mandatory post-market surveillance.
 
 % -----------------------------------------------------------------------------
-% METHOD — How was the review conducted?
+% METHOD — Condensed. Search strategy + final corpus only.
 % -----------------------------------------------------------------------------
-% [TODO: 2–3 sentences]
-% • Search strategy: which databases, time window, keywords.
-% • Selection criteria: inclusion/exclusion (peer-reviewed, English, health AI).
-% • Thematic synthesis approach.
-%
-A systematic search was conducted across PubMed, Semantic Scholar, arXiv, and
-DBLP for peer-reviewed publications and preprints published between 2020 and 2026,
-using a curated keyword set spanning five thematic axes: AI Evaluation and
-Validation, Participatory Governance, Adaptive Regulation, Evidence and
-Implementation, and Clinical Health AI. A total of approximately 2,700 papers
-were identified across sources, reduced to a final corpus of 311 papers after
-deduplication and quality screening. Of these, 78 (25.1\%) were designated
-Priority 3 (composite score ≥ 7.0) and form the primary evidence base; the
-remainder were retained as supporting literature. A thematic synthesis was
-performed, organizing findings across three analytical dimensions: (1) evaluation
-methods and metrics, (2) governance and regulatory frameworks, and (3)
-implementation outcomes and barriers.
+
+A systematic search was conducted across PubMed, Semantic Scholar, arXiv,
+and DBLP for peer-reviewed publications and preprints published between
+2020 and 2026, yielding a final corpus of 311 papers synthesized
+thematically (full methodology in Chapter~3).
 
 % -----------------------------------------------------------------------------
-% FINDINGS — What did we learn? Key themes (3–4 sentences).
+% FINDINGS — Expand. How the three gaps relate.
 % -----------------------------------------------------------------------------
-% [TODO: 3–4 sentences covering main findings]
-% • Theme 1: Evaluation gap between lab/real-world.
-% • Theme 2: Governance frameworks emerging (FDA, EU, multi-stakeholder).
-% • Theme 3: Pilot trap phenomenon.
-% • Theme 4: Ethical concerns and participatory governance.
-%
-The review identifies three major structural gaps in the health AI literature.
-First, a pervasive \textbf{ecological validity gap}: the majority of
-validation studies are conducted under controlled conditions and fail to capture
-the temporal dynamics, contextual reasoning, and multi-professional workflows
-of real clinical environments \citep{turchi2025ecological}. Second, a
-\textbf{governance capacity gap}: existing regulatory frameworks (FDA Software
-Pre-Cert, EU AI Act) specify \textit{what} governance should achieve but
-assume pre-existing organizational capacity that health systems have not yet
-developed \citep{tian2026pilottrap}. Third, an \textbf{accountability gap}:
-AI systems operating under continuous learning protocols may drift beyond their
-original validation parameters without mandatory post-market performance
-monitoring, creating untracked risk for patient safety \citep{abulibdeh2025illusion}.
+
+The synthesis reveals that the three gaps are not independent. Each one
+amplifies the others, producing a self-reinforcing cycle: ecologically
+weak validation sets the stage for deployment into institutions lacking
+governance capacity, which in turn cannot detect the post-market drift
+that triggers accountability. Current evaluation practices remain
+dominated by retrospective benchmarking on curated datasets; participation
+of patients, clinicians, and communities in AI governance remains episodic
+rather than institutionalized; and the most promising regulatory
+initiatives are those that treat evaluation, governance, and
+implementation as a single lifecycle rather than separate phases. A small
+but growing literature on ecologically grounded evaluation protocols,
+governance maturity models, and post-deployment monitoring frameworks
+suggests that this cycle can be broken --- but only if health systems,
+regulators, and researchers adopt integrated rather than fragmented
+approaches.
 
 % -----------------------------------------------------------------------------
-% IMPLICATIONS — So what? Why does this matter for the field?
+% IMPLICATIONS — What must change.
 % -----------------------------------------------------------------------------
-% [TODO: 2–3 sentences]
-% • Implications for regulators, implementers, clinicians.
-% • What a governance-and-evaluation integrated framework would require.
-% • Open research questions.
-%
-These findings imply that achieving safe and equitable health AI deployment
-requires an \textbf{integrated governance-and-evaluation approach} that moves
-beyond pre-market authorization alone. Regulators must mandate continuous
-post-market performance monitoring with standardized metrics; health systems
-must invest in institutional capacity-building as a precondition for sustainable
-AI integration, not an afterthought; and participatory mechanisms must be
-institutionalized to ensure that AI systems reflect the needs and values of the
-communities they serve. The review concludes with a research agenda outlining
-the five most pressing unanswered questions at the intersection of health AI
-evaluation and governance.
+
+The review argues that safe and equitable health AI deployment requires
+moving beyond pre-market authorization alone. It calls for \textbf{(i)}
+continuous post-market performance monitoring with standardized real-world
+metrics; \textbf{(ii)} institutional capacity-building as a precondition of
+AI integration; and \textbf{(iii)} institutionalized participatory
+mechanisms that ensure AI systems reflect the communities they serve. The
+review concludes by outlining the most pressing unanswered questions at
+the evaluation--governance--implementation interface and a research agenda
+for closing the three gaps.
 
 % =============================================================================
-% KEYWORDS (add after abstract body)
+% KEYWORDS
 % =============================================================================
 \medskip
 
 \noindent\textbf{Keywords:} health AI, AI evaluation, algorithmic governance,
 clinical AI deployment, adaptive regulation, participatory governance,
-implementation science, post-market surveillance, AI validation, digital health
+implementation science, post-market surveillance, ecological validity
 
 \end{abstract}
