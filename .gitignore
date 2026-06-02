@@ -36,3 +36,11 @@ outputs/*
 !outputs/reviews/**
 !outputs/slides/
 !outputs/slides/**
+
+# Analysis folder (empirical content analysis)
+# Intermediate bulk-coder files (large, regenerable) are ignored
+analysis/_batch_*.json
+analysis/_codings_batch_*.json
+analysis/_p3_papers.json
+analysis/_make_figures.py
+# Everything else in analysis/ is tracked (protocol, matrix, figures, etc.)
