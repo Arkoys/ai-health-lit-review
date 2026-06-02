@@ -1,6 +1,74 @@
 # AI Health Literature Review — Short Digest
-*Last updated: 2026-05-29 09:02*
+*Last updated: 2026-06-02 09:04*
 ---
+### digest_2026-06-02.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-06-02 (Tuesday) | **Papers ranked:** 100 | **New:** +0
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 24 · 🟡 73 · ⚪ 3
+**Top themes:** `AI_EVAL_VALID` (56), `PARTICIPATORY_GOV` (29), `EVIDENCE_IMPLEMENT` (21), `ADAPTIVE_REGULATION` (17), `CLINICAL_HEALTH_AI` (7)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 Evidence-Driven AI Governance for Healthcare: A PEAR...
+
+---
+
+### digest_2026-06-01.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-06-01 (Monday) | **Papers ranked:** 100 | **New:** +8
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 24 · 🟡 73 · ⚪ 3
+**Top themes:** `AI_EVAL_VALID` (61), `PARTICIPATORY_GOV` (32), `ADAPTIVE_REGULATION` (17), `EVIDENCE_IMPLEMENT` (13), `CLINICAL_HEALTH_AI` (7)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 Evidence-Driven AI Governance for Healthcare: A PEARL...
+
+---
+
+### digest_2026-05-31.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-05-31 (Sunday) | **Papers ranked:** 100 | **New:** +14
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 27 · 🟡 70 · ⚪ 3
+**Top themes:** `AI_EVAL_VALID` (60), `PARTICIPATORY_GOV` (31), `ADAPTIVE_REGULATION` (19), `EVIDENCE_IMPLEMENT` (16), `CLINICAL_HEALTH_AI` (7)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 Evidence-Driven AI Governance for Healthcare: A PEAR...
+
+---
+
+### digest_2026-05-30.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-05-30 (Saturday) | **Papers ranked:** 100 | **New:** +8
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 30 · 🟡 67 · ⚪ 3
+**Top themes:** `AI_EVAL_VALID` (63), `PARTICIPATORY_GOV` (34), `ADAPTIVE_REGULATION` (24), `EVIDENCE_IMPLEMENT` (9), `CLINICAL_HEALTH_AI` (5)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 Evidence-Driven AI Governance for Healthcare: A PEAR...
+
+---
+
 ### digest_2026-05-29.md
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-05-29 (Friday) | **Papers ranked:** 100 | **New:** +0
