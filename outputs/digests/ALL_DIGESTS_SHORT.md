@@ -1,6 +1,57 @@
 # AI Health Literature Review — Short Digest
-*Last updated: 2026-06-02 09:04*
+*Last updated: 2026-06-05 09:03*
 ---
+### digest_2026-06-05.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-06-05 (Friday) | **Papers ranked:** 100 | **New:** +30
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 24 · 🟡 73 · ⚪ 3
+**Top themes:** `AI_EVAL_VALID` (56), `PARTICIPATORY_GOV` (29), `EVIDENCE_IMPLEMENT` (21), `ADAPTIVE_REGULATION` (17), `CLINICAL_HEALTH_AI` (7)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 Evidence-Driven AI Governance for Healthcare: A PEAR...
+
+---
+
+### digest_2026-06-04.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-06-04 (Thursday) | **Papers ranked:** 100 | **New:** +0
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 24 · 🟡 73 · ⚪ 3
+**Top themes:** `AI_EVAL_VALID` (56), `PARTICIPATORY_GOV` (29), `EVIDENCE_IMPLEMENT` (21), `ADAPTIVE_REGULATION` (17), `CLINICAL_HEALTH_AI` (7)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 Evidence-Driven AI Governance for Healthcare: A PEA...
+
+---
+
+### digest_2026-06-03.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-06-03 (Wednesday) | **Papers ranked:** 100 | **New:** +0
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 24 · 🟡 73 · ⚪ 3
+**Top themes:** `AI_EVAL_VALID` (56), `PARTICIPATORY_GOV` (29), `EVIDENCE_IMPLEMENT` (21), `ADAPTIVE_REGULATION` (17), `CLINICAL_HEALTH_AI` (7)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 Evidence-Driven AI Governance for Healthcare: A PE...
+
+---
+
 ### digest_2026-06-02.md
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-06-02 (Tuesday) | **Papers ranked:** 100 | **New:** +0
