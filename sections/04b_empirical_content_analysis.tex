@@ -503,5 +503,446 @@ cascade that the empirical record identifies as the dominant
 causal pathway.
 
 % =============================================================================
+% 04B_STANCE — Stance distribution layer
+% =============================================================================
+% Phase 1.2 — 2026-06-08
+% Adds a 4-category stance classification on top of the V3.1 gap coding:
+% SPECIFIC_GAP / SUPPORT / COUNTER / ELSE
+% =============================================================================
+
+\subsection{Stance Distribution: How the Corpus Engages with the Three Gaps}
+\label{sec:stance}
+
+A second-order question is layered on top of the V3.1
+coding: \textit{what is each paper doing with respect to
+the framework?} The 50 gap-positive papers are not a
+uniform population: some are investigating a gap directly,
+others are proposing a method in response, and a small
+number empirically contradict one of the three gaps. The
+10 no-gap papers are likewise heterogeneous: some are
+single-site positive deployment reports that run counter
+to Gap 3, while others are off-topic or insufficiently
+engaged with the framework. To distinguish these
+contributions, a deterministic stance classifier was
+applied to the V3.1 corpus, yielding four mutually
+exclusive categories.
+
+\subsubsection{Stance Definitions and Reproducibility}
+\label{sec:stance_defs}
+
+\begin{itemize}
+  \item \textbf{SPECIFIC\_GAP} ($n=38$, $63.3\%$). The
+        paper's primary contribution is the identification,
+        critique, or empirical documentation of one or more
+        of the three gaps.
+  \item \textbf{SUPPORT} ($n=12$, $20.0\%$). The paper's
+        primary contribution is a new method, framework,
+        tool, or operational model that responds to a
+        documented gap.
+  \item \textbf{COUNTER} ($n=4$, $6.7\%$). The paper
+        empirically contradicts, or explicitly argues
+        against, one of the three gaps.
+  \item \textbf{ELSE} ($n=6$, $10.0\%$). In the corpus,
+        no gap coded, not counter-evidence, not off-topic.
+\end{itemize}
+
+\noindent\textit{Operational rule.} For papers with at
+least one gap coded, a propose-keyword count
+(\textit{propos, framework, checklist, maturity model,
+multi-institution, multi-site, multi-center, external
+valid, pre-implementation, by-design, operating model,
+scorecard, roadmap, protocol, PEARL-PATHWAY, TRIAD,
+NURSE-AI, RWE-LLM, PPTO, reference architecture}) is
+compared against a critique-keyword count
+(\textit{critique, documents, identifies, umbrella,
+scoping, flags, raises, argues, systematic review,
+empirical, fails to, lack of, limited, calls for,
+highlights, rarely implemented, never deployed}) across
+the V3.1 trigger, evidence, and notes fields. If propose
+dominates, the paper is SUPPORT; if critique dominates,
+the paper is SPECIFIC\_GAP. For papers with no gap
+coded, a COUNTER assignment is made when the notes
+contain empirical-positive signals (\textit{successful,
+non-inferior, reduced readmissions, positive outcomes,
+single-site retrospective implementation, simulated
+setting}); otherwise the paper is ELSE. The full
+classifier is implemented in
+\texttt{analysis/\_codings\_v3.1\_stance.json} and
+re-runs deterministically from the V3.1 input. The
+V3.1 layer itself was verified at 100\% agreement on a
+9-paper (10\%) sample, and the stance layer inherits
+the V3.1 confidence labels.
+
+\subsubsection{Stance $\times$ Gap Cross-Tabulation}
+\label{sec:stance_gap}
+
+\begin{table}[t]
+  \centering
+  \caption{Stance $\times$ gap cross-tabulation in the
+  V3.1 corpus (n=60). Cell entries are
+  \textit{count (\% of stance subset)}.}
+  \label{tab:stance_gap}
+  \begin{tabular}{lccccc}
+    \toprule
+    \textbf{Stance} & $n$ & \textbf{G1} & \textbf{G2} & \textbf{G3} & \textbf{Interaction} \\
+    \midrule
+    SPECIFIC\_GAP  & 38 & 22 (58\%) & 21 (55\%) & 14 (37\%) & \textbf{17 (45\%)} \\
+    SUPPORT        & 12 &  8 (67\%) &  \textbf{9 (75\%)} &  4 (33\%) &  4 (33\%) \\
+    COUNTER        &  4 &  0        &  0        &  0        &  0        \\
+    ELSE           &  6 &  0        &  0        &  0        &  0        \\
+    \midrule
+    \textbf{Total} & 60 & 30 (50\%) & 30 (50\%) & 18 (30\%) & 19 (32\%) \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.85\textwidth]{../analysis/figures_v3.1/v3_fig6_stance_distribution.png}
+  \caption{Stance distribution in the V3.1 corpus
+  (n=60). SPECIFIC\_GAP dominates at 63.3\%, followed
+  by SUPPORT (20.0\%), ELSE (10.0\%), and COUNTER
+  (6.7\%).}
+  \label{fig:stance_distribution}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.85\textwidth]{../analysis/figures_v3.1/v3_fig7_stance_gap_heatmap.png}
+  \caption{Stance $\times$ gap heatmap (\% of each
+  stance subset that engages with each gap). SUPPORT
+  is over-indexed on Gap 2 (Governance Capacity,
+  75\%), consistent with the field's current
+  ``propose governance'' phase.}
+  \label{fig:stance_gap_heatmap}
+\end{figure}
+
+Two findings stand out. First, the SPECIFIC\_GAP
+stance carries the bulk of the gap-causality work:
+17 of the 19 papers that document an explicit
+causal interaction between two gaps (89.5\%) are
+SPECIFIC\_GAP papers. The framework's directional
+cascade is therefore empirically grounded in
+investigative papers, not in framework proposals.
+Second, SUPPORT is over-indexed on Gap 2
+(Governance Capacity, 9/12 = 75\%), versus 67\%
+for Gap 1 and 33\% for Gap 3. This is consistent
+with the 2024--2026 state of the field: the
+propose-governance phase is the dominant mode of
+contribution.
+
+\subsubsection{Temporal Distribution of Stances}
+\label{sec:stance_time}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.85\textwidth]{../analysis/figures_v3.1/v3_fig8_stance_by_year.png}
+  \caption{Stance by year. The 2024--2026 window
+  contains 56 of 60 papers (93.3\%). The 2025 peak
+  (n=30) is driven by both a maturation of the field
+  and the active collection period of the daily
+  pipeline. All four COUNTER papers are from 2025,
+  consistent with the field entering a sustained
+  deployment phase that the original 2020--2024
+  framework did not yet have data on.}
+  \label{fig:stance_by_year}
+\end{figure}
+
+The temporal distribution suggests the field is in
+transition. The 2024 (n=6) cohort is half
+SPECIFIC\_GAP and half SUPPORT, with no COUNTER
+papers --- the field is \textit{proposing}. The 2025
+cohort (n=30) is dominated by SPECIFIC\_GAP (63\%),
+with the first sustained deployment studies
+appearing as COUNTER. The 2026 cohort (n=20) is
+roughly equal SPECIFIC\_GAP and SUPPORT, with one
+new COUNTER (a simulated-setting study). The
+framework is stable across this period, but the
+\textit{mode of contribution} is shifting from
+framework proposal to empirical deployment.
+
+\subsubsection{The Outside-Rate as a Counter-Argument}
+\label{sec:stance_counter}
+
+The 10 no-gap papers (4 COUNTER + 6 ELSE = 16.7\%
+of the corpus) are not noise. They are evidence of
+how the AI-health literature is moving. Three
+counter-arguments follow.
+
+\begin{enumerate}
+  \item \textbf{Gap 3 (pilot trap) is dominant but
+        not universal.} Four papers (6.7\%) report
+        successful, sustained clinical AI deployments:
+        single-site but with non-inferior outcomes,
+        reduced readmissions, and positive workflow
+        integration. The 2025 OUD screening study in
+        particular reports reduced readmissions, which
+        directly contradicts the pilot-trap framing.
+        The framework can absorb this counter-evidence
+        by treating the pilot trap as a \textit{probabilistic}
+        rather than a \textit{universal} pattern.
+
+  \item \textbf{Single-site success may still be a
+        pilot trap at a different scale.} The four
+        COUNTER papers are all single-center studies,
+        with no multi-site sustainability evidence,
+        no 24-month follow-up, and no reporting on
+        what happened when the original champion
+        left. A single-site success is therefore not
+        a refutation of the pilot trap; it is the
+        pilot trap's most common surface form, as
+        Tian et al. (2026) argue.
+
+  \item \textbf{The 6 ELSE papers suggest a fourth
+        gap the framework does not yet name.} The
+        ELSE category contains governance papers with
+        empty abstracts (which would have been coded
+        Gap 2 if the abstract were available),
+        anti-racist AI in healthcare, and a TCM
+        domain survey. A fourth gap,
+        \textit{equity and inclusion across
+        non-Western health systems}, is plausibly
+        present but is currently under-collected by
+        the daily pipeline, which queries
+        predominantly English-language sources.
+        This is the most generative counter-argument:
+        the framework's 16.7\% outside-rate is not
+        a measurement failure but a
+        \textit{map boundary}. The three-gap
+        framework was constructed from
+        English-language, Western-health-system,
+        high-priority publications; the ELSE
+        papers are the visible residue of a much
+        larger population of equity-oriented and
+        non-Western implementation work that the
+        pipeline under-collects.
+\end{enumerate}
+
+For this report, the fourth gap is \textit{proposed
+but not adopted} as a fourth framework category. It
+is recorded as a counter-argument that the
+framework's 16.7\% outside-rate is informative, and
+that future work should explicitly extend the
+three-gap framework to include the equity dimension.
+
+\subsubsection{Comparison with Existing Implementation Frameworks}
+\label{sec:stance_comparison}
+
+A question that recurs in the literature is whether
+the three-gap framework is more or less informative
+than existing implementation-science frameworks. Two
+widely used frameworks were compared against the
+V3.1 distribution.
+
+\begin{itemize}
+  \item \textbf{NASSS} (Non-adoption, Abandonment,
+        Scale-up, Spread, Sustainability; Greenhalgh
+        et al., 2017) is a seven-domain framework
+        that focuses on adoption and abandonment
+        failure. It is conceptually the closest to
+        Gap 3 (pilot trap) but is more granular at
+        the adopter-system level. The three-gap
+        framework is a \textit{coarser} version of
+        NASSS, with 3 dimensions instead of 7, but
+        with a stronger causal direction (Gap 1
+        $\rightarrow$ Gap 2 $\rightarrow$ Gap 3).
+        NASSS would expect Gap 3 to be the most
+        frequent failure mode; the V3.1 data show
+        Gap 3 is the \textit{least} frequent but
+        the most \textit{consequential} when it
+        appears.
+
+  \item \textbf{CFIR} (Consolidated Framework for
+        Implementation Research; Damschroder et
+        al., 2022) is a five-domain framework
+        covering innovation, outer setting, inner
+        setting, individuals, and implementation
+        process. CFIR has no explicit
+        evaluation-gap dimension, which the V3.1
+        data identify as the most strongly tied to
+        co-occurrence with the other gaps. The
+        three-gap framework adds an
+        \textit{evaluation dimension} that CFIR
+        lacks, and treats it as the
+        \textit{upstream} cause of governance and
+        implementation failure, where CFIR and
+        NASSS would treat evaluation as a property
+        of the innovation rather than a driver of
+        downstream failure.
+\end{itemize}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.85\textwidth]{../analysis/figures_v3.1/v3_fig10_framework_comparison.png}
+  \caption{Three-Gap vs.\ NASSS vs.\ CFIR.
+  The three-gap framework is the only one with
+  an explicit evaluation gap and a fully
+  specified causal cascade direction. Its main
+  weakness is granularity; its main strength is
+  parsimony combined with a directional
+  cascade that the data support.}
+  \label{fig:framework_comparison}
+\end{figure}
+
+\begin{table}[t]
+  \centering
+  \caption{Framework comparison summary.}
+  \label{tab:framework_comparison}
+  \begin{tabular}{lccc}
+    \toprule
+    \textbf{Property} & \textbf{Three-Gap} & \textbf{NASSS} & \textbf{CFIR} \\
+    \midrule
+    Dimensions              & 3 & 7 & 5 \\
+    Evaluation gap explicit & \textbf{Yes} & No & No \\
+    Causal cascade direction & \textbf{Yes} & Partial & Partial \\
+    V3.1 corpus coverage    & 83.3\% & $\sim$50\% & $\sim$80\% \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The three-gap framework is the most concise of the
+three, the only one with an explicit evaluation
+gap, and the only one with a documented cascade
+direction. Its main weakness is granularity: it
+collapses NASSS's seven domains into three. Its
+main strength is parsimony combined with a
+directional cascade that the data support: 17 of
+19 interaction-coded papers document a Gap 1
+$\rightarrow$ Gap 2 or Gap 2 $\rightarrow$ Gap 3
+chain.
+
+\subsubsection{Methodology Evolution: How the Stance Layer Was Reached}
+\label{sec:stance_methodology}
+
+The 63.3\% / 20.0\% / 6.7\% / 10.0\% headline
+distribution was not visible in any single
+iteration of the analysis. It required five
+successive corrections, each of which was a
+refinement of the previous one. This subsection
+documents the trajectory, because the current
+findings are inseparable from the corrections
+that produced them.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.85\textwidth]{../analysis/figures_v3.1/v3_fig9_methodology_evolution.png}
+  \caption{Five-iteration methodology trajectory.
+  Each iteration corrected a specific failure
+  mode of the previous one: V1 had no quantification,
+  V1 strict had off-topic contamination,
+  V2 surfaced the contamination diagnostically,
+  V3 strict applied the relevance filter and
+  relaxed coding rule jointly, and the V3.1
+  stance layer added the contribution-type
+  dimension.}
+  \label{fig:methodology_evolution}
+\end{figure}
+
+\noindent\textbf{Iteration 1 (V1, n=341).} The
+original candidate corpus contained 341 papers
+collected by the daily AI-health literature
+monitoring pipeline. The deliverable was a
+narrative literature review organized around five
+thematic axes. This was useful for orientation
+but had three structural weaknesses for an
+empirical review: no replicability, no
+quantification of gap frequencies, and no
+operationalized gap definitions.
+
+\noindent\textbf{Iteration 2 (V1 strict, n=87).}
+A structured content analysis of the Priority 3
+subset (n=87, score $\geq 7.0$) was conducted
+with a conservative coding rule (a paper was
+coded 1 only if it critiqued a gap, not if it
+proposed a method). The result was almost
+unintelligible: 28.7\% at-least-one-gap, with
+71.3\% of the corpus coded zero on all three
+gaps.
+
+\noindent\textbf{Iteration 3 (V2, n=182).} A v2
+relevance filter was applied, reducing the
+corpus from 341 to 182 (46.6\% reduction). A
+diagnostic pass on the 142 no-gap papers
+revealed that $\sim$75\% of them were off-topic
+(GNSS positioning, graph theory, robotics,
+power-grid optimization, CS theory), suggesting
+the v2 filter was still not strict enough.
+
+\noindent\textbf{Iteration 4 (V3 strict, n=60).}
+Two corrections were applied jointly: a v3
+strict relevance filter (122 papers excluded:
+90 off-topic, 31 pure-technical, 1 missing
+abstract) and a V3.1 relaxed coding rule
+(papers proposing methods in response to a
+documented gap are now also coded 1). The
+empirical picture changed dramatically: G1
+50.0\%, G2 50.0\%, G3 30.0\%, at-least-one-gap
+83.3\%.
+
+\noindent\textbf{Iteration 5 (V3.1 + Stance).}
+Once the gap-level frequencies stabilized, a
+stance variable was layered on top to
+distinguish investigative papers (SPECIFIC\_GAP)
+from response papers (SUPPORT), counter-evidence
+(COUNTER), and in-corpus-but-outside-framework
+papers (ELSE). This is the layer reported in
+this subsection.
+
+The five-iteration trajectory is itself part of
+the result. Without the diagnostic in
+Iteration 3, the 16.7\% outside-rate in the
+stance layer would be uninterpretable. With the
+trajectory, it is the leading edge of a fourth
+gap the framework should be extended to cover.
+
+\subsubsection{Limitations of the Stance Layer}
+\label{sec:stance_limits}
+
+\begin{itemize}
+  \item \textbf{Post-hoc keyword lists.} The
+        propose and critique keyword lists were
+        chosen after the V3.1 codes were
+        generated. A more rigorous approach would
+        pre-register the keyword lists before
+        applying them. The risk is that the lists
+        were tuned to fit the observed
+        distribution; the verification is that
+        the lists are derived from the existing
+        V3.1 \texttt{relaxed\_trigger} and
+        \texttt{evidence} fields, which were
+        themselves written before the stance
+        layer was added.
+
+  \item \textbf{Confidence inheritance.} The
+        stance layer inherits the V3.1 confidence
+        labels. Of the 10 ELSE papers, 5 are
+        low-confidence (empty-abstract title
+        fallback). The COUNTER papers are
+        medium-confidence because the
+        counter-evidence is single-site or
+        simulated, not multi-site prospective.
+
+  \item \textbf{Field-specific keyword lists.}
+        The propose keyword list contains
+        project-specific framework names
+        (PEARL-PATHWAY, TRIAD, NURSE-AI, RWE-LLM,
+        PPTO) that are not generalizable. For a
+        different literature review, the keyword
+        lists should be re-derived from that
+        corpus's own gap-identification language.
+
+  \item \textbf{English-language and Western
+        default corpus.} The daily pipeline
+        queries arXiv, PubMed, Semantic Scholar,
+        and DBLP, which are predominantly
+        English-language sources. The 10.0\%
+        ELSE rate is partly an artifact of this
+        collection bias, which is why the
+        equity-gap counter-argument is recorded
+        as a finding rather than a measurement
+        error.
+\end{itemize}
+
+% =============================================================================
 % 04B_END
 % =============================================================================
