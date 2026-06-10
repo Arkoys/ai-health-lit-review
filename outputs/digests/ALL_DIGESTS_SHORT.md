@@ -1,6 +1,91 @@
 # AI Health Literature Review — Short Digest
-*Last updated: 2026-06-05 09:03*
+*Last updated: 2026-06-10 09:01*
 ---
+### digest_2026-06-10.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-06-10 (Wednesday) | **Papers ranked:** 100 | **New:** +28
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 28 · 🟡 72 · ⚪ 0
+**Top themes:** `AI_EVAL_VALID` (48), `ADAPTIVE_REGULATION` (32), `PARTICIPATORY_GOV` (32), `EVIDENCE_IMPLEMENT` (17), `CLINICAL_HEALTH_AI` (8)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 Learning Global Motion with Compact Gaussians for...
+
+---
+
+### digest_2026-06-09.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-06-09 (Tuesday) | **Papers ranked:** 100 | **New:** +28
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 28 · 🟡 72 · ⚪ 0
+**Top themes:** `AI_EVAL_VALID` (48), `PARTICIPATORY_GOV` (29), `ADAPTIVE_REGULATION` (26), `EVIDENCE_IMPLEMENT` (24), `CLINICAL_HEALTH_AI` (12)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 Learning Global Motion with Compact Gaussians for ...
+
+---
+
+### digest_2026-06-08.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-06-08 (Monday) | **Papers ranked:** 100 | **New:** +24
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 25 · 🟡 75 · ⚪ 0
+**Top themes:** `AI_EVAL_VALID` (54), `PARTICIPATORY_GOV` (26), `EVIDENCE_IMPLEMENT` (24), `ADAPTIVE_REGULATION` (21), `CLINICAL_HEALTH_AI` (11)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 Learning Global Motion with Compact Gaussians for F...
+
+---
+
+### digest_2026-06-07.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-06-07 (Sunday) | **Papers ranked:** 100 | **New:** +0
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 25 · 🟡 75 · ⚪ 0
+**Top themes:** `AI_EVAL_VALID` (54), `PARTICIPATORY_GOV` (26), `EVIDENCE_IMPLEMENT` (24), `ADAPTIVE_REGULATION` (21), `CLINICAL_HEALTH_AI` (11)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 Learning Global Motion with Compact Gaussians for Fe...
+
+---
+
+### digest_2026-06-06.md
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-06-06 (Saturday) | **Papers ranked:** 100 | **New:** +0
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 25 · 🟡 75 · ⚪ 0
+**Top themes:** `AI_EVAL_VALID` (54), `PARTICIPATORY_GOV` (26), `EVIDENCE_IMPLEMENT` (24), `ADAPTIVE_REGULATION` (21), `CLINICAL_HEALTH_AI` (11)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 Learning Global Motion with Compact Gaussians for ...
+
+---
+
 ### digest_2026-06-05.md
 # 🔬 AI Health Literature Review — Daily Digest v2
 **Date:** 2026-06-05 (Friday) | **Papers ranked:** 100 | **New:** +30

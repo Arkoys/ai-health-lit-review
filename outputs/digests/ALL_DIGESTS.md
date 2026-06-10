@@ -1,6 +1,2049 @@
 # AI Health Literature Review — All Digests
-*Last updated: 2026-06-05 09:03*
+*Last updated: 2026-06-10 09:01*
 ---
+## Source: [digest_2026-06-10.md](outputs/digests/digest_2026-06-10.md)
+
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-06-10 (Wednesday) | **Papers ranked:** 100 | **New:** +28
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 28 · 🟡 72 · ⚪ 0
+**Top themes:** `AI_EVAL_VALID` (48), `ADAPTIVE_REGULATION` (32), `PARTICIPATORY_GOV` (32), `EVIDENCE_IMPLEMENT` (17), `CLINICAL_HEALTH_AI` (8)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 Learning Global Motion with Compact Gaussians for Feed-Forward 4D Reconstruction
+
+**Source:** ARXIV | **Score:** `10.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Mungyeom Kim, Minkyeong Jeon, Honggyu An, Jaewoo Jung, Hyuna Ko
+**Venue:** arXiv | **Published:** 2026-05-29
+
+[🔗 Link](https://arxiv.org/abs/2605.31595)
+
+> Dynamic scene reconstruction from monocular video remains a fundamental challenge in computer vision. Existing feed-forward methods predict 3D Gaussians pixel-wise for each frame, suffering from duplicated Gaussians and view-dependent biases that hinder effective learning of scene motion. We present C4G, a feed-forward 4D reconstruction framework b...
+
+
+### 🔴 Evaluation Cards: An Interpretive Layer for AI Evaluation Reporting
+
+**Source:** ARXIV | **Score:** `10.0` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV` `EVIDENCE_IMPLEMENT`
+**Authors:** Avijit Ghosh, Anka Reuel, Jenny Chim, Wm. Matthew Kennedy, Srishti Yadav
+**Venue:** arXiv | **Published:** 2026-06-08
+
+[🔗 Link](https://arxiv.org/abs/2606.09809)
+
+> AI evaluation results are produced at scale but reported inconsistently across leaderboards, model cards, benchmark papers, and company blogs. The cost is interpretive: readers cannot reliably compare results across sources, identify what a report omits, or trace an aggregate claim to its underlying evidence. Recent efforts address isolated compone...
+
+
+### 🔴 A 65 nm Trustworthy Hypoglycemia Forecasting Engine Achieving 11.3 nJ per Inference
+
+**Source:** ARXIV | **Score:** `9.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** Boyang Cheng, Jianbo Liu, Pengyu Ren, Xueji Zhao, Steven Davis
+**Venue:** arXiv | **Published:** 2026-06-05
+
+[🔗 Link](https://arxiv.org/abs/2606.07455)
+
+> Diabetes affects millions of people and requires reliable continuous glucose monitoring for early hypoglycemia warning. However, medical AI systems must be not only accurate and energy efficient, but also explainable, noise robust, and uncertainty aware. This work presents a 65 nm hypoglycemia forecasting engine based on probabilistic decision tree...
+
+
+### 🔴 Principled Uncertainty in Clinical AI: End-to-End Bayesian Modelling and Algorithmic Equity Auditing Across Multimodal Patient Data
+
+**Source:** ARXIV | **Score:** `9.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** Oladimeji Anthonio, Dimeji Abdulsobur Olawuyi, Oloruntoba Ajayi, Temiloluwa Aderemi, Joseph Odamo
+**Venue:** arXiv | **Published:** 2026-06-08
+
+[🔗 Link](https://arxiv.org/abs/2606.09789)
+
+> Clinical artificial intelligence (AI) systems routinely produce predictions without principled quantification of uncertainty, limiting their trustworthiness in high-stakes medical environments. This paper presents an integrated research programme addressing two interconnected problems: (1) the development of a fully end-to-end Bayesian uncertainty ...
+
+
+### 🔴 Human-Centred Risk Mitigation for AI-Mediated Information Manipulation: A SOCMINT Framework Based on Information Manipulation Sets
+
+**Source:** ARXIV | **Score:** `9.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Antonio Scala
+**Venue:** arXiv | **Published:** 2026-06-08
+
+[🔗 Link](https://arxiv.org/abs/2606.09754)
+
+> AI-mediated information manipulation increasingly takes the form of social cyber attacks that target trust, attention, credibility, reputation, and decision-making rather than only technical infrastructures or isolated false contents. Existing defensive approaches often oscillate between incident-level analysis, which fragments campaigns into weak ...
+
+
+### 🔴 Colored Noise Diffusion Sampling
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Hadar Davidson, Noam Issachar, Sagie Benaim
+**Venue:** arXiv | **Published:** 2026-05-28
+
+[🔗 Link](https://arxiv.org/abs/2605.30332)
+
+> Diffusion models achieve state-of-the-art image synthesis, with their generative trajectories fundamentally exhibiting a spectral bias, resolving low-frequency global structures early and high-frequency fine details later. Conventional stochastic differential equation (SDE) solvers fail to account for this dynamic, naively injecting uniform white n...
+
+
+### 🔴 Complexity-Balanced Diffusion Splitting
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Noam Issachar, Dani Lischinski, Raanan Fattal
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06477)
+
+> Standard continuous-time generative models rely on monolithic architectures that must navigate vastly different signal regimes, from isotropic noise to intricate data distributions. While scaling model capacity improves performance, deploying a massive network uniformly across the entire generative timeline is inherently inefficient. In this work, ...
+
+
+### 🔴 MLEvolve: A Self-Evolving Framework for Automated Machine Learning Algorithm Discovery
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Shangheng Du, Xiangchao Yan, Jinxin Shi, Zongsheng Cao, Shiyang Feng
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06473)
+
+> Large language model (LLM) agents are increasingly applied to long-horizon tasks such as scientific discovery and machine learning engineering (MLE), where sustained self-evolution becomes a key capability. However, existing MLE agents suffer from inter-branch information isolation, memoryless search, and lack of hierarchical control, which togethe...
+
+
+### 🔴 Benchmark Everything Everywhere All at Once
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Shiyun Xiong, Dongming Wu, Peiwen Sun, Yuang Ai, Bokang Yang
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06462)
+
+> Benchmarks are fundamental for evaluating and advancing LLMs and MLLMs by providing standardized and explicit measures of performance. However, their construction is labor-intensive and hard to reuse, raising concerns about sustainability and scalability. Moreover, existing benchmarks often quickly reach performance saturation after their release, ...
+
+
+### 🔴 Event Detection for Parameter-to-KPI Dependency Learning for AI-RAN
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Christie Djidjev, Nicholas Kaminski
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06459)
+
+> Next-generation wireless networks are expected to rely on multiple concurrent AI-driven control functions that optimize different network objectives simultaneously, particularly in AI-integrated and open radio access network architectures such as AI Radio Access Network (AI-RAN) and Open Radio Access Network (O-RAN). When these functions interact, ...
+
+
+### 🔴 Vortex: Efficient and Programmable Sparse Attention Serving for AI Agents
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Zhuoming Chen, Xinrui Zhong, Qilong Feng, Ranajoy Sadhukhan, Yang Zhou
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06453)
+
+> Sparse attention is becoming increasingly important for serving large language models (LLMs) as generation lengths continue to grow. However, deploying and evaluating new sparse attention algorithms at scale remains highly engineering-intensive, slowing both human researchers and AI agents in exploring the sparse attention design. To address this c...
+
+
+### 🔴 Bradley-Terry Rankings for Recommender Systems Across Dataset Taxonomies
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Ekaterina Grishina, Stepan Kuznetsov, Askar Tsyganov, Ilya Ivanov, Daria Korovaitceva
+**Venue:** arXiv | **Published:** 2026-06-05
+
+[🔗 Link](https://arxiv.org/abs/2606.07492)
+
+> The ranking of recommendation algorithms is a challenging problem since model performance is sensitive to dataset characteristics such as sparsity, sequential structure, and scale. This drives a demand for a proper methodology for fair comparison between algorithms. Naive aggregation of performance metrics (e.g., averaging NDCG over benchmarks) can...
+
+
+### 🔴 Drifting Models for Surrogate Flow Modeling
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Chris R. Jung, Markus Dörr, Natalie Jüngling, Jennifer Niessner, Adam T. Müller
+**Venue:** arXiv | **Published:** 2026-06-05
+
+[🔗 Link](https://arxiv.org/abs/2606.07481)
+
+> While Computational Fluid Dynamics (CFD) provides high-fidelity flow fields for optimizing indoor environments, its computational cost limits rapid exploration. To solve this problem generative surrogates offer better distribution modeling than deterministic networks, but iterative sampling is slow. To enable high-quality, single-pass generation, w...
+
+
+### 🔴 PTL-Diffusion: Manifold-Aware Diffusion with Periodic Terminal Laws
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Danqi Zhuang, Jisui Huang, Xiaoyue Xi, Andrew Kiggins, Xiaojie Wang
+**Venue:** arXiv | **Published:** 2026-06-08
+
+[🔗 Link](https://arxiv.org/abs/2606.09816)
+
+> Standard diffusion models typically use a single time-homogeneous Gaussian terminal distribution as the reference law for generation. While this choice is analytically convenient and empirically powerful, it provides little explicit structure for data concentrated near low-dimensional manifolds, where different regions of the data distribution may ...
+
+
+### 🔴 iMaC: Translating Actions into Motion and Contact Images for Embodied World Models
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `EVIDENCE_IMPLEMENT` `ADAPTIVE_REGULATION`
+**Authors:** Zhenyu Wu, Xiuwei Xu, Yukun Zhou, Yifan Li, Qiuping Deng
+**Venue:** arXiv | **Published:** 2026-06-08
+
+[🔗 Link](https://arxiv.org/abs/2606.09813)
+
+> Embodied world models have emerged as a pivotal paradigm for visual robotic decision-making and interactive environment simulation. However, conventional embodied frameworks rely on low-dimensional structured action vectors (e.g., joint angles and end-effector poses), which suffer from limited expressive capacity, poor generalization across diverse...
+
+
+### 🔴 Suppressing the Motion of Rydberg Atoms in Inhomogeneous Electric Fields via Stark Echo
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Dominik Jakab, Manuel Kaiser, Conny Glaser, David Petrosyan, József Fortágh
+**Venue:** arXiv | **Published:** 2026-06-08
+
+[🔗 Link](https://arxiv.org/abs/2606.09759)
+
+> Rydberg atoms possess strong electric dipole transitions and tunable energy levels, making them promising candidates for microwave to optical conversion on integrated superconducting atom chips. Achieving strong coupling of the atoms to e.g. the microwave field of an on-chip resonator requires placing the atoms within tens of micrometers from the c...
+
+
+### 🔴 Zero Touch Predictive Orchestration: Automating Time-Series Models for the Cloud-Edge Continuum
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Abd Elghani Meliani, Arora Sagar, Adlen Ksentini, Raymond Knopp
+**Venue:** arXiv | **Published:** 2026-06-08
+
+[🔗 Link](https://arxiv.org/abs/2606.09787)
+
+> The Cloud-Edge Continuum (CEC) enables latency-critical applications by distributing resources to the far edge, but its extreme volatility makes proactive Zero Touch Management via time-series forecasting essential. However, orchestrators face a severe "cold start" problem: newly discovered nodes lack the historical data required to train localized...
+
+
+### 🔴 Stateful Online Monitoring Catches Distributed Agent Attacks
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID`
+**Authors:** Davis Brown, Samarth Bhargav, Arav Santhanam, Kasper Hong, Ivan Zhang
+**Venue:** arXiv | **Published:** 2026-05-29
+
+[🔗 Link](https://arxiv.org/abs/2605.31593)
+
+> Language models can find thousands of severe software vulnerabilities, and agents are increasingly being misused for cyberattacks. To avoid detection, attackers frequently distribute their misuse, splitting a harmful task across many user accounts so each individual transcript looks benign. Because safety monitors score only one agent context at a ...
+
+
+### 🔴 HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `ADAPTIVE_REGULATION` `AI_EVAL_VALID`
+**Authors:** Lizhi Yang, Junheng Li, Nehar Poddar, Yiling Hou, Gio Huh
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06493)
+
+> For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics. We instead propose a compact, explicit inte...
+
+
+### 🔴 Primordial Black Hole Triggered Type Ia Supernovae II: Comparison with Supernova Remnants and Galactic Chemical Evolution
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Shing-Chi Leung, Seth Walther, Alexander Kusenko, Ken'ichi Nomoto, Tomoharu Suzuki
+**Venue:** arXiv | **Published:** 2026-06-05
+
+[🔗 Link](https://arxiv.org/abs/2606.07505)
+
+> The asteroid-mass class of Primordial Black Holes (PBHs) is one of the candidates for the dark matter in the universe. With a mass between $4 \times 10^{-17} < M_{\rm PBH} < 4 \times 10^{-12}~M_{\odot}$, they could be the major component of dark matter in the cosmic mass budget. The infall of these PBH into a white dwarf could be one triggering mec...
+
+
+### 🔴 Mitigating Proxy-to-Wild Domain Gap in Deepfake Speech
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `CLINICAL_HEALTH_AI` `AI_EVAL_VALID`
+**Authors:** Xuanjun Chen, Yun-Shing Wu, Wei-Chung Lu, Claire Lin, Haibin Wu
+**Venue:** arXiv | **Published:** 2026-06-05
+
+[🔗 Link](https://arxiv.org/abs/2606.07494)
+
+> Recent neural audio codec-based speech generation (CodecFake) produces highly realistic audio, posing a challenge to existing deepfake countermeasure models. While using codec resynthesized speech (CoRS) as proxy data improves performance, it often suffers from limited generalization. We propose Domain-Shift Feature Augmentation (DSFA), which simul...
+
+
+### 🔴 A fast and consistent sharp-interface immersed boundary method for moving bodies of arbitrary thicknes
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Giovanni Vagnoli, Martino Andrea Scarpolini, Roberto Verzicco, Francesco Viola
+**Venue:** arXiv | **Published:** 2026-06-08
+
+[🔗 Link](https://arxiv.org/abs/2606.09799)
+
+> Immersed boundary methods (IBMs) are widely used to simulate flows around complex geometries and moving bodies, but they often involve a trade-off between precision and computational efficiency. Eulerian formulations require special treatments for moving walls and may generate spurious force oscillations, whereas Lagrangian formulations can suffer ...
+
+
+### 🔴 Cohort-based Semantic Labeling: AI-Enabled Recovery of Visualization Semantics from Deployed SVGs
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Jeongah Lee, Hima Varshini Surisetty, Durga Nirmaleswaran, Jahnavi Sharma, Srikiran Kavuri
+**Venue:** arXiv | **Published:** 2026-06-08
+
+[🔗 Link](https://arxiv.org/abs/2606.09782)
+
+> Many web-based visualizations are deployed as Scalable Vector Graphics (SVG), a format that faithfully preserves visual appearance but typically omits the higher-level semantic structure needed for machine interpretation. Once rendered and published, information about a visualization's components, roles, and encodings is no longer explicitly availa...
+
+
+### 🔴 Gravitational Waves from hybrid defects as probe of Flavor symmetry breaking: Machine-Learning Approach
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `EVIDENCE_IMPLEMENT`
+**Authors:** Anish Ghoshal, Ilia Gogoladze, Amit Tiwari
+**Venue:** arXiv | **Published:** 2026-05-29
+
+[🔗 Link](https://arxiv.org/abs/2605.31600)
+
+> We present a novel possibility that a network of domain walls bounded by cosmic strings generates a stochastic gravitational wave background (SWGB) signal originating from the spontaneous breaking of a gauged $U(1)_F$ flavor symmetry and the subsequent breaking of discrete $Z_2$ symmetry that accommodates dark matter. The gravitational wave (GW) sp...
+
+
+### 🔴 Will the Agent Recuse Itself? Measuring LLM-Agent Compliance with In-Band Access-Deny Signals
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV`
+**Authors:** Thamilvendhan Munirathinam
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06460)
+
+> As autonomous LLM agents increasingly hold real credentials and operate infrastructure without a human in the loop, operators have no standard way to tell an agent that a resource is off-limits. Access controls either let the agent in (it has valid credentials) or hard-fail it (indistinguishable from any other client). We propose a third mode: a li...
+
+
+### 🔴 Twelve quick tips for designing AI-driven HPC workflows
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Jamie J. Alnasir
+**Venue:** arXiv | **Published:** 2026-06-05
+
+[🔗 Link](https://arxiv.org/abs/2606.07491)
+
+> High-performance computing (HPC) clusters remain the backbone of large-scale scientific computation, traditionally executing deterministic, linear pipelines optimised for predictable performance. However, the pervasive integration of artificial intelligence (AI) and foundation models into scientific research has introduced a fundamentally new compu...
+
+
+### 🔴 Amortized Neural Optimization for Pre-Layout Signal Integrity Design Space Exploration using Differentiable Surrogates
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Julian Withöft, Werner John, Emre Ecik, Ralf Brüning, Jürgen Götze
+**Venue:** arXiv | **Published:** 2026-06-05
+
+[🔗 Link](https://arxiv.org/abs/2606.07463)
+
+> Pre-layout design space exploration (DSE) for high-speed signal integrity (SI) analysis is often limited by the computational cost of simulations and iterative optimization algorithms within modern electronic design automation (EDA) workflows. While machine learning surrogate models accelerate the simulation step, optimizing designs still requires ...
+
+
+### 🔴 Data Synthesis and Parameter-Efficient Fine-Tuning for Low-Resource NMT: A Case Study on Q'eqchi' Mayan
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Alexander Chulzhanov, Soeren Eberhardt, Arjun Mukherjee
+**Venue:** arXiv | **Published:** 2026-06-08
+
+[🔗 Link](https://arxiv.org/abs/2606.09767)
+
+> Neural machine translation for digitally low-resource Indigenous languages is often hindered by extreme data scarcity, prompting reliance on extractive web-scraping. To ensure data sovereignty, this study introduces a data synthesis methodology to bootstrap NMT models without scraping target-language parallel text. Focusing on Q'eqchi' Mayan, we tr...
+
+
+
+## 📚 Supporting Papers (Priority 2, top 7)
+
+### 🟡 Carr criterion and mass gaps in non-singular primordial black hole formation
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Jens Boos, Arif Kağan Gündoğdu, Marek Hartenfels
+**Venue:** arXiv | **Published:** 2026-05-28
+
+[🔗 Link](https://arxiv.org/abs/2605.30340)
+
+> Non-singular gravitational theories are expected to be relevant in the early universe. In this paper, we derive a set of effective Friedmann equations describing the dynamics of matter shells in the presence of a gravitational regulator $\ell$. We find that such a regulator induces a primordial black hole mass gap such that below a certain mass $M_...
+
+
+### 🟡 TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Dong Jing, Jingchen Nie, Tianqi Zhang, Jiaqi Liu, Huaxiu Yao
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06491)
+
+> Robot manipulation alternates between low-risk transit phases that call for fast execution and high-risk contact stages that demand slow, precise motion. Yet existing Vision-Language-Action models (VLAs) only inherit a single fixed speed from training demonstrations. Prior efforts to accelerate VLAs through model compression, KV-cache reuse, or rei...
+
+
+### 🟡 Phenomenology of Inflaton-Driven Early QCD Confinement and Solution to Axion Isocurvature Problem
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `CLINICAL_HEALTH_AI` `ADAPTIVE_REGULATION`
+**Authors:** Evangelos I. Sfakianakis, Barmak Shams Es Haghi, Katherine Freese
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06484)
+
+> We study the phenomenology of early QCD confinement during inflation, driven by a direct coupling between the inflaton and Standard Model gluons. This coupling dynamically raises the QCD confinement scale, making the axion sufficiently heavy to suppress isocurvature perturbations during the CMB epoch. As inflation proceeds, the confinement scale de...
+
+
+### 🟡 Self-Augmenting Retrieval for Diffusion Language Models
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `CLINICAL_HEALTH_AI` `ADAPTIVE_REGULATION`
+**Authors:** Paul Jünger, Justin Lovelace, Linxi Zhao, Dongyoung Go, Kilian Q. Weinberger
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06474)
+
+> Discrete diffusion language models generate text by iteratively denoising an entire response in parallel. At each step, they predict tentative tokens for every masked position, committing the confident predictions to the output and discarding the unconfident ones. We show that the discarded tokens are in fact a useful lookahead signal for retrieval...
+
+
+### 🟡 OmniGameArena: A Unified UE5 Benchmark for VLM Game Agents with Improvement Dynamics
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Mingxian Lin, Shengju Qian, Yuqi Liu, Yi-Hua Huang, Yiyu Wang
+**Venue:** arXiv | **Published:** 2026-06-08
+
+[🔗 Link](https://arxiv.org/abs/2606.09826)
+
+> Vision-language model (VLM) agents are increasingly deployed in interactive game environments. Yet game benchmarks for VLM agents typically report a single first-attempt score per (agent, game) pair, focus on single-agent Solo play, and lack unified protocols for evaluating heterogeneous agent classes (commercial VLMs, open-weight VLMs, and special...
+
+
+### 🟡 Universal Suppression of Gravitational Waves from Black Hole Evaporation Dynamics
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Xin-Chen He, Xiao-Han Ma, Misao Sasaki, Volodymyr Takhistov
+**Venue:** arXiv | **Published:** 2026-06-08
+
+[🔗 Link](https://arxiv.org/abs/2606.09804)
+
+> Evaporating black holes can leave distinct imprints on gravitational wave (GW) backgrounds. We show that black hole populations with finite width mass distributions exhibit a universal late time evolution governed by the evaporation dynamics rather than the details of the initial mass distribution, leading to a characteristic power law suppression ...
+
+
+### 🟡 LLMSurgeon: Diagnosing Data Mixture of Large Language Models
+
+**Source:** ARXIV | **Score:** `6.0` | **Themes:** `AI_EVAL_VALID`
+**Authors:** Yaxin Luo, Jiacheng Cui, Xiaohan Zhao, Xinyi Shang, Jiacheng Liu
+**Venue:** arXiv | **Published:** 2026-05-28
+
+[🔗 Link](https://arxiv.org/abs/2605.30348)
+
+> The pretraining data mixture of Large Language Models (LLMs) constitutes their "digital DNA", shaping model behaviors, capabilities, and failure modes. Yet this composition is rarely disclosed, making post-hoc auditing of data combination or provenance difficult. In this work, we formalize $\textbf{Data Mixture Surgery (DMS)}$: given only generated...
+
+
+---
+
+## 🔍 Cross-Analysis
+**Multi-theme papers:** 32/100
+
+## 📈 Theme Distribution
+
+| Theme | Count |
+|-------|-------|
+| `AI_EVAL_VALID` | ██████████ 48 |
+| `ADAPTIVE_REGULATION` | ██████████ 32 |
+| `PARTICIPATORY_GOV` | ██████████ 32 |
+| `EVIDENCE_IMPLEMENT` | ██████████ 17 |
+| `CLINICAL_HEALTH_AI` | ████████ 8 |
+
+---
+
+*Generated: 2026-06-10T09:01:44.441608*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+
+---
+
+## Source: [digest_2026-06-09.md](outputs/digests/digest_2026-06-09.md)
+
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-06-09 (Tuesday) | **Papers ranked:** 100 | **New:** +28
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 28 · 🟡 72 · ⚪ 0
+**Top themes:** `AI_EVAL_VALID` (48), `PARTICIPATORY_GOV` (29), `ADAPTIVE_REGULATION` (26), `EVIDENCE_IMPLEMENT` (24), `CLINICAL_HEALTH_AI` (12)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 Learning Global Motion with Compact Gaussians for Feed-Forward 4D Reconstruction
+
+**Source:** ARXIV | **Score:** `10.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Mungyeom Kim, Minkyeong Jeon, Honggyu An, Jaewoo Jung, Hyuna Ko
+**Venue:** arXiv | **Published:** 2026-05-29
+
+[🔗 Link](https://arxiv.org/abs/2605.31595)
+
+> Dynamic scene reconstruction from monocular video remains a fundamental challenge in computer vision. Existing feed-forward methods predict 3D Gaussians pixel-wise for each frame, suffering from duplicated Gaussians and view-dependent biases that hinder effective learning of scene motion. We present C4G, a feed-forward 4D reconstruction framework b...
+
+
+### 🔴 DeltaBox: Scaling Stateful AI Agents with Millisecond-Level Sandbox Checkpoint/Rollback
+
+**Source:** ARXIV | **Score:** `9.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Yunpeng Dong, Jingkai He, Yuze Hou, Dong Du, Zhonghu Xu
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22781)
+
+> LLM-powered AI agents require high-frequency state exploration (e.g., test-time tree search and reinforcement learning), relying on rapid checkpoint and rollback (C/R) of the complete sandbox state, including files and process state (e.g., memory, contexts, etc.). Existing mechanisms duplicate the entire state, causing hundreds of milliseconds to s...
+
+
+### 🔴 A 65 nm Trustworthy Hypoglycemia Forecasting Engine Achieving 11.3 nJ per Inference
+
+**Source:** ARXIV | **Score:** `9.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** Boyang Cheng, Jianbo Liu, Pengyu Ren, Xueji Zhao, Steven Davis
+**Venue:** arXiv | **Published:** 2026-06-05
+
+[🔗 Link](https://arxiv.org/abs/2606.07455)
+
+> Diabetes affects millions of people and requires reliable continuous glucose monitoring for early hypoglycemia warning. However, medical AI systems must be not only accurate and energy efficient, but also explainable, noise robust, and uncertainty aware. This work presents a 65 nm hypoglycemia forecasting engine based on probabilistic decision tree...
+
+
+### 🔴 Sensor2Sensor: Cross-Embodiment Sensor Conversion for Autonomous Driving
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID`
+**Authors:** Jiahao Wang, Bo Sun, Yijing Bai, Vincent Casser, Songyou Peng
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22809)
+
+> Robust training and validation of Autonomous Driving Systems (ADS) require massive, diverse datasets. Proprietary data collected by Autonomous Vehicle (AV) fleets, while high-fidelity, are limited in scale, diversity of sensor configurations, as well as geographic and long-tail-behavioral coverage. In contrast, in-the-wild data from sources like da...
+
+
+### 🔴 LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Sadia Asif, Mohammad Mohammadi Amiri, Momin Abbas, Prasanna Sattigeri, Karthikeyan Natesan Ramamurth
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22786)
+
+> Large language model (LLM)-based multi-agent systems increasingly rely on intermediate communication to coordinate complex tasks. While most existing systems communicate through natural language, recent work shows that latent communication, particularly through transformer key-value (KV) caches, can improve efficiency and preserve richer task-relev...
+
+
+### 🔴 Prospective Implementation of AI-Assisted CBCT-Based Clinical Decision Support in Emergency Maxillofacial Trauma Care
+
+**Source:** SEMANTICSCHOLAR | **Score:** `8.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** Ayhan Yildirim, René Hertach, Vedat Yildirim
+**Venue:** Journal of Medicine and Dentistry | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/6d94421fcb97c68898b9761a5dcda0c007357105)
+
+> Background:
+Artificial intelligence (AI) has demonstrated high diagnostic accuracy in detecting maxillofacial fractures on cone beam computed tomography (CBCT). However, evidence regarding its prospective implementation and real-world clinical impact in emergency maxillofacial trauma care remains limited.
+
+Objective:
+This study aimed to prospective...
+
+
+### 🔴 A comprehensive review of venous thromboembolism risk assessment models for hospitalized medical patients: comparative evidence, implementation challenges, and future directions
+
+**Source:** SEMANTICSCHOLAR | **Score:** `8.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** L. Alfehaid, N. Alsuhebany, Yahya M. K. Tawfik, Shuroug A. Alowais, Shazia Adnan
+**Venue:** Frontiers in Cardiovascular Medicine | **Published:** 2026-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/5dce6433c29e6bc88dd3537b06eae793c41e80c5)
+
+> Venous thromboembolism (VTE) is a leading cause of preventable hospital-acquired morbidity and mortality. Despite the availability of effective prophylaxis, its application in clinical practice remains inconsistent, often due to uncertainty in risk stratification. This review evaluates the validity and implementation of VTE risk assessment models (...
+
+
+### 🔴 DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Jusuk Lee, Seungjae Lee, Jonghun Shin, Hoseong Jung, Sungha Kim
+**Venue:** arXiv | **Published:** 2026-05-28
+
+[🔗 Link](https://arxiv.org/abs/2605.30350)
+
+> Robot manipulation critically depends on perception that preserves the action-relevant aspects of a scene. Yet most robot learning pipelines are built upon visual encoders pre-trained for static recognition or vision-language alignment, leaving motion understanding to downstream policies. We introduce DynaFLIP, a dynamics-aware multimodal pre-train...
+
+
+### 🔴 Colored Noise Diffusion Sampling
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Hadar Davidson, Noam Issachar, Sagie Benaim
+**Venue:** arXiv | **Published:** 2026-05-28
+
+[🔗 Link](https://arxiv.org/abs/2605.30332)
+
+> Diffusion models achieve state-of-the-art image synthesis, with their generative trajectories fundamentally exhibiting a spectral bias, resolving low-frequency global structures early and high-frequency fine details later. Conventional stochastic differential equation (SDE) solvers fail to account for this dynamic, naively injecting uniform white n...
+
+
+### 🔴 Complexity-Balanced Diffusion Splitting
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Noam Issachar, Dani Lischinski, Raanan Fattal
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06477)
+
+> Standard continuous-time generative models rely on monolithic architectures that must navigate vastly different signal regimes, from isotropic noise to intricate data distributions. While scaling model capacity improves performance, deploying a massive network uniformly across the entire generative timeline is inherently inefficient. In this work, ...
+
+
+### 🔴 MLEvolve: A Self-Evolving Framework for Automated Machine Learning Algorithm Discovery
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Shangheng Du, Xiangchao Yan, Jinxin Shi, Zongsheng Cao, Shiyang Feng
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06473)
+
+> Large language model (LLM) agents are increasingly applied to long-horizon tasks such as scientific discovery and machine learning engineering (MLE), where sustained self-evolution becomes a key capability. However, existing MLE agents suffer from inter-branch information isolation, memoryless search, and lack of hierarchical control, which togethe...
+
+
+### 🔴 Benchmark Everything Everywhere All at Once
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Shiyun Xiong, Dongming Wu, Peiwen Sun, Yuang Ai, Bokang Yang
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06462)
+
+> Benchmarks are fundamental for evaluating and advancing LLMs and MLLMs by providing standardized and explicit measures of performance. However, their construction is labor-intensive and hard to reuse, raising concerns about sustainability and scalability. Moreover, existing benchmarks often quickly reach performance saturation after their release, ...
+
+
+### 🔴 Event Detection for Parameter-to-KPI Dependency Learning for AI-RAN
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Christie Djidjev, Nicholas Kaminski
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06459)
+
+> Next-generation wireless networks are expected to rely on multiple concurrent AI-driven control functions that optimize different network objectives simultaneously, particularly in AI-integrated and open radio access network architectures such as AI Radio Access Network (AI-RAN) and Open Radio Access Network (O-RAN). When these functions interact, ...
+
+
+### 🔴 Vortex: Efficient and Programmable Sparse Attention Serving for AI Agents
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Zhuoming Chen, Xinrui Zhong, Qilong Feng, Ranajoy Sadhukhan, Yang Zhou
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06453)
+
+> Sparse attention is becoming increasingly important for serving large language models (LLMs) as generation lengths continue to grow. However, deploying and evaluating new sparse attention algorithms at scale remains highly engineering-intensive, slowing both human researchers and AI agents in exploring the sparse attention design. To address this c...
+
+
+### 🔴 Bradley-Terry Rankings for Recommender Systems Across Dataset Taxonomies
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Ekaterina Grishina, Stepan Kuznetsov, Askar Tsyganov, Ilya Ivanov, Daria Korovaitceva
+**Venue:** arXiv | **Published:** 2026-06-05
+
+[🔗 Link](https://arxiv.org/abs/2606.07492)
+
+> The ranking of recommendation algorithms is a challenging problem since model performance is sensitive to dataset characteristics such as sparsity, sequential structure, and scale. This drives a demand for a proper methodology for fair comparison between algorithms. Naive aggregation of performance metrics (e.g., averaging NDCG over benchmarks) can...
+
+
+### 🔴 Drifting Models for Surrogate Flow Modeling
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Chris R. Jung, Markus Dörr, Natalie Jüngling, Jennifer Niessner, Adam T. Müller
+**Venue:** arXiv | **Published:** 2026-06-05
+
+[🔗 Link](https://arxiv.org/abs/2606.07481)
+
+> While Computational Fluid Dynamics (CFD) provides high-fidelity flow fields for optimizing indoor environments, its computational cost limits rapid exploration. To solve this problem generative surrogates offer better distribution modeling than deterministic networks, but iterative sampling is slow. To enable high-quality, single-pass generation, w...
+
+
+### 🔴 Evaluating Commercial AI Chatbots as News Intermediaries
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Mirac Suzgun, Emily Shen, Federico Bianchi, Alexander Spangher, Thomas Icard
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22785)
+
+> AI chatbots are rapidly shaping how people encounter the news, yet no prior study has systematically measured how accurately these systems, with their proprietary search integrations and retrieval-synthesis pipelines, handle emerging facts across languages and regions. We present a 14-day (February 9-22, 2026) evaluation of six AI chatbots (Gemini ...
+
+
+### 🔴 The ripple effect of evidence implementation: a descriptive evaluation of JBI's Evidence-based Clinical Fellowship Program.
+
+**Source:** SEMANTICSCHOLAR | **Score:** `7.5` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID` `PARTICIPATORY_GOV`
+**Authors:** A. McArthur, Z. Munn, L. Lizarondo, K. Porritt, M. Stephenson
+**Venue:** JBI evidence implementation | **Published:** 2020-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/70d4973c8f2f34f2ba2ae4297b31fe4450a8e5bc)
+
+> BACKGROUND
+Across healthcare there are acknowledged gaps in the translation of evidence into clinical practice. Undertaking a structured implementation program may assist clinicians to achieve this in their clinical practice setting.
+
+
+AIMS/METHODS
+The current study descriptively evaluates and analyzes the impact of JBI's (formerly known as the Joa...
+
+
+### 🔴 Stateful Online Monitoring Catches Distributed Agent Attacks
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID`
+**Authors:** Davis Brown, Samarth Bhargav, Arav Santhanam, Kasper Hong, Ivan Zhang
+**Venue:** arXiv | **Published:** 2026-05-29
+
+[🔗 Link](https://arxiv.org/abs/2605.31593)
+
+> Language models can find thousands of severe software vulnerabilities, and agents are increasingly being misused for cyberattacks. To avoid detection, attackers frequently distribute their misuse, splitting a harmful task across many user accounts so each individual transcript looks benign. Because safety monitors score only one agent context at a ...
+
+
+### 🔴 HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `ADAPTIVE_REGULATION` `AI_EVAL_VALID`
+**Authors:** Lizhi Yang, Junheng Li, Nehar Poddar, Yiling Hou, Gio Huh
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06493)
+
+> For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics. We instead propose a compact, explicit inte...
+
+
+### 🔴 Primordial Black Hole Triggered Type Ia Supernovae II: Comparison with Supernova Remnants and Galactic Chemical Evolution
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Shing-Chi Leung, Seth Walther, Alexander Kusenko, Ken'ichi Nomoto, Tomoharu Suzuki
+**Venue:** arXiv | **Published:** 2026-06-05
+
+[🔗 Link](https://arxiv.org/abs/2606.07505)
+
+> The asteroid-mass class of Primordial Black Holes (PBHs) is one of the candidates for the dark matter in the universe. With a mass between $4 \times 10^{-17} < M_{\rm PBH} < 4 \times 10^{-12}~M_{\odot}$, they could be the major component of dark matter in the cosmic mass budget. The infall of these PBH into a white dwarf could be one triggering mec...
+
+
+### 🔴 Mitigating Proxy-to-Wild Domain Gap in Deepfake Speech
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `CLINICAL_HEALTH_AI` `AI_EVAL_VALID`
+**Authors:** Xuanjun Chen, Yun-Shing Wu, Wei-Chung Lu, Claire Lin, Haibin Wu
+**Venue:** arXiv | **Published:** 2026-06-05
+
+[🔗 Link](https://arxiv.org/abs/2606.07494)
+
+> Recent neural audio codec-based speech generation (CodecFake) produces highly realistic audio, posing a challenge to existing deepfake countermeasure models. While using codec resynthesized speech (CoRS) as proxy data improves performance, it often suffers from limited generalization. We propose Domain-Shift Feature Augmentation (DSFA), which simul...
+
+
+### 🔴 Advancing healthcare AI governance through a comprehensive maturity model based on systematic review.
+
+**Source:** DBLP | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV` `CLINICAL_HEALTH_AI`
+**Authors:** Rowan Hussein, Anna Zink, Bashar Ramadan, Frederick M. Howard, Maia Hightower
+**Venue:** npj Digit. Medicine | **Published:** 2026-01-01
+
+[🔗 DBLP](https://dblp.org/rec/journals/npjdm/HusseinZRHHSB26)
+
+
+### 🔴 Artificial intelligence in diabetology: systematizing clinical evidence and prospects for implementation
+
+**Source:** SEMANTICSCHOLAR | **Score:** `7.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID`
+**Authors:** D. Makhachev, I. G. Musapirov, M. N. Magomedova, M. O. Abakarov, D. M. Ametov
+**Venue:** International journal of Innovative Medicine | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/62ec161b36f7200222e9bfac9b86e3ea61f66276)
+
+> Artificial intelligence (AI) is rapidly transforming the management of diabetes mellitus, extending far beyond traditional glucose monitoring. This review synthesizes clinical evidence evaluating the effectiveness of AI-driven algorithms across key domains of diabetology: screening for vascular complications, prediction of postprandial glycemic exc...
+
+
+### 🔴 Gravitational Waves from hybrid defects as probe of Flavor symmetry breaking: Machine-Learning Approach
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `EVIDENCE_IMPLEMENT`
+**Authors:** Anish Ghoshal, Ilia Gogoladze, Amit Tiwari
+**Venue:** arXiv | **Published:** 2026-05-29
+
+[🔗 Link](https://arxiv.org/abs/2605.31600)
+
+> We present a novel possibility that a network of domain walls bounded by cosmic strings generates a stochastic gravitational wave background (SWGB) signal originating from the spontaneous breaking of a gauged $U(1)_F$ flavor symmetry and the subsequent breaking of discrete $Z_2$ symmetry that accommodates dark matter. The gravitational wave (GW) sp...
+
+
+### 🔴 Will the Agent Recuse Itself? Measuring LLM-Agent Compliance with In-Band Access-Deny Signals
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV`
+**Authors:** Thamilvendhan Munirathinam
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06460)
+
+> As autonomous LLM agents increasingly hold real credentials and operate infrastructure without a human in the loop, operators have no standard way to tell an agent that a resource is off-limits. Access controls either let the agent in (it has valid credentials) or hard-fail it (indistinguishable from any other client). We propose a third mode: a li...
+
+
+### 🔴 Twelve quick tips for designing AI-driven HPC workflows
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Jamie J. Alnasir
+**Venue:** arXiv | **Published:** 2026-06-05
+
+[🔗 Link](https://arxiv.org/abs/2606.07491)
+
+> High-performance computing (HPC) clusters remain the backbone of large-scale scientific computation, traditionally executing deterministic, linear pipelines optimised for predictable performance. However, the pervasive integration of artificial intelligence (AI) and foundation models into scientific research has introduced a fundamentally new compu...
+
+
+### 🔴 Amortized Neural Optimization for Pre-Layout Signal Integrity Design Space Exploration using Differentiable Surrogates
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Julian Withöft, Werner John, Emre Ecik, Ralf Brüning, Jürgen Götze
+**Venue:** arXiv | **Published:** 2026-06-05
+
+[🔗 Link](https://arxiv.org/abs/2606.07463)
+
+> Pre-layout design space exploration (DSE) for high-speed signal integrity (SI) analysis is often limited by the computational cost of simulations and iterative optimization algorithms within modern electronic design automation (EDA) workflows. While machine learning surrogate models accelerate the simulation step, optimizing designs still requires ...
+
+
+
+## 📚 Supporting Papers (Priority 2, top 7)
+
+### 🟡 Two bodies left behind
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `CLINICAL_HEALTH_AI` `ADAPTIVE_REGULATION`
+**Authors:** Raúl A. Briceño, Caroline S. R. Costa, Hans-Werner Hammer, Daniel R. Phillips
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22805)
+
+> We consider scenarios in which a shallow bound state undergoes breakup by a probe whose energy is high compared to the binding energy. The first two scenarios, which serve as warm-up exercises, involve a single heavy particle bound to a light particle, analogous to a core nucleus bound to a neutron. We show that in quasi-free kinematics, the leadin...
+
+
+### 🟡 AI-Driven Multi-Region Provisioning for Cloud Services Using Spot Fleets
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Javier Fabra, Enrique Molina-Giménez, Pedro García-López
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22778)
+
+> Cloud service platforms increasingly rely on elastic infrastructures to support dynamic workloads. Spot instances provide discounted computing resources but introduce uncertainty due to dynamic pricing, resource availability, and interruption risks that vary across geographical regions. In Amazon Web Services, the EC2 Spot Service simplifies fleet ...
+
+
+### 🟡 Clinical implementation of AI-based screening for risk for opioid use disorder in hospitalized adults
+
+**Source:** SEMANTICSCHOLAR | **Score:** `6.5` | **Themes:** `EVIDENCE_IMPLEMENT`
+**Authors:** Majid Afshar, F. Resnik, Cara Joyce, M. Oguss, D. Dligach
+**Venue:** Nature Medicine | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/a64b8f36fea8352e5597bbc4c106b11dd05886f2)
+
+> Adults with opioid use disorder (OUD) are at increased risk for opioid-related complications and repeated hospital admissions. Routine screening for patients at risk for an OUD to prevent complications is not standard practice in many hospitals, leading to missed opportunities for intervention. The adoption of electronic health records (EHRs) and a...
+
+
+### 🟡 How AI Transforms Regulatory Submission: Current Clinical Implementation and Future Prospects
+
+**Source:** SEMANTICSCHOLAR | **Score:** `6.5` | **Themes:** `EVIDENCE_IMPLEMENT`
+**Authors:** Jagdeep T Podichetty, Anna-Marika Bauer, Rachel Xu, Nick Henscheid, Wes Anderson
+**Venue:** Clinical and Translational Science | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/48dc9fe86e888ae424eda1ac9ba85498699cef29)
+
+> Artificial Intelligence (AI) is transforming drug development and regulatory submission by enabling advanced data analytics, predictive modeling and intelligent decision support systems. Beyond efficiency gains, AI establishes a translational bridge between model‐informed drug development (MIDD) and clinical implementation, turning regulatory evide...
+
+
+### 🟡 Carr criterion and mass gaps in non-singular primordial black hole formation
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Jens Boos, Arif Kağan Gündoğdu, Marek Hartenfels
+**Venue:** arXiv | **Published:** 2026-05-28
+
+[🔗 Link](https://arxiv.org/abs/2605.30340)
+
+> Non-singular gravitational theories are expected to be relevant in the early universe. In this paper, we derive a set of effective Friedmann equations describing the dynamics of matter shells in the presence of a gravitational regulator $\ell$. We find that such a regulator induces a primordial black hole mass gap such that below a certain mass $M_...
+
+
+### 🟡 TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Dong Jing, Jingchen Nie, Tianqi Zhang, Jiaqi Liu, Huaxiu Yao
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06491)
+
+> Robot manipulation alternates between low-risk transit phases that call for fast execution and high-risk contact stages that demand slow, precise motion. Yet existing Vision-Language-Action models (VLAs) only inherit a single fixed speed from training demonstrations. Prior efforts to accelerate VLAs through model compression, KV-cache reuse, or rei...
+
+
+### 🟡 Phenomenology of Inflaton-Driven Early QCD Confinement and Solution to Axion Isocurvature Problem
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `CLINICAL_HEALTH_AI` `ADAPTIVE_REGULATION`
+**Authors:** Evangelos I. Sfakianakis, Barmak Shams Es Haghi, Katherine Freese
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06484)
+
+> We study the phenomenology of early QCD confinement during inflation, driven by a direct coupling between the inflaton and Standard Model gluons. This coupling dynamically raises the QCD confinement scale, making the axion sufficiently heavy to suppress isocurvature perturbations during the CMB epoch. As inflation proceeds, the confinement scale de...
+
+
+---
+
+## 🔍 Cross-Analysis
+**Multi-theme papers:** 33/100
+
+## 📈 Theme Distribution
+
+| Theme | Count |
+|-------|-------|
+| `AI_EVAL_VALID` | ██████████ 48 |
+| `PARTICIPATORY_GOV` | ██████████ 29 |
+| `ADAPTIVE_REGULATION` | ██████████ 26 |
+| `EVIDENCE_IMPLEMENT` | ██████████ 24 |
+| `CLINICAL_HEALTH_AI` | ██████████ 12 |
+
+---
+
+*Generated: 2026-06-09T09:01:38.450124*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+
+---
+
+## Source: [digest_2026-06-08.md](outputs/digests/digest_2026-06-08.md)
+
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-06-08 (Monday) | **Papers ranked:** 100 | **New:** +24
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 25 · 🟡 75 · ⚪ 0
+**Top themes:** `AI_EVAL_VALID` (54), `PARTICIPATORY_GOV` (26), `EVIDENCE_IMPLEMENT` (24), `ADAPTIVE_REGULATION` (21), `CLINICAL_HEALTH_AI` (11)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 Learning Global Motion with Compact Gaussians for Feed-Forward 4D Reconstruction
+
+**Source:** ARXIV | **Score:** `10.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Mungyeom Kim, Minkyeong Jeon, Honggyu An, Jaewoo Jung, Hyuna Ko
+**Venue:** arXiv | **Published:** 2026-05-29
+
+[🔗 Link](https://arxiv.org/abs/2605.31595)
+
+> Dynamic scene reconstruction from monocular video remains a fundamental challenge in computer vision. Existing feed-forward methods predict 3D Gaussians pixel-wise for each frame, suffering from duplicated Gaussians and view-dependent biases that hinder effective learning of scene motion. We present C4G, a feed-forward 4D reconstruction framework b...
+
+
+### 🔴 NURSE-AI: A Nurse-by-Design Framework for Multi-Sensor, AI-Enabled Chronic Wound Assessment in Community Healthcare
+
+**Source:** SEMANTICSCHOLAR | **Score:** `9.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV` `EVIDENCE_IMPLEMENT`
+**Authors:** C. Barchielli, S. Jayousi, Riccardo Mari, B. Albanesi, M. Alaimo
+**Venue:** Italian National Conference on Sensors | **Published:** 2026-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/166b63e88e64f56e7277c42c093fcf32748a4da5)
+
+> Accurate and reproducible chronic wound assessment remains challenging in community healthcare, where environmental variability and subjective visual evaluation may introduce substantial measurement errors. Although multi-sensor technologies, including RGB–D imaging, mobile Light Detection and Ranging (LiDAR), thermal infrared imaging, and hyperspe...
+
+
+### 🔴 DeltaBox: Scaling Stateful AI Agents with Millisecond-Level Sandbox Checkpoint/Rollback
+
+**Source:** ARXIV | **Score:** `9.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Yunpeng Dong, Jingkai He, Yuze Hou, Dong Du, Zhonghu Xu
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22781)
+
+> LLM-powered AI agents require high-frequency state exploration (e.g., test-time tree search and reinforcement learning), relying on rapid checkpoint and rollback (C/R) of the complete sandbox state, including files and process state (e.g., memory, contexts, etc.). Existing mechanisms duplicate the entire state, causing hundreds of milliseconds to s...
+
+
+### 🔴 Sensor2Sensor: Cross-Embodiment Sensor Conversion for Autonomous Driving
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID`
+**Authors:** Jiahao Wang, Bo Sun, Yijing Bai, Vincent Casser, Songyou Peng
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22809)
+
+> Robust training and validation of Autonomous Driving Systems (ADS) require massive, diverse datasets. Proprietary data collected by Autonomous Vehicle (AV) fleets, while high-fidelity, are limited in scale, diversity of sensor configurations, as well as geographic and long-tail-behavioral coverage. In contrast, in-the-wild data from sources like da...
+
+
+### 🔴 LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Sadia Asif, Mohammad Mohammadi Amiri, Momin Abbas, Prasanna Sattigeri, Karthikeyan Natesan Ramamurth
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22786)
+
+> Large language model (LLM)-based multi-agent systems increasingly rely on intermediate communication to coordinate complex tasks. While most existing systems communicate through natural language, recent work shows that latent communication, particularly through transformer key-value (KV) caches, can improve efficiency and preserve richer task-relev...
+
+
+### 🔴 Prospective Implementation of AI-Assisted CBCT-Based Clinical Decision Support in Emergency Maxillofacial Trauma Care
+
+**Source:** SEMANTICSCHOLAR | **Score:** `8.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** Ayhan Yildirim, René Hertach, Vedat Yildirim
+**Venue:** Journal of Medicine and Dentistry | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/6d94421fcb97c68898b9761a5dcda0c007357105)
+
+> Background:
+Artificial intelligence (AI) has demonstrated high diagnostic accuracy in detecting maxillofacial fractures on cone beam computed tomography (CBCT). However, evidence regarding its prospective implementation and real-world clinical impact in emergency maxillofacial trauma care remains limited.
+
+Objective:
+This study aimed to prospective...
+
+
+### 🔴 A comprehensive review of venous thromboembolism risk assessment models for hospitalized medical patients: comparative evidence, implementation challenges, and future directions
+
+**Source:** SEMANTICSCHOLAR | **Score:** `8.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** L. Alfehaid, N. Alsuhebany, Yahya M. K. Tawfik, Shuroug A. Alowais, Shazia Adnan
+**Venue:** Frontiers in Cardiovascular Medicine | **Published:** 2026-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/5dce6433c29e6bc88dd3537b06eae793c41e80c5)
+
+> Venous thromboembolism (VTE) is a leading cause of preventable hospital-acquired morbidity and mortality. Despite the availability of effective prophylaxis, its application in clinical practice remains inconsistent, often due to uncertainty in risk stratification. This review evaluates the validity and implementation of VTE risk assessment models (...
+
+
+### 🔴 DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Jusuk Lee, Seungjae Lee, Jonghun Shin, Hoseong Jung, Sungha Kim
+**Venue:** arXiv | **Published:** 2026-05-28
+
+[🔗 Link](https://arxiv.org/abs/2605.30350)
+
+> Robot manipulation critically depends on perception that preserves the action-relevant aspects of a scene. Yet most robot learning pipelines are built upon visual encoders pre-trained for static recognition or vision-language alignment, leaving motion understanding to downstream policies. We introduce DynaFLIP, a dynamics-aware multimodal pre-train...
+
+
+### 🔴 Colored Noise Diffusion Sampling
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Hadar Davidson, Noam Issachar, Sagie Benaim
+**Venue:** arXiv | **Published:** 2026-05-28
+
+[🔗 Link](https://arxiv.org/abs/2605.30332)
+
+> Diffusion models achieve state-of-the-art image synthesis, with their generative trajectories fundamentally exhibiting a spectral bias, resolving low-frequency global structures early and high-frequency fine details later. Conventional stochastic differential equation (SDE) solvers fail to account for this dynamic, naively injecting uniform white n...
+
+
+### 🔴 Complexity-Balanced Diffusion Splitting
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Noam Issachar, Dani Lischinski, Raanan Fattal
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06477)
+
+> Standard continuous-time generative models rely on monolithic architectures that must navigate vastly different signal regimes, from isotropic noise to intricate data distributions. While scaling model capacity improves performance, deploying a massive network uniformly across the entire generative timeline is inherently inefficient. In this work, ...
+
+
+### 🔴 MLEvolve: A Self-Evolving Framework for Automated Machine Learning Algorithm Discovery
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Shangheng Du, Xiangchao Yan, Jinxin Shi, Zongsheng Cao, Shiyang Feng
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06473)
+
+> Large language model (LLM) agents are increasingly applied to long-horizon tasks such as scientific discovery and machine learning engineering (MLE), where sustained self-evolution becomes a key capability. However, existing MLE agents suffer from inter-branch information isolation, memoryless search, and lack of hierarchical control, which togethe...
+
+
+### 🔴 Benchmark Everything Everywhere All at Once
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Shiyun Xiong, Dongming Wu, Peiwen Sun, Yuang Ai, Bokang Yang
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06462)
+
+> Benchmarks are fundamental for evaluating and advancing LLMs and MLLMs by providing standardized and explicit measures of performance. However, their construction is labor-intensive and hard to reuse, raising concerns about sustainability and scalability. Moreover, existing benchmarks often quickly reach performance saturation after their release, ...
+
+
+### 🔴 Event Detection for Parameter-to-KPI Dependency Learning for AI-RAN
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Christie Djidjev, Nicholas Kaminski
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06459)
+
+> Next-generation wireless networks are expected to rely on multiple concurrent AI-driven control functions that optimize different network objectives simultaneously, particularly in AI-integrated and open radio access network architectures such as AI Radio Access Network (AI-RAN) and Open Radio Access Network (O-RAN). When these functions interact, ...
+
+
+### 🔴 Vortex: Efficient and Programmable Sparse Attention Serving for AI Agents
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Zhuoming Chen, Xinrui Zhong, Qilong Feng, Ranajoy Sadhukhan, Yang Zhou
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06453)
+
+> Sparse attention is becoming increasingly important for serving large language models (LLMs) as generation lengths continue to grow. However, deploying and evaluating new sparse attention algorithms at scale remains highly engineering-intensive, slowing both human researchers and AI agents in exploring the sparse attention design. To address this c...
+
+
+### 🔴 The Matching Principle: A Geometric Theory of Loss Functions for Nuisance-Robust Representation Learning
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `ADAPTIVE_REGULATION` `AI_EVAL_VALID`
+**Authors:** Vishal Rajput
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22800)
+
+> Robustness, domain adaptation, photometric and occlusion invariance, compositional generalisation, temporal robustness, alignment safety, and classical anisotropic regularisation are usually treated as separate problems with separate method families. This paper argues that much of their shared structure is one statistical problem: estimate the cova...
+
+
+### 🔴 Evaluating Commercial AI Chatbots as News Intermediaries
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Mirac Suzgun, Emily Shen, Federico Bianchi, Alexander Spangher, Thomas Icard
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22785)
+
+> AI chatbots are rapidly shaping how people encounter the news, yet no prior study has systematically measured how accurately these systems, with their proprietary search integrations and retrieval-synthesis pipelines, handle emerging facts across languages and regions. We present a 14-day (February 9-22, 2026) evaluation of six AI chatbots (Gemini ...
+
+
+### 🔴 The ripple effect of evidence implementation: a descriptive evaluation of JBI's Evidence-based Clinical Fellowship Program.
+
+**Source:** SEMANTICSCHOLAR | **Score:** `7.5` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID` `PARTICIPATORY_GOV`
+**Authors:** A. McArthur, Z. Munn, L. Lizarondo, K. Porritt, M. Stephenson
+**Venue:** JBI evidence implementation | **Published:** 2020-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/70d4973c8f2f34f2ba2ae4297b31fe4450a8e5bc)
+
+> BACKGROUND
+Across healthcare there are acknowledged gaps in the translation of evidence into clinical practice. Undertaking a structured implementation program may assist clinicians to achieve this in their clinical practice setting.
+
+
+AIMS/METHODS
+The current study descriptively evaluates and analyzes the impact of JBI's (formerly known as the Joa...
+
+
+### 🔴 Stateful Online Monitoring Catches Distributed Agent Attacks
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID`
+**Authors:** Davis Brown, Samarth Bhargav, Arav Santhanam, Kasper Hong, Ivan Zhang
+**Venue:** arXiv | **Published:** 2026-05-29
+
+[🔗 Link](https://arxiv.org/abs/2605.31593)
+
+> Language models can find thousands of severe software vulnerabilities, and agents are increasingly being misused for cyberattacks. To avoid detection, attackers frequently distribute their misuse, splitting a harmful task across many user accounts so each individual transcript looks benign. Because safety monitors score only one agent context at a ...
+
+
+### 🔴 HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `ADAPTIVE_REGULATION` `AI_EVAL_VALID`
+**Authors:** Lizhi Yang, Junheng Li, Nehar Poddar, Yiling Hou, Gio Huh
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06493)
+
+> For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics. We instead propose a compact, explicit inte...
+
+
+### 🔴 AlignInsight: A Three-Layer Framework for Detecting Deceptive Alignment and Evaluation Awareness in Healthcare AI Systems
+
+**Source:** SEMANTICSCHOLAR | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** A. Onovo, Y. Cherima
+**Venue:** medRxiv | **Published:** 2026-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/d9f0f2dafd5e976137c0037720665dbd936157f6)
+
+
+### 🔴 Geometric Origin of the Non-Adiabaticity Parameter and Self-Limiting Instability in Driven Nonlinear Systems
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** A. M. Tishin
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22796)
+
+> We establish that the non-adiabaticity parameter has a direct geometric interpretation as the instantaneous evolution speed of a driven quantum state in projective Hilbert space under the Fubini Study metric. In contrast to conventional asymptotic approaches, the proposed framework provides a strictly local geometric criterion that allows non-adiab...
+
+
+### 🔴 Advancing healthcare AI governance through a comprehensive maturity model based on systematic review.
+
+**Source:** DBLP | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV` `CLINICAL_HEALTH_AI`
+**Authors:** Rowan Hussein, Anna Zink, Bashar Ramadan, Frederick M. Howard, Maia Hightower
+**Venue:** npj Digit. Medicine | **Published:** 2026-01-01
+
+[🔗 DBLP](https://dblp.org/rec/journals/npjdm/HusseinZRHHSB26)
+
+
+### 🔴 Artificial intelligence in diabetology: systematizing clinical evidence and prospects for implementation
+
+**Source:** SEMANTICSCHOLAR | **Score:** `7.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID`
+**Authors:** D. Makhachev, I. G. Musapirov, M. N. Magomedova, M. O. Abakarov, D. M. Ametov
+**Venue:** International journal of Innovative Medicine | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/62ec161b36f7200222e9bfac9b86e3ea61f66276)
+
+> Artificial intelligence (AI) is rapidly transforming the management of diabetes mellitus, extending far beyond traditional glucose monitoring. This review synthesizes clinical evidence evaluating the effectiveness of AI-driven algorithms across key domains of diabetology: screening for vascular complications, prediction of postprandial glycemic exc...
+
+
+### 🔴 Gravitational Waves from hybrid defects as probe of Flavor symmetry breaking: Machine-Learning Approach
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `EVIDENCE_IMPLEMENT`
+**Authors:** Anish Ghoshal, Ilia Gogoladze, Amit Tiwari
+**Venue:** arXiv | **Published:** 2026-05-29
+
+[🔗 Link](https://arxiv.org/abs/2605.31600)
+
+> We present a novel possibility that a network of domain walls bounded by cosmic strings generates a stochastic gravitational wave background (SWGB) signal originating from the spontaneous breaking of a gauged $U(1)_F$ flavor symmetry and the subsequent breaking of discrete $Z_2$ symmetry that accommodates dark matter. The gravitational wave (GW) sp...
+
+
+### 🔴 Will the Agent Recuse Itself? Measuring LLM-Agent Compliance with In-Band Access-Deny Signals
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV`
+**Authors:** Thamilvendhan Munirathinam
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06460)
+
+> As autonomous LLM agents increasingly hold real credentials and operate infrastructure without a human in the loop, operators have no standard way to tell an agent that a resource is off-limits. Access controls either let the agent in (it has valid credentials) or hard-fail it (indistinguishable from any other client). We propose a third mode: a li...
+
+
+
+## 📚 Supporting Papers (Priority 2, top 7)
+
+### 🟡 Two bodies left behind
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `CLINICAL_HEALTH_AI` `ADAPTIVE_REGULATION`
+**Authors:** Raúl A. Briceño, Caroline S. R. Costa, Hans-Werner Hammer, Daniel R. Phillips
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22805)
+
+> We consider scenarios in which a shallow bound state undergoes breakup by a probe whose energy is high compared to the binding energy. The first two scenarios, which serve as warm-up exercises, involve a single heavy particle bound to a light particle, analogous to a core nucleus bound to a neutron. We show that in quasi-free kinematics, the leadin...
+
+
+### 🟡 AI-Driven Multi-Region Provisioning for Cloud Services Using Spot Fleets
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Javier Fabra, Enrique Molina-Giménez, Pedro García-López
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22778)
+
+> Cloud service platforms increasingly rely on elastic infrastructures to support dynamic workloads. Spot instances provide discounted computing resources but introduce uncertainty due to dynamic pricing, resource availability, and interruption risks that vary across geographical regions. In Amazon Web Services, the EC2 Spot Service simplifies fleet ...
+
+
+### 🟡 Clinical implementation of AI-based screening for risk for opioid use disorder in hospitalized adults
+
+**Source:** SEMANTICSCHOLAR | **Score:** `6.5` | **Themes:** `EVIDENCE_IMPLEMENT`
+**Authors:** Majid Afshar, F. Resnik, Cara Joyce, M. Oguss, D. Dligach
+**Venue:** Nature Medicine | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/a64b8f36fea8352e5597bbc4c106b11dd05886f2)
+
+> Adults with opioid use disorder (OUD) are at increased risk for opioid-related complications and repeated hospital admissions. Routine screening for patients at risk for an OUD to prevent complications is not standard practice in many hospitals, leading to missed opportunities for intervention. The adoption of electronic health records (EHRs) and a...
+
+
+### 🟡 How AI Transforms Regulatory Submission: Current Clinical Implementation and Future Prospects
+
+**Source:** SEMANTICSCHOLAR | **Score:** `6.5` | **Themes:** `EVIDENCE_IMPLEMENT`
+**Authors:** Jagdeep T Podichetty, Anna-Marika Bauer, Rachel Xu, Nick Henscheid, Wes Anderson
+**Venue:** Clinical and Translational Science | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/48dc9fe86e888ae424eda1ac9ba85498699cef29)
+
+> Artificial Intelligence (AI) is transforming drug development and regulatory submission by enabling advanced data analytics, predictive modeling and intelligent decision support systems. Beyond efficiency gains, AI establishes a translational bridge between model‐informed drug development (MIDD) and clinical implementation, turning regulatory evide...
+
+
+### 🟡 Carr criterion and mass gaps in non-singular primordial black hole formation
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Jens Boos, Arif Kağan Gündoğdu, Marek Hartenfels
+**Venue:** arXiv | **Published:** 2026-05-28
+
+[🔗 Link](https://arxiv.org/abs/2605.30340)
+
+> Non-singular gravitational theories are expected to be relevant in the early universe. In this paper, we derive a set of effective Friedmann equations describing the dynamics of matter shells in the presence of a gravitational regulator $\ell$. We find that such a regulator induces a primordial black hole mass gap such that below a certain mass $M_...
+
+
+### 🟡 TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Dong Jing, Jingchen Nie, Tianqi Zhang, Jiaqi Liu, Huaxiu Yao
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06491)
+
+> Robot manipulation alternates between low-risk transit phases that call for fast execution and high-risk contact stages that demand slow, precise motion. Yet existing Vision-Language-Action models (VLAs) only inherit a single fixed speed from training demonstrations. Prior efforts to accelerate VLAs through model compression, KV-cache reuse, or rei...
+
+
+### 🟡 Phenomenology of Inflaton-Driven Early QCD Confinement and Solution to Axion Isocurvature Problem
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `CLINICAL_HEALTH_AI` `ADAPTIVE_REGULATION`
+**Authors:** Evangelos I. Sfakianakis, Barmak Shams Es Haghi, Katherine Freese
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06484)
+
+> We study the phenomenology of early QCD confinement during inflation, driven by a direct coupling between the inflaton and Standard Model gluons. This coupling dynamically raises the QCD confinement scale, making the axion sufficiently heavy to suppress isocurvature perturbations during the CMB epoch. As inflation proceeds, the confinement scale de...
+
+
+---
+
+## 🔍 Cross-Analysis
+**Multi-theme papers:** 30/100
+
+## 📈 Theme Distribution
+
+| Theme | Count |
+|-------|-------|
+| `AI_EVAL_VALID` | ██████████ 54 |
+| `PARTICIPATORY_GOV` | ██████████ 26 |
+| `EVIDENCE_IMPLEMENT` | ██████████ 24 |
+| `ADAPTIVE_REGULATION` | ██████████ 21 |
+| `CLINICAL_HEALTH_AI` | ██████████ 11 |
+
+---
+
+*Generated: 2026-06-08T09:01:30.099548*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+
+---
+
+## Source: [digest_2026-06-07.md](outputs/digests/digest_2026-06-07.md)
+
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-06-07 (Sunday) | **Papers ranked:** 100 | **New:** +0
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 25 · 🟡 75 · ⚪ 0
+**Top themes:** `AI_EVAL_VALID` (54), `PARTICIPATORY_GOV` (26), `EVIDENCE_IMPLEMENT` (24), `ADAPTIVE_REGULATION` (21), `CLINICAL_HEALTH_AI` (11)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 Learning Global Motion with Compact Gaussians for Feed-Forward 4D Reconstruction
+
+**Source:** ARXIV | **Score:** `10.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Mungyeom Kim, Minkyeong Jeon, Honggyu An, Jaewoo Jung, Hyuna Ko
+**Venue:** arXiv | **Published:** 2026-05-29
+
+[🔗 Link](https://arxiv.org/abs/2605.31595)
+
+> Dynamic scene reconstruction from monocular video remains a fundamental challenge in computer vision. Existing feed-forward methods predict 3D Gaussians pixel-wise for each frame, suffering from duplicated Gaussians and view-dependent biases that hinder effective learning of scene motion. We present C4G, a feed-forward 4D reconstruction framework b...
+
+
+### 🔴 NURSE-AI: A Nurse-by-Design Framework for Multi-Sensor, AI-Enabled Chronic Wound Assessment in Community Healthcare
+
+**Source:** SEMANTICSCHOLAR | **Score:** `9.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV` `EVIDENCE_IMPLEMENT`
+**Authors:** C. Barchielli, S. Jayousi, Riccardo Mari, B. Albanesi, M. Alaimo
+**Venue:** Italian National Conference on Sensors | **Published:** 2026-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/166b63e88e64f56e7277c42c093fcf32748a4da5)
+
+> Accurate and reproducible chronic wound assessment remains challenging in community healthcare, where environmental variability and subjective visual evaluation may introduce substantial measurement errors. Although multi-sensor technologies, including RGB–D imaging, mobile Light Detection and Ranging (LiDAR), thermal infrared imaging, and hyperspe...
+
+
+### 🔴 DeltaBox: Scaling Stateful AI Agents with Millisecond-Level Sandbox Checkpoint/Rollback
+
+**Source:** ARXIV | **Score:** `9.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Yunpeng Dong, Jingkai He, Yuze Hou, Dong Du, Zhonghu Xu
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22781)
+
+> LLM-powered AI agents require high-frequency state exploration (e.g., test-time tree search and reinforcement learning), relying on rapid checkpoint and rollback (C/R) of the complete sandbox state, including files and process state (e.g., memory, contexts, etc.). Existing mechanisms duplicate the entire state, causing hundreds of milliseconds to s...
+
+
+### 🔴 Sensor2Sensor: Cross-Embodiment Sensor Conversion for Autonomous Driving
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID`
+**Authors:** Jiahao Wang, Bo Sun, Yijing Bai, Vincent Casser, Songyou Peng
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22809)
+
+> Robust training and validation of Autonomous Driving Systems (ADS) require massive, diverse datasets. Proprietary data collected by Autonomous Vehicle (AV) fleets, while high-fidelity, are limited in scale, diversity of sensor configurations, as well as geographic and long-tail-behavioral coverage. In contrast, in-the-wild data from sources like da...
+
+
+### 🔴 LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Sadia Asif, Mohammad Mohammadi Amiri, Momin Abbas, Prasanna Sattigeri, Karthikeyan Natesan Ramamurth
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22786)
+
+> Large language model (LLM)-based multi-agent systems increasingly rely on intermediate communication to coordinate complex tasks. While most existing systems communicate through natural language, recent work shows that latent communication, particularly through transformer key-value (KV) caches, can improve efficiency and preserve richer task-relev...
+
+
+### 🔴 Prospective Implementation of AI-Assisted CBCT-Based Clinical Decision Support in Emergency Maxillofacial Trauma Care
+
+**Source:** SEMANTICSCHOLAR | **Score:** `8.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** Ayhan Yildirim, René Hertach, Vedat Yildirim
+**Venue:** Journal of Medicine and Dentistry | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/6d94421fcb97c68898b9761a5dcda0c007357105)
+
+> Background:
+Artificial intelligence (AI) has demonstrated high diagnostic accuracy in detecting maxillofacial fractures on cone beam computed tomography (CBCT). However, evidence regarding its prospective implementation and real-world clinical impact in emergency maxillofacial trauma care remains limited.
+
+Objective:
+This study aimed to prospective...
+
+
+### 🔴 A comprehensive review of venous thromboembolism risk assessment models for hospitalized medical patients: comparative evidence, implementation challenges, and future directions
+
+**Source:** SEMANTICSCHOLAR | **Score:** `8.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** L. Alfehaid, N. Alsuhebany, Yahya M. K. Tawfik, Shuroug A. Alowais, Shazia Adnan
+**Venue:** Frontiers in Cardiovascular Medicine | **Published:** 2026-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/5dce6433c29e6bc88dd3537b06eae793c41e80c5)
+
+> Venous thromboembolism (VTE) is a leading cause of preventable hospital-acquired morbidity and mortality. Despite the availability of effective prophylaxis, its application in clinical practice remains inconsistent, often due to uncertainty in risk stratification. This review evaluates the validity and implementation of VTE risk assessment models (...
+
+
+### 🔴 DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Jusuk Lee, Seungjae Lee, Jonghun Shin, Hoseong Jung, Sungha Kim
+**Venue:** arXiv | **Published:** 2026-05-28
+
+[🔗 Link](https://arxiv.org/abs/2605.30350)
+
+> Robot manipulation critically depends on perception that preserves the action-relevant aspects of a scene. Yet most robot learning pipelines are built upon visual encoders pre-trained for static recognition or vision-language alignment, leaving motion understanding to downstream policies. We introduce DynaFLIP, a dynamics-aware multimodal pre-train...
+
+
+### 🔴 Colored Noise Diffusion Sampling
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Hadar Davidson, Noam Issachar, Sagie Benaim
+**Venue:** arXiv | **Published:** 2026-05-28
+
+[🔗 Link](https://arxiv.org/abs/2605.30332)
+
+> Diffusion models achieve state-of-the-art image synthesis, with their generative trajectories fundamentally exhibiting a spectral bias, resolving low-frequency global structures early and high-frequency fine details later. Conventional stochastic differential equation (SDE) solvers fail to account for this dynamic, naively injecting uniform white n...
+
+
+### 🔴 Complexity-Balanced Diffusion Splitting
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Noam Issachar, Dani Lischinski, Raanan Fattal
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06477)
+
+> Standard continuous-time generative models rely on monolithic architectures that must navigate vastly different signal regimes, from isotropic noise to intricate data distributions. While scaling model capacity improves performance, deploying a massive network uniformly across the entire generative timeline is inherently inefficient. In this work, ...
+
+
+### 🔴 MLEvolve: A Self-Evolving Framework for Automated Machine Learning Algorithm Discovery
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Shangheng Du, Xiangchao Yan, Jinxin Shi, Zongsheng Cao, Shiyang Feng
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06473)
+
+> Large language model (LLM) agents are increasingly applied to long-horizon tasks such as scientific discovery and machine learning engineering (MLE), where sustained self-evolution becomes a key capability. However, existing MLE agents suffer from inter-branch information isolation, memoryless search, and lack of hierarchical control, which togethe...
+
+
+### 🔴 Benchmark Everything Everywhere All at Once
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Shiyun Xiong, Dongming Wu, Peiwen Sun, Yuang Ai, Bokang Yang
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06462)
+
+> Benchmarks are fundamental for evaluating and advancing LLMs and MLLMs by providing standardized and explicit measures of performance. However, their construction is labor-intensive and hard to reuse, raising concerns about sustainability and scalability. Moreover, existing benchmarks often quickly reach performance saturation after their release, ...
+
+
+### 🔴 Event Detection for Parameter-to-KPI Dependency Learning for AI-RAN
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Christie Djidjev, Nicholas Kaminski
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06459)
+
+> Next-generation wireless networks are expected to rely on multiple concurrent AI-driven control functions that optimize different network objectives simultaneously, particularly in AI-integrated and open radio access network architectures such as AI Radio Access Network (AI-RAN) and Open Radio Access Network (O-RAN). When these functions interact, ...
+
+
+### 🔴 Vortex: Efficient and Programmable Sparse Attention Serving for AI Agents
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Zhuoming Chen, Xinrui Zhong, Qilong Feng, Ranajoy Sadhukhan, Yang Zhou
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06453)
+
+> Sparse attention is becoming increasingly important for serving large language models (LLMs) as generation lengths continue to grow. However, deploying and evaluating new sparse attention algorithms at scale remains highly engineering-intensive, slowing both human researchers and AI agents in exploring the sparse attention design. To address this c...
+
+
+### 🔴 The Matching Principle: A Geometric Theory of Loss Functions for Nuisance-Robust Representation Learning
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `ADAPTIVE_REGULATION` `AI_EVAL_VALID`
+**Authors:** Vishal Rajput
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22800)
+
+> Robustness, domain adaptation, photometric and occlusion invariance, compositional generalisation, temporal robustness, alignment safety, and classical anisotropic regularisation are usually treated as separate problems with separate method families. This paper argues that much of their shared structure is one statistical problem: estimate the cova...
+
+
+### 🔴 Evaluating Commercial AI Chatbots as News Intermediaries
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Mirac Suzgun, Emily Shen, Federico Bianchi, Alexander Spangher, Thomas Icard
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22785)
+
+> AI chatbots are rapidly shaping how people encounter the news, yet no prior study has systematically measured how accurately these systems, with their proprietary search integrations and retrieval-synthesis pipelines, handle emerging facts across languages and regions. We present a 14-day (February 9-22, 2026) evaluation of six AI chatbots (Gemini ...
+
+
+### 🔴 The ripple effect of evidence implementation: a descriptive evaluation of JBI's Evidence-based Clinical Fellowship Program.
+
+**Source:** SEMANTICSCHOLAR | **Score:** `7.5` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID` `PARTICIPATORY_GOV`
+**Authors:** A. McArthur, Z. Munn, L. Lizarondo, K. Porritt, M. Stephenson
+**Venue:** JBI evidence implementation | **Published:** 2020-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/70d4973c8f2f34f2ba2ae4297b31fe4450a8e5bc)
+
+> BACKGROUND
+Across healthcare there are acknowledged gaps in the translation of evidence into clinical practice. Undertaking a structured implementation program may assist clinicians to achieve this in their clinical practice setting.
+
+
+AIMS/METHODS
+The current study descriptively evaluates and analyzes the impact of JBI's (formerly known as the Joa...
+
+
+### 🔴 Stateful Online Monitoring Catches Distributed Agent Attacks
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID`
+**Authors:** Davis Brown, Samarth Bhargav, Arav Santhanam, Kasper Hong, Ivan Zhang
+**Venue:** arXiv | **Published:** 2026-05-29
+
+[🔗 Link](https://arxiv.org/abs/2605.31593)
+
+> Language models can find thousands of severe software vulnerabilities, and agents are increasingly being misused for cyberattacks. To avoid detection, attackers frequently distribute their misuse, splitting a harmful task across many user accounts so each individual transcript looks benign. Because safety monitors score only one agent context at a ...
+
+
+### 🔴 HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `ADAPTIVE_REGULATION` `AI_EVAL_VALID`
+**Authors:** Lizhi Yang, Junheng Li, Nehar Poddar, Yiling Hou, Gio Huh
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06493)
+
+> For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics. We instead propose a compact, explicit inte...
+
+
+### 🔴 AlignInsight: A Three-Layer Framework for Detecting Deceptive Alignment and Evaluation Awareness in Healthcare AI Systems
+
+**Source:** SEMANTICSCHOLAR | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** A. Onovo, Y. Cherima
+**Venue:** medRxiv | **Published:** 2026-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/d9f0f2dafd5e976137c0037720665dbd936157f6)
+
+
+### 🔴 Geometric Origin of the Non-Adiabaticity Parameter and Self-Limiting Instability in Driven Nonlinear Systems
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** A. M. Tishin
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22796)
+
+> We establish that the non-adiabaticity parameter has a direct geometric interpretation as the instantaneous evolution speed of a driven quantum state in projective Hilbert space under the Fubini Study metric. In contrast to conventional asymptotic approaches, the proposed framework provides a strictly local geometric criterion that allows non-adiab...
+
+
+### 🔴 Advancing healthcare AI governance through a comprehensive maturity model based on systematic review.
+
+**Source:** DBLP | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV` `CLINICAL_HEALTH_AI`
+**Authors:** Rowan Hussein, Anna Zink, Bashar Ramadan, Frederick M. Howard, Maia Hightower
+**Venue:** npj Digit. Medicine | **Published:** 2026-01-01
+
+[🔗 DBLP](https://dblp.org/rec/journals/npjdm/HusseinZRHHSB26)
+
+
+### 🔴 Artificial intelligence in diabetology: systematizing clinical evidence and prospects for implementation
+
+**Source:** SEMANTICSCHOLAR | **Score:** `7.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID`
+**Authors:** D. Makhachev, I. G. Musapirov, M. N. Magomedova, M. O. Abakarov, D. M. Ametov
+**Venue:** International journal of Innovative Medicine | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/62ec161b36f7200222e9bfac9b86e3ea61f66276)
+
+> Artificial intelligence (AI) is rapidly transforming the management of diabetes mellitus, extending far beyond traditional glucose monitoring. This review synthesizes clinical evidence evaluating the effectiveness of AI-driven algorithms across key domains of diabetology: screening for vascular complications, prediction of postprandial glycemic exc...
+
+
+### 🔴 Gravitational Waves from hybrid defects as probe of Flavor symmetry breaking: Machine-Learning Approach
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `EVIDENCE_IMPLEMENT`
+**Authors:** Anish Ghoshal, Ilia Gogoladze, Amit Tiwari
+**Venue:** arXiv | **Published:** 2026-05-29
+
+[🔗 Link](https://arxiv.org/abs/2605.31600)
+
+> We present a novel possibility that a network of domain walls bounded by cosmic strings generates a stochastic gravitational wave background (SWGB) signal originating from the spontaneous breaking of a gauged $U(1)_F$ flavor symmetry and the subsequent breaking of discrete $Z_2$ symmetry that accommodates dark matter. The gravitational wave (GW) sp...
+
+
+### 🔴 Will the Agent Recuse Itself? Measuring LLM-Agent Compliance with In-Band Access-Deny Signals
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV`
+**Authors:** Thamilvendhan Munirathinam
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06460)
+
+> As autonomous LLM agents increasingly hold real credentials and operate infrastructure without a human in the loop, operators have no standard way to tell an agent that a resource is off-limits. Access controls either let the agent in (it has valid credentials) or hard-fail it (indistinguishable from any other client). We propose a third mode: a li...
+
+
+
+## 📚 Supporting Papers (Priority 2, top 7)
+
+### 🟡 Two bodies left behind
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `CLINICAL_HEALTH_AI` `ADAPTIVE_REGULATION`
+**Authors:** Raúl A. Briceño, Caroline S. R. Costa, Hans-Werner Hammer, Daniel R. Phillips
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22805)
+
+> We consider scenarios in which a shallow bound state undergoes breakup by a probe whose energy is high compared to the binding energy. The first two scenarios, which serve as warm-up exercises, involve a single heavy particle bound to a light particle, analogous to a core nucleus bound to a neutron. We show that in quasi-free kinematics, the leadin...
+
+
+### 🟡 AI-Driven Multi-Region Provisioning for Cloud Services Using Spot Fleets
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Javier Fabra, Enrique Molina-Giménez, Pedro García-López
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22778)
+
+> Cloud service platforms increasingly rely on elastic infrastructures to support dynamic workloads. Spot instances provide discounted computing resources but introduce uncertainty due to dynamic pricing, resource availability, and interruption risks that vary across geographical regions. In Amazon Web Services, the EC2 Spot Service simplifies fleet ...
+
+
+### 🟡 Clinical implementation of AI-based screening for risk for opioid use disorder in hospitalized adults
+
+**Source:** SEMANTICSCHOLAR | **Score:** `6.5` | **Themes:** `EVIDENCE_IMPLEMENT`
+**Authors:** Majid Afshar, F. Resnik, Cara Joyce, M. Oguss, D. Dligach
+**Venue:** Nature Medicine | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/a64b8f36fea8352e5597bbc4c106b11dd05886f2)
+
+> Adults with opioid use disorder (OUD) are at increased risk for opioid-related complications and repeated hospital admissions. Routine screening for patients at risk for an OUD to prevent complications is not standard practice in many hospitals, leading to missed opportunities for intervention. The adoption of electronic health records (EHRs) and a...
+
+
+### 🟡 How AI Transforms Regulatory Submission: Current Clinical Implementation and Future Prospects
+
+**Source:** SEMANTICSCHOLAR | **Score:** `6.5` | **Themes:** `EVIDENCE_IMPLEMENT`
+**Authors:** Jagdeep T Podichetty, Anna-Marika Bauer, Rachel Xu, Nick Henscheid, Wes Anderson
+**Venue:** Clinical and Translational Science | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/48dc9fe86e888ae424eda1ac9ba85498699cef29)
+
+> Artificial Intelligence (AI) is transforming drug development and regulatory submission by enabling advanced data analytics, predictive modeling and intelligent decision support systems. Beyond efficiency gains, AI establishes a translational bridge between model‐informed drug development (MIDD) and clinical implementation, turning regulatory evide...
+
+
+### 🟡 Carr criterion and mass gaps in non-singular primordial black hole formation
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Jens Boos, Arif Kağan Gündoğdu, Marek Hartenfels
+**Venue:** arXiv | **Published:** 2026-05-28
+
+[🔗 Link](https://arxiv.org/abs/2605.30340)
+
+> Non-singular gravitational theories are expected to be relevant in the early universe. In this paper, we derive a set of effective Friedmann equations describing the dynamics of matter shells in the presence of a gravitational regulator $\ell$. We find that such a regulator induces a primordial black hole mass gap such that below a certain mass $M_...
+
+
+### 🟡 TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Dong Jing, Jingchen Nie, Tianqi Zhang, Jiaqi Liu, Huaxiu Yao
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06491)
+
+> Robot manipulation alternates between low-risk transit phases that call for fast execution and high-risk contact stages that demand slow, precise motion. Yet existing Vision-Language-Action models (VLAs) only inherit a single fixed speed from training demonstrations. Prior efforts to accelerate VLAs through model compression, KV-cache reuse, or rei...
+
+
+### 🟡 Phenomenology of Inflaton-Driven Early QCD Confinement and Solution to Axion Isocurvature Problem
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `CLINICAL_HEALTH_AI` `ADAPTIVE_REGULATION`
+**Authors:** Evangelos I. Sfakianakis, Barmak Shams Es Haghi, Katherine Freese
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06484)
+
+> We study the phenomenology of early QCD confinement during inflation, driven by a direct coupling between the inflaton and Standard Model gluons. This coupling dynamically raises the QCD confinement scale, making the axion sufficiently heavy to suppress isocurvature perturbations during the CMB epoch. As inflation proceeds, the confinement scale de...
+
+
+---
+
+## 🔍 Cross-Analysis
+**Multi-theme papers:** 30/100
+
+## 📈 Theme Distribution
+
+| Theme | Count |
+|-------|-------|
+| `AI_EVAL_VALID` | ██████████ 54 |
+| `PARTICIPATORY_GOV` | ██████████ 26 |
+| `EVIDENCE_IMPLEMENT` | ██████████ 24 |
+| `ADAPTIVE_REGULATION` | ██████████ 21 |
+| `CLINICAL_HEALTH_AI` | ██████████ 11 |
+
+---
+
+*Generated: 2026-06-07T09:02:04.578947*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+
+---
+
+## Source: [digest_2026-06-06.md](outputs/digests/digest_2026-06-06.md)
+
+# 🔬 AI Health Literature Review — Daily Digest v2
+**Date:** 2026-06-06 (Saturday) | **Papers ranked:** 100 | **New:** +0
+**Sources:** arXiv · PubMed · Semantic Scholar · DBLP (FAccT/AIES/CHI)
+
+---
+
+## 📊 Executive Summary
+**Priority breakdown:** 🔴 25 · 🟡 75 · ⚪ 0
+**Top themes:** `AI_EVAL_VALID` (54), `PARTICIPATORY_GOV` (26), `EVIDENCE_IMPLEMENT` (24), `ADAPTIVE_REGULATION` (21), `CLINICAL_HEALTH_AI` (11)
+
+## 🏆 Featured Papers (Priority 3)
+
+### 🔴 Learning Global Motion with Compact Gaussians for Feed-Forward 4D Reconstruction
+
+**Source:** ARXIV | **Score:** `10.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Mungyeom Kim, Minkyeong Jeon, Honggyu An, Jaewoo Jung, Hyuna Ko
+**Venue:** arXiv | **Published:** 2026-05-29
+
+[🔗 Link](https://arxiv.org/abs/2605.31595)
+
+> Dynamic scene reconstruction from monocular video remains a fundamental challenge in computer vision. Existing feed-forward methods predict 3D Gaussians pixel-wise for each frame, suffering from duplicated Gaussians and view-dependent biases that hinder effective learning of scene motion. We present C4G, a feed-forward 4D reconstruction framework b...
+
+
+### 🔴 NURSE-AI: A Nurse-by-Design Framework for Multi-Sensor, AI-Enabled Chronic Wound Assessment in Community Healthcare
+
+**Source:** SEMANTICSCHOLAR | **Score:** `9.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV` `EVIDENCE_IMPLEMENT`
+**Authors:** C. Barchielli, S. Jayousi, Riccardo Mari, B. Albanesi, M. Alaimo
+**Venue:** Italian National Conference on Sensors | **Published:** 2026-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/166b63e88e64f56e7277c42c093fcf32748a4da5)
+
+> Accurate and reproducible chronic wound assessment remains challenging in community healthcare, where environmental variability and subjective visual evaluation may introduce substantial measurement errors. Although multi-sensor technologies, including RGB–D imaging, mobile Light Detection and Ranging (LiDAR), thermal infrared imaging, and hyperspe...
+
+
+### 🔴 DeltaBox: Scaling Stateful AI Agents with Millisecond-Level Sandbox Checkpoint/Rollback
+
+**Source:** ARXIV | **Score:** `9.5` | **Themes:** `AI_EVAL_VALID` `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Yunpeng Dong, Jingkai He, Yuze Hou, Dong Du, Zhonghu Xu
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22781)
+
+> LLM-powered AI agents require high-frequency state exploration (e.g., test-time tree search and reinforcement learning), relying on rapid checkpoint and rollback (C/R) of the complete sandbox state, including files and process state (e.g., memory, contexts, etc.). Existing mechanisms duplicate the entire state, causing hundreds of milliseconds to s...
+
+
+### 🔴 Sensor2Sensor: Cross-Embodiment Sensor Conversion for Autonomous Driving
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID`
+**Authors:** Jiahao Wang, Bo Sun, Yijing Bai, Vincent Casser, Songyou Peng
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22809)
+
+> Robust training and validation of Autonomous Driving Systems (ADS) require massive, diverse datasets. Proprietary data collected by Autonomous Vehicle (AV) fleets, while high-fidelity, are limited in scale, diversity of sensor configurations, as well as geographic and long-tail-behavioral coverage. In contrast, in-the-wild data from sources like da...
+
+
+### 🔴 LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Sadia Asif, Mohammad Mohammadi Amiri, Momin Abbas, Prasanna Sattigeri, Karthikeyan Natesan Ramamurth
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22786)
+
+> Large language model (LLM)-based multi-agent systems increasingly rely on intermediate communication to coordinate complex tasks. While most existing systems communicate through natural language, recent work shows that latent communication, particularly through transformer key-value (KV) caches, can improve efficiency and preserve richer task-relev...
+
+
+### 🔴 Prospective Implementation of AI-Assisted CBCT-Based Clinical Decision Support in Emergency Maxillofacial Trauma Care
+
+**Source:** SEMANTICSCHOLAR | **Score:** `8.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** Ayhan Yildirim, René Hertach, Vedat Yildirim
+**Venue:** Journal of Medicine and Dentistry | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/6d94421fcb97c68898b9761a5dcda0c007357105)
+
+> Background:
+Artificial intelligence (AI) has demonstrated high diagnostic accuracy in detecting maxillofacial fractures on cone beam computed tomography (CBCT). However, evidence regarding its prospective implementation and real-world clinical impact in emergency maxillofacial trauma care remains limited.
+
+Objective:
+This study aimed to prospective...
+
+
+### 🔴 A comprehensive review of venous thromboembolism risk assessment models for hospitalized medical patients: comparative evidence, implementation challenges, and future directions
+
+**Source:** SEMANTICSCHOLAR | **Score:** `8.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** L. Alfehaid, N. Alsuhebany, Yahya M. K. Tawfik, Shuroug A. Alowais, Shazia Adnan
+**Venue:** Frontiers in Cardiovascular Medicine | **Published:** 2026-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/5dce6433c29e6bc88dd3537b06eae793c41e80c5)
+
+> Venous thromboembolism (VTE) is a leading cause of preventable hospital-acquired morbidity and mortality. Despite the availability of effective prophylaxis, its application in clinical practice remains inconsistent, often due to uncertainty in risk stratification. This review evaluates the validity and implementation of VTE risk assessment models (...
+
+
+### 🔴 DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Jusuk Lee, Seungjae Lee, Jonghun Shin, Hoseong Jung, Sungha Kim
+**Venue:** arXiv | **Published:** 2026-05-28
+
+[🔗 Link](https://arxiv.org/abs/2605.30350)
+
+> Robot manipulation critically depends on perception that preserves the action-relevant aspects of a scene. Yet most robot learning pipelines are built upon visual encoders pre-trained for static recognition or vision-language alignment, leaving motion understanding to downstream policies. We introduce DynaFLIP, a dynamics-aware multimodal pre-train...
+
+
+### 🔴 Colored Noise Diffusion Sampling
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Hadar Davidson, Noam Issachar, Sagie Benaim
+**Venue:** arXiv | **Published:** 2026-05-28
+
+[🔗 Link](https://arxiv.org/abs/2605.30332)
+
+> Diffusion models achieve state-of-the-art image synthesis, with their generative trajectories fundamentally exhibiting a spectral bias, resolving low-frequency global structures early and high-frequency fine details later. Conventional stochastic differential equation (SDE) solvers fail to account for this dynamic, naively injecting uniform white n...
+
+
+### 🔴 Complexity-Balanced Diffusion Splitting
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Noam Issachar, Dani Lischinski, Raanan Fattal
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06477)
+
+> Standard continuous-time generative models rely on monolithic architectures that must navigate vastly different signal regimes, from isotropic noise to intricate data distributions. While scaling model capacity improves performance, deploying a massive network uniformly across the entire generative timeline is inherently inefficient. In this work, ...
+
+
+### 🔴 MLEvolve: A Self-Evolving Framework for Automated Machine Learning Algorithm Discovery
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Shangheng Du, Xiangchao Yan, Jinxin Shi, Zongsheng Cao, Shiyang Feng
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06473)
+
+> Large language model (LLM) agents are increasingly applied to long-horizon tasks such as scientific discovery and machine learning engineering (MLE), where sustained self-evolution becomes a key capability. However, existing MLE agents suffer from inter-branch information isolation, memoryless search, and lack of hierarchical control, which togethe...
+
+
+### 🔴 Benchmark Everything Everywhere All at Once
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Shiyun Xiong, Dongming Wu, Peiwen Sun, Yuang Ai, Bokang Yang
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06462)
+
+> Benchmarks are fundamental for evaluating and advancing LLMs and MLLMs by providing standardized and explicit measures of performance. However, their construction is labor-intensive and hard to reuse, raising concerns about sustainability and scalability. Moreover, existing benchmarks often quickly reach performance saturation after their release, ...
+
+
+### 🔴 Event Detection for Parameter-to-KPI Dependency Learning for AI-RAN
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Christie Djidjev, Nicholas Kaminski
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06459)
+
+> Next-generation wireless networks are expected to rely on multiple concurrent AI-driven control functions that optimize different network objectives simultaneously, particularly in AI-integrated and open radio access network architectures such as AI Radio Access Network (AI-RAN) and Open Radio Access Network (O-RAN). When these functions interact, ...
+
+
+### 🔴 Vortex: Efficient and Programmable Sparse Attention Serving for AI Agents
+
+**Source:** ARXIV | **Score:** `8.0` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Zhuoming Chen, Xinrui Zhong, Qilong Feng, Ranajoy Sadhukhan, Yang Zhou
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06453)
+
+> Sparse attention is becoming increasingly important for serving large language models (LLMs) as generation lengths continue to grow. However, deploying and evaluating new sparse attention algorithms at scale remains highly engineering-intensive, slowing both human researchers and AI agents in exploring the sparse attention design. To address this c...
+
+
+### 🔴 The Matching Principle: A Geometric Theory of Loss Functions for Nuisance-Robust Representation Learning
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `ADAPTIVE_REGULATION` `AI_EVAL_VALID`
+**Authors:** Vishal Rajput
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22800)
+
+> Robustness, domain adaptation, photometric and occlusion invariance, compositional generalisation, temporal robustness, alignment safety, and classical anisotropic regularisation are usually treated as separate problems with separate method families. This paper argues that much of their shared structure is one statistical problem: estimate the cova...
+
+
+### 🔴 Evaluating Commercial AI Chatbots as News Intermediaries
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `PARTICIPATORY_GOV` `AI_EVAL_VALID`
+**Authors:** Mirac Suzgun, Emily Shen, Federico Bianchi, Alexander Spangher, Thomas Icard
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22785)
+
+> AI chatbots are rapidly shaping how people encounter the news, yet no prior study has systematically measured how accurately these systems, with their proprietary search integrations and retrieval-synthesis pipelines, handle emerging facts across languages and regions. We present a 14-day (February 9-22, 2026) evaluation of six AI chatbots (Gemini ...
+
+
+### 🔴 The ripple effect of evidence implementation: a descriptive evaluation of JBI's Evidence-based Clinical Fellowship Program.
+
+**Source:** SEMANTICSCHOLAR | **Score:** `7.5` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID` `PARTICIPATORY_GOV`
+**Authors:** A. McArthur, Z. Munn, L. Lizarondo, K. Porritt, M. Stephenson
+**Venue:** JBI evidence implementation | **Published:** 2020-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/70d4973c8f2f34f2ba2ae4297b31fe4450a8e5bc)
+
+> BACKGROUND
+Across healthcare there are acknowledged gaps in the translation of evidence into clinical practice. Undertaking a structured implementation program may assist clinicians to achieve this in their clinical practice setting.
+
+
+AIMS/METHODS
+The current study descriptively evaluates and analyzes the impact of JBI's (formerly known as the Joa...
+
+
+### 🔴 Stateful Online Monitoring Catches Distributed Agent Attacks
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID`
+**Authors:** Davis Brown, Samarth Bhargav, Arav Santhanam, Kasper Hong, Ivan Zhang
+**Venue:** arXiv | **Published:** 2026-05-29
+
+[🔗 Link](https://arxiv.org/abs/2605.31593)
+
+> Language models can find thousands of severe software vulnerabilities, and agents are increasingly being misused for cyberattacks. To avoid detection, attackers frequently distribute their misuse, splitting a harmful task across many user accounts so each individual transcript looks benign. Because safety monitors score only one agent context at a ...
+
+
+### 🔴 HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers
+
+**Source:** ARXIV | **Score:** `7.5` | **Themes:** `ADAPTIVE_REGULATION` `AI_EVAL_VALID`
+**Authors:** Lizhi Yang, Junheng Li, Nehar Poddar, Yiling Hou, Gio Huh
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06493)
+
+> For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics. We instead propose a compact, explicit inte...
+
+
+### 🔴 AlignInsight: A Three-Layer Framework for Detecting Deceptive Alignment and Evaluation Awareness in Healthcare AI Systems
+
+**Source:** SEMANTICSCHOLAR | **Score:** `7.0` | **Themes:** `AI_EVAL_VALID` `CLINICAL_HEALTH_AI`
+**Authors:** A. Onovo, Y. Cherima
+**Venue:** medRxiv | **Published:** 2026-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/d9f0f2dafd5e976137c0037720665dbd936157f6)
+
+
+### 🔴 Geometric Origin of the Non-Adiabaticity Parameter and Self-Limiting Instability in Driven Nonlinear Systems
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** A. M. Tishin
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22796)
+
+> We establish that the non-adiabaticity parameter has a direct geometric interpretation as the instantaneous evolution speed of a driven quantum state in projective Hilbert space under the Fubini Study metric. In contrast to conventional asymptotic approaches, the proposed framework provides a strictly local geometric criterion that allows non-adiab...
+
+
+### 🔴 Advancing healthcare AI governance through a comprehensive maturity model based on systematic review.
+
+**Source:** DBLP | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV` `CLINICAL_HEALTH_AI`
+**Authors:** Rowan Hussein, Anna Zink, Bashar Ramadan, Frederick M. Howard, Maia Hightower
+**Venue:** npj Digit. Medicine | **Published:** 2026-01-01
+
+[🔗 DBLP](https://dblp.org/rec/journals/npjdm/HusseinZRHHSB26)
+
+
+### 🔴 Artificial intelligence in diabetology: systematizing clinical evidence and prospects for implementation
+
+**Source:** SEMANTICSCHOLAR | **Score:** `7.0` | **Themes:** `EVIDENCE_IMPLEMENT` `AI_EVAL_VALID`
+**Authors:** D. Makhachev, I. G. Musapirov, M. N. Magomedova, M. O. Abakarov, D. M. Ametov
+**Venue:** International journal of Innovative Medicine | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/62ec161b36f7200222e9bfac9b86e3ea61f66276)
+
+> Artificial intelligence (AI) is rapidly transforming the management of diabetes mellitus, extending far beyond traditional glucose monitoring. This review synthesizes clinical evidence evaluating the effectiveness of AI-driven algorithms across key domains of diabetology: screening for vascular complications, prediction of postprandial glycemic exc...
+
+
+### 🔴 Gravitational Waves from hybrid defects as probe of Flavor symmetry breaking: Machine-Learning Approach
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `EVIDENCE_IMPLEMENT`
+**Authors:** Anish Ghoshal, Ilia Gogoladze, Amit Tiwari
+**Venue:** arXiv | **Published:** 2026-05-29
+
+[🔗 Link](https://arxiv.org/abs/2605.31600)
+
+> We present a novel possibility that a network of domain walls bounded by cosmic strings generates a stochastic gravitational wave background (SWGB) signal originating from the spontaneous breaking of a gauged $U(1)_F$ flavor symmetry and the subsequent breaking of discrete $Z_2$ symmetry that accommodates dark matter. The gravitational wave (GW) sp...
+
+
+### 🔴 Will the Agent Recuse Itself? Measuring LLM-Agent Compliance with In-Band Access-Deny Signals
+
+**Source:** ARXIV | **Score:** `7.0` | **Themes:** `PARTICIPATORY_GOV`
+**Authors:** Thamilvendhan Munirathinam
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06460)
+
+> As autonomous LLM agents increasingly hold real credentials and operate infrastructure without a human in the loop, operators have no standard way to tell an agent that a resource is off-limits. Access controls either let the agent in (it has valid credentials) or hard-fail it (indistinguishable from any other client). We propose a third mode: a li...
+
+
+
+## 📚 Supporting Papers (Priority 2, top 7)
+
+### 🟡 Two bodies left behind
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `CLINICAL_HEALTH_AI` `ADAPTIVE_REGULATION`
+**Authors:** Raúl A. Briceño, Caroline S. R. Costa, Hans-Werner Hammer, Daniel R. Phillips
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22805)
+
+> We consider scenarios in which a shallow bound state undergoes breakup by a probe whose energy is high compared to the binding energy. The first two scenarios, which serve as warm-up exercises, involve a single heavy particle bound to a light particle, analogous to a core nucleus bound to a neutron. We show that in quasi-free kinematics, the leadin...
+
+
+### 🟡 AI-Driven Multi-Region Provisioning for Cloud Services Using Spot Fleets
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `AI_EVAL_VALID` `ADAPTIVE_REGULATION`
+**Authors:** Javier Fabra, Enrique Molina-Giménez, Pedro García-López
+**Venue:** arXiv | **Published:** 2026-05-21
+
+[🔗 Link](https://arxiv.org/abs/2605.22778)
+
+> Cloud service platforms increasingly rely on elastic infrastructures to support dynamic workloads. Spot instances provide discounted computing resources but introduce uncertainty due to dynamic pricing, resource availability, and interruption risks that vary across geographical regions. In Amazon Web Services, the EC2 Spot Service simplifies fleet ...
+
+
+### 🟡 Clinical implementation of AI-based screening for risk for opioid use disorder in hospitalized adults
+
+**Source:** SEMANTICSCHOLAR | **Score:** `6.5` | **Themes:** `EVIDENCE_IMPLEMENT`
+**Authors:** Majid Afshar, F. Resnik, Cara Joyce, M. Oguss, D. Dligach
+**Venue:** Nature Medicine | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/a64b8f36fea8352e5597bbc4c106b11dd05886f2)
+
+> Adults with opioid use disorder (OUD) are at increased risk for opioid-related complications and repeated hospital admissions. Routine screening for patients at risk for an OUD to prevent complications is not standard practice in many hospitals, leading to missed opportunities for intervention. The adoption of electronic health records (EHRs) and a...
+
+
+### 🟡 How AI Transforms Regulatory Submission: Current Clinical Implementation and Future Prospects
+
+**Source:** SEMANTICSCHOLAR | **Score:** `6.5` | **Themes:** `EVIDENCE_IMPLEMENT`
+**Authors:** Jagdeep T Podichetty, Anna-Marika Bauer, Rachel Xu, Nick Henscheid, Wes Anderson
+**Venue:** Clinical and Translational Science | **Published:** 2025-01-01
+
+[🔗 SemanticScholar](https://www.semanticscholar.org/paper/48dc9fe86e888ae424eda1ac9ba85498699cef29)
+
+> Artificial Intelligence (AI) is transforming drug development and regulatory submission by enabling advanced data analytics, predictive modeling and intelligent decision support systems. Beyond efficiency gains, AI establishes a translational bridge between model‐informed drug development (MIDD) and clinical implementation, turning regulatory evide...
+
+
+### 🟡 Carr criterion and mass gaps in non-singular primordial black hole formation
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Jens Boos, Arif Kağan Gündoğdu, Marek Hartenfels
+**Venue:** arXiv | **Published:** 2026-05-28
+
+[🔗 Link](https://arxiv.org/abs/2605.30340)
+
+> Non-singular gravitational theories are expected to be relevant in the early universe. In this paper, we derive a set of effective Friedmann equations describing the dynamics of matter shells in the presence of a gravitational regulator $\ell$. We find that such a regulator induces a primordial black hole mass gap such that below a certain mass $M_...
+
+
+### 🟡 TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `PARTICIPATORY_GOV` `ADAPTIVE_REGULATION`
+**Authors:** Dong Jing, Jingchen Nie, Tianqi Zhang, Jiaqi Liu, Huaxiu Yao
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06491)
+
+> Robot manipulation alternates between low-risk transit phases that call for fast execution and high-risk contact stages that demand slow, precise motion. Yet existing Vision-Language-Action models (VLAs) only inherit a single fixed speed from training demonstrations. Prior efforts to accelerate VLAs through model compression, KV-cache reuse, or rei...
+
+
+### 🟡 Phenomenology of Inflaton-Driven Early QCD Confinement and Solution to Axion Isocurvature Problem
+
+**Source:** ARXIV | **Score:** `6.5` | **Themes:** `CLINICAL_HEALTH_AI` `ADAPTIVE_REGULATION`
+**Authors:** Evangelos I. Sfakianakis, Barmak Shams Es Haghi, Katherine Freese
+**Venue:** arXiv | **Published:** 2026-06-04
+
+[🔗 Link](https://arxiv.org/abs/2606.06484)
+
+> We study the phenomenology of early QCD confinement during inflation, driven by a direct coupling between the inflaton and Standard Model gluons. This coupling dynamically raises the QCD confinement scale, making the axion sufficiently heavy to suppress isocurvature perturbations during the CMB epoch. As inflation proceeds, the confinement scale de...
+
+
+---
+
+## 🔍 Cross-Analysis
+**Multi-theme papers:** 30/100
+
+## 📈 Theme Distribution
+
+| Theme | Count |
+|-------|-------|
+| `AI_EVAL_VALID` | ██████████ 54 |
+| `PARTICIPATORY_GOV` | ██████████ 26 |
+| `EVIDENCE_IMPLEMENT` | ██████████ 24 |
+| `ADAPTIVE_REGULATION` | ██████████ 21 |
+| `CLINICAL_HEALTH_AI` | ██████████ 11 |
+
+---
+
+*Generated: 2026-06-06T09:02:41.734095*
+*Project: [Arkoys/ai-health-lit-review](https://github.com/Arkoys/ai-health-lit-review)*
+
+---
+
 ## Source: [digest_2026-06-05.md](outputs/digests/digest_2026-06-05.md)
 
 # 🔬 AI Health Literature Review — Daily Digest v2
