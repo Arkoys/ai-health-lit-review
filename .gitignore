@@ -48,3 +48,17 @@ analysis/_codings_batch_*.json
 analysis/_p3_papers.json
 analysis/_make_figures.py
 # Everything else in analysis/ is tracked (protocol, matrix, figures, etc.)
+
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb

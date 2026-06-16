@@ -1,0 +1,193 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LiGHT thesis/report template
+%
+% Thank you to Rizhong Lin (LiGHT) who created the original LiGHT template!
+% Writing guidance embedded in this template is derived from the
+% LiGHT Scientific Writing Standards: https://docs.google.com/document/d/1n7gyFq6CwPeOr6H7BlcozAHIDsVoSceoMHtbqYCvW88
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[style=epfl,lab=light,reporttype=msc-thesis]{lightreport}
+%Set \lightreport@reporttype to one of the following values:
+%
+%   msc-semester-project   -> "MSc Semester Project Report"
+%   msc-thesis             -> "Master's Thesis"
+%   bsc-semester-project   -> "BSc Semester Project Report"
+%   bsc-thesis             -> "Bachelor's Thesis"
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LiGHT TEMPLATE CONTROLS (students should edit these, not the internals)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Guidance text toggle: set \guidancefalse for final submission
+\newif\ifguidance
+\guidancetrue
+
+% Section length guidance (soft limits)
+% (Used for on-PDF guidance only; does not enforce page counts.)
+\newcommand{\lightAbstractWordLimit}{300}
+\newcommand{\lightIntroPageLimit}{2}
+\newcommand{\lightRelatedPageLimit}{2}
+\newcommand{\lightMethodsPageLimit}{2}
+\newcommand{\lightResultsPageMin}{2}
+\newcommand{\lightResultsPageMax}{4}
+\newcommand{\lightDiscussionPageLimit}{2}
+\newcommand{\lightGraphicalPageLimit}{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packages for clarity, figures, tables, and professional layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{microtype}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\usepackage{enumitem}
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage[section]{placeins}
+\usepackage{adjustbox}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.multipart}
+\usetikzlibrary{arrows.meta,positioning,fit}
+
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{siunitx}
+\usepackage{xcolor}
+    
+    \definecolor{lightExample}{RGB}{120,160,205}    
+    \definecolor{lightTip}{RGB}{70,110,170}
+    \definecolor{lightBadExample}{RGB}{145,125,180}
+        \newcommand{\lighttip}[1]{\ifguidance{\color{lightTip}#1}\fi}
+        \newcommand{\lightexample}[1]{\ifguidance{\color{lightExample}\itshape #1}\fi}
+        \newcommand{\lightbadexample}[1]{\ifguidance{\color{lightBadExample}\itshape #1}\fi}
+    \usepackage[table]{xcolor}
+\let\Bbbk\relax
+\usepackage{amssymb}
+\usepackage{longtable}
+\usepackage{array}
+    \newcommand{\yes}{\raisebox{0.15ex}{\large$\checkmark$}}
+    \newcommand{\no}{\raisebox{0.15ex}{\large$\times$}}
+    \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\sisetup{
+  detect-weight=true,
+  group-separator={,},
+  round-mode=places,
+  round-precision=2
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[
+  backend=biber,
+  style=ieee,
+  citestyle=numeric-comp,
+  natbib=true,
+  giveninits=false
+]{biblatex}
+\addbibresource{references.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TITLE GUIDANCE
+%
+% The title is a concise scientific claim.
+% It should state:
+%   (1) WHAT was done,
+%   (2) ON WHAT population, data, or setting,
+%   (3) FOR WHAT purpose or outcome.
+%
+% A good title is:
+% - precise and informative (not aspirational),
+% - understandable without the abstract,
+% - falsifiable in principle (the implied claim could be wrong),
+% - aligned with the actual scope of the study.
+%
+% Avoid hype words (e.g. "novel", "transformative", "groundbreaking").
+% Use a colon only when it adds clarity.
+%
+% Ask yourself:
+% - Could a reviewer reasonably say “this is not supported by the results”?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% FULL TITLE
+\renewcommand{\reportTitle}{
+Governance and Evaluation Frameworks for Clinical Artificial Intelligence:
+Challenges of Real-World Deployment and Sustainable Integration
+}
+
+\renewcommand{\reportShortTitle}{
+Governance and Evaluation of Clinical AI
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% AUTHORSHIP GUIDANCE:
+%
+% Authorship for all LiGHT theses and publications follows the established
+% ethical authorship standards of ICMJE
+%
+% Authorship is not a matter of hierarchy or status. It reflects contribution.
+%
+% Roles and order:
+% - First author:
+%   The individual who made the primary intellectual contribution and led the
+%   execution and writing of the work.
+%
+% - Middle authors:
+%   Contributors who made substantial intellectual, methodological, or analytic
+%   contributions. Ordering should reflect relative contribution unless authors
+%   agree otherwise.
+%
+% - Joint first or joint senior authorship:
+%   Permissible when contributions are genuinely equal. This must be explicitly
+%   agreed upon and documented in advance.
+%
+% - Last author:
+%   Typically the person with overall scientific responsibility for the work
+%   (e.g. principal supervisor or PI), accountable for its integrity.
+%
+% Authorship order must be discussed explicitly and cannot be pre-agreed. 
+% It should be revisited as the project evolves based on contributions, and finalized before submission.
+%
+% All listed authors must:
+%   (1) have made a substantial intellectual contribution,
+%   (2) have participated in drafting or critical revision,
+%   (3) approve the final version,
+%   (4) accept accountability for the work.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\addstudent{Victor Cartier-Negadi}{victor.cartier-negadi@epfl.ch}{LiGHT}{EPFL}
+% Add additional authors here as appropriate
+\addsupervisor{Sahaj Vaidya}{sahajs235@gmail.com}{LiGHT}{EPFL / Ashoka}
+\addsupervisor{Mary-Anne Hartley}{mary-anne.hartley@epfl.ch}{LiGHT}{EPFL}
+
+\begin{document}
+\makereporttitle
+\cleardoublepage
+
+\input{sections/00_abstract}
+\input{sections/01_introduction}
+\input{sections/02_related_work}
+\input{sections/03_methods}
+\input{sections/04_results}
+\input{sections/05_discussion}
+\input{sections/06_acknowledgements}
+
+\newpage
+\printbibliography
+
+\newpage
+\appendix
+\input{sections/07_appendix}
+
+\end{document}
