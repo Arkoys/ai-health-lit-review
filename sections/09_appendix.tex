@@ -241,7 +241,7 @@ Token with read-write access to that repository.
 
 Dissemination to the research team is automated via a Telegram bot. The bot
 is configured through two environment variables (loaded from
-\code{~/.hermes/.env} at runtime, \emph{not} the project's \texttt{.env}):
+\texttt{~/.hermes/.env} at runtime, \emph{not} the project's \texttt{.env}):
 
 \begin{verbatim}
 TELEGRAM_BOT_TOKEN=<bot_token>
@@ -250,8 +250,8 @@ TELEGRAM_HOME_CHANNEL=<home_channel_id>
 
 The bot delivers the daily digest summary to the configured Telegram channel
 on each successful pipeline run. Delivery is triggered from
-\code{reporter.py} and handles its own retry logic. The Hermes gateway's
-Telegram integration (defined in \code{~/.hermes/config.yaml}) manages the
+\texttt{reporter.py} and handles its own retry logic. The Hermes gateway's
+Telegram integration (defined in \texttt{~/.hermes/config.yaml}) manages the
 underlying Bot API calls.
 
 % =============================================================================
@@ -262,7 +262,7 @@ underlying Bot API calls.
 \label{sec:app_cron}
 
 The pipeline is executed on a scheduled basis via two cron jobs managed
-through the Hermes cron system (\code{mcp\_cronjob}):
+through the Hermes cron system (\texttt{mcp\_cronjob}):
 
 \begin{threeparttable}
 \caption{Scheduled literature pipeline cron jobs.}
@@ -281,8 +281,8 @@ d1d4915d28d0 & weekly-ai-health-literature-synthesis & \texttt{0 11 * * 5} &
 
 The daily job runs at 09:00 Monday--Friday (weekdays only). The weekly
 synthesis runs at 11:00 every Friday. Both jobs are configured with
-\code{deliver: origin}, routing output back to the originating Telegram DM.
-The \code{--push} flag ensures outputs are committed to GitHub before the job
+\texttt{deliver: origin}, routing output back to the originating Telegram DM.
+The \texttt{--push} flag ensures outputs are committed to GitHub before the job
 completes.
 
 Cron jobs can be manually triggered with:
@@ -387,7 +387,7 @@ Fine-Grained PAT with repository write access.
 \label{sec:app_config}
 
 LLM provider selection is configured in \texttt{config.yaml} under the
-\code{providers} key. The primary provider is OpenRouter
+\texttt{providers} key. The primary provider is OpenRouter
 (\texttt{stepfun/step-3.5-flash:free}) with an OpenRouter fallback
 (\texttt{nvidia/nemotron-3-super-120b-a12b:free}). Additional providers
 (Ollama, OpenAI, Gemini, HuggingFace) are available but disabled by default.

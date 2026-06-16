@@ -1,10 +1,10 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 % LiGHT thesis/report template
 %
 % Thank you to Rizhong Lin (LiGHT) who created the original LiGHT template!
 % Writing guidance embedded in this template is derived from the
 % LiGHT Scientific Writing Standards: https://docs.google.com/document/d/1n7gyFq6CwPeOr6H7BlcozAHIDsVoSceoMHtbqYCvW88
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 \documentclass[style=epfl,lab=light,reporttype=msc-thesis]{lightreport}
 %Set \lightreport@reporttype to one of the following values:
@@ -14,9 +14,9 @@
 %   bsc-semester-project   -> "BSc Semester Project Report"
 %   bsc-thesis             -> "Bachelor's Thesis"
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 % LiGHT TEMPLATE CONTROLS (students should edit these, not the internals)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 % Guidance text toggle: set \guidancefalse for final submission
 \newif\ifguidance
@@ -33,9 +33,9 @@
 \newcommand{\lightDiscussionPageLimit}{2}
 \newcommand{\lightGraphicalPageLimit}{1}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 % Packages for clarity, figures, tables, and professional layout
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \usepackage{microtype}
 \usepackage{csquotes}
 \usepackage{hyperref}
@@ -85,9 +85,9 @@
 }
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 % Bibliography
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \usepackage[
   backend=biber,
   style=ieee,
@@ -97,7 +97,7 @@
 ]{biblatex}
 \addbibresource{references.bib}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 % TITLE GUIDANCE
 %
 % The title is a concise scientific claim.
@@ -116,8 +116,8 @@
 % Use a colon only when it adds clarity.
 %
 % Ask yourself:
-% - Could a reviewer reasonably say “this is not supported by the results”?
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% - Could a reviewer reasonably say "this is not supported by the results"?
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 % FULL TITLE
 % Updated 2026-06-16 to reflect the review's central three-gap framework
@@ -131,7 +131,7 @@ Governance, and Implementation Challenges in Clinical AI Deployment
 \renewcommand{\reportShortTitle}{Closing the Three-Gap Framework in Clinical AI}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 % AUTHORSHIP GUIDANCE:
 %
 % Authorship for all LiGHT theses and publications follows the established
@@ -165,7 +165,7 @@ Governance, and Implementation Challenges in Clinical AI Deployment
 %   (2) have participated in drafting or critical revision,
 %   (3) approve the final version,
 %   (4) accept accountability for the work.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 \addstudent{Victor Cartier-Negadi}{victor.cartier-negadi@epfl.ch}{LiGHT}{EPFL}
 % Add additional authors here as appropriate
@@ -176,19 +176,56 @@ Governance, and Implementation Challenges in Clinical AI Deployment
 \makereporttitle
 \cleardoublepage
 
-\input{sections/00_abstract}
-\input{sections/01_introduction}
-% \input{sections/02_related_work}
-\input{sections/03_methods}
-\input{sections/04_results}
-\input{sections/05_discussion}
-% \input{sections/06_acknowledgements}
+% ===============================================================================
+% MAIN BODY — Sections in standard systematic review order
+% ===============================================================================
 
+% 1. Abstract
+\input{sections/00_abstract}
+
+% 2. Introduction
+\input{sections/01_introduction}
+
+% 3. Methods
+\input{sections/03_methods}
+
+% 4. Results — Thematic synthesis findings
+\input{sections/04_results}
+
+% 5. Thematic Application — Deep analysis of four cornerstone papers
+\input{sections/04_thematic}
+
+% 6. Empirical Content Analysis — Quantitative structured analysis of the three-gap framework
+\input{sections/04b_empirical_content_analysis}
+
+% 7. Regulatory Competitive Analysis — Comparative analysis of EU, US, UK, WHO frameworks
+\input{sections/04c_regulatory_competitive_analysis}
+
+% 8. Evaluation Methods — Analytical synthesis of evaluation approaches
+\input{sections/05_evaluation}
+
+% 9. Discussion
+\input{sections/05_discussion}
+
+% 10. Conclusion
+\input{sections/06_conclusion}
+
+% 11. Acknowledgements
+\input{sections/07_acknowledgements}
+
+% ===============================================================================
+% Bibliography
+% ===============================================================================
 \newpage
 \printbibliography
 
+% ===============================================================================
+% Appendices
+% ===============================================================================
 \newpage
 \appendix
 \input{sections/07_appendix}
+\input{sections/08_appendix}
+\input{sections/09_appendix}
 
 \end{document}
