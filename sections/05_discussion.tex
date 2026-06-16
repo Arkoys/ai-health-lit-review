@@ -89,3 +89,30 @@ literacy and clinical-AI workflow integration skills at scale.
 
 \subsection{Limitations}
 \label{sec:discussion_limitations}
+
+This review is subject to five interrelated limitations that qualify the confidence with which its findings should be interpreted.
+
+\subsubsection{Corpus construction and potential circularity}
+\label{sec:limitation_circularity}
+
+The literature corpus was assembled using a semi-automated pipeline that queries databases using keyword sets organized around five thematic axes pre-specified by the authors. While this approach enabled systematic and reproducible coverage of a rapidly evolving literature, it introduces a structural risk: the keyword architecture that defines what enters the corpus partly reflects the conceptual assumptions the framework was designed to test. Papers that document the three gaps in terms not anticipated by the search vocabulary, or that do so implicitly rather than explicitly, may have been systematically under-retrieved. The five-iteration refinement documented in Section~\ref{sec:refinement} mitigates but does not eliminate this risk. Readers should treat the empirical gap frequencies as indicative of a directional pattern rather than as population-level estimates.
+
+\subsubsection{Corpus size and generalizability after filtering}
+\label{sec:limitation_corpus_size}
+
+The v3 strict relevance filter, applied to correct for significant off-topic contamination in earlier iterations, reduced the analytically coded corpus from 341 candidate papers to 60. While the filter criteria are documented and motivated, a corpus of $n=60$ limits the statistical power of co-occurrence and interaction analyses. The conditional probabilities reported in Section~\ref{sec:conditional_probability} and Table~\ref{tab:conditional} are based on small cell counts: the gap2$\rightarrow$gap3 pathway, for instance, is documented in only three papers. The directional cascade finding is therefore best understood as a pattern warranted by the available evidence and consistent with the qualitative narrative of the cornerstone papers, rather than as a robust quantitative result. Replication with a larger, independently assembled corpus is needed before strong causal claims can be made.
+
+\subsubsection{Scope of the regulatory comparative analysis}
+\label{sec:limitation_regulatory}
+
+Section~\ref{sec:regulatory_analysis} evaluates four regulatory frameworks, the EU AI Act, the US FDA framework, the UK MHRA framework, and the WHO Governance Guidance, against five evaluative conditions derived from the three-gap framework. While the conditions themselves are grounded in the v3 corpus, the regulatory assessment draws substantially on documentary sources and policy knowledge that extend beyond the coded literature. This is methodologically appropriate for a literature review, the corpus identifies what the gaps are; external regulatory knowledge is required to assess how existing frameworks address them, but it means that the regulatory findings cannot claim the same empirical grounding as the gap-frequency and interaction analyses. Moreover, the regulatory landscape is evolving rapidly: the EU AI Act entered into force in August 2024 and its implementing acts and conformity standards remain in development, and the FDA's predetermined change control plan guidance was issued in 2023 and is subject to revision. Assessments of framework adequacy should therefore be read as reflective of the state of governance as of mid-2026 and will require updating as regulatory elaboration continues.
+
+\subsubsection{Language and geographic bias}
+\label{sec:limitation_bias}
+
+The pipeline queries predominantly English-language bibliographic databases, and the abstract-level screening retained only English-language publications. This creates a systematic bias toward research conducted in or published from North American, European, and Anglophone Asian health systems, contexts that differ substantially from the majority of health systems in which clinical AI is being deployed. The 10.0\% ELSE rate identified in Section~\ref{sec:else_analysis} is partly an artifact of this collection bias: the equity and inclusion literature on non-Western AI implementation is a substantially larger body of work than the pipeline captures, and its systematic under-representation means that the three-gap framework as currently specified may be less applicable to low- and middle-income health system contexts than the evidence base suggests. The proposed fourth gap, equity and inclusion across non-Western health systems, should be understood not merely as a conceptual extension but as a corrective to a structural limitation of the review's evidence base.
+
+\subsubsection{Absence of formal inter-rater reliability assessment}
+\label{sec:limitation_inter_rater}
+
+The structured content analysis in Section~\ref{sec:empirical_analysis} was conducted using LLM subagents coding in parallel batches of twenty papers, with the V3 protocol applied consistently across all coders. While this approach is documented and reproducible, the coding matrix and evidence appendix are provided as supplementary materials, it was not validated against human annotators, and no inter-rater reliability coefficient was computed for the gap and interaction codings. The stance classification layer introduced in Section~\ref{sec:stance_analysis} was assigned using post-hoc keyword lists derived from the same fields used to generate the V3.1 codes, introducing a risk of circularity in the stance distribution. These methodological choices were driven by practical constraints rather than by principled design, and they constitute a genuine limitation on the robustness of the coding scheme. Future work should validate the coding protocol through human annotation of a stratified sample of the corpus, ideally with independent coders blinded to the gap-frequency hypotheses the framework generates.
