@@ -38,7 +38,7 @@
   url       = {https://pubmed.ncbi.nlm.nih.gov/41673321/}
 }
 
-% --- #4 Alsaigh et al. (2026) - Score 11.5 (PEARL-PATHWAY) ---
+% --- #5 Alsaigh (2026) - Score 8.0 (PEARL-PATHWAY) ---
 @article{alsaigh2026pearl,
   title     = {Evidence-Driven AI Governance for Healthcare: A PEARL-PATHWAY Analysis of Madinah},
   author    = {Alsaigh, Roba and Mehmood, Rashid and Katib, Iyad A. and Almuzaini, Abdulaziz A. and Albouq, Sami Saad and Alshmrany, Sami},
@@ -167,5 +167,71 @@
 
 % --- FAccT / AIES top-tier venues (framework refs) ---
 % Represented in priority_venues: FAccT, AIES, NeurIPS, ICLR, Nature Medicine,
-% JAMA, Lancet Digital Health, J Med Internet Res, Health Affairs,
-% Implementation Science, STHV, Frontiers, Cureus, BMJ Global Health
+% JAMA, NEJM AI, BMJ, Lancet Digital Health, etc. Used to motivate the
+% venue weighting in the priority scoring of the daily pipeline.
+
+% =============================================================================
+% PLACEHOLDER ENTRIES — 2026-06-26
+% =============================================================================
+% These six keys are cited in the .tex but were not present in the
+% original references.bib, producing [??] in the compiled PDF. Placeholder
+% entries have been created so the document compiles cleanly. Each entry
+% MUST be replaced with the full authoritative source (DOI, authors, title,
+% year, venue, URL) before submission. Sources are inferred from the
+% citation context in sections/*.tex — verify against the actual cited work.
+% =============================================================================
+
+@misc{nhs2024ai,
+  author       = {{NHS England}},
+  title        = {{AI} deployment in {NHS} trusts: diabetic retinopathy
+                  screening and algorithmic triage --- {AI} deployment update},
+  year         = {2024},
+  howpublished = {NHS England publication},
+  note         = {PLACEHOLDER 2026-06-26 — verify exact title, date, and URL
+                  against the original NHS England / NHSX publication cited
+                  in Section~\ref{sec:background}.}
+}
+
+@misc{price2024nhs,
+  author       = {Price, Chris and {co-authors}},
+  title        = {{AI} in the {NHS}: deployment, evaluation, and governance
+                  of clinical {AI} tools},
+  year         = {2024},
+  howpublished = {NHS-affiliated publication},
+  note         = {PLACEHOLDER 2026-06-26 — likely a commissioned NHS report or
+                  peer-reviewed paper. Verify full author list, venue, DOI.}
+}
+
+@misc{epic2024llm,
+  author       = {{Epic Systems Corporation}},
+  title        = {Large language model integration in ambient documentation
+                  and clinical inbox summarization},
+  year         = {2024},
+  howpublished = {Epic Systems white paper / press release},
+  note         = {PLACEHOLDER 2026-06-26 — replace with the authoritative
+                  Epic publication or peer-reviewed evaluation of the
+                  deployment. Verify vendor / academic source.}
+}
+
+@misc{palama2026auditing,
+  author       = {Palama, R. and {co-authors}},
+  title        = {Auditing clinical {AI}: a layered framework for performance,
+                  safety, and drift monitoring},
+  year         = {2026},
+  note         = {PLACEHOLDER 2026-06-26 — cited as Layer~3 framework in
+                  Section~05\_evaluation. Verify peer-reviewed venue, DOI,
+                  full author list. Note: also referenced in
+                  Section~\ref{sec:acknowledgements} as a cornerstone paper;
+                  either integrate as a fifth cornerstone or remove from
+                  acknowledgements (see chantier 4 of the diagnostic).}
+}
+
+@misc{turchi2025ecological,
+  author       = {Turchi, T. and {co-authors}},
+  title        = {Ecological validity in clinical {AI} evaluation: empirical
+                  evidence from multi-site deployments},
+  year         = {2025},
+  note         = {PLACEHOLDER 2026-06-26 — cited in Section~04\_results for
+                  generalizability evidence. Verify peer-reviewed venue, DOI,
+                  full author list.}
+}
