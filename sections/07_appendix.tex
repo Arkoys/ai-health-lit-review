@@ -1,41 +1,58 @@
+% =============================================================================
+% 07_APPENDIX — Data and Code Availability
+% =============================================================================
+% Filled 2026-06-26 — replaces the placeholder template that was previously
+% in this file. See MISSING_REFS_CHECKLIST.md (local, not in repo) for
+% outstanding placeholder references that still need authoritative sources.
+% =============================================================================
+
 \section*{Data and Code Availability}
 
-Transparency and reproducibility are core principles of this work.
-Data and code availability are described below,
-subject to ethical, legal, and institutional constraints.
+This appendix describes the data and code underlying the literature
+review reported in the main text, subject to ethical, legal, and
+institutional constraints.
 
 \subsection*{Data availability}
 
-The data used in this study are [publicly available / available upon request / not publicly available].
-If publicly available, specify the repository and license:
-\textit{“The de-identified dataset used in this study is available at [repository link] under [license].”}
+The reviewed corpus is derived from publicly available peer-reviewed
+publications and preprints. No new primary data were collected for
+this review. The complete reference list is provided in
+\texttt{references.bib}, which accompanies this manuscript.
 
-If data cannot be shared publicly, state the reason and access conditions:
-\textit{“Patient-level data are protected under institutional and ethical approvals
-and cannot be shared publicly.
-Qualified researchers may request access through [data access committee or institution],
-subject to appropriate approvals.”}
-
-Where applicable, indicate whether aggregated or synthetic data are available.
+The coding matrix underlying the empirical content analysis reported
+in Section~\ref{sec:empirical} (V3.1 coding protocol applied to the
+strict v3 corpus of 60 papers) is available at the project repository:
+\url{https://github.com/Arkoys/ai-health-lit-review}, in the directory
+\texttt{analysis/}. The coding matrix includes verbatim evidence
+quotes extracted from each paper's abstract, the binary gap coding
+(0/1), confidence label, and trigger field, and is sufficient to
+reproduce the descriptive statistics reported in Section~\ref{sec:empirical}.
 
 \subsection*{Code availability}
 
-Code used for data preprocessing, analysis, and model training is
-[publicly available / partially available / not publicly available].
+The literature collection pipeline --- including the multi-database
+collector (arXiv, PubMed, Semantic Scholar, DBLP), the composite
+scoring algorithm, the database schema, and the LLM-assisted
+structured content analysis --- is publicly available as open-source
+code at \url{https://github.com/Arkoys/ai-health-lit-review}. The
+version of the code corresponding to the findings reported in this
+review is archived in the repository history at the commit associated
+with this manuscript.
 
-If available, provide a repository link and version reference:
-\textit{“Code is available at \url{https://github.com/yourrepo/yourproject}
-(commit \texttt{abc123}) for reproducibility.”}
+Deployment configuration (database credentials, messaging tokens,
+scheduling specifications) is managed in external environment files
+and is not part of the public repository. Pseudocode for the scoring
+algorithm and structured analysis workflow is provided in
+Appendix~\ref{sec:technical_appendix}.
 
-If parts of the code cannot be shared,
-briefly state which components are unavailable and why
-(e.g., proprietary deployment interfaces),
-and indicate whether pseudocode or detailed methodological descriptions are provided instead.
+\subsection*{Reproducibility note}
 
-\section{Supplementary methods}
-
-Include detailed methodological information that would disrupt the flow of the main text. Present additional analyses or derivations.
-
-\section{Additional results}
-
-Present supporting analyses and figures that complement your main results. Include any results referenced but not shown in the main text.
+The daily literature monitoring pipeline that produced the candidate
+corpus has been operational since 2024 and is described in
+Appendix~\ref{sec:technical_appendix}. The 60-paper v3 corpus used
+for the empirical content analysis is a frozen snapshot of the
+candidate corpus at the cut-off date reported in
+Section~\ref{sec:methods}. The reproducibility of the descriptive
+findings (gap frequencies, co-occurrence counts, interaction
+pathways) is high because all intermediate data products are
+versioned in the public repository.
