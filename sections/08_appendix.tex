@@ -175,14 +175,16 @@ AI safety in healthcare, clinical validation \\
 
 The complete roster of the 60 papers comprising the V3.1 corpus,
 sorted by stance (SPECIFIC\_GAP $\rightarrow$ SUPPORT $\rightarrow$
-ELSE $\rightarrow$ COUNTER) and then by year (descending). The
-\texttt{Gaps} column shows the binary coding for Gap 1 (ecological
-validity), Gap 2 (governance capacity), and Gap 3 (pilot trap):
-1 = documented, 0 = absent. Stance abbreviations: SG = SPECIFIC\_GAP,
-SUP = SUPPORT, ELS = ELSE, CNT = COUNTER. Confidence abbreviations:
-hig = high, med = medium, low = low. The full coding matrix
-(including verbatim evidence quotes, indicator lists, and interaction
-directions) is available at
+ELSE $\rightarrow$ COUNTER) and then by year (descending). Each
+\textbf{ID} is a clickable hyperlink to the canonical record on
+its source database (PubMed, DBLP, Semantic Scholar, or arXiv).
+The \texttt{Gaps} column shows the binary coding for Gap 1
+(ecological validity), Gap 2 (governance capacity), and Gap 3
+(pilot trap): 1 = documented, 0 = absent. Stance abbreviations:
+SG = SPECIFIC\_GAP, SUP = SUPPORT, ELS = ELSE, CNT = COUNTER.
+Confidence abbreviations: hig = high, med = medium, low = low.
+The full coding matrix (including verbatim evidence quotes,
+indicator lists, and interaction directions) is available at
 \url{https://github.com/Arkoys/ai-health-lit-review} in
 \texttt{analysis/\_codings\_v3.1\_stance.json}.
 
@@ -195,68 +197,68 @@ directions) is available at
     \toprule
     \textbf{ID} & \textbf{Year} & \textbf{Src.} & \textbf{Title} & \textbf{Gaps} & \textbf{Stance} & \textbf{Conf.} \\
     \midrule
-  d:corr/abs-2601-15630 & 2026 & DBLP & Agentic AI Governance and Lifecycle Management \ldots & 010 & SG & low \\
-  d:corr/abs-2603-07924 & 2026 & DBLP & Semantic Risk Scoring of Aggregated Metrics: An\ldots & 010 & SG & low \\
-  d:npjdm/HusseinZRHHSB26 & 2026 & DBLP & Advancing healthcare AI governance through a co\ldots & 010 & SG & low \\
-  pmid:41930736 & 2026 & PubMed & Validation of a Risk-Prediction Model in the Pr\ldots & 100 & SG & hig \\
-  pmid:41935450 & 2026 & PubMed & Prediction of Early-onset Preeclampsia Using De\ldots & 101 & SG & hig \\
-  pmid:41935973 & 2026 & PubMed & Predictive neuroimaging biomarkers of major dep\ldots & 100 & SG & hig \\
-  pmid:41936035 & 2026 & PubMed & [Simulated consciousness, pseudo-empathy and th\ldots & 110 & SG & med \\
-  pmid:41941973 & 2026 & PubMed & Exploring AI and ML in managing overlap between\ldots & 101 & SG & hig \\
-  pmid:41942350 & 2026 & PubMed & From Pilot Trap to Institutional Capacity: A Go\ldots & 011 & SG & hig \\
-  pmid:41942817 & 2026 & PubMed & AI Models for Surgical Decision Support in Spon\ldots & 100 & SG & med \\
-  ss:5dce643 & 2026 & SemSchol & A comprehensive review of venous thromboembolis\ldots & 101 & SG & hig \\
-  ss:65d820b & 2026 & SemSchol & Beyond binary diagnosis: Key questions on AI ac\ldots & 101 & SG & hig \\
-  ss:bf7fd44 & 2026 & SemSchol & Evidence-Driven AI Governance for Healthcare: A\ldots & 010 & SG & hig \\
-  d:fllm/QureshiS25 & 2025 & DBLP & Responsible AI to AI Governance: An Awareness-D\ldots & 010 & SG & low \\
-  d:ijcnn/Skubis25 & 2025 & DBLP & AI Governance: Ethics of Trustworthy AI in Heal\ldots & 010 & SG & low \\
-  d:corr/abs-2512-03098 & 2025 & DBLP & An AI Implementation Science Study to Improve T\ldots & 001 & SG & low \\
-  ss:1fe644e & 2025 & SemSchol & Real-World Evaluation of Large Language Models \ldots & 110 & SG & hig \\
-  ss:37453bb & 2025 & SemSchol & The illusion of safety: A report to the FDA on \ldots & 110 & SG & hig \\
-  ss:48816ce & 2025 & SemSchol & Leadership Challenges in Implementing AI Govern\ldots & 010 & SG & med \\
-  ss:5c5299a & 2025 & SemSchol & AI-based Clinical Decision Support for Primary \ldots & 001 & SG & med \\
-  ss:62ec161 & 2025 & SemSchol & Artificial intelligence in diabetology: systema\ldots & 101 & SG & med \\
-  ss:644f8df & 2025 & SemSchol & Preventing unrestricted and unmonitored AI expe\ldots & 110 & SG & hig \\
-  ss:79185ce & 2025 & SemSchol & The Blockchain Deployment Deficit in AI-Enabled\ldots & 101 & SG & hig \\
-  ss:89ba9fd & 2025 & SemSchol & Patient-Reported Outcome Measures in Adults wit\ldots & 001 & SG & med \\
-  ss:97341ce & 2025 & SemSchol & SLaM Image Bank - a real-world diverse London c\ldots & 100 & SG & hig \\
-  ss:9b55f76 & 2025 & SemSchol & Artificial intelligence in healthcare: global i\ldots & 010 & SG & hig \\
-  ss:9cb5147 & 2025 & SemSchol & Ethical and legal considerations in healthcare \ldots & 010 & SG & med \\
-  ss:ca5cf92 & 2025 & SemSchol & Real-World Feasibility of Generative Large Lang\ldots & 100 & SG & hig \\
-  ss:d65b399 & 2025 & SemSchol & Ecological Validity Missing in AI-Assisted Clin\ldots & 100 & SG & hig \\
-  ss:e676d1d & 2025 & SemSchol & Governance and Accountability of AI Agents in U\ldots & 111 & SG & hig \\
-  ss:eb64145 & 2025 & SemSchol & Deep Learning in Healthcare & 100 & SG & hig \\
-  ss:ffdae9b & 2025 & SemSchol & Generative AI’s healthcare professional role cr\ldots & 010 & SG & hig \\
-  ss:27b2cb8 & 2024 & SemSchol & Comparative Governance of AI-Driven Healthcare \ldots & 011 & SG & hig \\
-  ss:6fe6e3d & 2024 & SemSchol & FDA-Approved Artificial Intelligence and Machin\ldots & 110 & SG & hig \\
-  ss:7caca59 & 2024 & SemSchol & Navigating regulatory and policy challenges for\ldots & 110 & SG & hig \\
-  ss:8fabf24 & 2024 & SemSchol & Shaping the future of AI in healthcare through \ldots & 010 & SG & med \\
-  ss:77e1783 & 2023 & SemSchol & From theoretical models to practical deployment\ldots & 101 & SG & hig \\
-  ss:ce7982b & 2023 & SemSchol & Real-World Demonstration of AI to Clinical Cyto\ldots & 100 & SG & hig \\
-  2604.11798v1 & 2026 & Other & Budget-Aware Uncertainty for Radiotherapy Segme\ldots & 100 & SUP & hig \\
-  d:biostec/ChandradevaM26 & 2026 & DBLP & AI-Based Software as a Medical Device: Bridging\ldots & 010 & SUP & low \\
-  d:npjdm/KimHBS26 & 2026 & DBLP & People process technology and operations framew\ldots & 010 & SUP & low \\
-  ss:166b63e & 2026 & SemSchol & NURSE-AI: A Nurse-by-Design Framework for Multi\ldots & 111 & SUP & hig \\
-  ss:9444765 & 2026 & SemSchol & Ethical AI Governance in Healthcare CRM Systems & 010 & SUP & hig \\
-  ss:d9f0f2d & 2026 & SemSchol & AlignInsight: A Three-Layer Framework for Detec\ldots & 110 & SUP & low \\
-  d:ijmi/OlawadeWTMBH25 & 2025 & DBLP & Evaluating AI adoption in healthcare: Insights \ldots & 011 & SUP & low \\
-  ss:981e769 & 2025 & SemSchol & Post-Marketing Surveillance and Regulation of t\ldots & 110 & SUP & hig \\
-  ss:af5ed53 & 2025 & SemSchol & Prioritizing human-AI collaboration in healthca\ldots & 111 & SUP & hig \\
-  ss:6ff7c77 & 2024 & SemSchol & Developing a Framework for Self-regulatory Gove\ldots & 111 & SUP & hig \\
-  ss:c222df3 & 2024 & SemSchol & FDA Perspective on the Regulation of Artificial\ldots & 110 & SUP & hig \\
-  ss:057dc43 & 2021 & SemSchol & Multi-Institution Encrypted Medical Imaging AI \ldots & 101 & SUP & hig \\
-  d:bise/BartschBBBBDFJLRSW25 & 2025 & DBLP & Governance of High-Risk AI Systems in Healthcar\ldots & 000 & ELS & low \\
-  d:fdgth/FieldsBTJARABAHS25 & 2025 & DBLP & Governance for anti-racist AI in healthcare: in\ldots & 000 & ELS & low \\
-  ss:48dc9fe & 2025 & SemSchol & How AI Transforms Regulatory Submission: Curren\ldots & 000 & ELS & low \\
-  ss:6b25670 & 2025 & SemSchol & Generative AI in clinical practice: novel quali\ldots & 000 & ELS & low \\
-  ss:edada58 & 2025 & SemSchol & Artificial intelligence in traditional Chinese \ldots & 000 & ELS & med \\
-  d:titb/Shaban-NejadMBB21 & 2021 & DBLP & Guest Editorial Explainable AI: Towards Fairnes\ldots & 000 & ELS & low \\
-  pmid:41942089 & 2026 & PubMed & A comparative analysis of AI scribes versus hum\ldots & 000 & CNT & med \\
-  ss:11855a6 & 2025 & SemSchol & From prediction to action: a retrospective obse\ldots & 000 & CNT & med \\
-  ss:6d94421 & 2025 & SemSchol & Prospective Implementation of AI-Assisted CBCT-\ldots & 000 & CNT & med \\
-  ss:a64b8f3 & 2025 & SemSchol & Clinical implementation of AI-based screening f\ldots & 000 & CNT & hig \\
+  \href{https://dblp.org/rec/journals/corr/abs-2601-15630}{d:corr/abs-2601-15630} & 2026 & DBLP & Agentic AI Governance and Lifecycle Management \ldots & 010 & SG & low \\
+  \href{https://dblp.org/rec/journals/corr/abs-2603-07924}{d:corr/abs-2603-07924} & 2026 & DBLP & Semantic Risk Scoring of Aggregated Metrics: An\ldots & 010 & SG & low \\
+  \href{https://dblp.org/rec/journals/npjdm/HusseinZRHHSB26}{d:npjdm/HusseinZRHHSB26} & 2026 & DBLP & Advancing healthcare AI governance through a co\ldots & 010 & SG & low \\
+  \href{https://pubmed.ncbi.nlm.nih.gov/41930736/}{pmid:41930736} & 2026 & PubMed & Validation of a Risk-Prediction Model in the Pr\ldots & 100 & SG & hig \\
+  \href{https://pubmed.ncbi.nlm.nih.gov/41935450/}{pmid:41935450} & 2026 & PubMed & Prediction of Early-onset Preeclampsia Using De\ldots & 101 & SG & hig \\
+  \href{https://pubmed.ncbi.nlm.nih.gov/41935973/}{pmid:41935973} & 2026 & PubMed & Predictive neuroimaging biomarkers of major dep\ldots & 100 & SG & hig \\
+  \href{https://pubmed.ncbi.nlm.nih.gov/41936035/}{pmid:41936035} & 2026 & PubMed & [Simulated consciousness, pseudo-empathy and th\ldots & 110 & SG & med \\
+  \href{https://pubmed.ncbi.nlm.nih.gov/41941973/}{pmid:41941973} & 2026 & PubMed & Exploring AI and ML in managing overlap between\ldots & 101 & SG & hig \\
+  \href{https://pubmed.ncbi.nlm.nih.gov/41942350/}{pmid:41942350} & 2026 & PubMed & From Pilot Trap to Institutional Capacity: A Go\ldots & 011 & SG & hig \\
+  \href{https://pubmed.ncbi.nlm.nih.gov/41942817/}{pmid:41942817} & 2026 & PubMed & AI Models for Surgical Decision Support in Spon\ldots & 100 & SG & med \\
+  \href{https://www.semanticscholar.org/paper/5dce6433c29e6bc88dd3537b06eae793c41e80c5}{ss:5dce643} & 2026 & SemSchol & A comprehensive review of venous thromboembolis\ldots & 101 & SG & hig \\
+  \href{https://www.semanticscholar.org/paper/65d820b0292c7692166f30f41cd7a7da314d3a8e}{ss:65d820b} & 2026 & SemSchol & Beyond binary diagnosis: Key questions on AI ac\ldots & 101 & SG & hig \\
+  \href{https://www.semanticscholar.org/paper/bf7fd44beaf7f754084e4d32a66653337510f911}{ss:bf7fd44} & 2026 & SemSchol & Evidence-Driven AI Governance for Healthcare: A\ldots & 010 & SG & hig \\
+  \href{https://dblp.org/rec/conf/fllm/QureshiS25}{d:fllm/QureshiS25} & 2025 & DBLP & Responsible AI to AI Governance: An Awareness-D\ldots & 010 & SG & low \\
+  \href{https://dblp.org/rec/conf/ijcnn/Skubis25}{d:ijcnn/Skubis25} & 2025 & DBLP & AI Governance: Ethics of Trustworthy AI in Heal\ldots & 010 & SG & low \\
+  \href{https://dblp.org/rec/journals/corr/abs-2512-03098}{d:corr/abs-2512-03098} & 2025 & DBLP & An AI Implementation Science Study to Improve T\ldots & 001 & SG & low \\
+  \href{https://www.semanticscholar.org/paper/1fe644e3b971a52cc57b1b5ddc4cba5408cf1a8d}{ss:1fe644e} & 2025 & SemSchol & Real-World Evaluation of Large Language Models \ldots & 110 & SG & hig \\
+  \href{https://www.semanticscholar.org/paper/37453bba51312c14c911b237652eaeffff5d8e43}{ss:37453bb} & 2025 & SemSchol & The illusion of safety: A report to the FDA on \ldots & 110 & SG & hig \\
+  \href{https://www.semanticscholar.org/paper/48816ceed442327a097e22a1b4a318b6d26e4714}{ss:48816ce} & 2025 & SemSchol & Leadership Challenges in Implementing AI Govern\ldots & 010 & SG & med \\
+  \href{https://www.semanticscholar.org/paper/5c5299ab486eb67a79c8ffcf607446e9f5f1fbfe}{ss:5c5299a} & 2025 & SemSchol & AI-based Clinical Decision Support for Primary \ldots & 001 & SG & med \\
+  \href{https://www.semanticscholar.org/paper/62ec161b36f7200222e9bfac9b86e3ea61f66276}{ss:62ec161} & 2025 & SemSchol & Artificial intelligence in diabetology: systema\ldots & 101 & SG & med \\
+  \href{https://www.semanticscholar.org/paper/644f8df8c9f4f31bfff147a4bff64b77f4e81ffb}{ss:644f8df} & 2025 & SemSchol & Preventing unrestricted and unmonitored AI expe\ldots & 110 & SG & hig \\
+  \href{https://www.semanticscholar.org/paper/79185ce1fddf051f42d68633449ea8db3a6f9bf5}{ss:79185ce} & 2025 & SemSchol & The Blockchain Deployment Deficit in AI-Enabled\ldots & 101 & SG & hig \\
+  \href{https://www.semanticscholar.org/paper/89ba9fde2bde295010720131d28cc52f90bda918}{ss:89ba9fd} & 2025 & SemSchol & Patient-Reported Outcome Measures in Adults wit\ldots & 001 & SG & med \\
+  \href{https://www.semanticscholar.org/paper/97341ce214d3ee6ff38797b0d31902728279283e}{ss:97341ce} & 2025 & SemSchol & SLaM Image Bank - a real-world diverse London c\ldots & 100 & SG & hig \\
+  \href{https://www.semanticscholar.org/paper/9b55f763dac5f72478d0a0cd3b4c8ee4fc8fe3e8}{ss:9b55f76} & 2025 & SemSchol & Artificial intelligence in healthcare: global i\ldots & 010 & SG & hig \\
+  \href{https://www.semanticscholar.org/paper/9cb51471e41ddaeaae6f93513f4ce20128248cfd}{ss:9cb5147} & 2025 & SemSchol & Ethical and legal considerations in healthcare \ldots & 010 & SG & med \\
+  \href{https://www.semanticscholar.org/paper/ca5cf9264d753c39a709603f8248c048b35de3bf}{ss:ca5cf92} & 2025 & SemSchol & Real-World Feasibility of Generative Large Lang\ldots & 100 & SG & hig \\
+  \href{https://www.semanticscholar.org/paper/d65b3997f9ee3728ab5ffb6a999a457914c5320e}{ss:d65b399} & 2025 & SemSchol & Ecological Validity Missing in AI-Assisted Clin\ldots & 100 & SG & hig \\
+  \href{https://www.semanticscholar.org/paper/e676d1d843bb4bfc5e4dfa53a8e471b59ae33b8b}{ss:e676d1d} & 2025 & SemSchol & Governance and Accountability of AI Agents in U\ldots & 111 & SG & hig \\
+  \href{https://www.semanticscholar.org/paper/eb64145d21ce569267c55569d15b07b6701fe77b}{ss:eb64145} & 2025 & SemSchol & Deep Learning in Healthcare & 100 & SG & hig \\
+  \href{https://www.semanticscholar.org/paper/ffdae9b41bd79a5d59beb0f074c7ea9cf893d092}{ss:ffdae9b} & 2025 & SemSchol & Generative AI’s healthcare professional role cr\ldots & 010 & SG & hig \\
+  \href{https://www.semanticscholar.org/paper/27b2cb8e59e9f1a728a13d6a0c610cd48cea7a84}{ss:27b2cb8} & 2024 & SemSchol & Comparative Governance of AI-Driven Healthcare \ldots & 011 & SG & hig \\
+  \href{https://www.semanticscholar.org/paper/6fe6e3d9ebc672124b43149fb8de1915c8c4796d}{ss:6fe6e3d} & 2024 & SemSchol & FDA-Approved Artificial Intelligence and Machin\ldots & 110 & SG & hig \\
+  \href{https://www.semanticscholar.org/paper/7caca59244e1770bfd94d92fe73cce1bde9b05c7}{ss:7caca59} & 2024 & SemSchol & Navigating regulatory and policy challenges for\ldots & 110 & SG & hig \\
+  \href{https://www.semanticscholar.org/paper/8fabf24a07f006bd2097584770afd3953aadc4a6}{ss:8fabf24} & 2024 & SemSchol & Shaping the future of AI in healthcare through \ldots & 010 & SG & med \\
+  \href{https://www.semanticscholar.org/paper/77e17832bbafda1dba494e03b00e82b22f7de7c0}{ss:77e1783} & 2023 & SemSchol & From theoretical models to practical deployment\ldots & 101 & SG & hig \\
+  \href{https://www.semanticscholar.org/paper/ce7982b45f386e107507c1d30ef2288bbdd55ec8}{ss:ce7982b} & 2023 & SemSchol & Real-World Demonstration of AI to Clinical Cyto\ldots & 100 & SG & hig \\
+  \href{https://arxiv.org/abs/2604.11798}{2604.11798v1} & 2026 & arXiv & Budget-Aware Uncertainty for Radiotherapy Segme\ldots & 100 & SUP & hig \\
+  \href{https://dblp.org/rec/conf/biostec/ChandradevaM26}{d:biostec/ChandradevaM26} & 2026 & DBLP & AI-Based Software as a Medical Device: Bridging\ldots & 010 & SUP & low \\
+  \href{https://dblp.org/rec/journals/npjdm/KimHBS26}{d:npjdm/KimHBS26} & 2026 & DBLP & People process technology and operations framew\ldots & 010 & SUP & low \\
+  \href{https://www.semanticscholar.org/paper/166b63e88e64f56e7277c42c093fcf32748a4da5}{ss:166b63e} & 2026 & SemSchol & NURSE-AI: A Nurse-by-Design Framework for Multi\ldots & 111 & SUP & hig \\
+  \href{https://www.semanticscholar.org/paper/94447651cc7a0d032fd9d08377ba46abcdea125e}{ss:9444765} & 2026 & SemSchol & Ethical AI Governance in Healthcare CRM Systems & 010 & SUP & hig \\
+  \href{https://www.semanticscholar.org/paper/d9f0f2dafd5e976137c0037720665dbd936157f6}{ss:d9f0f2d} & 2026 & SemSchol & AlignInsight: A Three-Layer Framework for Detec\ldots & 110 & SUP & low \\
+  \href{https://dblp.org/rec/journals/ijmi/OlawadeWTMBH25}{d:ijmi/OlawadeWTMBH25} & 2025 & DBLP & Evaluating AI adoption in healthcare: Insights \ldots & 011 & SUP & low \\
+  \href{https://www.semanticscholar.org/paper/981e7694a91e9af418a2483724f5a4cbba904864}{ss:981e769} & 2025 & SemSchol & Post-Marketing Surveillance and Regulation of t\ldots & 110 & SUP & hig \\
+  \href{https://www.semanticscholar.org/paper/af5ed5354bf871ea35c607fd37adabddb9686cef}{ss:af5ed53} & 2025 & SemSchol & Prioritizing human-AI collaboration in healthca\ldots & 111 & SUP & hig \\
+  \href{https://www.semanticscholar.org/paper/6ff7c775b686fd1ade7b543b95e46a6edc43438a}{ss:6ff7c77} & 2024 & SemSchol & Developing a Framework for Self-regulatory Gove\ldots & 111 & SUP & hig \\
+  \href{https://www.semanticscholar.org/paper/c222df39f6861098a33bb8b1ad86cee14c06074c}{ss:c222df3} & 2024 & SemSchol & FDA Perspective on the Regulation of Artificial\ldots & 110 & SUP & hig \\
+  \href{https://www.semanticscholar.org/paper/057dc435313a999391271f9cf0ef46d1a5524c6e}{ss:057dc43} & 2021 & SemSchol & Multi-Institution Encrypted Medical Imaging AI \ldots & 101 & SUP & hig \\
+  \href{https://dblp.org/rec/journals/bise/BartschBBBBDFJLRSW25}{d:bise/BartschBBBBDFJLRSW25} & 2025 & DBLP & Governance of High-Risk AI Systems in Healthcar\ldots & 000 & ELS & low \\
+  \href{https://dblp.org/rec/journals/fdgth/FieldsBTJARABAHS25}{d:fdgth/FieldsBTJARABAHS25} & 2025 & DBLP & Governance for anti-racist AI in healthcare: in\ldots & 000 & ELS & low \\
+  \href{https://www.semanticscholar.org/paper/48dc9fe86e888ae424eda1ac9ba85498699cef29}{ss:48dc9fe} & 2025 & SemSchol & How AI Transforms Regulatory Submission: Curren\ldots & 000 & ELS & low \\
+  \href{https://www.semanticscholar.org/paper/6b256703d800a0757fb66b153dc1dfbff5b32dac}{ss:6b25670} & 2025 & SemSchol & Generative AI in clinical practice: novel quali\ldots & 000 & ELS & low \\
+  \href{https://www.semanticscholar.org/paper/edada5869090472f36e36fa9ce9dc0b7c5fc8b00}{ss:edada58} & 2025 & SemSchol & Artificial intelligence in traditional Chinese \ldots & 000 & ELS & med \\
+  \href{https://dblp.org/rec/journals/titb/Shaban-NejadMBB21}{d:titb/Shaban-NejadMBB21} & 2021 & DBLP & Guest Editorial Explainable AI: Towards Fairnes\ldots & 000 & ELS & low \\
+  \href{https://pubmed.ncbi.nlm.nih.gov/41942089/}{pmid:41942089} & 2026 & PubMed & A comparative analysis of AI scribes versus hum\ldots & 000 & CNT & med \\
+  \href{https://www.semanticscholar.org/paper/11855a6c39258799f3d5d87cd418b8cc43761e62}{ss:11855a6} & 2025 & SemSchol & From prediction to action: a retrospective obse\ldots & 000 & CNT & med \\
+  \href{https://www.semanticscholar.org/paper/6d94421fcb97c68898b9761a5dcda0c007357105}{ss:6d94421} & 2025 & SemSchol & Prospective Implementation of AI-Assisted CBCT-\ldots & 000 & CNT & med \\
+  \href{https://www.semanticscholar.org/paper/a64b8f36fea8352e5597bbc4c106b11dd05886f2}{ss:a64b8f3} & 2025 & SemSchol & Clinical implementation of AI-based screening f\ldots & 000 & CNT & hig \\
     \bottomrule
   \end{tabularx}
-  \caption{Complete V3.1 corpus roster ($n=60$), ordered by stance then year (descending). The Gaps column reports the binary coding for Gap 1 (ecological validity), Gap 2 (governance capacity), and Gap 3 (pilot trap). Stance and confidence labels follow the V3.1 coding protocol.}
+  \caption{Complete V3.1 corpus roster ($n=60$), ordered by stance then year (descending). The Gaps column reports the binary coding for Gap 1 (ecological validity), Gap 2 (governance capacity), and Gap 3 (pilot trap). Stance and confidence labels follow the V3.1 coding protocol. Each ID is a hyperlink to the canonical record on its source database.}
   \label{tab:corpus_roster}
 \end{table}
