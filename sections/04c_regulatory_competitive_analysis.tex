@@ -1,401 +1,458 @@
 % =============================================================================
-% 04C_REGULATORY_COMPETITIVE_ANALYSIS — Comparative Analysis of Regulatory
-% Frameworks Against the Three-Gap Framework
+% 04C_REGULATORY_COMPARISON — Empirical-Driven Regulatory Analysis
 % =============================================================================
-% Compares EU AI Act, US FDA, UK MHRA, and WHO frameworks on their capacity
-% to address the gap1 → gap2 → gap3 cascade identified in the empirical analysis.
+% Version 3.1 — Updated to reflect the v3.1 empirical findings from
+% Section 04b. The dominant causal pathway is now gap1 → gap3
+% (ecological validity failure → pilot trap), not gap2 → gap3.
 % =============================================================================
 
-\section{Regulatory Competitive Analysis}
+\section{Regulatory Framework Comparison: An Empirical-Driven Analysis}
 \label{sec:regulatory}
-\addcontentsline{toc}{section}{Regulatory Competitive Analysis}
 
-The empirical analysis in Section~\ref{sec:empirical} identified the
-\textbf{gap1 $\rightarrow$ gap3 cascade} as the dominant causal pathway
-in the literature: ecological validity failures in evaluation drive pilot-trap
-outcomes. Gap 1 is the upstream regulatory lever with the largest downstream
-effect on implementation success. This section applies that finding to a
-comparative analysis of the four major regulatory frameworks operating in
-the health AI space: the \textbf{EU AI Act}, the \textbf{US FDA framework},
-the \textbf{UK MHRA framework}, and the \textbf{WHO Governance Guidance}.
-Each framework is evaluated against its capacity to address the three-gap
-cascade, with particular attention to the gap1 $\rightarrow$ gap3 pathway
-that the empirical record identifies as primary.
-
-\medskip
-\noindent\textbf{Methodological note.} The evaluative criteria applied in this
-section (the five conditions derived from the three-gap framework) are
-empirically grounded in the 60-paper v3 corpus. However, the application of
-those criteria to specific regulatory frameworks draws on regulatory knowledge
-that extends beyond the strict corpus. This is methodologically appropriate for
-a literature review: the corpus identifies \textit{what the gaps are} and
-\textit{how they interact}, while the regulatory comparison applies those
-findings to the broader governance landscape. Where specific regulatory claims
-are made, they are supported by citations to corpus papers where available
-(e.g., \cite{warraich2024fda, abulibdeh2025illusion} for FDA critique) and
-to authoritative regulatory documentation where the corpus does not provide
-direct evidence. The reader should therefore understand this section as an
-analytical application of the empirical framework to the known regulatory
-landscape, not as a systematic content analysis of the 60-paper corpus
-against each regulatory framework.
-
-\subsection{Evaluative Framework: What Should a Health AI Regulatory Framework Address?}
-
-Before comparing frameworks, it is necessary to establish the evaluative
-criteria derived from the three-gap framework. A regulatory framework that
-genuinely addresses the health AI evaluation-governance-implementation
-challenge must satisfy five conditions:
+The V3.1 empirical analysis in Section~\ref{sec:empirical} yields
+four findings that constrain the regulatory comparison:
 
 \begin{enumerate}
-  \item \textbf{Ecological validity mandate:} The framework must require
-        evaluation methodologies that reflect real-world clinical complexity —
-        including external validation, diverse population subgroups, and
-        longitudinal performance monitoring — not merely technical accuracy
-        on curated single-site datasets.
-
-  \item \textbf{Governance capacity recognition:} The framework must recognize
-        that governance capacity is built through implementation, not pre-installed
-        prior to deployment. Regulatory design must account for organizational
-        readiness as a dynamic process rather than a static precondition.
-
-  \item \textbf{Pilot-to-routine transition support:} The framework must
-        provide mechanisms that actively support the transition from pilot
-        to routine care — including staged authorization, enhanced monitoring
-        during the transition period, and clear escalation pathways.
-
-  \item \textbf{Algorithmic drift and post-market monitoring:} The framework
-        must mandate continuous post-market performance monitoring with
-        standardized drift detection protocols, moving beyond one-time
-        pre-market authorization.
-
-  \item \textbf{Equity and subgroup performance:} The framework must require
-        mandatory subgroup performance reporting to detect and quantify
-        algorithmic bias across population strata, addressing the equity gap
-        documented in the literature.
+  \item \textbf{Gap 1 (Ecological Validity) and Gap 2 (Governance
+        Capacity) are tied as the most-documented individual
+        deficits}, each appearing in 30 of 60 papers (50.0\%).
+        Gap 3 (Pilot Trap) is documented in 18 papers (30.0\%).
+  \item \textbf{The dominant causal pathway is gap1 $\rightarrow$
+        gap3} (9 papers, 47.4\% of all interaction papers),
+        followed by gap1 $\rightarrow$ gap2 (5 papers) and
+        gap2 $\rightarrow$ gap3 (3 papers). The cascade is
+        \textit{initiated by ecological validity failure}, not
+        by governance weakness.
+  \item \textbf{Gap 3 (Pilot Trap) is rarely documented
+        independently}: 66.7\% of Gap 3 papers also discuss
+        Gap 1, and 38.9\% also discuss Gap 2. The pilot trap
+        is the downstream symptom of upstream evaluation
+        deficits.
+  \item \textbf{The strongest co-occurrence is Gap 1 $\cap$ Gap 3}
+        (12 papers), confirming that ecological-validity-driven
+        deployment failure is the most-documented cascade in
+        the empirical record.
 \end{enumerate}
 
-These five conditions operationalize the three-gap framework as a regulatory
-design criterion. Each framework is assessed against all five.
+\noindent\textbf{Comparison criteria derived from the empirical
+findings.} The three regulatory frameworks are evaluated against
+the following three questions, in the order implied by the
+empirical structure of the literature:
 
-% =============================================================================
-% EU AI ACT
-% =============================================================================
+\begin{itemize}
+  \item \textbf{Q1 (Gap 1, Ecological Validity):} Does the
+        framework mandate \textit{ecologically-valid evaluation}
+        (multi-site, prospective, subgroup-stratified,
+        post-deployment distribution-shift monitoring) as a
+        precondition for deployment?
+  \item \textbf{Q2 (Gap 2, Governance Capacity):} Does the
+        framework require or enable \textit{institutional
+        governance capacity} (post-market monitoring
+        infrastructure, accountability assignment, audit
+        capacity) before, during, and after AI deployment?
+  \item \textbf{Q3 (Gap 3, Pilot Trap):} Does the framework
+        provide a \textit{sustained pathway from pilot to
+        routine practice} (workflow integration support,
+        scale-up funding, post-pilot evaluation requirements)?
+\end{itemize}
 
-\subsection{EU AI Act}
-\label{sec:reg_eu}
+Special attention is given to the upstream lever that the
+empirical record identifies: because the dominant cascade is
+\textbf{gap1 $\rightarrow$ gap3}, the central regulatory
+question for this study is:
 
-The European Union's AI Act \citep{eu_ai_act_2024}, which entered into force
-in August 2024, represents the world's most comprehensive horizontal
-regulation of AI systems. Its risk-based architecture classifies AI systems
-into four tiers — unacceptable risk (prohibited), high risk, limited risk,
-and minimal risk — with health AI systems predominantly falling into the
-high-risk category.
+\begin{quote}
+\textit{Which governance framework is most capable of mandating
+ecologically-valid evaluation as a precondition for sustained
+deployment, such that the gap1 $\rightarrow$ gap3 cascade is
+interrupted at its evaluation source?}
+\end{quote}
 
-\textbf{Strengths against the three-gap framework.}
+\subsection{Evaluation: EU AI Act}
+\label{sec:eu_ai_act}
 
-The EU AI Act scores highest on Condition2 (governance capacity recognition).
-Article 10 requires that high-risk AI systems be accompanied by technical
-documentation demonstrating not only technical performance but also
-organizational readiness to manage the system throughout its lifecycle.
-Crucially, Article 14 on human oversight mandates that high-risk AI systems
-be designed to allow human intervention and that organizations maintain
-processes for ongoing monitoring — implicitly acknowledging that governance
-capacity must be maintained, not merely asserted at authorization.
+The EU AI Act (Regulation (EU) 2024/1689) entered into force in
+August 2024 with phased application through 2027. Healthcare AI
+systems used for triage, diagnosis, treatment recommendation, and
+critical-care decision support are classified as \textbf{high-risk}
+under Annex III, which subjects them to conformity assessment,
+risk management, data governance, transparency, human oversight,
+and post-market monitoring obligations.
 
-The Act also scores well on Condition 4 (post-market monitoring). Article 10
-requires manufacturers to implement quality management systems that include
-post-market surveillance procedures, and Article 92 mandates that the European
-AI Office conduct ongoing conformity assessments. This represents a meaningful
-departure from the one-time authorization model.
+\noindent\textbf{Q1 (Ecological Validity): Moderate.}
+The Act requires ``high quality'' training, validation, and
+testing datasets (Art. 10) representative of the intended
+population, and mandates that datasets ``have the appropriate
+statistical properties'' relative to the deployment context. It
+also requires that validation ``be performed against
+appropriate data sets'' that reflect deployment conditions.
+However, the Act does not explicitly require multi-site
+prospective evaluation, subgroup-stratified performance
+reporting, or post-deployment drift monitoring as a
+precondition for market access. Ecological validity is treated
+as a property of the input data rather than as a property of
+the evaluation \textit{process}. The empirical literature
+(Gap 1) documents failures in the latter, not the former.
 
-On Condition 5 (equity and subgroup performance), the Act's requirements for
-training data documentation (Article 10) and the risk management system
-(Article 9) create institutional hooks for equity auditing, though mandatory
-subgroup performance reporting in deployment is not explicitly required.
+\noindent\textbf{Q2 (Governance Capacity): Strong on
+\textit{paper}, moderate in practice.}
+The Act is the most explicit of the three frameworks on
+post-market monitoring. Article 72 requires providers to
+establish a post-market monitoring system \textit{proportional
+to the nature of the high-risk AI system}, with active
+monitoring of performance, complaint handling, and reporting
+of serious incidents. Article 73 requires post-market
+monitoring plans with indicators of performance and a
+methodology for identifying risks. Article 26 obliges
+deployers (health institutions) to assign human oversight
+to ``natural persons'' with the necessary competence,
+authority, and resources. The gap, in the empirical
+literature, is the \textit{capacity to execute} these
+obligations rather than their presence in the regulation.
+The Act assumes that institutions have the capacity to
+comply; the literature documents that they often do not.
+The Act's enforcement relies on national competent
+authorities designated by member states; capacity variation
+across member states is itself a documented source of
+governance asymmetry.
 
-\textbf{Weaknesses against the three-gap framework.}
+\noindent\textbf{Q3 (Pilot Trap): Weak.}
+The Act is designed around market-access decisions, not
+sustained-deployment support. It provides a regulatory
+pathway into the market (conformity assessment, CE marking)
+and a post-market surveillance system, but does not provide
+a mechanism to support workflow integration, organizational
+change, or sustained adoption once a system is in routine
+use. The empirical literature (Gap 3) documents that the
+challenge is not whether an AI system is approved but
+whether the institution can integrate it into routine
+practice. The Act addresses the former and is silent on the
+latter.
 
-The EU AI Act scores poorly on Condition 1 (ecological validity mandate).
-The conformity assessment procedure for high-risk AI systems (Annexes VII–VIII)
-focuses on technical documentation and testing protocols but does not mandate
-external, multicenter, prospective evaluation as a condition of market entry.
-The Act's evaluation requirements are process-oriented — demonstrating that
-a quality management system exists — rather than outcome-oriented in terms
-of ecological validity. A manufacturer could satisfy the conformity assessment
-with single-site retrospective validation data, which the empirical analysis
-identifies as the primary source of the ecological validity gap.
+\subsection{Evaluation: FDA Adaptive / Post-Market Pathway}
+\label{sec:fda}
 
-On Condition 3 (pilot-to-routine transition), the Act provides no staged
-authorization mechanism. High-risk AI systems are subject to the same
-requirements at the pilot stage as at full deployment, which may create
-disincentives for organizations to run controlled pilot phases with enhanced
-monitoring. The regulatory sandbox provisions (Article 53) are designed for
-innovation support but are not explicitly tied to a structured pilot-to-routine
-transition pathway.
+The FDA regulates AI/ML-based Software as a Medical Device
+(SaMD) under the 510(k) and De Novo pathways, with the
+Predetermined Change Control Plan (PCCP) framework (2024
+final guidance) enabling iterative model updates without
+re-submission. The EU AI Act aligns its high-risk category
+with the FDA's Class II/III SaMD category, but the
+regulatory philosophies differ: the EU AI Act is
+\textit{ex-ante} and risk-classified; the FDA pathway is
+\textit{iterative} and post-market-driven.
 
-\textbf{Summary assessment for EU AI Act.} The Act is the most structurally
-sophisticated of the four frameworks, with meaningful post-market monitoring
-requirements and explicit governance capacity provisions. Its primary weakness
-is the absence of mandatory ecological validity standards for pre-market
-evaluation — it does not close the gap1 $\rightarrow$ gap3 cascade at its
-upstream source. Organizations seeking to deploy AI under the EU AI Act
-will encounter robust governance requirements but no regulatory pressure to
-adopt ecologically valid evaluation methodologies.
+\noindent\textbf{Q1 (Ecological Validity): Weak to moderate.}
+The 510(k) pathway requires demonstration of substantial
+equivalence to a predicate device, which is a comparison of
+intended use and technological characteristics, not a
+comparison of ecological validity. The De Novo pathway
+requires clinical evidence of safety and effectiveness, but
+this evidence is often retrospective, single-site, and
+based on locally-collected data. The PCCP framework allows
+predetermined modifications without new clinical evidence
+if they are within the scope of the originally-approved
+PCCP, which means that the original (often weak)
+ecological validity is inherited across model iterations.
+The empirical Gap 1 literature documents that this
+inherited ecological-validity gap is a structural feature
+of the pathway, not an artifact of individual submissions.
 
-% =============================================================================
-% US FDA
-% =============================================================================
+\noindent\textbf{Q2 (Governance Capacity): Moderate, with
+explicit attention to post-market.}
+The FDA's strength is its post-market surveillance system
+(MAUDE, MedWatch, Sentinel) and its increasing focus on
+Real-World Evidence (RWE) for performance monitoring.
+PCCP explicitly requires manufacturers to specify
+post-market monitoring, performance triggers, and update
+protocols. However, the burden of post-market monitoring
+falls heavily on manufacturers rather than on healthcare
+institutions, and the FDA does not directly regulate
+institutional governance capacity. The empirical Gap 2
+literature documents that institutional governance capacity
+(IRBs, AI governance committees, post-deployment audit
+teams) is variable across institutions; the FDA pathway
+assumes a baseline capacity that the literature shows is
+not uniformly present.
 
-\subsection{US FDA Framework}
-\label{sec:reg_fda}
+\noindent\textbf{Q3 (Pilot Trap): Moderate.}
+The FDA pathway supports the transition from pilot to
+routine practice through its iterative update mechanism
+(PCCP), which is unique among the three frameworks. A
+device that performs well in a pilot can be incrementally
+updated, monitored in real-world use, and re-validated
+based on RWE. This addresses the \textit{regulatory}
+dimension of the pilot trap. However, the FDA pathway
+does not address the \textit{organizational} dimension:
+workflow integration, change management, sustainability
+funding. The empirical Gap 3 literature documents that
+these organizational dimensions are the primary cause of
+sustained adoption failure, not regulatory friction.
 
-The US Food and Drug Administration's approach to AI-enabled medical devices
-operates primarily through the 510(k) and De Novo clearance pathways, with
-Software as a Medical Device (SaMD) governed under the FD\&C Act framework
-\citep{warraich2024fda}. As of 2024, the FDA had authorized nearly 1,000
-AI-enabled medical devices, making it the largest single regulatory authority
-for clinical AI in the world.
+\subsection{Evaluation: WHO and LMIC-Oriented AI Governance Frameworks}
+\label{sec:who_lmic}
 
-\textbf{Strengths against the three-gap framework.}
+The WHO has issued \textit{Ethics and Governance of
+Artificial Intelligence for Health} (2021) and, with
+UNESCO, joint guidance on AI ethics. The WHO's approach
+differs from the EU and FDA approaches in that it is
+\textit{principle-based} and \textit{capacity-oriented}
+rather than \textit{enforcement-based} and
+\textit{market-access-based}. LMIC-oriented frameworks
+include the African Union's \textit{AI Policy Framework}
+(2024), India's \textit{National Strategy for AI}
+(NITI Aayog, 2018), and regional frameworks such as the
+ASEAN AI Governance Guide (2024). These frameworks are
+typically less prescriptive than the EU AI Act and less
+enforcement-driven than the FDA pathway.
 
-The FDA scores highest on Condition 3 (pilot-to-routine transition support)
-through its Predetermined Change Control Plan (PCCP) mechanism. Introduced
-in 2023 and formalized in guidance, the PCCP allows manufacturers to define
-in advance the types of model modifications that can be implemented without
-requiring new market authorization, subject to documented performance
-monitoring. This is a genuinely innovative mechanism: it creates a regulatory
-structure for iterative deployment that mirrors the pilot-to-routine transition
-process, allowing organizations to move from controlled updates to full
-routine operation within a single authorization.
+\noindent\textbf{Q1 (Ecological Validity): Variable, often
+strong in principle, weak in mechanism.}
+WHO guidance explicitly emphasizes the importance of
+context-appropriate AI, including the relevance of training
+data to local populations, languages, and disease burdens.
+The 2021 WHO report devotes substantial attention to the
+risks of AI trained on non-representative data being
+deployed in LMIC contexts. However, the WHO guidance is
+not legally binding and does not include conformity
+assessment, validation requirements, or post-market
+monitoring obligations. The principle is strong; the
+mechanism for enforcing it is absent. LMIC frameworks
+typically defer to the principle of ``contextual
+relevance'' without specifying what this means in
+practice for evaluation methodology.
 
-The FDA also scores reasonably well on Condition 4 (post-market monitoring).
-The agency has issued guidance on real-world performance monitoring for
-AI/ML-enabled devices and requires adverse event reporting through the
-MAUDE database. The 2024 guidance on predetermined change control plans
-further incorporates mandatory performance monitoring thresholds.
+\noindent\textbf{Q2 (Governance Capacity): Strong on
+\textit{capacity building}, weak on \textit{enforcement}.}
+This is the area in which WHO/LMIC frameworks are
+\textit{uniquely strong}. The WHO's 2021 report and
+subsequent guidance explicitly address the capacity
+constraints of LMIC health systems: limited
+infrastructure, weak regulatory agencies, limited
+workforce training, and fragmented data systems. The
+framework is designed to support the \textit{building}
+of governance capacity, not just its regulation. The
+African Union's AI Policy Framework and India's NITI
+Aayog strategy similarly emphasize institutional
+development, training, and infrastructure investment as
+preconditions for responsible AI. This is precisely
+the Gap 2 deficit documented in the empirical
+literature: not the absence of a governance
+\textit{framework}, but the absence of governance
+\textit{capacity} to execute existing frameworks.
+WHO/LMIC frameworks are the only ones of the three
+that explicitly address the capacity deficit as their
+primary concern.
 
-\textbf{Weaknesses against the three-gap framework.}
-
-The FDA scores most poorly on Condition 1 (ecological validity mandate).
-\citet{abulibdeh2025illusion} document that the majority of FDA-authorized
-AI devices were approved on the basis of single-site, premarket studies
-with no mandatory external validation. The 510(k) pathway in particular
-operates on a substantial equivalence model that does not require prospective,
-multicenter, ecologically grounded evaluation. The FDA's focus is on
-demonstrating that a device is substantially equivalent to a predicate
-device — a process-oriented standard — rather than on real-world performance.
-
-On Condition 2 (governance capacity recognition), the FDA framework assumes
-that organizations seeking authorization possess the governance infrastructure
-necessary for safe deployment. The FDA does not assess organizational
-governance maturity as a condition of authorization, and the guidance on
-governance capacity building is minimal. This is the assumption that
-\citet{tian2026pilottrap} identify as empirically challengeable.
-
-On Condition 5 (equity and subgroup performance), the FDA has historically
-not required mandatory subgroup performance reporting in authorization
-submissions. While the 2023 action plan on AI/ML in medical devices
-identifies equity as a priority, enforceable subgroup reporting requirements
-remain under development.
-
-\textbf{Summary assessment for FDA.} The FDA is the world's most active
-regulator of clinical AI by volume, but its framework is the least well
-adapted to the ecological validity challenge identified in the empirical
-analysis. The PCCP mechanism is a genuine innovation for pilot-to-routine
-transition, but the absence of mandatory ecological validity standards
-means that the gap1 $\rightarrow$ gap3 cascade is not addressed at its
-upstream source. The FDA framework generates authorization for AI systems
-whose validation evidence systematically understates real-world complexity.
-
-% =============================================================================
-% UK MHRA
-% =============================================================================
-
-\subsection{UK MHRA Framework}
-\label{sec:reg_mhra}
-
-The UK Medicines and Healthcare products Regulatory Agency (MHRA) has developed
-a distinctive approach to AI-enabled medical devices following Brexit,
-positioning the UK as a potential regulatory innovator through its Software
-and AI Incident Management Programme and the emerging AI roadmap
-\citep{mhra2024software, mhra2024ai}. The MHRA's approach is notable for
-its emphasis on iterative, real-world evidence and its use of the Yellow Card
-reporting system for post-market surveillance.
-
-\textbf{Strengths against the three-gap framework.}
-
-The MHRA scores highest on Condition 4 (post-market monitoring) through its
-established Yellow Card pharmacovigilance-style reporting system, which has
-been extended to AI-enabled medical devices. The agency has also signaled
-intent to develop real-world performance monitoring frameworks that go beyond
-adverse event reporting to include proactive drift detection.
-
-On Condition 3 (pilot-to-routine transition), the MHRA's emphasis on iterative
-authorizations and its work on Software as a Medical Device (SaMD) pathways
-suggests a framework better adapted to the iterative deployment lifecycle
-than the FDA's 510(k) pathway. The MHRA's 2024 software and AI work programme
-explicitly addresses the challenge of continuous learning AI systems.
-
-\textbf{Weaknesses against the three-gap framework.}
-
-The MHRA scores poorly on Condition 1 (ecological validity mandate). The
-current MHRA guidance on AI device evaluation does not mandate external,
-multicenter, prospective evaluation as a condition of authorization. The
-framework relies on existing conformity assessment pathways that do not
-require ecologically grounded evaluation.
-
-On Condition 2 (governance capacity recognition), the MHRA framework
-similarly assumes organizational readiness without assessing it as a
-dynamic process. No guidance currently addresses governance capacity building
-as a regulatory requirement.
-
-On Condition 5 (equity and subgroup performance), the MHRA has not issued
-enforceable subgroup performance reporting requirements, though this is an
-area of active policy development.
-
-\textbf{Summary assessment for MHRA.} The MHRA framework is the least
-documented of the four in the reviewed literature, making definitive assessment
-difficult. Its real-world evidence orientation and iterative authorization
-approach suggest potential to address the pilot-to-routine transition, but
-the absence of mandatory ecological validity standards and governance capacity
-provisions limits its effectiveness against the three-gap cascade.
-
-% =============================================================================
-% WHO GOVERNANCE GUIDANCE
-% =============================================================================
-
-\subsection{WHO Governance Guidance}
-\label{sec:reg_who}
-
-The World Health Organization's guidance on ethics and governance of AI in
-health \citep{who2024ethics} represents the most authoritative global
-normative framework for health AI governance. Unlike the EU AI Act, FDA, or
-MHRA frameworks — which are legally binding within their jurisdictions —
-the WHO guidance functions as soft law: it establishes normative standards
-that member states are encouraged to adopt, but it does not carry enforcement
-mechanisms.
-
-\textbf{Strengths against the three-gap framework.}
-
-The WHO guidance scores highest on Condition 2 (governance capacity
-recognition) and Condition 5 (equity and subgroup performance). The guidance
-explicitly addresses governance capacity as a dynamic, building process:
-it advocates for continuous compliance mechanisms that evolve with the AI
-system's performance history, and it places equity and inclusion at the
-center of governance design. The guidance's emphasis on participatory
-governance — incorporating affected communities, patient advocacy groups,
-and frontline clinical staff — directly addresses the equity dimension
-that the empirical analysis identifies as a gap.
-
-On Condition 3 (pilot-to-routine transition), the WHO guidance recommends
-phased deployment approaches with mandatory performance thresholds at each
-stage, which is conceptually aligned with the pilot-to-routine transition
-challenge.
-
-\textbf{Weaknesses against the three-gap framework.}
-
-The WHO guidance scores poorly on Condition 1 (ecological validity mandate).
-As a normative document, the guidance does not specify evaluation methodology
-requirements and does not mandate external validation or subgroup performance
-reporting as technical standards. The guidance addresses governance and ethics
-but not the technical evaluation methodology that the empirical analysis
-identifies as the upstream driver of the cascade.
-
-On Condition 4 (post-market monitoring), the WHO guidance advocates for
-continuous monitoring but provides no operational mechanism, enforcement
-pathway, or threshold standard. The advocacy is normative rather than
-operational.
-
-\textbf{Summary assessment for WHO.} The WHO guidance is the strongest
-of the four frameworks on governance capacity recognition and equity, but
-its lack of enforcement mechanisms and absence of ecological validity
-mandates limit its effectiveness as a regulatory instrument. It functions
-best as a complement to legally binding frameworks (EU AI Act, FDA, MHRA)
-rather than as a standalone regulatory mechanism.
-
-% =============================================================================
-% COMPARATIVE SUMMARY
-% =============================================================================
+\noindent\textbf{Q3 (Pilot Trap): Strong on
+\textit{narrative}, weak on \textit{mechanism}.}
+WHO guidance explicitly discusses the risk of AI pilots
+failing to scale, particularly in LMIC contexts where
+pilot funding is often donor-driven and does not
+transition to sustainable domestic financing. The
+framework correctly identifies the problem. However, the
+mechanism for addressing it is the same capacity-building
+approach as for Gap 2: training, infrastructure,
+institutional support. The pilot trap in LMIC contexts
+is in part a financing problem and a workforce problem,
+neither of which is solved by regulatory guidance alone.
 
 \subsection{Comparative Summary}
-\label{sec:reg_comparison}
-
-Table~\ref{tab:reg_comparison} summarizes the four frameworks against the
-five evaluative conditions derived from the three-gap framework.
+\label{sec:regulatory_summary}
 
 \begin{table}[t]
   \centering
-  \caption{Comparative assessment of four regulatory frameworks against the
-  five conditions derived from the three-gap framework. Ratings: ++ strong,
-  + moderate, $-$ weak, $--$ absent or counter-productive.}
-  \label{tab:reg_comparison}
-  \begin{tabular}{lcccc}
+  \caption{Comparative evaluation of the three regulatory
+  frameworks against the three gaps. Scores are qualitative
+  assessments based on the regulatory text and on the
+  empirical findings of the literature corpus. \textbf{Strong}
+  = the framework directly and enforceably addresses the
+  gap; \textbf{Moderate} = the framework addresses the gap
+  in principle or for some deployment contexts; \textbf{Weak}
+  = the framework does not address the gap or addresses it
+  only indirectly.}
+  \label{tab:regulatory_comparison}
+  \begin{tabular}{lccc}
     \toprule
-    \textbf{Condition} & \textbf{EU AI Act} & \textbf{FDA} & \textbf{MHRA} & \textbf{WHO} \\
+    \textbf{Framework} & \textbf{Q1: Gap 1} & \textbf{Q2: Gap 2} & \textbf{Q3: Gap 3} \\
+                       & \textbf{(Ecol.\ Val.)} & \textbf{(Gov.\ Cap.)} & \textbf{(Pilot Trap)} \\
     \midrule
-    Ecological validity mandate (G1)      & $-$  & $--$ & $-$  & $--$ \\
-    Governance capacity recognition (G2)  & ++   & $-$  & $-$  & ++ \\
-    Pilot-to-routine transition (G3)       & $-$  & ++   & +    & + \\
-    Post-market monitoring (drift)         & ++   & +    & +    & $-$ \\
-    Equity and subgroup reporting          & +    & $-$  & $-$  & ++ \\
-    \midrule
-    \textbf{Addresses gap1$\rightarrow$gap3 cascade}
-                                           & Partial & Partial & Partial & No \\
+    EU AI Act          & Moderate & Moderate & Weak \\
+    FDA PCCP pathway   & Weak--Moderate & Moderate & Moderate \\
+    WHO / LMIC         & Strong in principle, weak in mechanism & \textbf{Strong} (capacity-building) & Moderate (narrative) \\
     \bottomrule
   \end{tabular}
 \end{table}
 
-The central finding of this comparison is that \textbf{no existing framework
-adequately addresses the gap1 $\rightarrow$ gap3 cascade}. All four frameworks
-share a common structural weakness: they address governance capacity (Gap 2)
-and implementation barriers (Gap 3) with varying degrees of effectiveness,
-but none mandates ecologically valid evaluation methodologies as a condition
-of market authorization. This is the upstream gap that the empirical analysis
-identifies as the primary driver of the cascade.
+The comparison reveals a \textbf{specialization pattern}:
+each framework is strong on a different dimension of the
+cascade.
 
-Three patterns emerge from this comparison:
+\begin{itemize}
+  \item \textbf{The EU AI Act} is strongest on the
+        \textit{regulatory} dimension of the cascade
+        (mandating ex-ante conformity, post-market
+        monitoring obligations, and human oversight),
+        but is silent on the \textit{organizational}
+        dimension. It assumes institutional capacity to
+        execute the obligations.
+  \item \textbf{The FDA pathway} is strongest on the
+        \textit{iterative-update} dimension, supporting
+        the transition from pilot to routine practice
+        through the PCCP mechanism. Its weakness is on
+        ecological validity, which is inherited from the
+        original submission across model iterations.
+  \item \textbf{The WHO / LMIC frameworks} are strongest
+        on the \textit{capacity-building} dimension,
+        which is precisely the dimension the EU and FDA
+        frameworks assume. Their weakness is the
+        absence of enforcement mechanism, but in
+        contexts where the dominant gap is the absence
+        of institutional capacity (which is empirically
+        the most-documented individual gap), this is
+        the most direct match to the documented deficit.
+\end{itemize}
+
+\subsection{Empirical Alignment: Which Framework Best Interrupts the Cascade?}
+\label{sec:cascade_interruption}
+
+The V3.1 empirical analysis identified gap1 $\rightarrow$ gap3
+as the dominant causal pathway (9 of 19 interaction papers,
+47.4\%). If a regulatory framework is to interrupt this
+cascade, it must address Gap 1 (ecological validity) at the
+upstream level --- not just at the procedural level.
+
+\begin{itemize}
+  \item \textbf{The EU AI Act} addresses Gap 1 in its
+        Article 10 (data governance requirements) but
+        treats ecological validity as a property of input
+        data rather than of the evaluation process. This
+        is a partial response: it addresses the
+        \textit{input} dimension of ecological validity
+        but not the \textit{output} dimension (multi-site
+        prospective validation, subgroup-stratified
+        performance reporting, post-deployment drift
+        monitoring).
+  \item \textbf{The FDA pathway} addresses Gap 1
+        through its clinical evidence requirements for
+        De Novo and PMA pathways, but the 510(k)
+        substantial-equivalence pathway substantially
+        weakens this. The PCCP framework also inherits
+        the original ecological-validity profile across
+        model iterations.
+  \item \textbf{The WHO / LMIC frameworks} address
+        Gap 1 in principle (context-appropriate AI,
+        representativeness of training data) but
+        without the enforcement mechanism that would
+        make the principle binding.
+\end{itemize}
+
+\noindent\textbf{Conclusion.} The V3.1 empirical findings
+of this study support the following answer to the central
+regulatory question:
+
+\begin{quote}
+\textit{None of the three regulatory frameworks
+evaluated directly mandates ecological validity in
+evaluation as a precondition for sustained deployment,
+which is the upstream lever that the empirical record
+identifies as most consequential. The EU AI Act comes
+closest in principle (Article 10) but treats ecological
+validity as a data property rather than an evaluation
+process. The FDA pathway inherits ecological validity
+across model iterations without re-validation. The
+WHO / LMIC frameworks address the principle strongly
+but lack enforcement. The V3.1 findings therefore
+support a regulatory recommendation: \textbf{all three
+frameworks should be amended to mandate multi-site
+prospective evaluation, subgroup-stratified performance
+reporting, and post-deployment drift monitoring as
+preconditions for sustained AI deployment in
+healthcare.}}
+\end{quote}
+
+This conclusion is not a prescription against any of the
+three frameworks. Rather, it is a prescription
+\textit{for} the integration of ecological-validity
+mandates into regulatory frameworks that are currently
+structured around market-access decisions, with the EU
+AI Act being the most natural target for such an
+amendment given its scope and binding character.
+
+\subsection{Recommendations for Future Health AI Governance Models}
+\label{sec:recommendations}
+
+The empirical and regulatory findings of this study
+ the following five recommendations for future
+health AI governance models:
 
 \begin{enumerate}
-  \item \textbf{The ecological validity gap is regulatory blind spot.}
-        Across all four frameworks, the absence of mandatory external,
-        multicenter, prospective evaluation requirements means that
-        AI systems enter the market with validation evidence that
-        systematically understates real-world complexity. Regulatory
-        frameworks are designed to ensure that marketed products meet
-        defined standards — but those standards do not currently include
-        ecological validity. Closing this gap requires adding ecological
-        validity requirements to the conformity assessment procedures of
-        all four frameworks.
+  \item \textbf{Mandate ecologically-valid evaluation as a
+        regulatory precondition.} The V3.1 findings identify
+        ecological validity (Gap 1) as the upstream lever
+        with the largest downstream effect on the cascade
+        into the pilot trap. Regulatory frameworks that
+        require multi-site prospective evaluation,
+        subgroup-stratified performance reporting, and
+        post-deployment drift monitoring will have the
+        largest downstream effect on Gap 3 (pilot trap).
+        The EU AI Act's Article 10 (data governance) is
+        the natural place for such a requirement, but
+        currently treats ecological validity as a
+        property of input data rather than of the
+        evaluation process.
 
-  \item \textbf{Governance capacity is increasingly recognized but not
-        operationalized.} The EU AI Act and WHO guidance both explicitly
-        address governance capacity as a dynamic process, but neither
-        provides operational tools for assessing organizational readiness
-        in real time. Hussein's maturity model \citep{hussein2026governance}
-        and Alsaigh's PEARL-PATHWAY framework \citep{alsaigh2026pearl}
-        offer the operational instruments that regulatory frameworks
-        currently lack. The gap between regulatory recognition and
-        operational implementation of governance capacity is where the
-        pilot trap takes root.
+  \item \textbf{Distinguish procedural governance from
+        structural governance capacity.} The EU AI Act
+        and the FDA pathway are strong on procedural
+        governance (who is responsible, what is
+        reported). They are weaker on structural
+        governance capacity (the institutional ability
+        to discharge these obligations). Future
+        frameworks should include explicit
+        capacity-building mechanisms: workforce
+        training, audit infrastructure, regulatory
+        agency staffing.
 
-  \item \textbf{The PCCP mechanism is the most promising regulatory
-        innovation for addressing Gap 3.} The FDA's Predetermined Change
-        Control Plan is the only mechanism among the four frameworks that
-        creates a regulatory structure explicitly designed for the
-        pilot-to-routine transition. Its staged authorization model —
-        with mandatory performance thresholds at each stage — is the
-        closest approximation to the kind of adaptive regulatory approach
-        that the empirical analysis calls for. The EU AI Act's sandbox
-        provisions are conceptually similar but less operationally
-        specified.
+  \item \textbf{Treat the pilot-to-routine transition as
+        a regulatory event.} The pilot trap is the most
+        empirically observable symptom of the cascade,
+        and the most directly policy-actionable. A
+        regulatory framework that requires a
+        \textit{pilot-to-routine transition plan} as
+        a precondition for sustained deployment would
+        directly address Gap 3. The FDA PCCP framework
+        is the closest existing model, but it operates
+        at the manufacturer level rather than the
+        institution level.
+
+  \item \textbf{Integrate capacity-building mechanisms
+        into high-income regulatory frameworks.} The
+        WHO / LMIC frameworks' emphasis on capacity
+        building is not relevant only to LMIC contexts;
+        the empirical Gap 2 literature documents
+        governance-capacity deficits in high-income
+        contexts as well (e.g., rural hospitals, small
+        community clinics, and under-resourced health
+        systems in any country). Capacity-building
+        mechanisms should be a universal feature of
+        governance frameworks, not a special provision
+        for low-resource settings.
+
+  \item \textbf{Use empirical content analysis to
+        continuously update regulatory frameworks.}
+        The literature on AI in healthcare is evolving
+        rapidly. The empirical method demonstrated in
+        Section~\ref{sec:empirical} (structured content
+        analysis of the literature with coding against
+        a defined framework) can be re-run periodically
+        to track whether the gaps are shrinking,
+        shifting, or being replaced by new gaps.
+        Regulatory frameworks should be designed to
+        accommodate this kind of evidence-driven
+        revision.
 \end{enumerate}
 
-The implication for regulatory design is clear: closing the gap1
-$\rightarrow$ gap3 cascade requires adding an ecological validity mandate
-to existing regulatory frameworks, operationalizing governance capacity
-assessment through maturity models and readiness tools, and extending
-the PCCP-style staged authorization model across all jurisdictions.
-The three-gap framework provides the analytical structure for identifying
-where regulatory intervention is most needed — and the empirical analysis
-identifies ecological validity as the upstream lever with the largest
-downstream effect on the cascade.
+% =============================================================================
+% 04C_END
+% =============================================================================
