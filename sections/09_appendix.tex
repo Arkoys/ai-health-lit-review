@@ -201,6 +201,35 @@ Indexes are created on \texttt{score}, \texttt{published\_date}, and
 \texttt{processing\_status}.
 
 % =============================================================================
+% D'. Coding Reliability Check
+% =============================================================================
+
+\subsection{Coding Reliability Check}
+\label{sec:app_coding_reliability}
+
+Given the single-researcher design of this review, coding robustness
+was approximated via \textit{multi-pass LLM coding replication} using
+varied prompting strategies to simulate independent annotators. The
+V3 corpus (n=60 papers) was re-coded by an LLM operating under at
+least two distinct prompting conditions (a \emph{conservative coder}
+prompt that minimises false positives and a \emph{liberal coder}
+prompt that minimises false negatives). Output codings were compared
+to the primary reviewer's codes, and agreement rates were computed
+at the paper, gap, and interaction levels.
+
+This approach is documented as an \textit{internal replication}
+exercise rather than as a formal human inter-rater reliability
+coefficient. It provides a lower-bound estimate of coding robustness:
+agreement above the chance baseline across divergent prompting regimes
+suggests that the gap and interaction codings are reasonably stable
+to variation in coder instruction, while disagreement indicates
+papers whose codes should be interpreted with additional caution.
+
+The executable specification of the replication procedure is
+\texttt{analysis/\_v3\_coding\_matrix.py}, with archived coding
+snapshots in \texttt{analysis/\_v3\_batch\_pN\_coded.json} files.
+
+% =============================================================================
 % E. Output Products
 % =============================================================================
 
